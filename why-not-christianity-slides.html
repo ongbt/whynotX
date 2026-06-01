@@ -1,0 +1,2961 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="minimal-white">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Why I Do Not Believe Christianity Is True</title>
+
+
+
+
+<style>
+/* html-ppt :: shared webfonts */
+/* html-ppt :: shared webfonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/* html-ppt :: base.css */
+/* html-ppt :: base.css — reset + shared tokens + layout primitives */
+/* Default tokens. Themes in assets/themes/*.css override the :root block. */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --surface: #ffffff;
+  --surface-2: #f2f2f4;
+  --border: rgba(0,0,0,.08);
+  --border-strong: rgba(0,0,0,.16);
+  --text-1: #111216;
+  --text-2: #55596a;
+  --text-3: #8a8f9e;
+  --accent: #3b6cff;
+  --accent-2: #7a5cff;
+  --accent-3: #ff5c8a;
+  --good: #1aaf6c;
+  --warn: #f5a524;
+  --bad:  #e0445a;
+  --grad: linear-gradient(135deg,#3b6cff,#7a5cff 55%,#ff5c8a);
+  --grad-soft: linear-gradient(135deg,#eef2ff,#f5ecff 55%,#ffeef5);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --radius-lg: 26px;
+  --shadow: 0 10px 30px rgba(18,24,40,.08), 0 2px 6px rgba(18,24,40,.04);
+  --shadow-lg: 0 24px 60px rgba(18,24,40,.14), 0 6px 16px rgba(18,24,40,.06);
+  --font-sans: 'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  --font-serif: 'Playfair Display','Noto Serif SC',Georgia,serif;
+  --font-mono: 'JetBrains Mono','IBM Plex Mono',SFMono-Regular,Menlo,monospace;
+  --font-display: var(--font-sans);
+  --letter-tight: -.03em;
+  --letter-normal: -.01em;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text-1);
+  font-family:var(--font-sans);font-weight:400;line-height:1.6;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  letter-spacing:var(--letter-normal)}
+img,svg,video{max-width:100%;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+code,kbd,pre,samp{font-family:var(--font-mono)}
+
+/* ================= SLIDE SYSTEM ================= */
+.deck{position:relative;width:100vw;height:100vh;overflow:hidden;background:var(--bg)}
+.slide{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:72px 96px;
+  box-sizing:border-box;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s var(--ease), transform .5s var(--ease);
+  transform:translateX(30px);
+  overflow:hidden;
+}
+.slide.is-active{opacity:1;pointer-events:auto;transform:translateX(0);z-index:2}
+.slide.is-prev{transform:translateX(-30px)}
+
+/* single-page standalone (used when a layout file is opened directly) */
+body.single .slide{position:relative;width:100vw;height:100vh;opacity:1;transform:none;pointer-events:auto}
+
+/* ================= TYPOGRAPHY ================= */
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3)}
+.kicker{font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+h1.title,.h1{font-family:var(--font-display);font-size:72px;line-height:1.05;font-weight:800;letter-spacing:var(--letter-tight);margin:0 0 18px;color:var(--text-1)}
+h2.title,.h2{font-family:var(--font-display);font-size:54px;line-height:1.1;font-weight:700;letter-spacing:var(--letter-tight);margin:0 0 14px}
+h3,.h3{font-size:32px;line-height:1.2;font-weight:600;letter-spacing:var(--letter-normal);margin:0 0 10px}
+h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
+.lede{font-size:22px;line-height:1.55;color:var(--text-2);font-weight:300;max-width:62ch}
+.dim{color:var(--text-2)}
+.dim2{color:var(--text-3)}
+.mono{font-family:var(--font-mono)}
+.serif{font-family:var(--font-serif)}
+.gradient-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--text-1)}
+
+/* ================= LAYOUT PRIMITIVES ================= */
+.stack>*+*{margin-top:14px}
+.row{display:flex;gap:24px;align-items:center}
+.row.wrap{flex-wrap:wrap}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.center{display:flex;align-items:center;justify-content:center;text-align:center}
+.fill{flex:1}
+.sp-t{padding-top:24px}.sp-b{padding-bottom:24px}
+.mt-s{margin-top:8px}.mt-m{margin-top:18px}.mt-l{margin-top:32px}
+.mb-s{margin-bottom:8px}.mb-m{margin-bottom:18px}.mb-l{margin-bottom:32px}
+
+/* ================= CARDS ================= */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:26px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.card-soft{background:var(--surface-2);border:1px solid var(--border)}
+.card-outline{background:transparent;border:1.5px solid var(--border-strong);box-shadow:none}
+.card-accent{background:var(--surface);border-top:3px solid var(--accent)}
+.card-hover{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.card-hover:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+
+.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:500;
+  background:var(--surface-2);color:var(--text-2);border:1px solid var(--border)}
+.pill-accent{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 28%,transparent)}
+
+/* ================= BARS / DIVIDERS ================= */
+.divider{height:1px;background:var(--border);width:100%}
+.divider-accent{height:3px;width:72px;background:var(--accent);border-radius:2px}
+
+/* ================= CHROME (header/footer/progress) ================= */
+.deck-header{position:absolute;top:24px;left:40px;right:40px;display:flex;align-items:center;justify-content:space-between;
+  font-size:12px;color:var(--text-3);letter-spacing:.12em;text-transform:uppercase;z-index:10;pointer-events:none}
+.deck-footer{position:absolute;bottom:24px;left:40px;right:40px;display:flex;align-items:center;justify-content:space-between;
+  font-size:12px;color:var(--text-3);z-index:10;pointer-events:none}
+.slide-number::before{content:attr(data-current)}
+.slide-number::after{content:" / " attr(data-total)}
+.progress-bar{position:fixed;left:0;right:0;bottom:0;height:3px;background:transparent;z-index:20}
+.progress-bar > span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s var(--ease)}
+
+/* ================= PRESENTER / OVERVIEW ================= */
+.notes{display:none!important}
+.notes-overlay{position:fixed;inset:auto 0 0 0;max-height:42vh;background:rgba(20,22,30,.95);color:#e8ebf4;
+  padding:20px 32px;font-size:16px;line-height:1.6;border-top:1px solid rgba(255,255,255,.1);transform:translateY(100%);
+  transition:transform .3s var(--ease);z-index:40;overflow:auto;font-family:var(--font-sans)}
+.notes-overlay.open{transform:translateY(0)}
+.overview{position:fixed;inset:0;background:rgba(10,12,18,.92);backdrop-filter:blur(12px);z-index:50;
+  display:none;padding:40px;overflow:auto}
+.overview.open{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-content:start}
+.overview .thumb{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  aspect-ratio:16/9;overflow:hidden;cursor:pointer;position:relative;color:var(--text-1);padding:16px;
+  font-size:11px;transition:transform .2s var(--ease)}
+.overview .thumb:hover{transform:scale(1.04)}
+.overview .thumb .n{position:absolute;top:8px;left:10px;font-weight:700;font-size:14px;color:var(--text-3)}
+.overview .thumb .t{position:absolute;bottom:10px;left:14px;right:14px;font-weight:600;color:var(--text-1)}
+
+/* ================= PRESENTER VIEW ================= */
+/* Presenter view opens in a separate popup window (S key).
+ * All presenter styles are self-contained in the popup HTML generated by runtime.js.
+ * The audience window (this file) is NOT affected — it stays as normal deck view.
+ * Only the .notes class below is needed to hide speaker notes from audience. */
+
+/* ================= UTILITY ================= */
+.hidden{display:none!important}
+.nowrap{white-space:nowrap}
+.tr{text-align:right}.tc{text-align:center}.tl{text-align:left}
+.uppercase{text-transform:uppercase;letter-spacing:.12em}
+
+/* ================= PRINT ================= */
+@media print{
+  .slide{position:relative;opacity:1!important;transform:none!important;page-break-after:always;height:100vh}
+  .deck-header,.deck-footer,.progress-bar,.notes-overlay,.overview{display:none!important}
+}
+
+/* theme: minimal-white */
+/* theme: minimal-white — 极简白，克制高级 */
+:root{
+  --bg:#ffffff;--bg-soft:#fafafa;--surface:#ffffff;--surface-2:#f5f5f6;
+  --border:rgba(17,18,22,.08);--border-strong:rgba(17,18,22,.16);
+  --text-1:#0c0d10;--text-2:#55596a;--text-3:#9ca1b0;
+  --accent:#111216;--accent-2:#3b3f4a;--accent-3:#6b6f7a;
+  --good:#1aaf6c;--warn:#c98500;--bad:#c13a3a;
+  --grad:linear-gradient(135deg,#111216,#3b3f4a);
+  --grad-soft:linear-gradient(135deg,#f5f5f6,#ffffff);
+  --radius:14px;--radius-sm:8px;--radius-lg:22px;
+  --shadow:0 1px 2px rgba(17,18,22,.04),0 8px 24px rgba(17,18,22,.06);
+  --shadow-lg:0 20px 60px rgba(17,18,22,.1);
+  --font-sans:'Inter','Noto Sans SC',sans-serif;
+  --font-display:'Inter','Noto Sans SC',sans-serif;
+  --letter-tight:-.035em;
+}
+
+/* html-ppt :: animations */
+/* html-ppt :: animations.css
+ * Apply by adding class="anim-<name>" or data-anim="<name>".
+ * Durations are deliberately snappy; tweak --anim-dur per element.
+ */
+:root{--anim-dur:.7s;--anim-ease:cubic-bezier(.4,0,.2,1)}
+
+/* ---------- FADE DIRECTIONALS ---------- */
+@keyframes kf-fade-up{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-down{from{opacity:0;transform:translateY(-32px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-left{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-right{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+.anim-fade-up{animation:kf-fade-up var(--anim-dur) var(--anim-ease) both}
+.anim-fade-down{animation:kf-fade-down var(--anim-dur) var(--anim-ease) both}
+.anim-fade-left{animation:kf-fade-left var(--anim-dur) var(--anim-ease) both}
+.anim-fade-right{animation:kf-fade-right var(--anim-dur) var(--anim-ease) both}
+
+/* ---------- RISE / DROP / ZOOM / BLUR / GLITCH ---------- */
+@keyframes kf-rise{from{opacity:0;transform:translateY(60px) scale(.97);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes kf-drop{from{opacity:0;transform:translateY(-60px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes kf-zoom{0%{opacity:0;transform:scale(.6)}60%{transform:scale(1.04)}100%{opacity:1;transform:scale(1)}}
+@keyframes kf-blur{from{opacity:0;filter:blur(18px)}to{opacity:1;filter:none}}
+@keyframes kf-glitch{0%{opacity:0;transform:translateX(0);clip-path:inset(0 0 0 0)}
+  20%{opacity:1;transform:translateX(-6px);clip-path:inset(20% 0 30% 0)}
+  40%{transform:translateX(4px);clip-path:inset(50% 0 10% 0)}
+  60%{transform:translateX(-3px);clip-path:inset(10% 0 60% 0)}
+  80%{transform:translateX(2px);clip-path:inset(0 0 0 0)}
+  100%{opacity:1;transform:none}}
+.anim-rise-in{animation:kf-rise .9s var(--anim-ease) both}
+.anim-drop-in{animation:kf-drop .8s var(--anim-ease) both}
+.anim-zoom-pop{animation:kf-zoom .7s cubic-bezier(.22,1.3,.36,1) both}
+.anim-blur-in{animation:kf-blur .8s var(--anim-ease) both}
+.anim-glitch-in{animation:kf-glitch .8s steps(5,end) both}
+
+/* ---------- TYPEWRITER ---------- */
+.anim-typewriter{display:inline-block;overflow:hidden;white-space:nowrap;border-right:2px solid currentColor;
+  width:0;animation:kf-type 2.4s steps(40,end) forwards, kf-caret 1s step-end infinite}
+@keyframes kf-type{to{width:100%}}
+@keyframes kf-caret{50%{border-color:transparent}}
+
+/* ---------- GLOW / SHIMMER / GRADIENT-FLOW ---------- */
+@keyframes kf-neon{0%,100%{text-shadow:0 0 8px var(--accent),0 0 20px var(--accent)}
+  50%{text-shadow:0 0 16px var(--accent),0 0 40px var(--accent),0 0 80px var(--accent)}}
+.anim-neon-glow{animation:kf-neon 2s ease-in-out infinite}
+
+.anim-shimmer-sweep{position:relative;overflow:hidden}
+.anim-shimmer-sweep::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(110deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%);
+  transform:translateX(-100%);animation:kf-shimmer 2.4s var(--anim-ease) infinite}
+@keyframes kf-shimmer{to{transform:translateX(100%)}}
+
+.anim-gradient-flow{background:linear-gradient(90deg,var(--accent),var(--accent-2,var(--accent)),var(--accent-3,var(--accent)),var(--accent));
+  background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+  animation:kf-gradflow 4s linear infinite}
+@keyframes kf-gradflow{to{background-position:300% 0}}
+
+/* ---------- STAGGER LIST ---------- */
+/* Zero-specificity stagger so anim-* classes override via natural cascade */
+:where(.anim-stagger-list) > :where(*) {opacity:0;animation:kf-rise .65s var(--anim-ease) both}
+:where(.anim-stagger-list) > :where(*:nth-child(1)){animation-delay:.05s}
+:where(.anim-stagger-list) > :where(*:nth-child(2)){animation-delay:.15s}
+:where(.anim-stagger-list) > :where(*:nth-child(3)){animation-delay:.25s}
+:where(.anim-stagger-list) > :where(*:nth-child(4)){animation-delay:.35s}
+:where(.anim-stagger-list) > :where(*:nth-child(5)){animation-delay:.45s}
+:where(.anim-stagger-list) > :where(*:nth-child(6)){animation-delay:.55s}
+:where(.anim-stagger-list) > :where(*:nth-child(7)){animation-delay:.65s}
+:where(.anim-stagger-list) > :where(*:nth-child(8)){animation-delay:.75s}
+:where(.anim-stagger-list) > :where(*:nth-child(n+9)){animation-delay:.85s}
+
+/* ---------- COUNTER-UP (JS-driven, marker class only) ---------- */
+.counter{font-variant-numeric:tabular-nums}
+
+/* ---------- SVG PATH DRAW ---------- */
+.anim-path-draw path,.anim-path-draw line,.anim-path-draw polyline,.anim-path-draw circle,.anim-path-draw rect{
+  stroke-dasharray:1000;stroke-dashoffset:1000;animation:kf-draw 2s var(--anim-ease) forwards}
+@keyframes kf-draw{to{stroke-dashoffset:0}}
+
+/* ---------- PARALLAX TILT (hover) ---------- */
+.anim-parallax-tilt{transform-style:preserve-3d;transition:transform .4s var(--anim-ease)}
+.anim-parallax-tilt:hover{transform:perspective(900px) rotateX(6deg) rotateY(-8deg) translateZ(10px)}
+
+/* ---------- CARD FLIP 3D ---------- */
+@keyframes kf-flip{from{transform:perspective(1200px) rotateY(-90deg);opacity:0}
+  to{transform:perspective(1200px) rotateY(0);opacity:1}}
+.anim-card-flip-3d{animation:kf-flip .9s var(--anim-ease) both;transform-style:preserve-3d;backface-visibility:hidden}
+
+/* ---------- CUBE ROTATE 3D ---------- */
+@keyframes kf-cube{from{transform:perspective(1200px) rotateX(20deg) rotateY(-90deg) translateZ(-200px);opacity:0}
+  to{transform:perspective(1200px) rotateX(0) rotateY(0) translateZ(0);opacity:1}}
+.anim-cube-rotate-3d{animation:kf-cube 1s var(--anim-ease) both}
+
+/* ---------- PAGE TURN 3D ---------- */
+@keyframes kf-pageturn{from{transform:perspective(1600px) rotateY(-85deg);transform-origin:left center;opacity:0}
+  to{transform:perspective(1600px) rotateY(0);opacity:1}}
+.anim-page-turn-3d{animation:kf-pageturn 1s var(--anim-ease) both;transform-origin:left center}
+
+/* ---------- PERSPECTIVE ZOOM ---------- */
+@keyframes kf-pzoom{from{opacity:0;transform:perspective(1400px) translateZ(-400px) rotateX(12deg)}
+  to{opacity:1;transform:none}}
+.anim-perspective-zoom{animation:kf-pzoom 1s var(--anim-ease) both}
+
+/* ---------- MARQUEE SCROLL ---------- */
+.anim-marquee-scroll{display:flex;gap:48px;white-space:nowrap;animation:kf-marquee 20s linear infinite}
+@keyframes kf-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- KEN BURNS ---------- */
+@keyframes kf-kenburns{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.15) translate(-2%,-1%)}}
+.anim-kenburns{animation:kf-kenburns 14s ease-in-out infinite alternate}
+
+/* ---------- CONFETTI BURST (pseudo — pure CSS sparkles) ---------- */
+.anim-confetti-burst{position:relative}
+.anim-confetti-burst::before,.anim-confetti-burst::after{
+  content:"";position:absolute;top:50%;left:50%;width:8px;height:8px;border-radius:50%;
+  background:var(--accent);box-shadow:
+    20px -30px 0 var(--accent-2,var(--accent)),-25px -20px 0 var(--accent-3,var(--accent)),
+    30px 20px 0 var(--good,#1aaf6c),-30px 25px 0 var(--warn,#f5a524),
+    40px -10px 0 var(--bad,#e0445a),-45px 0 0 var(--accent),
+    10px 40px 0 var(--accent-2,var(--accent)),-15px -40px 0 var(--accent-3,var(--accent));
+  opacity:0;animation:kf-confetti 1.2s var(--anim-ease) forwards}
+.anim-confetti-burst::after{animation-delay:.15s;transform:rotate(45deg)}
+@keyframes kf-confetti{0%{opacity:0;transform:scale(.2)}30%{opacity:1}100%{opacity:0;transform:scale(2.2)}}
+
+/* ---------- SPOTLIGHT ---------- */
+@keyframes kf-spot{0%{clip-path:circle(0% at 50% 50%)}100%{clip-path:circle(140% at 50% 50%)}}
+.anim-spotlight{animation:kf-spot 1.1s var(--anim-ease) both}
+
+/* ---------- MORPH SHAPE (SVG) ---------- */
+.anim-morph-shape path{animation:kf-morph 6s ease-in-out infinite alternate}
+@keyframes kf-morph{0%{d:path("M60,120 Q120,20 180,120 T300,120")}
+  100%{d:path("M60,120 Q120,220 180,120 T300,120")}}
+
+/* ---------- RIPPLE REVEAL ---------- */
+@keyframes kf-ripple{0%{clip-path:circle(0% at 20% 80%);opacity:.4}
+  100%{clip-path:circle(160% at 20% 80%);opacity:1}}
+.anim-ripple-reveal{animation:kf-ripple 1.2s var(--anim-ease) both}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+  [class*="anim-"]{animation:none!important;transition:none!important}
+}
+
+/* slide-section styles */
+.slide-section{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--bg-soft)}
+.slide-section .section-number{font-size:14px;font-weight:600;color:var(--text-3);letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.slide-section .divider-accent{height:3px;width:72px;background:var(--accent);border-radius:2px;margin:24px auto}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.comp-col{padding:20px 24px;border-radius:var(--radius-sm)}
+.comp-col.good{background:color-mix(in srgb,var(--good) 8%,var(--surface-2));border:1px solid color-mix(in srgb,var(--good) 20%,var(--border))}
+.comp-col.bad{background:color-mix(in srgb,var(--bad) 8%,var(--surface-2));border:1px solid color-mix(in srgb,var(--bad) 20%,var(--border))}
+.prophecy-card{border-left:3px solid var(--accent);padding:16px 20px;margin:10px 0;background:var(--surface-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+.prophecy-card .ref{font-size:12px;font-weight:600;color:var(--text-3);letter-spacing:.08em;text-transform:uppercase}
+.fail-card{background:color-mix(in srgb,var(--bad) 6%,var(--surface));border:1px solid color-mix(in srgb,var(--bad) 15%,var(--border));border-radius:var(--radius-sm);padding:16px 20px;margin:8px 0}
+.fail-card .ref{font-size:12px;font-weight:600;color:var(--text-3);letter-spacing:.08em;text-transform:uppercase}
+.version-badge{position:absolute;top:20px;right:20px;font-size:14px;color:#999;font-family:monospace;z-index:5}
+</style>
+</head>
+<body data-themes="minimal-white">
+<div class="deck">
+
+  <!-- ============================== -->
+  <!-- COVER                          -->
+  <!-- ============================== -->
+  <section class="slide" data-title="Cover">
+    <div class="version-badge" style="position:absolute;top:20px;right:20px;font-size:14px;color:#999;font-family:monospace;">v15</div>
+    <div class="anim-stagger-list">
+      <p class="kicker">A Reasoned Examination</p>
+      <h1 class="h1" style="opacity:1!important;color:var(--text-1);font-size:72px;font-weight:700;line-height:1.1;margin:0 0 16px;letter-spacing:-1px;text-shadow:0 2px 8px rgba(0,0,0,0.3)">
+        Why I Do Not Believe<br>
+        Christianity Is True
+      </h1>
+      <p class="lede">An evidence-based look at the claims of Christianity through the lenses of science, history, morality, and scripture.</p>
+      <div class="row wrap mt-l">
+        <span class="pill pill-accent">Scientific</span>
+        <span class="pill">Historical</span>
+        <span class="pill">Moral</span>
+        <span class="pill">Biblical</span>
+        <span class="pill">Philosophical</span>
+      </div>
+    </div>
+    <div class="deck-footer"><span class="dim2">Based on the presentation by DarkMatter2525 · Adapted and refined</span><span class="slide-number" data-current="1" data-total="61"></span></div>
+    <div class="notes">Welcome. Today we're going to examine the central question: is Christianity true? Not whether it's comforting or culturally significant, but whether its truth claims hold up to scrutiny. We'll go through five areas: scientific evidence, historical evidence, moral philosophy, the Bible itself, and finally broader philosophical questions. Each section will build on the last.</div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION: INTRODUCTION          -->
+  <!-- ============================== -->
+  <section class="slide tc center" data-title="Section Intro">
+    <div style="max-width:780px;margin:0 auto">
+      <p class="kicker anim-fade-down" data-anim="fade-down">Introduction</p>
+      <h1 class="h1 anim-rise-in" data-anim="rise-in" style="font-size:96px">Setting the <span class="gradient-text">Ground Rules</span></h1>
+      <div class="divider-accent" style="margin:24px auto"></div>
+      <p class="lede">Before we begin, we need to establish what we're actually arguing about and who carries the burden.</p>
+    </div>
+    <div class="notes">Before we dive into the arguments, we need to be clear on the rules of engagement. What exactly are we debating? And who has the burden of proof? These aren't rhetorical tricks — they're necessary framing that prevents talking past each other.</div>
+  </section>
+
+  <section class="slide" data-title="Burden of Proof">
+    <p class="kicker">Ground Rules</p>
+    <h2 class="h2">Burden of Proof</h2>
+    <p class="lede mb-l">Extraordinary claims require extraordinary evidence.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>The Claim</h4>
+        <p class="dim">Christianity makes positive claims about reality: a God exists, Jesus rose from the dead, prayers are answered, miracles occur. These are not neutral statements — they assert something extraordinary about the universe.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>The Burden</h4>
+        <p class="dim">Whoever makes a positive claim carries the burden of proof. Skepticism is not a counter-claim — it's the default position until sufficient evidence is presented. The lack of belief is not a belief in lack.</p>
+      </div>
+    </div>
+    <div class="notes">The most common confusion in these debates: atheism isn't the claim that "no god exists" with certainty. It's the lack of belief in the god claim due to insufficient evidence. The difference matters. If I tell you there's a dragon in my garage, you don't have to prove there isn't — I have to show you the dragon.</div>
+  </section>
+
+  <section class="slide" data-title="Agnostic vs Atheist">
+    <p class="kicker">Ground Rules</p>
+    <h2 class="h2">Agnostic vs Atheist</h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card anim-fade-left" data-anim="fade-left">
+        <h4>Knowledge vs Belief</h4>
+        <p class="dim">These are answers to two different questions:</p>
+        <ul class="mt-m">
+          <li><b>Agnosticism</b> answers "Do you <i>know</i>?" — No.</li>
+          <li><b>Atheism</b> answers "Do you <i>believe</i>?" — No.</li>
+        </ul>
+        <p class="dim mt-m">You can be both: an agnostic atheist doesn't claim to know no god exists, but doesn't find the evidence for one convincing.</p>
+      </div>
+      <div class="card anim-fade-right" data-anim="fade-right">
+        <h4>The Courage of the Agnostic</h4>
+        <p class="dim">Bertrand Russell's teapot illustrates this well. The agnostic position requires intellectual courage — the willingness to say "I don't know" rather than filling gaps with certainty. It's not a weakness; it's epistemological honesty.</p>
+      </div>
+    </div>
+    <div class="notes">This distinction is critical. An agnostic atheist says: "I don't know for certain whether a god exists, but I don't find the evidence for the Christian god convincing enough to believe." This is different from a gnostic atheist who says "I know no god exists." Most skeptics are in the first camp, not the second.</div>
+  </section>
+
+  <section class="slide" data-title="The Five Pillars">
+    <p class="kicker">Ground Rules</p>
+    <h2 class="h2">The Five Pillars of Examination</h2>
+    <p class="lede mb-l">We'll evaluate Christianity on five independent grounds. Each stands on its own; together they form a cumulative case.</p>
+    <div class="grid anim-stagger-list" style="grid-template-columns:repeat(5,1fr);gap:16px" data-anim-target>
+      <div class="card card-accent tc" style="padding:30px 20px">
+        <h3 style="font-size:36px;">🔬</h3>
+        <h4>Scientific</h4>
+        <p class="dim" style="font-size:14px">Origins, evolution, fine-tuning, the flood</p>
+      </div>
+      <div class="card card-accent tc" style="padding:30px 20px">
+        <h3 style="font-size:36px;">📜</h3>
+        <h4>Historical</h4>
+        <p class="dim" style="font-size:14px">Gospels, resurrection, prophecies</p>
+      </div>
+      <div class="card card-accent tc" style="padding:30px 20px">
+        <h3 style="font-size:36px;">⚖️</h3>
+        <h4>Moral</h4>
+        <p class="dim" style="font-size:14px">Euthyphro, evil, biblical morality</p>
+      </div>
+      <div class="card card-accent tc" style="padding:30px 20px">
+        <h3 style="font-size:36px;">📖</h3>
+        <h4>Biblical</h4>
+        <p class="dim" style="font-size:14px">Inerrancy, canon, contradictions</p>
+      </div>
+      <div class="card card-accent tc" style="padding:30px 20px">
+        <h3 style="font-size:36px;">🧠</h3>
+        <h4>Philosophical</h4>
+        <p class="dim" style="font-size:14px">Free will, Pascal, faith as a virtue</p>
+      </div>
+    </div>
+    <div class="notes">These five areas are largely independent. Even if the scientific case were weak, the historical and moral arguments might still be compelling — or vice versa. We'll examine each on its own merits and then see how they stack up together.</div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION: SCIENTIFIC ARGUMENT   -->
+  <!-- ============================== -->
+  <section class="slide tc center" data-title="Section Scientific">
+    <div style="max-width:780px;margin:0 auto">
+      <p class="section-number">Part One</p>
+      <h1 class="h1 anim-rise-in" data-anim="rise-in" style="font-size:96px">The <span class="gradient-text">Scientific</span> Argument</h1>
+      <div class="divider-accent" style="margin:24px auto"></div>
+      <p class="lede">Does science point toward or away from the Christian worldview?</p>
+    </div>
+    <div class="notes">The scientific argument is often the starting point. Christians point to fine-tuning, the origin of life, and the complexity of biology as evidence for a creator. Critics point to evolution, geology, and cosmology as evidence against a literal reading of scripture and as natural explanations for what religion once attributed to God.</div>
+  </section>
+
+  <section class="slide" data-title="God of the Gaps">
+    <p class="kicker">Scientific · Origins</p>
+    <h2 class="h2">The God of the Gaps</h2>
+    <p class="lede mb-l">A recurring pattern in the history of science.</p>
+    <ul class="grid g1 anim-stagger-list" style="list-style:none;padding:0;margin:0;gap:14px" data-anim-target>
+      <li class="card card-soft">
+        <h4>⛈️ Weather & Lightning</h4>
+        <p class="dim">Once attributed to divine wrath. Now understood as atmospheric physics. Each gap filled by science shrinks the space for divine explanation.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>🌍 Disease & Pandemics</h4>
+        <p class="dim">Explained by demons and divine punishment for centuries. Germ theory provided natural causation. Prayer alone was never an effective treatment.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>🌌 The Origin of Species</h4>
+        <p class="dim">The most resilient gap. Evolution by natural selection provides a fully natural mechanism for the diversity of life. The gap keeps shrinking as transitional fossils and genetic evidence accumulate.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>⚠️ The Logical Problem</h4>
+        <p class="dim">If God is the explanation for whatever science hasn't yet explained, then God exists only in the shrinking margins of human ignorance. This is a fragile foundation for faith.</p>
+      </li>
+    </ul>
+    <div class="notes">The God of the Gaps argument is the most common but also the weakest. It says "science can't explain X, therefore God." The problem is that historically, every time we've said that, science eventually does explain X. Lightning, disease, the motions of the planets, the origin of species — all were once attributed to God, all now have natural explanations. If God only lives in the gaps of our knowledge, what happens when the gaps close?</div>
+  </section>
+
+  <section class="slide" data-title="Fine-Tuning">
+    <p class="kicker">Scientific · Cosmology</p>
+    <h2 class="h2">The Fine-Tuning Fallacy</h2>
+    <p class="lede mb-l">"The universe appears designed. Therefore a designer exists."</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>The Claim</h4>
+        <p class="dim">Physical constants (gravitational constant, cosmological constant, strong nuclear force, etc.) appear to be finely tuned to within extraordinarily narrow ranges. If any were even slightly different, life could not exist. This seems to suggest a fine-tuner.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>The Counter</h4>
+        <p class="dim">Three major problems: (1) The Anthropic Principle — we can only observe a universe that permits our existence. (2) The multiverse hypothesis — if there are countless universes with varying constants, ours being life-permitting is unremarkable. (3) Fine-tuning assumes life is the goal — why not fine-tuned for something else?</p>
+      </div>
+    </div>
+    <div class="card card-soft mt-m anim-fade-up" data-anim="fade-up" style="padding:16px 20px;border-left:3px solid var(--accent)">
+      <p class="dim" style="font-size:14px;line-height:1.7;margin:0"><b>The Puddle Analogy:</b> Imagine a puddle waking up one morning and thinking, <em>"What a wonderful hole I'm in — it fits me perfectly!"</em> The puddle mistakes its own shape for evidence that the hole was designed for it. In truth, the hole shaped the puddle, not the other way around. We observe a universe that permits our existence — that's not surprising, it's tautological. We couldn't observe anything else.</p>
+    </div>
+    <div class="notes">The fine-tuning argument sounds compelling until you examine it closely. We exist in a universe that permits our existence — that's not surprising, it's tautological.</div>
+  </section>
+
+  <section class="slide" data-title="First Cause">
+    <p class="kicker">Scientific · Cosmology</p>
+    <h2 class="h2">The Kalam: Who Caused God?</h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card anim-fade-left" data-anim="fade-left">
+        <h4>The Argument</h4>
+        <ol class="dim">
+          <li>Whatever begins to exist has a cause.</li>
+          <li>The universe began to exist.</li>
+          <li>Therefore, the universe has a cause.</li>
+          <li>That cause is God.</li>
+        </ol>
+      </div>
+      <div class="card anim-fade-right" data-anim="fade-right">
+        <h4>Two Problems</h4>
+        <ul class="dim">
+          <li><b>Special pleading:</b> If everything that begins needs a cause, what caused God? If God doesn't need a cause, why can't the universe be the uncaused thing?</li>
+          <li><b>Equivocation:</b> Even if premise 3 is granted, the conclusion "that cause is God" smuggles in attributes (omnipotence, omniscience, benevolence) that aren't in the premises. The cause could be a quantum fluctuation, a multiverse bubble, or anything else.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">The Kalam argument has been popularized by William Lane Craig, but it has a fatal flaw: it treats God as a special exception to its own logic. If the universe needs a cause because it began to exist, then God — who is also said to be a conscious being with a beginning (though theologians dispute this) — would need one too. And if you say "God is eternal, he didn't begin," then you've simply moved the mystery back one step. Why not stop at the universe?</div>
+  </section>
+
+  <section class="slide" data-title="Adam and Eve">
+    <p class="kicker">Scientific · Biology</p>
+    <h2 class="h2">Adam & Eve: The Genetic Impossibility</h2>
+    <p class="lede mb-l">A literal Adam and Eve is scientifically untenable.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>The Biblical Claim</h4>
+        <p class="dim">All humanity descended from a single pair of humans created ~6,000–10,000 years ago. Sin entered the world through Adam, and all humans inherit that sin.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>The Genetic Reality</h4>
+        <p class="dim">Population genetics shows humanity never passed through a bottleneck of two individuals. The minimum viable human population is estimated at 10,000–40,000 individuals. Our genetic diversity is far too high to have come from a single pair. Mitochondrial Eve and Y-chromosomal Adam lived tens of thousands of years apart and were never alone.</p>
+      </div>
+    </div>
+    <div class="notes">This is a concrete example where scripture and science directly conflict. A literal Adam and Eve is essential to Pauline theology — Romans 5 says sin entered through one man, and salvation through one man (Christ). If Adam wasn't a real historical figure, the entire theological framework of original sin and atonement collapses. Many Christians allegorize Genesis here, but that raises the question: where do you stop allegorizing?</div>
+  </section>
+
+  <section class="slide" data-title="Noah's Flood">
+    <p class="kicker">Scientific · Geology</p>
+    <h2 class="h2">Noah's Flood: The Geological Impossibility</h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card anim-fade-left" data-anim="fade-left">
+        <h4>Geological Impossibility</h4>
+        <ul class="dim">
+          <li>No geological evidence for a global flood in the last 6,000 years</li>
+          <li>Stratigraphic layers show gradual deposition over millions of years, not a single catastrophic flood</li>
+          <li>Ice cores from Greenland and Antarctica show annual layers going back 100,000+ years — uninterrupted</li>
+          <li>If a global flood occurred, we'd expect a worldwide layer of flood sediment. No such layer exists.</li>
+        </ul>
+      </div>
+      <div class="card anim-fade-right" data-anim="fade-right">
+        <h4>Biological Impossibility</h4>
+        <ul class="dim">
+          <li>8 people could not feed, clean, and care for ~35,000+ animal species (let alone insects and marine life)</li>
+          <li>Freshwater fish would die in saltwater; saltwater fish in freshwater</li>
+          <li>Post-flood repopulation is genetically impossible from such a small founder population</li>
+          <li>Kangaroos and koalas making it from Ararat to Australia without leaving fossils along the way stretches credulity</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">The Noah's Ark story is one of the most well-known in the Bible, and one of the most empirically falsifiable. Every branch of science — geology, biology, genetics, archaeology — independently concludes that no global flood occurred in human history. The story almost certainly derives from older Mesopotamian flood myths like the Epic of Gilgamesh, which predate the Genesis account.</div>
+  </section>
+
+  <section class="slide" data-title="Age of the Earth">
+    <p class="kicker">Scientific · Geology</p>
+    <h2 class="h2">Age of the Earth: Why Not 6,000 Years?</h2>
+    <p class="lede mb-l">A direct contradiction between scripture and every dating method.</p>
+    <div class="grid" style="grid-template-columns:1fr 2fr;gap:16px;align-items:stretch">
+      <div class="card" style="border-top:3px solid var(--bad);padding:18px 16px;display:flex;flex-direction:column">
+        <h4>📏 Biblical Chronology</h4>
+        <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Adding up genealogies in Genesis yields an Earth age of <b>~6,000 years</b> (Ussher) to <b>~10,000 years</b> (Septuagint). Every biblical chronology yields a young Earth measured in thousands, not billions.</p>
+        <div class="pi" style="border-top:2px solid color-mix(in srgb,var(--bad) 50%,transparent);padding-top:10px;text-align:center">
+          <span style="font-size:28px;font-weight:800;color:var(--bad);letter-spacing:-1px">~10,000</span>
+          <span style="font-size:16px;color:var(--bad);font-weight:600"> years</span>
+        </div>
+      </div>
+      <div class="grid" style="grid-template-columns:1fr;gap:10px;align-content:start">
+        <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
+          <h4>⛰️ Radiometric Dating</h4>
+          <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Uranium-lead dating of zircon crystals gives Earth at <b>4.4 billion years</b>. Multiple independent methods (K-Ar, Rb-Sr, Sm-Nd, U-Pb) all agree.</p>
+          <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
+            <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">4.4 billion</span>
+            <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
+          </div>
+        </div>
+        <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
+          <h4>🌌 Stellar Distance</h4>
+          <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Light from galaxies billions of light-years away reaches us. A 6,000-year-old universe would mean God created light in transit — a deceptive appearance of age.</p>
+          <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
+            <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">13.8 billion</span>
+            <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
+          </div>
+        </div>
+        <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
+          <h4>🪨 Geological Column</h4>
+          <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Globally consistent rock layers with distinct fossils. Makes no sense in a 6,000-year timeframe — requires rejecting the entire edifice of modern geology.</p>
+          <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
+            <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">4.5 billion</span>
+            <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="notes">This is perhaps the most straightforward contradiction. If you take the Bible literally, the Earth is at most 10,000 years old. Every scientific discipline that measures age — astronomy, geology, physics, biology — independently arrives at 4.5 billion years. You can reconcile this by saying Genesis isn't literal, but then you have to explain which parts are literal and which aren't, and on what basis you decide.</div>
+  </section>
+
+  <section class="slide" data-title="Evolution">
+    <p class="kicker">Scientific · Biology</p>
+    <h2 class="h2">Evolution: The Engine That Makes Creationism Obsolete</h2>
+    <p class="lede mb-l">The cornerstone of modern biology — and a direct challenge to special creation.</p>
+    <div class="grid g3 mt-l" style="align-items:start">
+      <div class="card card-accent tc anim-fade-up" data-anim="fade-up">
+        <h3 style="font-size:36px;">🧬</h3>
+        <h4>Common Descent</h4>
+        <p class="dim" style="font-size:14px">All life shares a common ancestor. Genetic code is universal. Pseudogenes and endogenous retroviruses show nested hierarchies that perfectly match evolutionary trees.</p>
+      </div>
+      <div class="card card-accent tc anim-fade-up" data-anim="fade-up">
+        <h3 style="font-size:36px;">🦴</h3>
+        <h4>Fossil Evidence</h4>
+        <p class="dim" style="font-size:14px">Transitional fossils — Tiktaalik (fish to tetrapod), Archaeopteryx (dinosaur to bird), Pakicetus (land mammal to whale) — show gradual change over millions of years.</p>
+      </div>
+      <div class="card card-accent tc anim-fade-up" data-anim="fade-up">
+        <h3 style="font-size:36px;">🧪</h3>
+        <h4>Observed Evolution</h4>
+        <p class="dim" style="font-size:14px">We've directly observed speciation in the lab and in the wild. Antibiotic resistance, Darwin's finches, and lizard adaptions on experimental islands all demonstrate evolution in action.</p>
+      </div>
+    </div>
+    <div class="notes">Evolution is not a theory about the origin of life — it's a theory about the diversity of life. And it's one of the most well-supported theories in all of science. The evidence comes from independent fields: genetics, paleontology, comparative anatomy, biogeography, and direct observation. The "eye is too complex to evolve" argument has been thoroughly refuted — we've found every intermediate stage in living species and in the fossil record, and we know the molecular pathways by which light-sensitive cells evolved.</div>
+  </section>
+
+  <!-- Evolution: Whales That Walked -->
+  <section class="slide" data-title="Whales That Walked">
+    <p class="kicker">Evolution · Paleontology</p>
+    <h2 class="h2">Walking Whales: A Prediction Confirmed</h2>
+    <p class="lede mb-l">The most complete transitional sequence in the fossil record.</p>
+    <div class="grid anim-stagger-list" style="grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:14px" data-anim-target>
+      <div class="card card-soft tc" style="padding:12px 8px;border-bottom:3px solid var(--accent)">
+        <p class="dim" style="font-size:10px;font-weight:600;margin:0 0 4px;color:var(--text-3)">50 mya</p>
+        <h4 style="font-size:13px;margin:0 0 4px">🐺 Pakicetus</h4>
+        <p class="dim" style="font-size:11px;line-height:1.4;margin:0">Land predator, wolf-sized, ears adapted for underwater hearing.</p>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-3);padding:0 4px">→</div>
+      <div class="card card-soft tc" style="padding:12px 8px;border-bottom:3px solid var(--accent)">
+        <p class="dim" style="font-size:10px;font-weight:600;margin:0 0 4px;color:var(--text-3)">48 mya</p>
+        <h4 style="font-size:13px;margin:0 0 4px">🐊 Ambulocetus</h4>
+        <p class="dim" style="font-size:11px;line-height:1.4;margin:0">"Walking whale" — crocodile-like, could walk on land <i>and</i> swim.</p>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-3);padding:0 4px">→</div>
+      <div class="card card-soft tc" style="padding:12px 8px;border-bottom:3px solid var(--accent)">
+        <p class="dim" style="font-size:10px;font-weight:600;margin:0 0 4px;color:var(--text-3)">46 mya</p>
+        <h4 style="font-size:13px;margin:0 0 4px">🦴 Rodhocetus</h4>
+        <p class="dim" style="font-size:11px;line-height:1.4;margin:0">More aquatic, paddle-like feet, pelvis still connected to spine.</p>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-3);padding:0 4px">→</div>
+      <div class="card card-soft tc" style="padding:12px 8px;border-bottom:3px solid var(--accent)">
+        <p class="dim" style="font-size:10px;font-weight:600;margin:0 0 4px;color:var(--text-3)">40 mya</p>
+        <h4 style="font-size:13px;margin:0 0 4px">🐋 Basilosaurus</h4>
+        <p class="dim" style="font-size:11px;line-height:1.4;margin:0">Fully aquatic, 18m long, tiny vestigial hind legs.</p>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-3);padding:0 4px">→</div>
+      <div class="card card-soft tc" style="padding:12px 8px;border-bottom:3px solid var(--accent)">
+        <p class="dim" style="font-size:10px;font-weight:600;margin:0 0 4px;color:var(--text-3);text-transform:uppercase">Today</p>
+        <h4 style="font-size:13px;margin:0 0 4px">🐳 Modern Whales</h4>
+        <p class="dim" style="font-size:11px;line-height:1.4;margin:0">Flippers, no hind limbs, blowhole, sonar.</p>
+      </div>
+    </div>
+    <div class="card anim-fade-up" data-anim="fade-up" style="padding:14px 20px;border-left:4px solid var(--good)">
+      <p class="dim" style="font-size:14px;line-height:1.6;margin:0"><b>What It Proves:</b> Every stage has been found with the right anatomy and in the right geological strata. No creationist explanation accounts for this sequence. Special creation predicts fixed kinds — evolution predicts gradual, functional transitions at every step.</p>
+    </div>
+    <div class="notes">The whale series is the gold standard of transitional fossils. We have multiple complete skeletons from millions of years, each showing the gradual shift from land mammal to ocean giant. This is exactly what evolution predicts and what special creation cannot explain.</div>
+  </section>
+
+  <!-- Evolution: Feathered Dinosaurs -->
+  <section class="slide" data-title="Feathered Dinosaurs">
+    <p class="kicker">Evolution · Paleontology</p>
+    <h2 class="h2">Feathered Dinosaurs: Birds Are Dinosaurs</h2>
+    <p class="lede mb-l">The dinosaur-to-bird transition is now one of the best-documented in the fossil record.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <p class="dim" style="font-size:14px;line-height:1.7">
+          <b>Archaeopteryx</b> (150 mya): Classic missing link — dinosaur skeleton with feathers and wishbone.<br><br>
+          <b>Microraptor</b> (120 mya): Four-winged dinosaur that glided between trees.<br><br>
+          <b>Sinosauropteryx</b> (124 mya): First dinosaur found with proto-feathers — simple filaments, not flight feathers.<br><br>
+          <b>Yutyrannus</b> (125 mya): A 9-meter tyrannosaur covered in feathers. If T. rex had feathers, the image changes entirely.
+        </p>
+      </div>
+      <div class="card anim-fade-right" data-anim="fade-right">
+        <h4>Feathers Before Flight</h4>
+        <p class="dim">Feathers first evolved for insulation and display, then were co-opted for flight. If they had been designed for flight, there would be no reason for proto-feathers — the precursors would be useless. Evolution predicts exactly this pattern of exaptation.</p>
+      </div>
+    </div>
+    <div class="notes">Before the 1990s, creationists pointed to the bird-dinosaur gap as evidence against evolution. Then Chinese paleontologists found dozens of feathered dinosaurs. The gap closed. Now it's one of our most complete transitions.</div>
+  </section>
+
+  <!-- Evolution: Ring Species -->
+  <section class="slide" data-title="Ring Species">
+    <p class="kicker">Evolution · Speciation</p>
+    <h2 class="h2">Ring Species: Evolution Caught in the Act</h2>
+    <p class="lede mb-l">A living demonstration of how one species becomes two.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <p class="dim" style="font-size:14px;line-height:1.7">
+          <b>Ensatina salamanders</b> in California form a ring around the Central Valley. At each step along the ring, neighboring populations can interbreed. The populations change gradually — slightly different colors, slightly different behaviors.<br><br>
+          But at the southern end of the ring, where the two ends meet, the forms live together and <b>never hybridize.</b> They are reproductively isolated. A breeds with B, B with C, C with D &mdash; but D cannot breed with A.
+        </p>
+      </div>
+      <div class="card anim-fade-right" data-anim="fade-right">
+        <h4>The Implications</h4>
+        <p class="dim">This is not a hypothetical. It is observable, testable, and happening today. Ring species show how continuous variation becomes discrete species when gene flow is interrupted. It bridges the gap between microevolution and macroevolution.</p>
+      </div>
+    </div>
+    <div class="notes">Ring species are powerful because they show the exact mechanism by which one species becomes two. Creationists accept that variation happens within "kinds" but deny it can produce new species. Ring species show that with enough time and isolation, it absolutely does.</div>
+  </section>
+
+  <!-- Evolution: Bad Design -->
+  <section class="slide" data-title="Bad Design">
+    <p class="kicker">Evolution · Anatomy</p>
+    <h2 class="h2">Bad Design: The Signature of Evolution</h2>
+    <p class="lede mb-l">An intelligent designer wouldn&rsquo;t do any of this. Evolution explains every one.</p>
+    <div class="grid anim-stagger-list" style="grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px" data-anim-target>
+      <div class="card card-soft" style="padding:16px;border-top:3px solid var(--accent)">
+        <h4 style="font-size:15px">🦒 Recurrent Laryngeal Nerve</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6">Takes a <b>4.5-meter detour</b> down the giraffe&rsquo;s neck, around the aorta, and back up. In fish it takes a short, direct path. As necks lengthened in evolution, the nerve was trapped behind the aorta.</p>
+      </div>
+      <div class="card card-soft" style="padding:16px;border-top:3px solid var(--accent)">
+        <h4 style="font-size:15px">👁️ The Human Eye</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6">Photoreceptors face <b>backward</b>, with nerves and blood vessels on top creating a blind spot. The octopus eye evolved independently and has the wiring <i>behind</i> the retina &mdash; the &ldquo;correct&rdquo; design.</p>
+      </div>
+      <div class="card card-soft" style="padding:16px;border-top:3px solid var(--accent)">
+        <h4 style="font-size:15px">🧬 The Vas Deferens</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6">In male mammals, it <b>loops over the ureter</b> &mdash; a legacy of our fish ancestry when the testes were near the kidneys. An engineer would never route it this way.</p>
+      </div>
+    </div>
+    <div class="card anim-fade-up" data-anim="fade-up" style="padding:16px 20px;border-left:4px solid var(--accent);background:var(--surface)">
+      <p class="dim" style="font-size:14px;line-height:1.7;margin:0"><b>The Argument from Poor Design:</b> An engineer would not route a nerve around a major artery, wire a retina backwards, or loop a tube in a way that requires a hernia. These are <i>historical constraints</i> &mdash; the unmistakable signature of evolution tinkering with existing structures rather than designing from scratch.</p>
+    </div>
+    <div class="notes">The argument from poor design is perhaps the strongest evidence against intelligent design. We don't just have neutral evidence that doesn't support design &mdash; we have positive evidence of bad design. Bodies that look exactly like what you'd expect from evolutionary history.</div>
+  </section>
+
+  <!-- Evolution: Biogeography -->
+  <!-- Evolution: Junk DNA (now condensed — ERV & GULO split to own slides) -->
+  <section class="slide" data-title="DNA Nonsense">
+    <p class="kicker">Evolution · Genetics</p>
+    <h2 class="h2">The DNA That Makes No Sense</h2>
+    <p class="lede mb-l">Broken genes, viral fossils, and genomic garbage.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>Genomic Fossils</h4>
+        <p class="dim">Our genome is littered with the wreckage of evolutionary history — broken genes, ancient viral insertions, and parasitic DNA. Each piece tells a story of common ancestry, not intelligent design. The following two slides cover the most powerful examples in detail.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>Transposons</h4>
+        <p class="dim">"Jumping genes" that replicate themselves within the genome. Most are decaying remnants — <b>Alu elements</b> alone make up ~10% of the human genome. Over 7,000 Alu insertions are shared between humans and chimps at identical positions. A designer who fills genomes with parasitic self-copying elements is either incompetent or not designing at all.</p>
+      </div>
+    </div>
+    <div class="notes">The genome is a museum of evolutionary history. ERVs, pseudogenes, and transposons are three independent lines of evidence that all point to the same conclusion: common descent. Each one alone is compelling — together they're overwhelming.</div>
+  </section>
+
+  <!-- Dedicated ERV slide -->
+  <section class="slide" data-title="ERVs: Viral Fossils">
+    <p class="kicker">Evolution · Genetics</p>
+    <h2 class="h2">ERVs: The Viral Fingerprint</h2>
+    <p class="lede mb-l">Endogenous retroviruses are the closest thing evolution has to a smoking gun.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>What Are ERVs?</h4>
+        <p class="dim">When a retrovirus infects a germ cell (sperm or egg), its DNA becomes a permanent part of the host genome. If that individual reproduces, the viral insertion is passed down to all descendants — a <b>genetic fossil</b> preserved for millions of years. About <b>8% of the human genome</b> consists of ancient ERV remnants.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>The Shared Insertion Problem</h4>
+        <p class="dim">Humans and chimpanzees share <b>hundreds of ERV insertions</b> at the <i>exact same genomic positions.</i> The odds of two independent viral insertions landing in the same nucleotide position in two different species are effectively zero — far less than the probability of winning the lottery multiple times in a row. The only parsimonious explanation: <b>common ancestry.</b></p>
+      </div>
+    </div>
+    <div class="notes">Creationists try to argue ERVs have "function" to explain why they're shared. For some ERVs, this is true — a tiny fraction have been co-opted for things like placental development (syncytin). But the vast majority are inert viral remnants. And even functional ERVs don't explain why humans and chimps share them at precisely the same locations. The shared position is the key evidence, not the presence of ERVs themselves. This is overwhelming evidence of common descent, not design.</div>
+  </section>
+
+  <!-- Dedicated GULO slide -->
+  <section class="slide" data-title="GULO Pseudogene">
+    <p class="kicker">Evolution · Genetics</p>
+    <h2 class="h2">GULO: The Broken Gene That Betrays Our Ape Ancestry</h2>
+    <p class="lede mb-l">A broken vitamin C gene — broken in exactly the same way in humans and apes.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>How Vitamin C Works</h4>
+        <p class="dim">Most mammals produce their own vitamin C via the <b>GULO</b> (L-gulonolactone oxidase) enzyme, coded by the GULO gene. Humans, apes, and guinea pigs cannot — we must get vitamin C from our diet. The GULO gene is <b>broken</b> in our genome: it has accumulated disabling mutations that prevent it from producing a functional enzyme.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>The Identical Breakage</h4>
+        <p class="dim">The GULO gene is broken in <b>humans, chimpanzees, gorillas, and orangutans</b> — and it's broken in the <i>exact same way</i> in all of them. The same deletions, the same frameshift mutations. An intelligent designer would have either made a working gene or broken it differently in each species. The only explanation for the identical breakage pattern is <b>shared ancestry</b>: we inherited the already-broken gene from a common ancestor.</p>
+      </div>
+    </div>
+    <div class="notes">The GULO pseudogene is one of the most elegant arguments for common descent. It's not just that the gene is broken — it's that it's broken identically in all great apes. If God had designed humans and chimps separately, why would he give both the same broken vitamin C gene? The evolutionary explanation is simple: our common ancestor had a functional GULO gene, it broke in that ancestor, and we all inherited the broken copy.</div>
+  </section>
+
+  <!-- Evolution: Atavisms -->
+  <section class="slide" data-title="Atavisms">
+    <p class="kicker">Evolution · Genetics</p>
+    <h2 class="h2">Atavisms: The Genetic Echo</h2>
+    <p class="lede mb-l">Dormant ancestral programs leaking through &mdash; only explained by shared ancestry.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <p class="dim" style="font-size:14px;line-height:1.7">
+          <b>Whales with hind legs:</b> Several documented cases of whales born with external hind limbs &mdash; complete with femur, tibia, and foot bones. The genetic program for legs was never fully deleted, just suppressed.<br><br>
+          <b>Chickens with teeth:</b> The talpid mutant activates the ancient reptilian dental pathway. Chickens haven't had teeth for 80 million years, but the genes are still there.<br><br>
+          <b>Human tails:</b> Babies born with vestigial tails (caudal appendages). Surgical removal is routine. The embryonic tail program normally regresses; sometimes it doesn't.
+        </p>
+      </div>
+      <div class="card anim-fade-right" data-anim="fade-right">
+        <h4>Prediction vs Explanation</h4>
+        <p class="dim">Evolution predicts atavisms: if we descended from ancestors with different body plans, the genetic machinery lingers. Special creation has no explanation &mdash; why would a designer program a whale genome to produce legs? Each atavism is a prediction confirmed.</p>
+      </div>
+    </div>
+    <div class="notes">Atavisms are among the most striking predictions of evolutionary theory. Every time a whale is born with legs or a chicken develops teeth, evolution is confirmed and special creation is left without explanation. These aren't anomalies &mdash; they're expected.</div>
+  </section>
+
+
+  <section class="slide" data-title="Scientific Summary">
+    <p class="kicker">Scientific · Summary</p>
+    <h2 class="h2">What Science Actually Shows</h2>
+    <div class="pc" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px">
+      <div class="card con anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--bad)">
+        <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">✗</span> The Christian Prediction</h3>
+        <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
+          <li>A young Earth created in six literal days</li>
+          <li>All species individually created by God</li>
+          <li>A global flood that reshaped the planet</li>
+          <li>Humans from a single pair a few thousand years ago</li>
+        </ul>
+      </div>
+      <div class="card pro anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--good)">
+        <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)">✓</span> What Science Found</h3>
+        <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
+          <li>A 4.5-billion-year-old Earth formed by natural processes</li>
+          <li>All life descended from common ancestors via evolution</li>
+          <li>No evidence of a global flood; geology shows gradual change</li>
+          <li>Humanity never bottlenecked to two individuals</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">The scientific evidence consistently contradicts a literal reading of Genesis. Every independent line of evidence — physics, chemistry, geology, biology, genetics — points to a very different story than the one in scripture. If Christianity is true, then either Genesis is not literal (which many Christians accept) or all of modern science is fundamentally wrong. The latter seems like an enormous burden to carry.</div>
+  </section>
+
+  <section class="slide" data-title="Evolution Conclusion">
+    <p class="kicker">Scientific · What It Means</p>
+    <h2 class="h2">What Happens to Christianity If Science Is Right?</h2>
+    <p class="lede mb-l">Evolution is not just a scientific theory &mdash; it has theological consequences.</p>
+    <div style="display:flex;flex-direction:column;gap:16px;flex:1">
+      <div class="grid g2" style="align-items:start;flex:1">
+        <div class="card card-soft anim-fade-left" data-anim="fade-left">
+          <h4>The Fall Unravels</h4>
+          <p class="dim">If humans evolved from earlier hominins over millions of years, there was no historical Adam and Eve. No first couple, no original sin, no Fall that corrupted creation. The entire Christian soteriology &mdash; the need for a savior because of Adam&rsquo;s sin &mdash; collapses. Paul explicitly ties Christ&rsquo;s redemption to Adam&rsquo;s sin (Romans 5:12-21). Without Adam, the logic of atonement has no foundation.</p>
+        </div>
+        <div class="card card-soft anim-fade-right" data-anim="fade-right">
+          <h4>No Special Creation, No Special Status</h4>
+          <p class="dim">Humans are not a separately created species &mdash; we share a common ancestor with every living thing. The image of God becomes harder to define when our lineage connects continuously to non-human ancestors. The idea that humanity is God&rsquo;s special creation, set apart from all other life, is simply not supported by the evidence. Death, suffering, and extinction have been part of life for hundreds of millions of years &mdash; they cannot be the result of Adam&rsquo;s sin.</p>
+        </div>
+      </div>
+      <div class="card card-soft anim-fade-up" data-anim="fade-up" style="padding:20px 24px;border-left:3px solid var(--accent)">
+        <p class="dim" style="font-size:15px;line-height:1.7"><b>The Bottom Line:</b> Christianity does not require young-earth creationism. Many Christians accept evolution and reinterpret Genesis as metaphor or poetry. But the theological cost is high: original sin, the Fall, and humanity&rsquo;s special status must be redefined or abandoned. Evolution does not disprove God, but it does falsify a specific, literal reading of the Bible that billions of Christians hold as true.</p>
+      </div>
+    </div>
+    <div class="notes">This is the honest answer: evolution doesn't prove there's no God, but it massively undermines the specific origin story that Christianity depends on. If you reinterpret Genesis as metaphor, you save your faith but lose your foundation. If you read it literally, you contradict established science. Either way, the simple biblical narrative is unsustainable.</div>
+  </section>
+
+
+
+  <!-- ============================== -->
+  <!-- SECTION: HISTORICAL ARGUMENT   -->
+  <!-- ============================== -->
+  <section class="slide tc center" data-title="Section Historical">
+    <div style="max-width:780px;margin:0 auto">
+      <p class="section-number">Part Two</p>
+      <h1 class="h1 anim-rise-in" data-anim="rise-in" style="font-size:96px">The <span class="gradient-text">Historical</span> Argument</h1>
+      <div class="divider-accent" style="margin:24px auto"></div>
+      <p class="lede">Does the historical evidence support the extraordinary claims of the New Testament?</p>
+    </div>
+    <div class="notes">Moving from science to history. Christianity is a historical religion — it makes claims about specific events that supposedly happened in first-century Palestine. Unlike scientific claims, historical ones are evaluated by different standards: manuscript evidence, corroboration, consistency, and the reliability of sources. Let's see how the New Testament holds up.</div>
+  </section>
+
+  <section class="slide" data-title="Gospels as Sources">
+    <p class="kicker">Historical · Sources</p>
+    <h2 class="h2">The Gospels: Why Historians Treat Them with Skepticism</h2>
+    <p class="lede mb-l">Anonymous, late, and contradictory.</p>
+    <ul class="grid g1 anim-stagger-list" style="list-style:none;padding:0;margin:0;gap:14px" data-anim-target>
+      <li class="card card-soft">
+        <h4>📅 Dating</h4>
+        <p class="dim">The Gospels were written 40–70 years after Jesus's death — two to three generations later. Not eyewitness accounts, but stories passed through multiple oral and written stages before being compiled. Mark (the earliest) was written ~70 CE, John ~90–110 CE.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>✍️ Authorship</h4>
+        <p class="dim">The Gospels are anonymous. The names "Matthew," "Mark," "Luke," and "John" were attached later by church tradition, not by the authors themselves. None claim to be eyewitnesses. Luke admits he's compiling from earlier sources.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>🔄 The Synoptic Problem</h4>
+        <p class="dim">Matthew and Luke copied extensively from Mark (and another lost source called Q). They are not independent accounts — they're derivative. Over 90% of Mark appears in Matthew; 50% in Luke.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>📊 Contradictions</h4>
+        <p class="dim">The Gospels contradict each other on key details: Jesus's birth narratives, the Sermon on the Mount/Plain, the day of the crucifixion, the words on the cross, the resurrection appearances, and the ascension. Harmonization requires creative reinterpretation.</p>
+      </li>
+    </ul>
+    <div class="notes">When evaluating the Gospels as historical documents, scholars apply the same criteria they would to any ancient text. The Gospels fail several key tests: they're anonymous, written decades after the events, by non-eyewitnesses, and they contradict each other on important factual matters. If a modern biography had these problems, we wouldn't accept it as reliable. Why should the Gospels be treated differently?</div>
+  </section>
+
+  <section class="slide" data-title="Resurrection">
+    <p class="kicker">Historical · Central Claim</p>
+    <h2 class="h2">The Resurrection: Extraordinary Claim, Insufficient Evidence</h2>
+    <p class="lede mb-l">The central claim of Christianity — and the hardest to verify historically.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>The Claim</h4>
+        <p class="dim">A man died, was dead for three days, and then rose from the dead — never to die again — resurrected to a glorified, immortal body. This is a miracle of the highest order, and it requires correspondingly high-quality evidence.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>The Evidence Problem</h4>
+        <ul class="dim">
+          <li>No contemporary non-Christian source mentions it</li>
+          <li>The empty tomb story appears only in the Gospels, decades later</li>
+          <li>Paul's account (1 Cor 15) mentions only visions, not an empty tomb</li>
+          <li>The Gospel accounts contradict each other on who found the tomb, what they saw, and what happened next</li>
+          <li>Natural explanations (hallucination, borrowed tomb, wrong tomb, legend formation) are more parsimonious than a violation of every known law of nature</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">The resurrection is the keystone of Christianity. Paul says if Christ didn't rise, faith is futile. So the evidence matters enormously. What we have: four contradictory accounts written decades later by anonymous authors, no independent corroboration from Roman or Jewish sources, and Paul — our earliest source — mentions only visions, not a physical tomb. Historians can establish that some early Christians believed Jesus appeared to them, but establishing that a dead man actually rose requires evidence of a different order entirely.</div>
+  </section>
+
+  <section class="slide" data-title="Historical Summary">
+    <p class="kicker">Historical · Summary</p>
+    <h2 class="h2">Jesus: What History Confirms vs. What Faith Assumes</h2>
+    <div class="pc" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px">
+      <div class="card pro anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--good)">
+        <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)">✓</span> What We Can Affirm</h3>
+        <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
+          <li>A Jewish preacher named Jesus likely existed</li>
+          <li>He was baptized by John and preached in Galilee</li>
+          <li>He was crucified by Pontius Pilate around 30 CE</li>
+          <li>His followers believed he appeared to them after death</li>
+          <li>These beliefs spread rapidly through the early church</li>
+        </ul>
+      </div>
+      <div class="card con anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--bad)">
+        <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">✗</span> What We Cannot Verify</h3>
+        <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
+          <li>Virgin birth (no contemporary record, contradicts known biology)</li>
+          <li>Miracles (reported only in late, biased sources)</li>
+          <li>Resurrection (contradictory accounts, no corroboration)</li>
+          <li>Prophecy fulfillment (often taken out of context or misapplied)</li>
+          <li>Ascension (reported in only one late Gospel)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">Historians largely agree that a historical Jesus existed — that's not controversial. What's disputed is whether the supernatural elements of the story are historical. The consensus among secular historians is that the Gospel accounts contain legendary embellishment, that the miracles are not historically verifiable, and that the resurrection in particular lacks the kind of evidence needed to establish such an extraordinary event.</div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION: MORAL ARGUMENT        -->
+  <!-- ============================== -->
+  
+  <!-- Section: Old Testament Prophecies Intro -->
+  <section class="slide" data-title="OT Prophecies Intro">
+    <p class="kicker">Historical · Messianic Prophecies</p>
+    <h2 class="h2">The Prophecy Problem</h2>
+    <p class="lede mb-l">Christians claim dozens of Old Testament verses predict Jesus. But do they actually?</p>
+    <div class="card card-soft mt-l anim-fade-up" data-anim="fade-up">
+      <p class="dim" style="font-size:15px;line-height:1.7">The New Testament authors used a technique called <b>vaticinium ex eventu</b> &mdash; reading earlier texts in light of later events. Verses that originally referred to contemporary figures (King Ahaz, the nation of Israel, the Psalmist&rsquo;s own suffering) were reinterpreted as &ldquo;prophecies&rdquo; of Jesus. This was standard Jewish interpretive practice at the time, but it is not prediction in any meaningful sense. Let&rsquo;s examine the most-cited examples.</p>
+    </div>
+    <div class="notes">The prophecy argument is one of the most commonly used by apologists. When you actually read each prophecy in its original context, you find that almost none of them are predictive in nature. They were about events and people contemporary to the writers.</div>
+  </section>
+
+  <section class="slide" data-title="Prophecy 1 Virgin Birth">
+    <p class="kicker">Historical · Prophecy #1</p>
+    <h2 class="h2">The &ldquo;Virgin&rdquo; Birth</h2>
+    <p class="lede mb-l">Isaiah 7:14: &ldquo;A virgin shall conceive and bear a son, and shall call his name Immanuel.&rdquo;</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>The Context</h4>
+      <p class="dim">Isaiah is speaking to King Ahaz of Judah, who is terrified of an invasion by Israel and Syria. The sign &mdash; a young woman (Hebrew: <i>almah</i>, meaning &ldquo;young woman,&rdquo; not <i>bethulah</i>, &ldquo;virgin&rdquo;) giving birth &mdash; is meant to show Ahaz that the threat will pass within a few years. The child is named Immanuel as a symbolic name, and the prophecy is fulfilled in Isaiah 8:3-4 when the prophet&rsquo;s own son is born. The context is entirely about the 8th century BCE, not a messiah 700 years later.</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Problem</span>
+      <p class="outcome">Matthew (1:23) quotes the Septuagint, which mistranslated <i>almah</i> as <i>parthenos</i> (virgin). The original Hebrew says nothing about a miraculous birth.</p>
+    </div>
+    <div class="notes">This is the most famous "messianic prophecy" and it fails on every level. The original Hebrew word doesn't mean virgin, the context is about an 8th-century political crisis, and the prophecy was fulfilled within Isaiah's lifetime.</div>
+  </section>
+
+  <section class="slide" data-title="Prophecy 2 Bethlehem">
+    <p class="kicker">Historical · Prophecy #2</p>
+    <h2 class="h2">Born in Bethlehem</h2>
+    <p class="lede mb-l">Micah 5:2: &ldquo;But you, Bethlehem Ephrathah, though you are small among the clans of Judah, out of you will come for me one who will be ruler over Israel.&rdquo;</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>The Context</h4>
+      <p class="dim">Micah is speaking about a local ruler who will defend Israel from the Assyrian invasion. The prophecy continues in verses 5-6 about this ruler defeating Assyria. Jesus did not defeat Assyria. The prophecy is about a military leader in Micah&rsquo;s own time, not a spiritual savior centuries later. When Matthew cites this for Jesus (Matthew 2:5-6), he reads a local political prophecy as a cosmic messianic prediction.</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Problem</span>
+      <p class="outcome">Micah&rsquo;s prophecy was about a contemporary ruler who would defeat Assyria. Jesus was not that ruler. Additionally, the genealogies in Matthew and Luke contradict each other on Jesus&rsquo;s lineage, making the Bethlehem claim suspect.</p>
+    </div>
+    <div class="notes">Even if Bethlehem is historically accurate for Jesus's birthplace (which is contested), the prophecy in Micah is plainly about a different person in a different context. It's not a prediction.</div>
+  </section>
+
+  <section class="slide" data-title="Prophecy 3 Out of Egypt">
+    <p class="kicker">Historical · Prophecy #3</p>
+    <h2 class="h2">Called Out of Egypt</h2>
+    <p class="lede mb-l">Hosea 11:1: &ldquo;Out of Egypt I called my son.&rdquo;</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>The Context</h4>
+      <p class="dim">Read the verse in full: &ldquo;When Israel was a child, I loved him, and out of Egypt I called my son.&rdquo; The &ldquo;son&rdquo; is the nation of Israel. The verse is referring to the Exodus &mdash; God calling the Israelites out of slavery in Egypt. It is a past event, not a future prediction. Matthew (2:15) pulls a single phrase out of context and claims it refers to Jesus returning from Egypt as a child.</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Problem</span>
+      <p class="outcome">This is the textbook definition of prooftexting &mdash; taking a verse out of its original context and giving it a new meaning. The original text is about the nation of Israel in the past, not a person centuries in the future.</p>
+    </div>
+    <div class="notes">Matthew uses Hosea 11:1 in a way that no Jewish reader would recognize. It's a clear example of how New Testament authors retrofitted Old Testament verses to fit Jesus's biography.</div>
+  </section>
+
+  <section class="slide" data-title="Prophecy 4 Rachel Weeping">
+    <p class="kicker">Historical · Prophecy #4</p>
+    <h2 class="h2">Rachel Weeping for Her Children</h2>
+    <p class="lede mb-l">Jeremiah 31:15: &ldquo;A voice is heard in Ramah, lamentation and bitter weeping. Rachel is weeping for her children.&rdquo;</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>The Context</h4>
+      <p class="dim">Jeremiah is describing the Babylonian exile of the northern tribes (Ephraim). Rachel, the matriarch buried near Ramah, is poetically depicted as weeping for her descendants being led into captivity. The very next verse (Jeremiah 31:16) says: &ldquo;Keep your voice from weeping&hellip; they shall come back from the land of the enemy.&rdquo; It is about exile and return, not about babies being killed in Bethlehem.</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Problem</span>
+      <p class="outcome">Matthew (2:17-18) applies these words to Herod&rsquo;s massacre of infants, an event recorded in no other historical source. The original text is about the exile of the northern kingdom, not a massacre in Bethlehem 600 years later.</p>
+    </div>
+    <div class="notes">Rachel's tomb is near Ramah, about 10 km north of Jerusalem, nowhere near Bethlehem. Matthew's geography is also questionable here.</div>
+  </section>
+
+  <section class="slide" data-title="Prophecy 5 Suffering Servant">
+    <p class="kicker">Historical · Prophecy #5</p>
+    <h2 class="h2">The Suffering Servant &mdash; Isaiah 53</h2>
+    <p class="lede mb-l">The most-cited &ldquo;messianic prophecy&rdquo; in the New Testament. But who is the servant?</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>Jewish Interpretation</h4>
+      <p class="dim">Jewish scholars have always read the servant in Isaiah 52-53 as the nation of Israel. The servant is &ldquo;despised and rejected by men&rdquo; because Israel was conquered and scattered. The servant &ldquo;bore our griefs&rdquo; because Israel suffered among the nations. Read Isaiah 49:3: &ldquo;You are my servant, Israel, in whom I will be glorified.&rdquo; The servant is explicitly identified as Israel in the very same set of poems. In Isaiah 42 and 49, sometimes the servant is a faithful remnant of Israel, sometimes the whole nation. There is no single individual.</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Problem</span>
+      <p class="outcome">The New Testament reads the servant as an individual (Jesus). The Old Testament context identifies the servant as Israel. When you read the entire passage (Isaiah 52:13-53:12), the servant suffers because of Israel&rsquo;s sins, not to atone for the world&rsquo;s sins.</p>
+    </div>
+    <div class="notes">Isaiah 53 is arguably the strongest prophecy argument Christians have, yet it's also the most debated. The Hebrew text is ambiguous enough that both interpretations are possible, but reading the full context strongly favors the collective interpretation.</div>
+  </section>
+
+  <section class="slide" data-title="Prophecy 6 Psalm 22">
+    <p class="kicker">Historical · Prophecy #6</p>
+    <h2 class="h2">Psalm 22 &mdash; Crucifixion Details</h2>
+    <p class="lede mb-l">&ldquo;My God, my God, why have you forsaken me?&rdquo; &mdash; Jesus&rsquo;s cry from the cross.</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>The Psalmist&rsquo;s Context</h4>
+      <p class="dim">Psalm 22 is attributed to David and describes &mdash; in typical Hebrew poetic hyperbole &mdash; his own distress when facing enemies. Verses like &ldquo;they pierced my hands and my feet&rdquo; (v. 16) are a contested translation: the Masoretic text reads &ldquo;like a lion at my hands and feet&rdquo; (<i>ka&rsquo;ari yadai viraglai</i>), not &ldquo;pierced.&rdquo; The Septuagint introduced &ldquo;pierced.&rdquo; The psalm ends with David praising God for deliverance. It is a song of thanksgiving for rescue, not a prediction of crucifixion.</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Problem</span>
+      <p class="outcome">Casting lots for garments (Psalm 22:18) was standard Roman practice for crucifying multiple people simultaneously &mdash; it was done to all condemned men, not uniquely to Jesus. Gospel authors retrofitted details of Jesus&rsquo;s crucifixion to match Psalm 22&rsquo;s poetic imagery.</p>
+    </div>
+    <div class="notes">If someone today wrote about a tragedy using phrases from a famous poem, we wouldn't say the poem predicted the tragedy &mdash; we'd say the writer was echoing familiar language. That's exactly what the Gospel authors did.</div>
+  </section>
+
+  <section class="slide" data-title="Prophecy 7 Psalm 16">
+    <p class="kicker">Historical · Prophecy #7</p>
+    <h2 class="h2">Not Abandoned to the Grave</h2>
+    <p class="lede mb-l">Psalm 16:10: &ldquo;You will not abandon my soul to Sheol, nor let your Holy One see corruption.&rdquo;</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>The Context</h4>
+      <p class="dim">David is expressing confidence that God will protect him from dying at the hands of his enemies. The psalm is about David&rsquo;s hope for deliverance in <i>this</i> life. Peter (Acts 2:25-31) and Paul (Acts 13:35-37) argue that since David did die and his tomb was still around, the psalm must refer to someone else &mdash; Jesus. But David is speaking in the first person. He is the &ldquo;Holy One&rdquo; who trusts God not to let enemies kill him prematurely.</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Problem</span>
+      <p class="outcome">Peter and Paul argue: &ldquo;David died, so he can&rsquo;t be talking about himself.&rdquo; But this only works if you ignore that the psalmist often speaks hyperbolically. Every psalm of lament expresses hope that God won&rsquo;t let the speaker die. If none of those psalmists were predicting the resurrection, why should this one be treated differently?</p>
+    </div>
+    <div class="notes">The early Christian reinterpretation of Psalm 16 is a classic example of reading the resurrection back into the Old Testament. A surface reading never would have suggested resurrection &mdash; it describes deliverance from imminent death, not victory over death itself.</div>
+  </section>
+
+  <section class="slide" data-title="Prophecy Summary">
+    <p class="kicker">Historical · Prophecy Summary</p>
+    <h2 class="h2">What the Prophecies Actually Show</h2>
+    <p class="lede mb-l">The pattern is clear and consistent across all major &ldquo;messianic prophecies.&rdquo;</p>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="comp-col good">
+        <h4 style="color:var(--good)">The Claim</h4>
+        <ul>
+          <li>The Old Testament contains dozens of specific predictions about a coming messiah</li>
+          <li>Jesus fulfilled every one of them</li>
+          <li>This proves Jesus was the prophesied messiah</li>
+          <li>Old Testament prophecy is evidence of divine inspiration</li>
+        </ul>
+      </div>
+      <div class="comp-col bad">
+        <h4 style="color:var(--bad)">The Reality</h4>
+        <ul>
+          <li>Verses are consistently taken out of their original context</li>
+          <li>Original meanings refer to contemporary figures, events, or the nation of Israel</td>
+          <li>&ldquo;Fulfillment&rdquo; is often vague, metaphorical, or simply incorrect</li>
+          <li>Many prophecies cited by the NT are not predictive at all in their original setting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">After examining the ten most-cited messianic prophecies, the pattern is unmistakable. Each one requires ignoring the original context, changing the meaning of words, or reinterpreting poetry as prediction.</div>
+  </section>
+
+
+  <!-- Section: Failed Predictions Intro -->
+  <section class="slide" data-title="Failed Predictions Intro">
+    <p class="kicker">Historical · Jesus&rsquo;s Predictions</p>
+    <h2 class="h2">When Prophecy Fails</h2>
+    <p class="lede mb-l">Jesus made specific, testable predictions about the future. They did not come true.</p>
+    <div class="card card-soft mt-l anim-fade-up" data-anim="fade-up">
+      <p class="dim" style="font-size:15px;line-height:1.7">If a prophet makes a prediction and it does not come true, Deuteronomy 18:22 is clear: &ldquo;That prophet has presumed to speak in my name&hellip; you need not be afraid of him.&rdquo; Jesus made several predictions with clear timeframes. They are the most difficult passages in the New Testament for Christian apologists, and entire books have been written attempting to explain them away. Let&rsquo;s examine what Jesus actually predicted and what actually happened.</p>
+    </div>
+    <div class="notes">These aren't obscure passages. They're some of the most clearly stated predictions in the Gospels. If Jesus was wrong about his own timeline, that raises profound questions about everything else he taught.</div>
+  </section>
+
+  <section class="slide" data-title="Second Coming Generation">
+    <p class="kicker">Historical · Failed Prediction #1</p>
+    <h2 class="h2">Return Within a Generation</h2>
+    <p class="lede mb-l">The most explicit and most problematic prediction.</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>What Jesus Said</h4>
+      <p class="dim"><b>Matthew 16:28:</b> &ldquo;There are some standing here who will not taste death until they see the Son of Man coming in his kingdom.&rdquo;<br><br>
+      <b>Matthew 24:30-34:</b> &ldquo;They will see the Son of Man coming on the clouds of heaven with power and great glory&hellip; Truly I tell you, this generation will not pass away until all these things take place.&rdquo;<br><br>
+      <b>Mark 13:30:</b> &ldquo;This generation will not pass away until all these things take place.&rdquo;<br><br>
+      <b>Mark 9:1:</b> &ldquo;Some who are standing here will not taste death before they see the kingdom of God come with power.&rdquo;</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Reality</span>
+      <p class="outcome">Every single person of that generation died. The Son of Man did not return. &ldquo;This generation&rdquo; cannot be redefined to mean &ldquo;the Jewish people&rdquo; or &ldquo;the generation that sees the signs&rdquo; without violating the plain meaning of the text. Albert Schweitzer, Bart Ehrman, E.P. Sanders, and most critical scholars agree: Jesus expected the end within his own lifetime and was mistaken.</p>
+    </div>
+    <div class="notes">Apologists try to redefine "this generation" as "this race" (the Jews) or "the generation that sees these signs." But in every other Gospel context, "this generation" clearly means the living contemporaries. This is the most well-documented failed prediction in the Bible.</div>
+  </section>
+
+  <section class="slide" data-title="12 Thrones">
+    <p class="kicker">Historical · Failed Prediction #2</p>
+    <h2 class="h2">The Twelve Apostles on Thrones</h2>
+    <p class="lede mb-l">A specific promise to his closest followers.</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>What Jesus Said</h4>
+      <p class="dim"><b>Matthew 19:28:</b> &ldquo;Truly I tell you, at the renewal of all things, when the Son of Man sits on his glorious throne, you who have followed me will also sit on twelve thrones, judging the twelve tribes of Israel.&rdquo;</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Reality</span>
+      <p class="outcome">None of the twelve apostles ever sat on a throne judging anyone. Most died in obscurity. Peter was crucified, James was executed, John died in exile, Judas committed suicide. The &ldquo;renewal of all things&rdquo; never occurred in their lifetimes. This is not a prediction that can be &ldquo;spiritualized&rdquo; &mdash; thrones and judgment are concrete images with a concrete meaning.</p>
+    </div>
+    <div class="notes">Jesus promised his inner circle positions of power and authority. They died poor, persecuted, and executed. Either Jesus was wrong about the timing, or the promise was never fulfilled.</div>
+  </section>
+
+  <section class="slide" data-title="Mission Promise">
+    <p class="kicker">Historical · Failed Prediction #3</p>
+    <h2 class="h2">The Mission Promise</h2>
+    <p class="lede mb-l">&ldquo;You will not finish going through the towns of Israel before the Son of Man comes.&rdquo;</p>
+    <div class="card card-soft" style="margin-bottom:16px">
+      <h4>What Jesus Said</h4>
+      <p class="dim"><b>Matthew 10:23:</b> &ldquo;When they persecute you in one town, flee to the next. For truly I tell you, you will not finish going through the towns of Israel before the Son of Man comes.&rdquo; Jesus is sending his disciples on a mission and telling them it will be interrupted by his return &mdash; the ultimate interruption. The timeframe is explicit: before they finish their circuit of Israelite towns.</p>
+    </div>
+    <div class="fail-card">
+      <span class="ref">The Reality</span>
+      <p class="outcome">The disciples finished going through Israel many times over. Paul traveled extensively throughout the region. The Son of Man did not come. Apologists argue that this was about the specific mission in Matthew 10 and that the &ldquo;coming of the Son of Man&rdquo; refers to Jesus&rsquo;s resurrection or the destruction of Jerusalem. But the text says nothing about resurrection or 70 CE &mdash; it says the Son of Man will come before they finish their circuit.</p>
+    </div>
+    <div class="notes">This is one of the clearest time-bound predictions. The Son of Man was supposed to come before the disciples finished traveling through Israel. They finished traveling. He did not come.</div>
+  </section>
+
+  <section class="slide" data-title="Failed Predictions Summary">
+    <p class="kicker">Historical · Failed Predictions Summary</p>
+    <h2 class="h2">If the Prophet Failed</h2>
+    <p class="lede mb-l">If Jesus was wrong about his own return, why trust him on anything else?</p>
+    <div class="comp-grid">
+      <div class="comp-col good">
+        <h4 style="color:var(--good)">Minimal Facts</h4>
+        <ul>
+          <li>Jesus of Nazareth was a Jewish apocalyptic preacher</li>
+          <li>He believed the end of the world was imminent</li>
+          <li>He predicted his return within his disciples&rsquo; lifetime</li>
+          <li>His followers adapted after the prediction failed</li>
+        </ul>
+      </div>
+      <div class="comp-col bad">
+        <h4 style="color:var(--bad)">The Dilemma</h4>
+        <ul>
+          <li>Jesus predicted his return within a generation &mdash; it did not happen</li>
+          <li>He promised his apostles thrones &mdash; they did not receive them</li>
+          <li>He guaranteed prayer works &mdash; mountains stay put</li>
+          <li>The most important prediction failed. What remains?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">Scholars like Albert Schweitzer concluded that Jesus was an apocalyptic prophet who expected the kingdom of God to arrive imminently. He was wrong. If he was wrong about the central element of his own message, the foundation of Christian theology is shaken.</div>
+  </section>
+
+<section class="slide tc center" data-title="Section Moral">
+    <div style="max-width:780px;margin:0 auto">
+      <p class="section-number">Part Three</p>
+      <h1 class="h1 anim-rise-in" data-anim="rise-in" style="font-size:96px">The <span class="gradient-text">Moral</span> Argument</h1>
+      <div class="divider-accent" style="margin:24px auto"></div>
+      <p class="lede">Does Christian morality stand up to philosophical scrutiny? And does the Bible itself provide a sound moral foundation?</p>
+    </div>
+    <div class="notes">The moral argument in Christianity usually takes two forms. First, that objective morality requires God. Second, that the Bible provides a moral foundation. We'll examine both, and also look at the problem of evil — perhaps the strongest argument against the existence of an all-powerful, all-good God.</div>
+  </section>
+
+  <section class="slide" data-title="Euthyphro Dilemma">
+    <p class="kicker">Moral · Philosophy</p>
+    <h2 class="h2">The Euthyphro Dilemma</h2>
+    <p class="lede mb-l">Is something good because God commands it, or does God command it because it's good?</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>Horn 1: Divine Command</h4>
+        <p class="dim">If good = whatever God commands, then morality is arbitrary. If God commanded genocide, slavery, or child sacrifice, those would be morally good by definition. This makes morality a matter of divine whim, not objective truth.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>Horn 2: Independent Standard</h4>
+        <p class="dim">If God commands good because it is independently good, then goodness exists apart from God. God is not the source of morality — He's just a messenger. In that case, we can access the same moral standard through reason and empathy without needing divine revelation.</p>
+      </div>
+    </div>
+    <p class="dim mt-m" style="border-left:3px solid var(--accent);padding-left:16px">Socrates posed this dilemma to Euthyphro over 2,400 years ago. It remains unanswered in Christian theology.</p>
+    <div class="notes">The Euthyphro dilemma is ancient and devastating. If morality depends on God's commands, then whatever God commands is good — including the genocides and slavery commanded in the Old Testament. Many Christians try to avoid this by saying "God's nature is good," but that just pushes the question back: is God's nature good because it happens to be God's nature, or because goodness is a standard God's nature meets?</div>
+  </section>
+
+  <section class="slide" data-title="Old Testament Morality">
+    <p class="kicker">Moral · Scripture</p>
+    <h2 class="h2">Biblical Morality in the Old Testament</h2>
+    <p class="lede mb-l">The Bible condones practices we now universally condemn.</p>
+    <ul class="grid g1 anim-stagger-list" style="list-style:none;padding:0;margin:0;gap:14px" data-anim-target>
+      <li class="card card-soft">
+        <h4>🔗 Slavery (Exodus 21, Leviticus 25, Ephesians 6)</h4>
+        <p class="dim">The Bible does not condemn slavery — it regulates it. The Old Testament allows Hebrews to own slaves for life (Lev 25:44-46). The New Testament tells slaves to obey their masters. Nowhere is slavery condemned as a moral evil.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>⚔️ Genocide (Deuteronomy 20, 1 Samuel 15)</h4>
+        <p class="dim">God explicitly commands the Israelites to "utterly destroy" entire nations — men, women, children, and livestock. The Amalekites, Canaanites, and others were to be annihilated. King Saul was punished for sparing some of the Amalekite livestock.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>👩 Misogyny (Deuteronomy 22, 1 Timothy 2)</h4>
+        <p class="dim">Women were treated as property. A rape victim could be forced to marry her rapist (Deut 22:28-29). Women couldn't testify in court. They were to be silent in church. They were created second and blamed for sin entering the world.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>🔞 Capital Punishment (Leviticus 20, 24)</h4>
+        <p class="dim">The death penalty was prescribed for: working on the Sabbath, cursing your parents, adultery, homosexuality, witchcraft, blasphemy, and being a stubborn child. These laws are presented as God's direct commands, not cultural concessions.</p>
+      </li>
+    </ul>
+    <div class="notes">The common response is "that was the Old Covenant; we're under the New Covenant." But this raises a serious problem: if God's moral commands can change between covenants, then morality is not absolute — it's relative to whatever God is commanding at that moment. And it means God once commanded slavery and genocide, which are now considered moral evils. Did God change his mind? Did he make a mistake? Or did humans gradually develop a better moral understanding than the one presented in scripture?</div>
+  </section>
+
+  <section class="slide" data-title="Problem of Evil">
+    <p class="kicker">Moral · Theodicy</p>
+    <h2 class="h2">The Problem of Evil</h2>
+    <p class="lede mb-l">The most persistent argument against the existence of an all-powerful, all-good God.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>The Logical Problem</h4>
+        <ul class="dim">
+          <li>If God is all-powerful, He can prevent evil.</li>
+          <li>If God is all-good, He wants to prevent evil.</li>
+          <li>Evil exists.</li>
+          <li>Therefore, an all-powerful, all-good God does not exist.</li>
+        </ul>
+        <p class="dim mt-m">The problem isn't that we can't explain evil — it's that the three attributes (omnipotence, omnibenevolence, and the reality of evil) form an inconsistent triad.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>Failed Theodicies</h4>
+        <ul class="dim">
+          <li><b>Free will:</b> Explains moral evil, but not natural evil (earthquakes, childhood cancer, birth defects)</li>
+          <li><b>Greater good:</b> What greater good could possibly justify the suffering of a child with cancer?</li>
+          <li><b>Mystery:</b> "We can't understand God's ways" — this is intellectually honest but evacuates theodicy of content</li>
+          <li><b>Soul-making:</b> Why do animals suffer? They have no souls to be made</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">The problem of evil is not the claim that "there's too much evil for God to exist." The logical problem is stronger: the three premises are formally inconsistent. Many theologians have attempted theodicies — explanations for why God allows evil — but none have been widely accepted outside their own tradition. The free will defense handles moral evil but not natural evil. The soul-making theodicy doesn't explain animal suffering. And all of them struggle with the sheer scale and apparent pointlessness of so much suffering.</div>
+  </section>
+
+
+  <!-- Hell slide removed -->
+
+  <section class="slide" data-title="Moral Summary">
+    <p class="kicker">Moral · Summary</p>
+    <h2 class="h2">The Moral Landscape</h2>
+    <div class="pc" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px">
+      <div class="card pro anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--good)">
+        <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)">✓</span> For Christianity</h3>
+        <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
+          <li>Provides a metaphysical foundation for morality</li>
+          <li>Offers meaning, purpose, and hope</li>
+          <li>Has inspired charitable institutions and social reforms</li>
+          <li>Teaches forgiveness, humility, and love of neighbor</li>
+        </ul>
+      </div>
+      <div class="card con anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--bad)">
+        <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">✗</span> Against</h3>
+        <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
+          <li>The Euthyphro dilemma remains unanswered</li>
+          <li>Much biblical morality (slavery, genocide, misogyny) is now rejected</li>
+          <li>The problem of evil is a strong objection to the classical conception of God</li>
+          <li>Hell, as traditionally conceived, is morally indefensible</li>
+          <li>Secular moral frameworks (utilitarianism, deontology, virtue ethics) provide robust foundations without God</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">The moral argument cuts both ways. Christianity claims to provide a foundation for objective morality, but the Bible itself contains moral commands we now find abhorrent. We've made moral progress — we no longer own slaves or execute people for working on Saturday — and we made that progress despite the Bible, not because of it. The moral arc of history bends toward justice, but it bends through secular reason and human empathy, not through divine revelation.</div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION: THE BIBLE             -->
+  <!-- ============================== -->
+  <section class="slide tc center" data-title="Section Bible">
+    <div style="max-width:780px;margin:0 auto">
+      <p class="section-number">Part Four</p>
+      <h1 class="h1 anim-rise-in" data-anim="rise-in" style="font-size:96px">The <span class="gradient-text">Bible</span> Itself</h1>
+      <div class="divider-accent" style="margin:24px auto"></div>
+      <p class="lede">Examining the Bible's own claims about itself: inerrancy, canon, contradictions, and errors.</p>
+    </div>
+    <div class="notes">Protestant Christianity holds that the Bible is the inspired, inerrant Word of God. This is a strong claim, and it's testable. If the Bible contains internal contradictions, scientific errors, historical mistakes, or unfulfilled prophecies, then the claim of inerrancy fails. Let's look at what the evidence shows.</div>
+  </section>
+
+  <section class="slide" data-title="Inerrancy & Textual Transmission">
+    <p class="kicker">Bible · Textual Criticism</p>
+    <h2 class="h2">Inerrancy & Textual Transmission</h2>
+    <p class="lede mb-l">The original autographs don't exist. What we have are copies of copies.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>The Claim of Inerrancy</h4>
+        <p class="dim">Many Christians believe the Bible is without error in its original manuscripts. But we don't have the originals. We have thousands of handwritten copies, all of which contain differences — scribal errors, additions, deletions, and theological corrections.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>What Textual Criticism Reveals</h4>
+        <ul class="dim">
+          <li>There are 400,000+ textual variants among NT manuscripts</li>
+          <li>Most are minor, but some affect doctrine: the story of the woman caught in adultery (John 7:53–8:11) and the longer ending of Mark (Mark 16:9–20) are later additions, not original</li>
+          <li>The Johannine Comma (1 John 5:7–8) — the only explicit Trinitarian verse — was added centuries later</li>
+          <li>We reconstruct the "original" text through scholarly inference, but we can never be certain we have it exactly right</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">If God wanted to preserve an inerrant text for humanity, why didn't he preserve the originals? Why did he allow thousands of scribal errors to accumulate? Why are key passages that support important doctrines later additions? The inerrancy doctrine requires faith not just in the original text, but in the process of transmission and the ability of scholars to reconstruct that text. That's a lot of faith in a very human process.</div>
+  </section>
+
+  <section class="slide" data-title="Canon Formation">
+    <p class="kicker">Bible · Canon</p>
+    <h2 class="h2">The Canon: Chosen by Men, Not God</h2>
+    <p class="lede mb-l">Who decided which books belong in the Bible?</p>
+    <ul class="grid g1 anim-stagger-list" style="list-style:none;padding:0;margin:0;gap:14px" data-anim-target>
+      <li class="card card-soft">
+        <h4>📜 The Old Testament Canon</h4>
+        <p class="dim">Jesus and the NT authors used the Septuagint (Greek translation), which includes the Apocrypha/deuterocanonical books. Protestants later excluded these books. There was no "official" Jewish canon until the Council of Jamnia (~90 CE) — after Christianity split from Judaism. The canon was not a settled collection but a contested process.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>📖 The New Testament Canon</h4>
+        <p class="dim">The 27-book NT canon was not finalized until the late 4th century (Council of Carthage, 397 CE). Many gospels and epistles were circulated and read in churches before being excluded: Gospel of Thomas, Gospel of Peter, Shepherd of Hermas, Didache. The canon was decided by bishops and councils — fallible humans — not by divine decree.</p>
+      </li>
+      <li class="card card-soft">
+        <h4>🔍 Criteria for Inclusion</h4>
+        <p class="dim">Books were included based on: apostolic authorship (or claimed apostolic connection), orthodoxy (conformity to emerging church doctrine), and widespread usage. These are historical criteria applied by human judgment, not objective divine markers. Different Christian traditions (Catholic, Orthodox, Protestant) still disagree on the canon today.</p>
+      </li>
+    </ul>
+    <div class="notes">The canon of scripture wasn't handed down from heaven — it was a centuries-long process of debate, politics, and theological negotiation. Different churches had different Bibles. Marcion had his own canon. The Gnostics had theirs. The canon we have today reflects the winners of those theological battles, not a self-evident list of God-authored books. If the Bible is uniquely inspired, shouldn't its table of contents be obvious?</div>
+  </section>
+
+  <section class="slide" data-title="Contradictions">
+    <p class="kicker">Bible · Internal Consistency</p>
+    <h2 class="h2">Internal Contradictions</h2>
+    <p class="lede mb-l">An inerrant book shouldn't contradict itself. Yet it does.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>Historical Contradictions</h4>
+        <ul class="dim">
+          <li>Who killed Goliath? David (1 Sam 17) or Elhanan (2 Sam 21:19)?</li>
+          <li>Who incited David's census? God (2 Sam 24:1) or Satan (1 Chr 21:1)?</li>
+          <li>How did Judas die? Hanged himself (Matt 27:5) or fell and burst open (Acts 1:18)?</li>
+          <li>When was the Last Supper? Before or during Passover? (Synoptics vs John)</li>
+          <li>What happened at the empty tomb? One angel? Two? Sitting? Standing? Inside? Outside?</li>
+        </ul>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>Theological Contradictions</h4>
+        <ul class="dim">
+          <li>Is salvation by faith alone (Eph 2:8-9) or faith + works (James 2:24)? Luther wanted to remove James.</li>
+          <li>Does God repent/change his mind? Yes (Ex 32:14, Jon 3:10). No (Num 23:19, 1 Sam 15:29).</li>
+          <li>Does God tempt people? Yes (Gen 22:1, 2 Sam 24:1). No (James 1:13).</li>
+          <li>Is God a God of peace or does he create evil? (Isa 45:7 vs multiple "God is love" passages)</li>
+          <li>Are we justified by faith alone or do we need to keep the law?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">Apologists have answers for every contradiction. Harmonization is always possible if you're creative enough. But harmonization isn't the same as the plain reading of the text. When you need to invent elaborate explanations to reconcile two accounts that say different things, you're not discovering the text's meaning — you're imposing a harmonization on it. An inerrant book would be self-consistent on its face.</div>
+  </section>
+
+  <!-- Prophecies slide removed (covered in Part Four) -->
+
+  <section class="slide" data-title="Bible Summary">
+    <p class="kicker">Bible · Summary</p>
+    <h2 class="h2">The Bible as a Human Book</h2>
+    <div class="pc" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px">
+      <div class="card pro anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--good)">
+        <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)">✓</span> If Divinely Inspired</h3>
+        <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
+          <li>We should expect internal consistency</li>
+          <li>We should expect historical and scientific accuracy</li>
+          <li>We should expect fulfilled prophecies</li>
+          <li>We should expect moral clarity and progress</li>
+          <li>We should expect a clear, universally recognized canon</li>
+        </ul>
+      </div>
+      <div class="card con anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--bad)">
+        <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">✗</span> What We Actually Find</h3>
+        <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
+          <li>Contradictions on basic historical facts</li>
+          <li>Scientific claims that don't match modern understanding</li>
+          <li>Unfulfilled prophecies explained away</li>
+          <li>Morality that reflects ancient Near Eastern culture, not transcendent perfect goodness</li>
+          <li>A canon that was debated and settled by human institutions</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">When you examine the Bible with the same critical tools you'd apply to any ancient text, it looks exactly like what you'd expect from a collection of human writings: reflecting the cultures, biases, limitations, and theological agendas of their authors. The simplest explanation for the Bible's features is not that it's a divinely inspired inerrant text, but that it's a very human book — a remarkable one, to be sure, but human nonetheless.</div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION: PHILOSOPHICAL         -->
+  <!-- ============================== -->
+  <section class="slide tc center" data-title="Section Philosophical">
+    <div style="max-width:780px;margin:0 auto">
+      <p class="section-number">Part Five</p>
+      <h1 class="h1 anim-rise-in" data-anim="rise-in" style="font-size:96px">Philosophical <span class="gradient-text">Objections</span></h1>
+      <div class="divider-accent" style="margin:24px auto"></div>
+      <p class="lede">Broader philosophical issues with the Christian worldview.</p>
+    </div>
+    <div class="notes">Beyond science, history, morality, and the Bible itself, there are broader philosophical problems with Christian theology. These aren't knock-down arguments, but they contribute to the cumulative case that Christianity fails as a coherent worldview.</div>
+  </section>
+
+  <section class="slide" data-title="Pascal's Wager">
+    <p class="kicker">Philosophical · Pragmatism</p>
+    <h2 class="h2">Pascal's Wager: The Bet You Can't Win</h2>
+    <p class="lede mb-l">"Believe in God because you have everything to gain and nothing to lose."</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>The Argument</h4>
+        <p class="dim">Pascal argued that belief in God is the rational bet: if God exists, the believer gains infinite reward and avoids infinite punishment. If God doesn't exist, the believer loses little. The atheist, by contrast, risks infinite loss for finite gain.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>Why It Fails</h4>
+        <ul class="dim">
+          <li><b>Which God?</b> There are thousands of mutually exclusive religions. Which one do you wager on? The wager only works if Christianity is presented as the only option.</li>
+          <li><b>Can you choose belief?</b> Belief isn't a choice you make for pragmatic reasons. You can't genuinely believe something just because it's safer to believe it.</li>
+          <li><b>Dishonesty:</b> A god who knows your heart would see that your belief is insincere — a calculated hedge rather than genuine faith. Would a perfectly just god reward that?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">Pascal's Wager is probably the most famous argument for belief, and it's almost universally rejected by philosophers and theologians alike. It treats faith as an insurance policy, which is arguably the opposite of what genuine religious commitment should be. And it ignores the problem of religious pluralism: which specific version of God do you bet on?</div>
+  </section>
+
+  <section class="slide" data-title="Faith Not a Virtue">
+    <p class="kicker">Philosophical · Epistemology</p>
+    <h2 class="h2">Faith Is Not a Virtue</h2>
+    <p class="lede mb-l">Is believing without evidence a virtue or a vice?</p>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card anim-fade-left" data-anim="fade-left">
+        <h4>Defining Faith</h4>
+        <p class="dim">Hebrews 11:1 defines faith as "the assurance of things hoped for, the conviction of things not seen." In practice, this often means believing something despite insufficient evidence. If you had sufficient evidence, it wouldn't be faith — it would be knowledge.</p>
+        <p class="dim mt-m">The problem: faith is a methodology that leads people to believe contradictory things. Muslims have faith in the Quran. Hindus have faith in the Vedas. Mormons have faith in the Book of Mormon. Faith alone can't distinguish truth from falsehood.</p>
+      </div>
+      <div class="card anim-fade-right" data-anim="fade-right">
+        <h4>The Epistemic Problem</h4>
+        <p class="dim">If faith is a reliable path to truth, then why does it produce such different results in different people? The same spirit of sincere faith leads one person to Christianity, another to Islam, another to atheism.</p>
+        <p class="dim mt-m">Contrast faith with evidence-based reasoning: when applied properly, science converges on the same answers regardless of who's doing the asking. Faith diverges. This strongly suggests faith is not a reliable method for determining what's true.</p>
+      </div>
+    </div>
+    <div class="notes">This is perhaps the deepest issue. We all have to decide what we believe and why. If you believe something because of evidence and reason, you're using the same tools that let you navigate every other area of your life — medicine, engineering, personal relationships. If you believe something because of faith, you're using a different tool — one that, applied universally, would lead you to accept contradictory truth claims from different religions. If faith is a reliable path to truth, how would we ever resolve disagreements between faiths?</div>
+  </section>
+
+  <section class="slide" data-title="Free Will">
+    <p class="kicker">Philosophical · Theology</p>
+    <h2 class="h2">Omniscience vs Free Will</h2>
+    <p class="lede mb-l">If God knows everything that will happen, can we truly have free will?</p>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card anim-fade-left" data-anim="fade-left">
+        <h4>The Problem</h4>
+        <p class="dim">Classical Christian theology holds that God is omniscient — He knows all future events with certainty, including every choice you'll ever make. If God knows with absolute certainty that you'll choose A over B, can you genuinely choose B? If not, your choice is not free. Your freely made choices are, from an eternal perspective, already known and fixed.</p>
+      </div>
+      <div class="card anim-fade-right" data-anim="fade-right">
+        <h4>Theological Responses</h4>
+        <ul class="dim">
+          <li><b>Molinism</b> (middle knowledge) — God knows what you would freely choose in any possible situation. But this still implies the choices are determined by the situation God creates.</li>
+          <li><b>Open Theism</b> — God doesn't know the future because the future isn't settled. But this denies classical omniscience.</li>
+          <li><b>Compatibilism</b> — Free will and determinism are compatible. But this redefines "free will" to mean something most people wouldn't recognize as freedom.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">This issue is relevant to the problem of evil. If humans have genuine free will, then God doesn't know for certain what they'll do — which contradicts classical omniscience. If God does know everything, then human choices are essentially scripted, and God bears ultimate responsibility for evil. Neither option is comfortable for traditional Christian theology.</div>
+  </section>
+
+  <section class="slide" data-title="Divine Hiddenness">
+    <p class="kicker">Philosophical · Epistemology</p>
+    <h2 class="h2">The Problem of Divine Hiddenness</h2>
+    <p class="lede mb-l">If God wants a relationship with us, why is his existence so ambiguous?</p>
+    <div class="card" style="margin-bottom:18px;padding:20px 24px;border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 6%,var(--surface))">
+      <p class="dim" style="font-size:15px;line-height:1.7;margin:0">An all-powerful, all-loving God who desires a relationship with every person would have both the power and the motivation to make his existence undeniably clear. He could appear visibly, speak audibly, or write across the sky — as obvious as the sun. Yet he does not.</p>
+    </div>
+    <div class="comp-grid">
+      <div class="comp-col good anim-fade-left" data-anim="fade-left" style="border-left:3px solid var(--bad)">
+        <h4 style="color:var(--bad);font-size:15px">The Agnostic's Predicament</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6">Sincere seekers who genuinely want to know the truth about God often find the evidence ambiguous. People pray, study scripture, and examine arguments — and many come away unconvinced. A God who desires to be known would not hide himself from those sincerely seeking him.</p>
+      </div>
+      <div class="comp-col good anim-fade-right" data-anim="fade-right" style="border-left:3px solid var(--bad)">
+        <h4 style="color:var(--bad);font-size:15px">Why the Responses Fail</h4>
+        <ul class="dim" style="font-size:13px;line-height:1.7;padding-left:18px;margin:0">
+          <li><b>"God wants faith, not proof"</b> — but this means God values sincere seeking that ends in belief while punishing sincere seeking that doesn't. How does the seeker know when they've done enough?</li>
+          <li><b>"God reveals himself to the humble"</b> — this implies doubters are arrogant, a convenient dismissal rather than an answer.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">The problem of divine hiddenness is personal for many people. It's not an abstract philosophical puzzle — it's the experience of millions of sincere seekers who wanted to believe but couldn't. If God wants a relationship with us, why is he so much less obvious than, say, gravity or the sun? The fact that belief requires overcoming so many intellectual obstacles seems inconsistent with a God who desires universal salvation.</div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- CONCLUSION                     -->
+  <!-- ============================== -->
+  <section class="slide" data-title="The Cumulative Case">
+    <p class="kicker">Conclusion</p>
+    <h2 class="h2">The Cumulative Case</h2>
+    <p class="lede mb-l">The verdict across all five pillars is devastating for a literal, inerrant Christianity. No single argument is a knockout &mdash; but together, they form an overwhelming picture.</p>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:10px;align-items:stretch">
+      <div class="card card-soft" style="padding:14px 14px;display:flex;flex-direction:column;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:6px">🔬 Science</h4>
+        <p class="dim" style="flex:1;font-size:12px;line-height:1.5;margin:0 0 8px">God of the gaps, fine-tuning, Adam &amp; Eve, Noah&rsquo;s flood, age of Earth, evolution (fossils, ERVs, GULO, atavisms). Every line of evidence contradicts a literal Genesis.</p>
+        <div class="pi" style="font-size:11px;line-height:1.4;color:var(--bad);border-top:1px solid color-mix(in srgb,var(--bad) 40%,transparent);padding-top:6px"><b>Verdict:</b> The biblical creation story is scientifically false.</div>
+      </div>
+      <div class="card card-soft" style="padding:14px 14px;display:flex;flex-direction:column;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:6px">📜 History</h4>
+        <p class="dim" style="flex:1;font-size:12px;line-height:1.5;margin:0 0 8px">Late, anonymous, contradictory Gospels; no contemporary corroboration of miracles; failed messianic prophecies; Jesus&rsquo;s own failed prediction of his return within his generation.</p>
+        <div class="pi" style="font-size:11px;line-height:1.4;color:var(--bad);border-top:1px solid color-mix(in srgb,var(--bad) 40%,transparent);padding-top:6px"><b>Verdict:</b> The resurrection and supernatural claims are unsupported by reliable historical evidence.</div>
+      </div>
+      <div class="card card-soft" style="padding:14px 14px;display:flex;flex-direction:column;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:6px">⚖️ Moral</h4>
+        <p class="dim" style="flex:1;font-size:12px;line-height:1.5;margin:0 0 8px">Euthyphro dilemma; OT morality endorses slavery, genocide, misogyny; problem of evil unresolved (gratuitous suffering, natural evil).</p>
+        <div class="pi" style="font-size:11px;line-height:1.4;color:var(--bad);border-top:1px solid color-mix(in srgb,var(--bad) 40%,transparent);padding-top:6px"><b>Verdict:</b> The Bible is not a perfect moral guide; evil weighs against an all-powerful, benevolent God.</div>
+      </div>
+    </div>
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px;align-items:stretch;max-width:66%;margin:0 auto">
+      <div class="card card-soft" style="padding:14px 14px;display:flex;flex-direction:column;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:6px">📖 Bible</h4>
+        <p class="dim" style="flex:1;font-size:12px;line-height:1.5;margin:0 0 8px">Thousands of textual variants; canon formation was political; internal contradictions (genealogies, Judas&rsquo;s death, who carried the cross, what women saw at the tomb).</p>
+        <div class="pi" style="font-size:11px;line-height:1.4;color:var(--bad);border-top:1px solid color-mix(in srgb,var(--bad) 40%,transparent);padding-top:6px"><b>Verdict:</b> The Bible bears clear marks of human authorship, not divine inerrancy.</div>
+      </div>
+      <div class="card card-soft" style="padding:14px 14px;display:flex;flex-direction:column;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:6px">🧠 Philosophy</h4>
+        <p class="dim" style="flex:1;font-size:12px;line-height:1.5;margin:0 0 8px">Pascal&rsquo;s Wager fails; faith is unreliable (every religion uses it); free will vs. foreknowledge paradox; divine hiddenness inconsistent with a God who desires relationship.</p>
+        <div class="pi" style="font-size:11px;line-height:1.4;color:var(--bad);border-top:1px solid color-mix(in srgb,var(--bad) 40%,transparent);padding-top:6px"><b>Verdict:</b> The philosophical foundations of Christian belief are unsound.</div>
+      </div>
+    </div>
+    <div class="notes">The cumulative case is the strongest argument against Christianity. Each pillar alone might be survivable — you could explain away bad design, or reinterpret prophecies, or rationalize contradictions. But when all five pillars point the same way, the probability that you're wrong on every single one becomes vanishingly small. The cumulative weight of evidence is what makes the case compelling, not any single argument.</div>
+  </section>
+
+  <section class="slide" data-title="The Implication">
+    <p class="kicker">Conclusion · The Verdict</p>
+    <h2 class="h2">The Implication</h2>
+    <p class="lede mb-l">Five independent lines of evidence, five consistent verdicts.</p>
+    <div class="grid" style="grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px;align-items:stretch">
+      <div class="card" style="padding:10px 10px;display:flex;flex-direction:column;border-left:4px solid var(--bad)">
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0"><b>🔬 Scientific:</b> The biblical creation story is scientifically false.</p>
+      </div>
+      <div class="card" style="padding:10px 10px;display:flex;flex-direction:column;border-left:4px solid var(--bad)">
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0"><b>📜 Historical:</b> The resurrection and supernatural claims are unsupported by reliable historical evidence.</p>
+      </div>
+      <div class="card" style="padding:10px 10px;display:flex;flex-direction:column;border-left:4px solid var(--bad)">
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0"><b>⚖️ Moral:</b> The Bible is not a perfect moral guide; evil weighs against an all-powerful, benevolent God.</p>
+      </div>
+      <div class="card" style="padding:10px 10px;display:flex;flex-direction:column;border-left:4px solid var(--bad)">
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0"><b>📖 Biblical:</b> The Bible bears clear marks of human authorship, not divine inerrancy.</p>
+      </div>
+      <div class="card" style="padding:10px 10px;display:flex;flex-direction:column;border-left:4px solid var(--bad)">
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0"><b>🧠 Philosophical:</b> The philosophical foundations of Christian belief are unsound.</p>
+      </div>
+    </div>
+    <div class="card" style="background:color-mix(in srgb,var(--accent) 12%,transparent);border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);padding:16px 20px;max-width:780px;margin:0 auto">
+      <p class="dim" style="font-size:14px;line-height:1.7;margin:0"><b>The cumulative case:</b> Any one argument could be argued away in isolation. Together, they form a <b>cumulative case</b> that no single apologetic can refute. The most parsimonious explanation: Christianity is a human-made religion, not a divine revelation. Its truth claims about the world are not supported by the evidence we have.</p>
+    </div>
+    <div class="notes">The verdict slides list each pillar&rsquo;s bottom line, and the implication draws the conclusion. The most parsimonious explanation isn&rsquo;t that all five lines of evidence are wrong &mdash; it&rsquo;s that Christianity was never a divine revelation in the first place.</div>
+  </section>
+
+  <section class="slide" data-title="Meaning Without God">
+    <p class="kicker">Conclusion · Humanism</p>
+    <h2 class="h2">Finding Meaning Without God</h2>
+    <p class="lede mb-l">If Christianity isn't true, what then?</p>
+    <ul class="grid g1 anim-stagger-list" style="list-style:none;padding:0;margin:0;gap:14px" data-anim-target>
+      <li class="card card-accent">
+        <h4>🌍 Meaning is Something We Create, Not Something We Find</h4>
+        <p class="dim">The absence of cosmic purpose does not mean the absence of purpose. We create meaning through our relationships, our work, our creativity, and our connections to others. Love, beauty, justice, and wonder are no less real or valuable because they are not eternal.</p>
+      </li>
+      <li class="card card-accent">
+        <h4>❤️ Morality Without Religion</h4>
+        <p class="dim">We can be good without God. Empathy, reason, and the recognition of shared suffering are sufficient foundations for ethics. Studies consistently show that secular societies have lower crime rates, lower murder rates, and higher levels of social trust than religious ones.</p>
+      </li>
+      <li class="card card-accent">
+        <h4>✨ This Life Is Enough</h4>
+        <p class="dim">The value of life is not diminished by its finitude. If anything, knowing that this is the only life we have makes it more precious, not less. We don't need an eternal afterlife to find joy, purpose, and love in the here and now.</p>
+      </li>
+    </ul>
+    <div class="notes">One of the most common questions: "If you don't believe in God, what's the point of anything?" The answer is that life has whatever meaning we give it. The love I feel for my family, the joy of learning, the beauty of a sunset, the satisfaction of helping another person — none of these require cosmic validation to be real and valuable. In fact, recognizing that this life is all we have makes every moment more precious.</div>
+  </section>
+
+  <section class="slide" data-title="Final Thoughts">
+    <p class="kicker">Conclusion</p>
+    <h2 class="h2">What I Believe and Why</h2>
+    <p class="lede mb-l">A summary of where the evidence leads.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>I Do Not Believe Because...</h4>
+        <ul class="dim">
+          <li>The natural world is adequately explained by natural processes — no supernatural intervention is needed</li>
+          <li>The historical evidence for Christianity's supernatural claims is weak and contradictory</li>
+          <li>Biblical morality contains elements that are, by modern standards, deeply problematic</li>
+          <li>The Bible itself shows clear signs of human authorship: contradictions, errors, and cultural bias</li>
+          <li>The problem of evil and divine hiddenness remain unresolved</li>
+          <li>Faith, as a method for determining truth, is unreliable</li>
+        </ul>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>I Remain Open To...</h4>
+        <ul class="dim">
+          <li>New evidence that changes the picture</li>
+          <li>Arguments I haven't considered or haven't understood properly</li>
+          <li>The possibility that I'm wrong — intellectual humility requires this</li>
+          <li>Dialogue with people who disagree — that's how we learn</li>
+          <li>The value of religious communities and traditions, even if I don't share their supernatural beliefs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">Let me be clear about what I'm not saying. I'm not saying Christianity is false with absolute certainty — that would be a knowledge claim I can't defend. I'm not saying Christians are stupid or irrational — many brilliant people believe. I'm not saying religion has no value — it provides community, comfort, and meaning to billions. What I am saying is: after examining the evidence, I find the case for Christianity unconvincing. I could be wrong about any or all of this. But I have to follow my best understanding of the evidence, and this is where it leads me.</div>
+  </section>
+
+  
+
+  <section class="slide"<section class="slide tc center" data-title="Thanks">
+    <h1 class="h1" style="font-size:140px;line-height:1"><span class="gradient-text">Thank You</span></h1>
+    <p class="lede" style="margin:16px auto">Questions & Discussion Welcome</p>
+    <p class="dim" style="margin-top:48px">← → to navigate · T to cycle themes · F for fullscreen · S for presenter mode</p>
+    <div class="notes">Thank you for listening. I've presented a case, but the purpose isn't to win an argument — it's to think clearly about an important question. I welcome questions, pushback, and discussion. The best way to refine our understanding is through open, honest dialogue.</div>
+  </section>
+
+</div>
+<script>
+/* html-ppt :: runtime.js
+ * Keyboard-driven deck runtime. Zero dependencies.
+ *
+ * Features:
+ *   ← → / space / PgUp PgDn / Home End  navigation
+ *   F  fullscreen
+ *   S  presenter mode (opens a NEW WINDOW with current/next slide preview + notes + timer)
+ *       The original window stays as audience view, synced via BroadcastChannel.
+ *       Slide previews use CSS transform:scale() at design resolution for pixel-perfect layout.
+ *   N  quick notes overlay (bottom drawer)
+ *   O  slide overview grid
+ *   T  cycle themes (reads data-themes on <html> or <body>)
+ *   A  cycle demo animation on current slide
+ *   URL hash #/N  deep-link to slide N (1-based)
+ *   Progress bar auto-managed
+ */
+(function () {
+  'use strict';
+
+  const ANIMS = ['fade-up','fade-down','fade-left','fade-right','rise-in','drop-in',
+    'zoom-pop','blur-in','glitch-in','typewriter','neon-glow','shimmer-sweep',
+    'gradient-flow','stagger-list','counter-up','path-draw','parallax-tilt',
+    'card-flip-3d','cube-rotate-3d','page-turn-3d','perspective-zoom',
+    'marquee-scroll','kenburns','confetti-burst','spotlight','morph-shape','ripple-reveal'];
+
+  function ready(fn){ if(document.readyState!='loading')fn(); else document.addEventListener('DOMContentLoaded',fn);}
+
+  /* ========== Parse URL for preview-only mode ==========
+   * When loaded as iframe.src = "index.html?preview=3", runtime enters a
+   * locked single-slide mode: only slide N is visible, no chrome, no keys,
+   * no hash updates. This is how the presenter window shows pixel-perfect
+   * previews — by loading the actual deck file in an iframe and telling it
+   * to display only a specific slide.
+   */
+  function getPreviewIdx() {
+    const m = /[?&]preview=(\d+)/.exec(location.search || '');
+    return m ? parseInt(m[1], 10) - 1 : -1;
+  }
+
+  ready(function () {
+    const deck = document.querySelector('.deck');
+    if (!deck) return;
+    const slides = Array.from(deck.querySelectorAll('.slide'));
+    if (!slides.length) return;
+
+    const previewOnlyIdx = getPreviewIdx();
+    const isPreviewMode = previewOnlyIdx >= 0 && previewOnlyIdx < slides.length;
+
+    /* ===== Preview-only mode: show one slide, hide everything else ===== */
+    if (isPreviewMode) {
+      function showSlide(i) {
+        slides.forEach((s, j) => {
+          const active = (j === i);
+          s.classList.toggle('is-active', active);
+          s.style.display = active ? '' : 'none';
+          if (active) {
+            s.style.opacity = '1';
+            s.style.transform = 'none';
+            s.style.pointerEvents = 'auto';
+          }
+        });
+      }
+      showSlide(previewOnlyIdx);
+      /* Hide chrome that the presenter shouldn't see in preview */
+      const hideSel = '.progress-bar, .notes-overlay, .overview, .notes, aside.notes, .speaker-notes';
+      document.querySelectorAll(hideSel).forEach(el => { el.style.display = 'none'; });
+      document.documentElement.setAttribute('data-preview', '1');
+      document.body.setAttribute('data-preview', '1');
+      /* Auto-detect theme base path for theme switching in preview mode */
+      function getPreviewThemeBase() {
+        const base = document.documentElement.getAttribute('data-theme-base');
+        if (base) return base;
+        const tl = document.getElementById('theme-link');
+        if (tl) {
+          const raw = tl.getAttribute('href') || '';
+          const ls = raw.lastIndexOf('/');
+          if (ls >= 0) return raw.substring(0, ls + 1);
+        }
+        return 'assets/themes/';
+      }
+      const previewThemeBase = getPreviewThemeBase();
+
+      /* Listen for postMessage from parent presenter window:
+       *  - preview-goto: switch visible slide WITHOUT reloading
+       *  - preview-theme: switch theme CSS link to match audience window */
+      window.addEventListener('message', function(e) {
+        if (!e.data) return;
+        if (e.data.type === 'preview-goto') {
+          const n = parseInt(e.data.idx, 10);
+          if (n >= 0 && n < slides.length) showSlide(n);
+        } else if (e.data.type === 'preview-theme' && e.data.name) {
+          let link = document.getElementById('theme-link');
+          if (!link) {
+            link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.id = 'theme-link';
+            document.head.appendChild(link);
+          }
+          link.href = previewThemeBase + e.data.name + '.css';
+          document.documentElement.setAttribute('data-theme', e.data.name);
+        }
+      });
+      /* Signal to parent that preview iframe is ready */
+      try { window.parent && window.parent.postMessage({ type: 'preview-ready' }, '*'); } catch(e) {}
+      return;
+    }
+
+    let idx = 0;
+    const total = slides.length;
+
+    /* ===== BroadcastChannel for presenter sync ===== */
+    const CHANNEL_NAME = 'html-ppt-presenter-' + location.pathname;
+    let bc;
+    try { bc = new BroadcastChannel(CHANNEL_NAME); } catch(e) { bc = null; }
+
+    // Are we running inside the presenter popup? (legacy flag, now unused)
+    const isPresenterWindow = false;
+
+    /* ===== progress bar ===== */
+    let bar = document.querySelector('.progress-bar');
+    if (!bar) {
+      bar = document.createElement('div');
+      bar.className = 'progress-bar';
+      bar.innerHTML = '<span></span>';
+      document.body.appendChild(bar);
+    }
+    const barFill = bar.querySelector('span');
+
+    /* ===== notes overlay (N key) ===== */
+    let notes = document.querySelector('.notes-overlay');
+    if (!notes) {
+      notes = document.createElement('div');
+      notes.className = 'notes-overlay';
+      document.body.appendChild(notes);
+    }
+
+    /* ===== overview grid (O key) ===== */
+    let overview = document.querySelector('.overview');
+    if (!overview) {
+      overview = document.createElement('div');
+      overview.className = 'overview';
+      slides.forEach((s, i) => {
+        const t = document.createElement('div');
+        t.className = 'thumb';
+        // Force 16:9 aspect ratio robustly
+        t.style.padding = '0 0 56.25% 0';
+        t.style.height = '0';
+        t.style.position = 'relative';
+        t.style.overflow = 'hidden';
+
+        const title = s.getAttribute('data-title') ||
+          (s.querySelector('h1,h2,h3')||{}).textContent || ('Slide '+(i+1));
+        
+        // Create a container for the mini-slide
+        const mini = document.createElement('div');
+        mini.className = 'mini-slide';
+        mini.style.position = 'absolute';
+        mini.style.top = '0';
+        mini.style.left = '0';
+        mini.style.width = '1920px';
+        mini.style.height = '1080px';
+        mini.style.transformOrigin = 'top left';
+        mini.style.pointerEvents = 'none';
+        mini.style.background = 'var(--bg)';
+        
+        // Clone the slide content
+        const clone = s.cloneNode(true);
+        clone.className = 'slide is-active'; // force active styles
+        clone.style.position = 'absolute';
+        clone.style.inset = '0';
+        clone.style.transform = 'none';
+        clone.style.opacity = '1';
+        clone.style.padding = '72px 96px'; // ensure padding is kept
+        
+        mini.appendChild(clone);
+        t.appendChild(mini);
+
+        // Add the number and title overlay
+        const overlay = document.createElement('div');
+        overlay.style.position = 'absolute';
+        overlay.style.inset = '0';
+        overlay.style.background = 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, transparent 40%, transparent 60%, rgba(0,0,0,0.8) 100%)';
+        overlay.style.color = '#fff';
+        overlay.style.zIndex = '10';
+        overlay.style.pointerEvents = 'none';
+        
+        const n = document.createElement('div');
+        n.className = 'n';
+        n.textContent = i + 1;
+        n.style.position = 'absolute';
+        n.style.top = '12px';
+        n.style.left = '16px';
+        n.style.fontWeight = '700';
+        n.style.fontSize = '16px';
+        n.style.color = '#fff';
+        n.style.textShadow = '0 1px 4px rgba(0,0,0,0.8)';
+        
+        const text = document.createElement('div');
+        text.className = 't';
+        text.textContent = title.trim().slice(0,80);
+        text.style.position = 'absolute';
+        text.style.bottom = '12px';
+        text.style.left = '16px';
+        text.style.right = '16px';
+        text.style.fontWeight = '600';
+        text.style.fontSize = '14px';
+        text.style.color = '#fff';
+        text.style.textShadow = '0 1px 4px rgba(0,0,0,0.8)';
+        
+        overlay.appendChild(n);
+        overlay.appendChild(text);
+        t.appendChild(overlay);
+
+        t.addEventListener('click', () => { go(i); toggleOverview(false); });
+        overview.appendChild(t);
+      });
+      document.body.appendChild(overview);
+    }
+
+    /* ===== navigation ===== */
+    function go(n, fromRemote){
+      n = Math.max(0, Math.min(total-1, n));
+      slides.forEach((s,i) => {
+        s.classList.toggle('is-active', i===n);
+        s.classList.toggle('is-prev', i<n);
+      });
+      idx = n;
+      barFill.style.width = ((n+1)/total*100)+'%';
+      const numEl = document.querySelector('.slide-number');
+      if (numEl) { numEl.setAttribute('data-current', n+1); numEl.setAttribute('data-total', total); }
+
+      // notes (bottom overlay)
+      const note = slides[n].querySelector('.notes, aside.notes, .speaker-notes');
+      notes.innerHTML = note ? note.innerHTML : '';
+
+      // hash
+      const hashTarget = '#/'+(n+1);
+      if (location.hash !== hashTarget && !isPresenterWindow) {
+        history.replaceState(null,'', hashTarget);
+      }
+
+      // re-trigger entry animations
+      slides[n].querySelectorAll('[data-anim]').forEach(el => {
+        const a = el.getAttribute('data-anim');
+        el.classList.remove('anim-'+a);
+        void el.offsetWidth;
+        el.classList.add('anim-'+a);
+      });
+
+      // counter-up
+      slides[n].querySelectorAll('.counter').forEach(el => {
+        const target = parseFloat(el.getAttribute('data-to')||el.textContent);
+        const dur = parseInt(el.getAttribute('data-dur')||'1200',10);
+        const start = performance.now();
+        const from = 0;
+        function tick(now){
+          const t = Math.min(1,(now-start)/dur);
+          const v = from + (target-from)*(1-Math.pow(1-t,3));
+          el.textContent = (target % 1 === 0) ? Math.round(v) : v.toFixed(1);
+          if (t<1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+
+      // Broadcast to other window (audience ↔ presenter)
+      if (!fromRemote && bc) {
+        bc.postMessage({ type: 'go', idx: n });
+      }
+    }
+
+    /* ===== listen for remote navigation / theme changes ===== */
+    if (bc) {
+      bc.onmessage = function(e) {
+        if (!e.data) return;
+        if (e.data.type === 'go' && typeof e.data.idx === 'number') {
+          go(e.data.idx, true);
+        } else if (e.data.type === 'theme' && e.data.name) {
+          /* Sync theme across windows */
+          const i = themes.indexOf(e.data.name);
+          if (i >= 0) themeIdx = i;
+          applyTheme(e.data.name);
+        }
+      };
+    }
+
+    function toggleNotes(force){ notes.classList.toggle('open', force!==undefined?force:!notes.classList.contains('open')); }
+    function toggleOverview(force){
+      const isOpen = force!==undefined ? force : !overview.classList.contains('open');
+      overview.classList.toggle('open', isOpen);
+      if (isOpen) {
+        requestAnimationFrame(() => {
+          const thumbs = overview.querySelectorAll('.thumb');
+          if (thumbs.length) {
+            const scale = thumbs[0].clientWidth / 1920;
+            overview.querySelectorAll('.mini-slide').forEach(m => {
+              m.style.transform = 'scale(' + scale + ')';
+            });
+          }
+        });
+      }
+    }
+
+    /* ========== PRESENTER MODE — Magnetic-card popup window ========== */
+    /* Opens a new window with 4 draggable, resizable cards:
+     *   CURRENT  — iframe(?preview=N)   pixel-perfect preview of current slide
+     *   NEXT     — iframe(?preview=N+1) pixel-perfect preview of next slide
+     *   SCRIPT   — large speaker notes (逐字稿)
+     *   TIMER    — elapsed timer + page counter + controls
+     * Cards remember position/size in localStorage.
+     * Two windows sync via BroadcastChannel.
+     */
+    let presenterWin = null;
+
+    function openPresenterWindow() {
+      if (presenterWin && !presenterWin.closed) {
+        presenterWin.focus();
+        return;
+      }
+
+      // Build absolute URL of THIS deck file (without hash/query)
+      const deckUrl = location.protocol + '//' + location.host + location.pathname;
+
+      // Collect slide titles + notes (HTML strings)
+      const slideMeta = slides.map((s, i) => {
+        const note = s.querySelector('.notes, aside.notes, .speaker-notes');
+        return {
+          title: s.getAttribute('data-title') ||
+            (s.querySelector('h1,h2,h3')||{}).textContent || ('Slide '+(i+1)),
+          notes: note ? note.innerHTML : ''
+        };
+      });
+
+      /* Capture current theme so presenter previews match the audience */
+      const currentTheme = root.getAttribute('data-theme') || (themes[themeIdx] || '');
+      const presenterHTML = buildPresenterHTML(deckUrl, slideMeta, total, idx, CHANNEL_NAME, currentTheme);
+
+      presenterWin = window.open('', 'html-ppt-presenter', 'width=1280,height=820,menubar=no,toolbar=no');
+      if (!presenterWin) {
+        alert('请允许弹出窗口以使用演讲者视图');
+        return;
+      }
+      presenterWin.document.open();
+      presenterWin.document.write(presenterHTML);
+      presenterWin.document.close();
+    }
+
+    function buildPresenterHTML(deckUrl, slideMeta, total, startIdx, channelName, currentTheme) {
+      const metaJSON = JSON.stringify(slideMeta);
+      const deckUrlJSON = JSON.stringify(deckUrl);
+      const channelJSON = JSON.stringify(channelName);
+      const themeJSON = JSON.stringify(currentTheme || '');
+      const storageKey = 'html-ppt-presenter:' + location.pathname;
+
+      // Build the document as a single template string for clarity
+      return `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Presenter View</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%; overflow: hidden;
+    background: #1a1d24;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(88,166,255,.04), transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(188,140,255,.04), transparent 50%);
+    color: #e6edf3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif;
+  }
+  /* Stage: positioned area where cards live */
+  #stage { position: absolute; inset: 0; overflow: hidden; }
+
+  /* Magnetic card */
+  .pcard {
+    position: absolute;
+    background: #0d1117;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.02);
+    display: flex; flex-direction: column;
+    overflow: hidden;
+    min-width: 180px; min-height: 100px;
+    transition: box-shadow .2s, border-color .2s;
+  }
+  .pcard.dragging { box-shadow: 0 16px 48px rgba(0,0,0,.6), 0 0 0 2px rgba(88,166,255,.5); border-color: #58a6ff; transition: none; z-index: 9999; }
+  .pcard.resizing { box-shadow: 0 16px 48px rgba(0,0,0,.6), 0 0 0 2px rgba(63,185,80,.5); border-color: #3fb950; transition: none; z-index: 9999; }
+  .pcard:hover { border-color: rgba(88,166,255,.3); }
+
+  /* Card header (drag handle) */
+  .pcard-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 12px;
+    background: rgba(255,255,255,.04);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    cursor: move;
+    user-select: none;
+    flex-shrink: 0;
+  }
+  .pcard-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--dot-color, #58a6ff); flex-shrink: 0; }
+  .pcard-title {
+    font-size: 11px; letter-spacing: .15em; text-transform: uppercase;
+    font-weight: 700; color: #8b949e; flex: 1;
+  }
+  .pcard-meta { font-size: 11px; color: #6e7681; }
+
+  /* Card body */
+  .pcard-body { flex: 1; position: relative; overflow: hidden; min-height: 0; }
+
+  /* Preview cards (CURRENT/NEXT) — iframe-based pixel-perfect render */
+  .pcard-preview .pcard-body { background: #000; }
+  .pcard-preview iframe {
+    position: absolute; top: 0; left: 0;
+    width: 1920px; height: 1080px;
+    border: none;
+    transform-origin: top left;
+    pointer-events: none;
+    background: transparent;
+  }
+  .pcard-preview .preview-end {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    color: #484f58; font-size: 14px; letter-spacing: .12em;
+  }
+
+  /* Notes card */
+  .pcard-notes .pcard-body {
+    padding: 14px 18px;
+    overflow-y: auto;
+    font-size: 18px; line-height: 1.75;
+    color: #d0d7de;
+    font-family: "Noto Sans SC", -apple-system, sans-serif;
+  }
+  .pcard-notes .pcard-body p { margin: 0 0 .7em 0; }
+  .pcard-notes .pcard-body strong { color: #f0883e; }
+  .pcard-notes .pcard-body em { color: #58a6ff; font-style: normal; }
+  .pcard-notes .pcard-body code {
+    font-family: "SF Mono", monospace; font-size: .9em;
+    background: rgba(255,255,255,.08); padding: 1px 6px; border-radius: 4px;
+  }
+  .pcard-notes .empty { color: #484f58; font-style: italic; }
+
+  /* Timer card */
+  .pcard-timer .pcard-body {
+    display: flex; flex-direction: column; gap: 14px;
+    padding: 18px 20px; justify-content: center;
+  }
+  .timer-display {
+    font-family: "SF Mono", "JetBrains Mono", monospace;
+    font-size: 42px; font-weight: 700;
+    color: #3fb950;
+    letter-spacing: .04em;
+    line-height: 1;
+  }
+  .timer-row {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 14px; color: #8b949e;
+  }
+  .timer-row .label { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: #6e7681; }
+  .timer-row .val { color: #e6edf3; font-weight: 600; font-family: "SF Mono", monospace; }
+  .timer-controls { display: flex; gap: 8px; flex-wrap: wrap; }
+  .timer-btn {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    color: #e6edf3;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .timer-btn:hover { background: rgba(88,166,255,.15); border-color: #58a6ff; }
+  .timer-btn:active { transform: translateY(1px); }
+
+  /* Resize handle */
+  .pcard-resize {
+    position: absolute; right: 0; bottom: 0;
+    width: 18px; height: 18px;
+    cursor: nwse-resize;
+    background: linear-gradient(135deg, transparent 50%, rgba(255,255,255,.25) 50%, rgba(255,255,255,.25) 60%, transparent 60%, transparent 70%, rgba(255,255,255,.25) 70%, rgba(255,255,255,.25) 80%, transparent 80%);
+    z-index: 5;
+  }
+  .pcard-resize:hover { background: linear-gradient(135deg, transparent 50%, #58a6ff 50%, #58a6ff 60%, transparent 60%, transparent 70%, #58a6ff 70%, #58a6ff 80%, transparent 80%); }
+
+  /* Bottom hint bar */
+  .hint-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,.6);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding: 6px 16px;
+    font-size: 11px; color: #8b949e;
+    display: flex; gap: 18px; align-items: center;
+    z-index: 1000;
+  }
+  .hint-bar kbd {
+    background: rgba(255,255,255,.08);
+    padding: 1px 6px; border-radius: 3px;
+    font-family: "SF Mono", monospace;
+    font-size: 10px;
+    border: 1px solid rgba(255,255,255,.1);
+    color: #e6edf3;
+  }
+  .hint-bar .reset-layout {
+    margin-left: auto;
+    background: transparent; border: 1px solid rgba(255,255,255,.15);
+    color: #8b949e; padding: 3px 10px; border-radius: 4px;
+    font-size: 11px; cursor: pointer; font-family: inherit;
+  }
+  .hint-bar .reset-layout:hover { background: rgba(248,81,73,.15); border-color: #f85149; color: #f85149; }
+
+  body.is-dragging-card * { user-select: none !important; }
+  body.is-dragging-card iframe { pointer-events: none !important; }
+</style>
+<style>
+/* html-ppt :: shared webfonts */
+/* html-ppt :: shared webfonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/* html-ppt :: base.css */
+/* html-ppt :: base.css — reset + shared tokens + layout primitives */
+/* Default tokens. Themes in assets/themes/*.css override the :root block. */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --surface: #ffffff;
+  --surface-2: #f2f2f4;
+  --border: rgba(0,0,0,.08);
+  --border-strong: rgba(0,0,0,.16);
+  --text-1: #111216;
+  --text-2: #55596a;
+  --text-3: #8a8f9e;
+  --accent: #3b6cff;
+  --accent-2: #7a5cff;
+  --accent-3: #ff5c8a;
+  --good: #1aaf6c;
+  --warn: #f5a524;
+  --bad:  #e0445a;
+  --grad: linear-gradient(135deg,#3b6cff,#7a5cff 55%,#ff5c8a);
+  --grad-soft: linear-gradient(135deg,#eef2ff,#f5ecff 55%,#ffeef5);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --radius-lg: 26px;
+  --shadow: 0 10px 30px rgba(18,24,40,.08), 0 2px 6px rgba(18,24,40,.04);
+  --shadow-lg: 0 24px 60px rgba(18,24,40,.14), 0 6px 16px rgba(18,24,40,.06);
+  --font-sans: 'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  --font-serif: 'Playfair Display','Noto Serif SC',Georgia,serif;
+  --font-mono: 'JetBrains Mono','IBM Plex Mono',SFMono-Regular,Menlo,monospace;
+  --font-display: var(--font-sans);
+  --letter-tight: -.03em;
+  --letter-normal: -.01em;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text-1);
+  font-family:var(--font-sans);font-weight:400;line-height:1.6;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  letter-spacing:var(--letter-normal)}
+img,svg,video{max-width:100%;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+code,kbd,pre,samp{font-family:var(--font-mono)}
+
+/* ================= SLIDE SYSTEM ================= */
+.deck{position:relative;width:100vw;height:100vh;overflow:hidden;background:var(--bg)}
+.slide{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:72px 96px;
+  box-sizing:border-box;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s var(--ease), transform .5s var(--ease);
+  transform:translateX(30px);
+  overflow:hidden;
+}
+.slide.is-active{opacity:1;pointer-events:auto;transform:translateX(0);z-index:2}
+.slide.is-prev{transform:translateX(-30px)}
+
+/* single-page standalone (used when a layout file is opened directly) */
+body.single .slide{position:relative;width:100vw;height:100vh;opacity:1;transform:none;pointer-events:auto}
+
+/* ================= TYPOGRAPHY ================= */
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3)}
+.kicker{font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+h1.title,.h1{font-family:var(--font-display);font-size:72px;line-height:1.05;font-weight:800;letter-spacing:var(--letter-tight);margin:0 0 18px;color:var(--text-1)}
+h2.title,.h2{font-family:var(--font-display);font-size:54px;line-height:1.1;font-weight:700;letter-spacing:var(--letter-tight);margin:0 0 14px}
+h3,.h3{font-size:32px;line-height:1.2;font-weight:600;letter-spacing:var(--letter-normal);margin:0 0 10px}
+h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
+.lede{font-size:22px;line-height:1.55;color:var(--text-2);font-weight:300;max-width:62ch}
+.dim{color:var(--text-2)}
+.dim2{color:var(--text-3)}
+.mono{font-family:var(--font-mono)}
+.serif{font-family:var(--font-serif)}
+.gradient-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--text-1)}
+
+/* ================= LAYOUT PRIMITIVES ================= */
+.stack>*+*{margin-top:14px}
+.row{display:flex;gap:24px;align-items:center}
+.row.wrap{flex-wrap:wrap}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.center{display:flex;align-items:center;justify-content:center;text-align:center}
+.fill{flex:1}
+.sp-t{padding-top:24px}.sp-b{padding-bottom:24px}
+.mt-s{margin-top:8px}.mt-m{margin-top:18px}.mt-l{margin-top:32px}
+.mb-s{margin-bottom:8px}.mb-m{margin-bottom:18px}.mb-l{margin-bottom:32px}
+
+/* ================= CARDS ================= */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:26px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.card-soft{background:var(--surface-2);border:1px solid var(--border)}
+.card-outline{background:transparent;border:1.5px solid var(--border-strong);box-shadow:none}
+.card-accent{background:var(--surface);border-top:3px solid var(--accent)}
+.card-hover{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.card-hover:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+
+.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:500;
+  background:var(--surface-2);color:var(--text-2);border:1px solid var(--border)}
+.pill-accent{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 28%,transparent)}
+
+/* ================= BARS / DIVIDERS ================= */
+.divider{height:1px;background:var(--border);width:100%}
+.divider-accent{height:3px;width:72px;background:var(--accent);border-radius:2px}
+
+/* ================= CHROME (header/footer/progress) ================= */
+.deck-header{position:absolute;top:24px;left:40px;right:40px;display:flex;align-items:center;justify-content:space-between;
+  font-size:12px;color:var(--text-3);letter-spacing:.12em;text-transform:uppercase;z-index:10;pointer-events:none}
+.deck-footer{position:absolute;bottom:24px;left:40px;right:40px;display:flex;align-items:center;justify-content:space-between;
+  font-size:12px;color:var(--text-3);z-index:10;pointer-events:none}
+.slide-number::before{content:attr(data-current)}
+.slide-number::after{content:" / " attr(data-total)}
+.progress-bar{position:fixed;left:0;right:0;bottom:0;height:3px;background:transparent;z-index:20}
+.progress-bar > span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s var(--ease)}
+
+/* ================= PRESENTER / OVERVIEW ================= */
+.notes{display:none!important}
+.notes-overlay{position:fixed;inset:auto 0 0 0;max-height:42vh;background:rgba(20,22,30,.95);color:#e8ebf4;
+  padding:20px 32px;font-size:16px;line-height:1.6;border-top:1px solid rgba(255,255,255,.1);transform:translateY(100%);
+  transition:transform .3s var(--ease);z-index:40;overflow:auto;font-family:var(--font-sans)}
+.notes-overlay.open{transform:translateY(0)}
+.overview{position:fixed;inset:0;background:rgba(10,12,18,.92);backdrop-filter:blur(12px);z-index:50;
+  display:none;padding:40px;overflow:auto}
+.overview.open{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-content:start}
+.overview .thumb{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  aspect-ratio:16/9;overflow:hidden;cursor:pointer;position:relative;color:var(--text-1);padding:16px;
+  font-size:11px;transition:transform .2s var(--ease)}
+.overview .thumb:hover{transform:scale(1.04)}
+.overview .thumb .n{position:absolute;top:8px;left:10px;font-weight:700;font-size:14px;color:var(--text-3)}
+.overview .thumb .t{position:absolute;bottom:10px;left:14px;right:14px;font-weight:600;color:var(--text-1)}
+
+/* ================= PRESENTER VIEW ================= */
+/* Presenter view opens in a separate popup window (S key).
+ * All presenter styles are self-contained in the popup HTML generated by runtime.js.
+ * The audience window (this file) is NOT affected — it stays as normal deck view.
+ * Only the .notes class below is needed to hide speaker notes from audience. */
+
+/* ================= UTILITY ================= */
+.hidden{display:none!important}
+.nowrap{white-space:nowrap}
+.tr{text-align:right}.tc{text-align:center}.tl{text-align:left}
+.uppercase{text-transform:uppercase;letter-spacing:.12em}
+
+/* ================= PRINT ================= */
+@media print{
+  .slide{position:relative;opacity:1!important;transform:none!important;page-break-after:always;height:100vh}
+  .deck-header,.deck-footer,.progress-bar,.notes-overlay,.overview{display:none!important}
+}
+
+/* theme: minimal-white */
+/* theme: minimal-white — 极简白，克制高级 */
+:root{
+  --bg:#ffffff;--bg-soft:#fafafa;--surface:#ffffff;--surface-2:#f5f5f6;
+  --border:rgba(17,18,22,.08);--border-strong:rgba(17,18,22,.16);
+  --text-1:#0c0d10;--text-2:#55596a;--text-3:#9ca1b0;
+  --accent:#111216;--accent-2:#3b3f4a;--accent-3:#6b6f7a;
+  --good:#1aaf6c;--warn:#c98500;--bad:#c13a3a;
+  --grad:linear-gradient(135deg,#111216,#3b3f4a);
+  --grad-soft:linear-gradient(135deg,#f5f5f6,#ffffff);
+  --radius:14px;--radius-sm:8px;--radius-lg:22px;
+  --shadow:0 1px 2px rgba(17,18,22,.04),0 8px 24px rgba(17,18,22,.06);
+  --shadow-lg:0 20px 60px rgba(17,18,22,.1);
+  --font-sans:'Inter','Noto Sans SC',sans-serif;
+  --font-display:'Inter','Noto Sans SC',sans-serif;
+  --letter-tight:-.035em;
+}
+
+/* html-ppt :: animations */
+/* html-ppt :: animations.css
+ * Apply by adding class="anim-<name>" or data-anim="<name>".
+ * Durations are deliberately snappy; tweak --anim-dur per element.
+ */
+:root{--anim-dur:.7s;--anim-ease:cubic-bezier(.4,0,.2,1)}
+
+/* ---------- FADE DIRECTIONALS ---------- */
+@keyframes kf-fade-up{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-down{from{opacity:0;transform:translateY(-32px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-left{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-right{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+.anim-fade-up{animation:kf-fade-up var(--anim-dur) var(--anim-ease) both}
+.anim-fade-down{animation:kf-fade-down var(--anim-dur) var(--anim-ease) both}
+.anim-fade-left{animation:kf-fade-left var(--anim-dur) var(--anim-ease) both}
+.anim-fade-right{animation:kf-fade-right var(--anim-dur) var(--anim-ease) both}
+
+/* ---------- RISE / DROP / ZOOM / BLUR / GLITCH ---------- */
+@keyframes kf-rise{from{opacity:0;transform:translateY(60px) scale(.97);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes kf-drop{from{opacity:0;transform:translateY(-60px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes kf-zoom{0%{opacity:0;transform:scale(.6)}60%{transform:scale(1.04)}100%{opacity:1;transform:scale(1)}}
+@keyframes kf-blur{from{opacity:0;filter:blur(18px)}to{opacity:1;filter:none}}
+@keyframes kf-glitch{0%{opacity:0;transform:translateX(0);clip-path:inset(0 0 0 0)}
+  20%{opacity:1;transform:translateX(-6px);clip-path:inset(20% 0 30% 0)}
+  40%{transform:translateX(4px);clip-path:inset(50% 0 10% 0)}
+  60%{transform:translateX(-3px);clip-path:inset(10% 0 60% 0)}
+  80%{transform:translateX(2px);clip-path:inset(0 0 0 0)}
+  100%{opacity:1;transform:none}}
+.anim-rise-in{animation:kf-rise .9s var(--anim-ease) both}
+.anim-drop-in{animation:kf-drop .8s var(--anim-ease) both}
+.anim-zoom-pop{animation:kf-zoom .7s cubic-bezier(.22,1.3,.36,1) both}
+.anim-blur-in{animation:kf-blur .8s var(--anim-ease) both}
+.anim-glitch-in{animation:kf-glitch .8s steps(5,end) both}
+
+/* ---------- TYPEWRITER ---------- */
+.anim-typewriter{display:inline-block;overflow:hidden;white-space:nowrap;border-right:2px solid currentColor;
+  width:0;animation:kf-type 2.4s steps(40,end) forwards, kf-caret 1s step-end infinite}
+@keyframes kf-type{to{width:100%}}
+@keyframes kf-caret{50%{border-color:transparent}}
+
+/* ---------- GLOW / SHIMMER / GRADIENT-FLOW ---------- */
+@keyframes kf-neon{0%,100%{text-shadow:0 0 8px var(--accent),0 0 20px var(--accent)}
+  50%{text-shadow:0 0 16px var(--accent),0 0 40px var(--accent),0 0 80px var(--accent)}}
+.anim-neon-glow{animation:kf-neon 2s ease-in-out infinite}
+
+.anim-shimmer-sweep{position:relative;overflow:hidden}
+.anim-shimmer-sweep::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(110deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%);
+  transform:translateX(-100%);animation:kf-shimmer 2.4s var(--anim-ease) infinite}
+@keyframes kf-shimmer{to{transform:translateX(100%)}}
+
+.anim-gradient-flow{background:linear-gradient(90deg,var(--accent),var(--accent-2,var(--accent)),var(--accent-3,var(--accent)),var(--accent));
+  background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+  animation:kf-gradflow 4s linear infinite}
+@keyframes kf-gradflow{to{background-position:300% 0}}
+
+/* ---------- STAGGER LIST ---------- */
+/* Zero-specificity stagger so anim-* classes override via natural cascade */
+:where(.anim-stagger-list) > :where(*) {opacity:0;animation:kf-rise .65s var(--anim-ease) both}
+:where(.anim-stagger-list) > :where(*:nth-child(1)){animation-delay:.05s}
+:where(.anim-stagger-list) > :where(*:nth-child(2)){animation-delay:.15s}
+:where(.anim-stagger-list) > :where(*:nth-child(3)){animation-delay:.25s}
+:where(.anim-stagger-list) > :where(*:nth-child(4)){animation-delay:.35s}
+:where(.anim-stagger-list) > :where(*:nth-child(5)){animation-delay:.45s}
+:where(.anim-stagger-list) > :where(*:nth-child(6)){animation-delay:.55s}
+:where(.anim-stagger-list) > :where(*:nth-child(7)){animation-delay:.65s}
+:where(.anim-stagger-list) > :where(*:nth-child(8)){animation-delay:.75s}
+:where(.anim-stagger-list) > :where(*:nth-child(n+9)){animation-delay:.85s}
+
+/* ---------- COUNTER-UP (JS-driven, marker class only) ---------- */
+.counter{font-variant-numeric:tabular-nums}
+
+/* ---------- SVG PATH DRAW ---------- */
+.anim-path-draw path,.anim-path-draw line,.anim-path-draw polyline,.anim-path-draw circle,.anim-path-draw rect{
+  stroke-dasharray:1000;stroke-dashoffset:1000;animation:kf-draw 2s var(--anim-ease) forwards}
+@keyframes kf-draw{to{stroke-dashoffset:0}}
+
+/* ---------- PARALLAX TILT (hover) ---------- */
+.anim-parallax-tilt{transform-style:preserve-3d;transition:transform .4s var(--anim-ease)}
+.anim-parallax-tilt:hover{transform:perspective(900px) rotateX(6deg) rotateY(-8deg) translateZ(10px)}
+
+/* ---------- CARD FLIP 3D ---------- */
+@keyframes kf-flip{from{transform:perspective(1200px) rotateY(-90deg);opacity:0}
+  to{transform:perspective(1200px) rotateY(0);opacity:1}}
+.anim-card-flip-3d{animation:kf-flip .9s var(--anim-ease) both;transform-style:preserve-3d;backface-visibility:hidden}
+
+/* ---------- CUBE ROTATE 3D ---------- */
+@keyframes kf-cube{from{transform:perspective(1200px) rotateX(20deg) rotateY(-90deg) translateZ(-200px);opacity:0}
+  to{transform:perspective(1200px) rotateX(0) rotateY(0) translateZ(0);opacity:1}}
+.anim-cube-rotate-3d{animation:kf-cube 1s var(--anim-ease) both}
+
+/* ---------- PAGE TURN 3D ---------- */
+@keyframes kf-pageturn{from{transform:perspective(1600px) rotateY(-85deg);transform-origin:left center;opacity:0}
+  to{transform:perspective(1600px) rotateY(0);opacity:1}}
+.anim-page-turn-3d{animation:kf-pageturn 1s var(--anim-ease) both;transform-origin:left center}
+
+/* ---------- PERSPECTIVE ZOOM ---------- */
+@keyframes kf-pzoom{from{opacity:0;transform:perspective(1400px) translateZ(-400px) rotateX(12deg)}
+  to{opacity:1;transform:none}}
+.anim-perspective-zoom{animation:kf-pzoom 1s var(--anim-ease) both}
+
+/* ---------- MARQUEE SCROLL ---------- */
+.anim-marquee-scroll{display:flex;gap:48px;white-space:nowrap;animation:kf-marquee 20s linear infinite}
+@keyframes kf-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- KEN BURNS ---------- */
+@keyframes kf-kenburns{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.15) translate(-2%,-1%)}}
+.anim-kenburns{animation:kf-kenburns 14s ease-in-out infinite alternate}
+
+/* ---------- CONFETTI BURST (pseudo — pure CSS sparkles) ---------- */
+.anim-confetti-burst{position:relative}
+.anim-confetti-burst::before,.anim-confetti-burst::after{
+  content:"";position:absolute;top:50%;left:50%;width:8px;height:8px;border-radius:50%;
+  background:var(--accent);box-shadow:
+    20px -30px 0 var(--accent-2,var(--accent)),-25px -20px 0 var(--accent-3,var(--accent)),
+    30px 20px 0 var(--good,#1aaf6c),-30px 25px 0 var(--warn,#f5a524),
+    40px -10px 0 var(--bad,#e0445a),-45px 0 0 var(--accent),
+    10px 40px 0 var(--accent-2,var(--accent)),-15px -40px 0 var(--accent-3,var(--accent));
+  opacity:0;animation:kf-confetti 1.2s var(--anim-ease) forwards}
+.anim-confetti-burst::after{animation-delay:.15s;transform:rotate(45deg)}
+@keyframes kf-confetti{0%{opacity:0;transform:scale(.2)}30%{opacity:1}100%{opacity:0;transform:scale(2.2)}}
+
+/* ---------- SPOTLIGHT ---------- */
+@keyframes kf-spot{0%{clip-path:circle(0% at 50% 50%)}100%{clip-path:circle(140% at 50% 50%)}}
+.anim-spotlight{animation:kf-spot 1.1s var(--anim-ease) both}
+
+/* ---------- MORPH SHAPE (SVG) ---------- */
+.anim-morph-shape path{animation:kf-morph 6s ease-in-out infinite alternate}
+@keyframes kf-morph{0%{d:path("M60,120 Q120,20 180,120 T300,120")}
+  100%{d:path("M60,120 Q120,220 180,120 T300,120")}}
+
+/* ---------- RIPPLE REVEAL ---------- */
+@keyframes kf-ripple{0%{clip-path:circle(0% at 20% 80%);opacity:.4}
+  100%{clip-path:circle(160% at 20% 80%);opacity:1}}
+.anim-ripple-reveal{animation:kf-ripple 1.2s var(--anim-ease) both}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+  [class*="anim-"]{animation:none!important;transition:none!important}
+}
+
+/* slide-section styles */
+.slide-section{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--bg-soft)}
+.slide-section .section-number{font-size:14px;font-weight:600;color:var(--text-3);letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.slide-section .divider-accent{height:3px;width:72px;background:var(--accent);border-radius:2px;margin:24px auto}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.comp-col{padding:20px 24px;border-radius:var(--radius-sm)}
+.comp-col.good{background:color-mix(in srgb,var(--good) 8%,var(--surface-2));border:1px solid color-mix(in srgb,var(--good) 20%,var(--border))}
+.comp-col.bad{background:color-mix(in srgb,var(--bad) 8%,var(--surface-2));border:1px solid color-mix(in srgb,var(--bad) 20%,var(--border))}
+.prophecy-card{border-left:3px solid var(--accent);padding:16px 20px;margin:10px 0;background:var(--surface-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+.prophecy-card .ref{font-size:12px;font-weight:600;color:var(--text-3);letter-spacing:.08em;text-transform:uppercase}
+.fail-card{background:color-mix(in srgb,var(--bad) 6%,var(--surface));border:1px solid color-mix(in srgb,var(--bad) 15%,var(--border));border-radius:var(--radius-sm);padding:16px 20px;margin:8px 0}
+.fail-card .ref{font-size:12px;font-weight:600;color:var(--text-3);letter-spacing:.08em;text-transform:uppercase}
+.version-badge{position:absolute;top:20px;right:20px;font-size:14px;color:#999;font-family:monospace;z-index:5}
+</style>
+</head>
+<body>
+
+<div id="stage">
+  <div class="pcard pcard-preview" id="card-cur" style="--dot-color:#58a6ff">
+    <div class="pcard-head" data-drag>
+      <span class="pcard-dot"></span>
+      <span class="pcard-title">CURRENT</span>
+      <span class="pcard-meta" id="cur-meta">—</span>
+    </div>
+    <div class="pcard-body"><iframe id="iframe-cur"></iframe></div>
+    <div class="pcard-resize" data-resize></div>
+  </div>
+
+  <div class="pcard pcard-preview" id="card-nxt" style="--dot-color:#bc8cff">
+    <div class="pcard-head" data-drag>
+      <span class="pcard-dot"></span>
+      <span class="pcard-title">NEXT</span>
+      <span class="pcard-meta" id="nxt-meta">—</span>
+    </div>
+    <div class="pcard-body"><iframe id="iframe-nxt"></iframe></div>
+    <div class="pcard-resize" data-resize></div>
+  </div>
+
+  <div class="pcard pcard-notes" id="card-notes" style="--dot-color:#f0883e">
+    <div class="pcard-head" data-drag>
+      <span class="pcard-dot"></span>
+      <span class="pcard-title">SPEAKER SCRIPT · 逐字稿</span>
+    </div>
+    <div class="pcard-body" id="notes-body"></div>
+    <div class="pcard-resize" data-resize></div>
+  </div>
+
+  <div class="pcard pcard-timer" id="card-timer" style="--dot-color:#3fb950">
+    <div class="pcard-head" data-drag>
+      <span class="pcard-dot"></span>
+      <span class="pcard-title">TIMER</span>
+    </div>
+    <div class="pcard-body">
+      <div class="timer-display" id="timer-display">00:00</div>
+      <div class="timer-row">
+        <span class="label">Slide</span>
+        <span class="val" id="timer-count">1 / ${total}</span>
+      </div>
+      <div class="timer-controls">
+        <button class="timer-btn" id="btn-prev">← Prev</button>
+        <button class="timer-btn" id="btn-next">Next →</button>
+        <button class="timer-btn" id="btn-reset">⏱ Reset</button>
+      </div>
+    </div>
+    <div class="pcard-resize" data-resize></div>
+  </div>
+</div>
+
+<div class="hint-bar">
+  <span><kbd>← →</kbd> 翻页</span>
+  <span><kbd>R</kbd> 重置计时</span>
+  <span><kbd>Esc</kbd> 关闭</span>
+  <span style="color:#6e7681">拖动卡片头部移动 · 拖动右下角调整大小</span>
+  <button class="reset-layout" id="reset-layout">重置布局</button>
+</div>
+
+<script>
+(function(){
+  var slideMeta = ${metaJSON};
+  var total = ${total};
+  var idx = ${startIdx};
+  var deckUrl = ${deckUrlJSON};
+  var STORAGE_KEY = ${JSON.stringify(storageKey)};
+  var bc;
+  try { bc = new BroadcastChannel(${channelJSON}); } catch(e) {}
+
+  var iframeCur = document.getElementById('iframe-cur');
+  var iframeNxt = document.getElementById('iframe-nxt');
+  var notesBody = document.getElementById('notes-body');
+  var curMeta = document.getElementById('cur-meta');
+  var nxtMeta = document.getElementById('nxt-meta');
+  var timerDisplay = document.getElementById('timer-display');
+  var timerCount = document.getElementById('timer-count');
+
+  /* ===== Default card layout ===== */
+  function defaultLayout() {
+    var w = window.innerWidth;
+    var h = window.innerHeight - 36; /* leave room for hint bar */
+    return {
+      'card-cur':   { x: 16,        y: 16,            w: Math.round(w*0.55) - 24, h: Math.round(h*0.62) - 16 },
+      'card-nxt':   { x: Math.round(w*0.55) + 8, y: 16, w: w - Math.round(w*0.55) - 24, h: Math.round(h*0.42) - 16 },
+      'card-notes': { x: Math.round(w*0.55) + 8, y: Math.round(h*0.42) + 8, w: w - Math.round(w*0.55) - 24, h: h - Math.round(h*0.42) - 16 },
+      'card-timer': { x: 16,        y: Math.round(h*0.62) + 8, w: Math.round(w*0.55) - 24, h: h - Math.round(h*0.62) - 16 }
+    };
+  }
+
+  /* ===== Apply / save / restore layout ===== */
+  function applyLayout(layout) {
+    Object.keys(layout).forEach(function(id){
+      var el = document.getElementById(id);
+      var l = layout[id];
+      if (el && l) {
+        el.style.left = l.x + 'px';
+        el.style.top = l.y + 'px';
+        el.style.width = l.w + 'px';
+        el.style.height = l.h + 'px';
+      }
+    });
+    rescaleAll();
+  }
+  function readLayout() {
+    try {
+      var saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) return JSON.parse(saved);
+    } catch(e) {}
+    return defaultLayout();
+  }
+  function saveLayout() {
+    var layout = {};
+    ['card-cur','card-nxt','card-notes','card-timer'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) {
+        layout[id] = {
+          x: parseInt(el.style.left,10) || 0,
+          y: parseInt(el.style.top,10) || 0,
+          w: parseInt(el.style.width,10) || 300,
+          h: parseInt(el.style.height,10) || 200
+        };
+      }
+    });
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(layout)); } catch(e) {}
+  }
+
+  /* ===== iframe rescale to fit card body ===== */
+  function rescaleIframe(iframe) {
+    if (!iframe || iframe.style.display === 'none') return;
+    var body = iframe.parentElement;
+    var cw = body.clientWidth, ch = body.clientHeight;
+    if (!cw || !ch) return;
+    var s = Math.min(cw / 1920, ch / 1080);
+    iframe.style.transform = 'scale(' + s + ')';
+    /* Center the scaled iframe in the body */
+    var sw = 1920 * s, sh = 1080 * s;
+    iframe.style.left = Math.max(0, (cw - sw) / 2) + 'px';
+    iframe.style.top = Math.max(0, (ch - sh) / 2) + 'px';
+  }
+  function rescaleAll() {
+    rescaleIframe(iframeCur);
+    rescaleIframe(iframeNxt);
+  }
+  window.addEventListener('resize', rescaleAll);
+
+  /* ===== Drag (move card by header) ===== */
+  document.querySelectorAll('[data-drag]').forEach(function(handle){
+    handle.addEventListener('mousedown', function(e){
+      if (e.button !== 0) return;
+      var card = handle.closest('.pcard');
+      if (!card) return;
+      e.preventDefault();
+      card.classList.add('dragging');
+      document.body.classList.add('is-dragging-card');
+      var startX = e.clientX, startY = e.clientY;
+      var startL = parseInt(card.style.left,10) || 0;
+      var startT = parseInt(card.style.top,10)  || 0;
+      function onMove(ev){
+        var nx = Math.max(0, Math.min(window.innerWidth - 100, startL + ev.clientX - startX));
+        var ny = Math.max(0, Math.min(window.innerHeight - 50, startT + ev.clientY - startY));
+        card.style.left = nx + 'px';
+        card.style.top = ny + 'px';
+      }
+      function onUp(){
+        card.classList.remove('dragging');
+        document.body.classList.remove('is-dragging-card');
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', onUp);
+        saveLayout();
+      }
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('mouseup', onUp);
+    });
+  });
+
+  /* ===== Resize (drag bottom-right corner) ===== */
+  document.querySelectorAll('[data-resize]').forEach(function(handle){
+    handle.addEventListener('mousedown', function(e){
+      if (e.button !== 0) return;
+      var card = handle.closest('.pcard');
+      if (!card) return;
+      e.preventDefault(); e.stopPropagation();
+      card.classList.add('resizing');
+      document.body.classList.add('is-dragging-card');
+      var startX = e.clientX, startY = e.clientY;
+      var startW = parseInt(card.style.width,10)  || card.offsetWidth;
+      var startH = parseInt(card.style.height,10) || card.offsetHeight;
+      function onMove(ev){
+        var nw = Math.max(180, startW + ev.clientX - startX);
+        var nh = Math.max(100, startH + ev.clientY - startY);
+        card.style.width = nw + 'px';
+        card.style.height = nh + 'px';
+        if (card.querySelector('iframe')) rescaleIframe(card.querySelector('iframe'));
+      }
+      function onUp(){
+        card.classList.remove('resizing');
+        document.body.classList.remove('is-dragging-card');
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', onUp);
+        rescaleAll();
+        saveLayout();
+      }
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('mouseup', onUp);
+    });
+  });
+
+  /* ===== Preview iframe ready tracking =====
+   * Each iframe loads the deck ONCE with ?preview=1 on init. Subsequent
+   * slide changes are sent via postMessage('preview-goto') so the iframe
+   * just toggles visibility of a different .slide — no reload, no flicker.
+   */
+  var iframeReady = { cur: false, nxt: false };
+  var currentTheme = ${themeJSON};
+  window.addEventListener('message', function(e) {
+    if (!e.data || e.data.type !== 'preview-ready') return;
+    var iframe = null;
+    if (e.source === iframeCur.contentWindow) {
+      iframeReady.cur = true;
+      iframe = iframeCur;
+      postPreviewGoto(iframeCur, idx);
+    } else if (e.source === iframeNxt.contentWindow) {
+      iframeReady.nxt = true;
+      iframe = iframeNxt;
+      postPreviewGoto(iframeNxt, idx + 1 < total ? idx + 1 : idx);
+    }
+    /* Sync current theme to the iframe */
+    if (iframe && currentTheme) {
+      try { iframe.contentWindow.postMessage({ type: 'preview-theme', name: currentTheme }, '*'); } catch(err) {}
+    }
+    if (iframe) rescaleIframe(iframe);
+  });
+
+  function postPreviewGoto(iframe, n) {
+    try {
+      iframe.contentWindow.postMessage({ type: 'preview-goto', idx: n }, '*');
+    } catch(e) {}
+  }
+
+  /* ===== Update content =====
+   * Smooth (no-reload) navigation: send postMessage to iframes instead of
+   * resetting src. Iframes stay loaded, just switch visible .slide.
+   */
+  function update(n) {
+    n = Math.max(0, Math.min(total - 1, n));
+    idx = n;
+
+    /* Current preview — postMessage (smooth) */
+    if (iframeReady.cur) postPreviewGoto(iframeCur, n);
+    curMeta.textContent = (n + 1) + '/' + total;
+
+    /* Next preview */
+    if (n + 1 < total) {
+      iframeNxt.style.display = '';
+      var endEl = document.querySelector('#card-nxt .preview-end');
+      if (endEl) endEl.remove();
+      if (iframeReady.nxt) postPreviewGoto(iframeNxt, n + 1);
+      nxtMeta.textContent = (n + 2) + '/' + total;
+    } else {
+      iframeNxt.style.display = 'none';
+      var body = document.querySelector('#card-nxt .pcard-body');
+      if (body && !body.querySelector('.preview-end')) {
+        var end = document.createElement('div');
+        end.className = 'preview-end';
+        end.textContent = '— END OF DECK —';
+        body.appendChild(end);
+      }
+      nxtMeta.textContent = 'END';
+    }
+
+    /* Notes */
+    var note = slideMeta[n].notes;
+    notesBody.innerHTML = note || '<span class="empty">（这一页还没有逐字稿）</span>';
+
+    /* Timer count */
+    timerCount.textContent = (n + 1) + ' / ' + total;
+  }
+
+  /* ===== Timer ===== */
+  var tStart = Date.now();
+  setInterval(function(){
+    var s = Math.floor((Date.now() - tStart) / 1000);
+    var mm = String(Math.floor(s/60)).padStart(2,'0');
+    var ss = String(s%60).padStart(2,'0');
+    timerDisplay.textContent = mm + ':' + ss;
+  }, 1000);
+  function resetTimer(){ tStart = Date.now(); timerDisplay.textContent = '00:00'; }
+
+  /* ===== BroadcastChannel sync ===== */
+  if (bc) {
+    bc.onmessage = function(e){
+      if (!e.data) return;
+      if (e.data.type === 'go') update(e.data.idx);
+      else if (e.data.type === 'theme' && e.data.name) {
+        currentTheme = e.data.name;
+        /* Forward theme change to preview iframes */
+        [iframeCur, iframeNxt].forEach(function(iframe){
+          try {
+            iframe.contentWindow.postMessage({ type: 'preview-theme', name: e.data.name }, '*');
+          } catch(err) {}
+        });
+      }
+    };
+  }
+  function go(n) {
+    update(n);
+    if (bc) bc.postMessage({ type: 'go', idx: idx });
+  }
+
+  /* ===== Buttons ===== */
+  document.getElementById('btn-prev').addEventListener('click', function(){ go(idx - 1); });
+  document.getElementById('btn-next').addEventListener('click', function(){ go(idx + 1); });
+  document.getElementById('btn-reset').addEventListener('click', resetTimer);
+  document.getElementById('reset-layout').addEventListener('click', function(){
+    if (confirm('恢复默认卡片布局？')) {
+      try { localStorage.removeItem(STORAGE_KEY); } catch(e){}
+      applyLayout(defaultLayout());
+    }
+  });
+
+  /* ===== Keyboard ===== */
+  document.addEventListener('keydown', function(e){
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    switch(e.key) {
+      case 'ArrowRight': case ' ': case 'PageDown': go(idx + 1); e.preventDefault(); break;
+      case 'ArrowLeft':  case 'PageUp':   go(idx - 1); e.preventDefault(); break;
+      case 'Home': go(0); break;
+      case 'End':  go(total - 1); break;
+      case 'r': case 'R': resetTimer(); break;
+      case 'Escape': window.close(); break;
+    }
+  });
+
+  /* ===== Iframe load → rescale (catches initial size) ===== */
+  iframeCur.addEventListener('load', function(){ rescaleIframe(iframeCur); });
+  iframeNxt.addEventListener('load', function(){ rescaleIframe(iframeNxt); });
+
+  /* ===== Init =====
+   * Load each iframe ONCE with the deck file. After they post
+   * 'preview-ready', all subsequent navigation is via postMessage
+   * (smooth, no reload, no flicker).
+   */
+  applyLayout(readLayout());
+  iframeCur.src = deckUrl + '?preview=' + (idx + 1);
+  if (idx + 1 < total) iframeNxt.src = deckUrl + '?preview=' + (idx + 2);
+  /* Initialize notes/timer/count without touching iframes */
+  notesBody.innerHTML = slideMeta[idx].notes || '<span class="empty">（这一页还没有逐字稿）</span>';
+  curMeta.textContent = (idx + 1) + '/' + total;
+  nxtMeta.textContent = (idx + 2) + '/' + total;
+  timerCount.textContent = (idx + 1) + ' / ' + total;
+})();
+</` + `script>
+</body></html>`;
+    }
+
+    function fullscreen(){ const el=document.documentElement;
+      if (!document.fullscreenElement) el.requestFullscreen&&el.requestFullscreen();
+      else document.exitFullscreen&&document.exitFullscreen();
+    }
+
+    // theme cycling
+    const root = document.documentElement;
+    const themesAttr = root.getAttribute('data-themes') || document.body.getAttribute('data-themes');
+    const themes = themesAttr ? themesAttr.split(',').map(s=>s.trim()).filter(Boolean) : [];
+    let themeIdx = 0;
+
+    // Auto-detect theme base path from existing <link id="theme-link">
+    let themeBase = root.getAttribute('data-theme-base');
+    if (!themeBase) {
+      const existingLink = document.getElementById('theme-link');
+      if (existingLink) {
+        // el.getAttribute('href') gives the raw relative path written in HTML
+        const rawHref = existingLink.getAttribute('href') || '';
+        const lastSlash = rawHref.lastIndexOf('/');
+        themeBase = lastSlash >= 0 ? rawHref.substring(0, lastSlash + 1) : 'assets/themes/';
+      } else {
+        themeBase = 'assets/themes/';
+      }
+    }
+
+    function applyTheme(name) {
+      let link = document.getElementById('theme-link');
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.id = 'theme-link';
+        document.head.appendChild(link);
+      }
+      link.href = themeBase + name + '.css';
+      root.setAttribute('data-theme', name);
+      const ind = document.querySelector('.theme-indicator');
+      if (ind) ind.textContent = name;
+    }
+    function cycleTheme(fromRemote){
+      if (!themes.length) return;
+      themeIdx = (themeIdx+1) % themes.length;
+      const name = themes[themeIdx];
+      applyTheme(name);
+      /* Broadcast to other window (audience ↔ presenter) */
+      if (!fromRemote && bc) bc.postMessage({ type: 'theme', name: name });
+    }
+
+    // animation cycling on current slide
+    let animIdx = 0;
+    function cycleAnim(){
+      animIdx = (animIdx+1) % ANIMS.length;
+      const a = ANIMS[animIdx];
+      const target = slides[idx].querySelector('[data-anim-target]') || slides[idx];
+      ANIMS.forEach(x => target.classList.remove('anim-'+x));
+      void target.offsetWidth;
+      target.classList.add('anim-'+a);
+      target.setAttribute('data-anim', a);
+      const ind = document.querySelector('.anim-indicator');
+      if (ind) ind.textContent = a;
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.metaKey||e.ctrlKey||e.altKey) return;
+      switch (e.key) {
+        case 'ArrowRight': case ' ': case 'PageDown': case 'Enter': go(idx+1); e.preventDefault(); break;
+        case 'ArrowLeft': case 'PageUp': case 'Backspace': go(idx-1); e.preventDefault(); break;
+        case 'Home': go(0); break;
+        case 'End': go(total-1); break;
+        case 'f': case 'F': fullscreen(); break;
+        case 's': case 'S': openPresenterWindow(); break;
+        case 'n': case 'N': toggleNotes(); break;
+        case 'o': case 'O': toggleOverview(); break;
+        case 't': case 'T': cycleTheme(); break;
+        case 'a': case 'A': cycleAnim(); break;
+        case 'Escape': toggleOverview(false); toggleNotes(false); break;
+      }
+    });
+
+    // hash deep-link
+    function fromHash(){
+      const m = /^#\/(\d+)/.exec(location.hash||'');
+      if (m) go(Math.max(0, parseInt(m[1],10)-1));
+    }
+    window.addEventListener('hashchange', fromHash);
+    fromHash();
+    go(idx);
+  });
+})();
+
+</script>
+</body></html>
