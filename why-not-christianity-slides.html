@@ -104,6 +104,9 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 .g2{grid-template-columns:repeat(2,1fr)}
 .g3{grid-template-columns:repeat(3,1fr)}
 .g4{grid-template-columns:repeat(4,1fr)}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g6{grid-template-columns:repeat(6,1fr)}
+.g2asym{grid-template-columns:1fr 2fr}
 .center{display:flex;align-items:center;justify-content:center;text-align:center}
 .fill{flex:1}
 .sp-t{padding-top:24px}.sp-b{padding-bottom:24px}
@@ -167,13 +170,14 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 
 /* ====== TABLET / MOBILE ====== */
 @media (max-width: 1024px){
-  .slide{padding:40px 32px;overflow-y:auto}
+  .slide{padding:40px 32px;overflow-y:auto;justify-content:flex-start}
   h1.title,.h1{font-size:40px}
   h2.title,.h2{font-size:30px}
   h3,.h3{font-size:22px}
   h4,.h4{font-size:18px}
   .lede{font-size:16px;line-height:1.5}
-  .g2,.g3,.g4{grid-template-columns:1fr}
+  .g2,.g3,.g4,.g5,.g6{grid-template-columns:1fr}
+  .g2asym{grid-template-columns:1fr}
   .card{padding:16px 18px}
   .kicker{font-size:11px}
   .eyebrow{font-size:11px}
@@ -184,7 +188,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   h1.title,.h1{font-size:34px}
   h2.title,.h2{font-size:26px}
   .g2{grid-template-columns:repeat(2,1fr)}
-  .g3,.g4{grid-template-columns:repeat(2,1fr)}
+  .g3,.g4,.g5,.g6{grid-template-columns:repeat(2,1fr)}
+  .g2asym{grid-template-columns:1fr 2fr}
 }
 /* ================= PRINT ================= */
 @media print{
@@ -379,7 +384,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- COVER                          -->
   <!-- ============================== -->
   <section class="slide" data-title="Cover">
-    <div class="version-badge" data-deploy="2026-06-01T15:30:00Z">v48 · 2026-06-04 18:38 SGT</div>
+    <div class="version-badge" data-deploy="2026-06-01T15:30:00Z">v52 · 2026-06-04 18:46 SGT</div>
     <div class="anim-stagger-list">
       <p class="kicker">A Reasoned Examination</p>
       <h1 class="h1" style="opacity:1!important;color:var(--text-1);font-size:72px;font-weight:700;line-height:1.1;margin:0 0 16px;letter-spacing:-1px;text-shadow:0 2px 8px rgba(0,0,0,0.3)">
@@ -452,7 +457,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Ground Rules</p>
     <h2 class="h2">Six Lines of Evidence</h2>
     <p class="lede mb-l">We'll evaluate Christianity on six independent lines of evidence. Each stands on its own; together they form a cumulative case.</p>
-    <div class="grid anim-stagger-list" style="grid-template-columns:repeat(3,1fr);gap:16px" data-anim-target>
+    <div class="grid g3 anim-stagger-list" style="gap:16px" data-anim-target>
       <div class="card card-accent tc" style="padding:20px 16px">
         <h3 style="font-size:28px;">🔬</h3>
         <h4>Scientific</h4>
@@ -544,7 +549,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Scientific · Geology</p>
     <h2 class="h2">Age of the Earth: Why Not 6,000 Years?</h2>
     <p class="lede mb-l">A direct contradiction between scripture and every dating method.</p>
-    <div class="grid" style="grid-template-columns:1fr 2fr;gap:16px;align-items:stretch">
+    <div class="grid g2asym" style="gap:16px;align-items:stretch">
       <div class="card" style="border-top:3px solid var(--bad);padding:18px 16px;display:flex;flex-direction:column">
         <h4>The Claim</h4>
         <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Adding up Genesis genealogies yields a specific age for the Earth. Archbishop James Ussher calculated <b>4004 BCE</b> for creation (~<b>6,000 years</b> ago). The Septuagint gives a slightly older figure of <b>~10,000 years</b>. Either way, the Bible places the Earth at thousands of years old — a specific, testable claim grounded in the plain reading of the text.</p>
@@ -614,7 +619,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Scientific · Evolution</p>
     <h2 class="h2">Origin of Humankind: The Evidence for Common Descent</h2>
     <p class="lede mb-l">Did humans evolve from apes? The evidence says yes &mdash; overwhelmingly so, across fossils, genetics, and population biology.</p>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:start">
+    <div class="grid g3" style="gap:10px;align-items:start">
       <div class="card card-soft anim-fade-up" data-anim="fade-up" style="padding:10px 14px;border-left:3px solid var(--accent)">
         <h4 style="font-size:14px;margin-bottom:3px">The Fossil Record</h4>
         <p class="dim" style="font-size:13px;line-height:1.5;margin:0">The hominin sequence is one of the best-documented transitions in paleontology: <b>Sahelanthropus</b> (7 mya) → <b>Australopithecus</b> (&ldquo;Lucy&rdquo;) → <b>Homo habilis</b> (tools) → <b>Homo erectus</b> (fire) → <b>Neanderthals</b> → <b>Homo sapiens</b>. The lineage is gradual and precisely dated. No gaps, no missing links.</p>
@@ -635,7 +640,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Scientific · Evolution</p>
     <h2 class="h2">The Genetic Evidence: We Are Apes</h2>
     <p class="lede mb-l">Our DNA confirms what the fossils suggest — we share a common ancestor with the great apes.</p>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:start">
+    <div class="grid g3" style="gap:10px;align-items:start">
       <div class="card card-soft anim-fade-up" data-anim="fade-up" style="padding:10px 14px;border-left:3px solid var(--accent)">
         <h4 style="font-size:14px;margin-bottom:3px">Shared Broken Genes</h4>
         <p class="dim" style="font-size:13px;line-height:1.5;margin:0">The GULO gene (vitamin C production) is broken identically in humans, chimps, gorillas, and orangutans by the same mutation. Over 200 processed pseudogenes are shared at identical genomic positions. These are genetic fossils — broken in the same way in the same places. An intelligent designer has no reason to copy non-functional DNA.</p>
@@ -660,7 +665,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">What Science Actually Shows</h2>
     <p class="lede mb-l">Four Christian claims, four scientific findings — and what it means for theology.</p>
 
-    <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;align-items:start">
+    <div class="grid g2" style="gap:12px;margin-bottom:14px;align-items:start">
       <div class="card" style="border-top:3px solid var(--bad);padding:14px 16px">
         <h4 style="font-size:14px;margin-bottom:8px;color:var(--bad)">✗ The Christian Prediction</h4>
         <ul style="margin:0;padding-left:18px;line-height:1.8;color:var(--text-2);font-size:13px">
@@ -790,7 +795,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="dim" style="font-size:13px;line-height:1.5;margin:0"><b>The biblical claim:</b> Joshua's army crosses the Jordan, destroys Jericho as its walls fall, and conquers Canaan city by city, wiping out entire populations as God commanded. A swift, total, divinely ordained conquest.</p>
     </div>
 
-    <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px;align-items:start">
+    <div class="grid g2" style="gap:12px;align-items:start">
       <div class="fail-card" style="margin:0;padding:12px 14px">
         <span class="ref">Jericho</span>
         <p class="dim" style="font-size:13px;line-height:1.5;margin:4px 0 0 0">Excavated by Kathleen Kenyon. Destroyed around <b>1550 BCE</b> — <b>300 years before</b> the biblical date (~1200 BCE). By 1200 BCE it was a small, unfortified settlement or uninhabited.</p>
@@ -819,7 +824,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Historical · Summary</p>
     <h2 class="h2">What the Evidence Shows</h2>
     <p class="lede" style="margin-bottom:10px">The pattern is consistent and devastating.</p>
-    <div class="grid anim-stagger-list" style="grid-template-columns:repeat(3,1fr);gap:12px;align-items:start" data-anim-target>
+    <div class="grid g3 anim-stagger-list" style="gap:12px;align-items:start" data-anim-target>
       <div class="card card-soft" style="padding:12px 14px;border-top:3px solid var(--bad);display:flex;flex-direction:column">
         <h4 style="font-size:14px;margin-bottom:6px">🌊 Noah&rsquo;s Flood</h4>
         <p class="dim" style="font-size:13px;line-height:1.5;margin:0;flex:1">No geological evidence for a global flood in the last 6,000 years. Ice cores show 100,000+ years of uninterrupted annual layers. The story derives from older Mesopotamian flood myths.</p>
@@ -1060,7 +1065,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Jesus · Summary</p>
     <h2 class="h2">The Verdict on Jesus</h2>
     <p class="lede" style="margin-bottom:10px">Three independent lines of evidence — three consistent results.</p>
-    <div class="grid anim-stagger-list" style="grid-template-columns:repeat(3,1fr);gap:12px;align-items:start" data-anim-target>
+    <div class="grid g3 anim-stagger-list" style="gap:12px;align-items:start" data-anim-target>
       <div class="card card-soft" style="padding:12px 14px;border-top:3px solid var(--bad);display:flex;flex-direction:column">
         <h4 style="font-size:14px;margin-bottom:6px">✝️ The Resurrection</h4>
         <p class="dim" style="font-size:13px;line-height:1.5;margin:0;flex:1">No contemporary corroboration. Four contradictory Gospel accounts written decades later by anonymous authors. Paul&rsquo;s earlier account mentions only visions, not an empty tomb. Natural explanations are more parsimonious than a violation of every known law of nature.</p>
@@ -1230,7 +1235,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <section class="slide" data-title="Moral Summary">
     <p class="kicker">Moral · Summary</p>
     <h2 class="h2">The Moral Landscape</h2>
-    <div class="pc" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px">
+    <div class="pc g2" style="gap:28px;margin-top:30px">
       <div class="card pro anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--good)">
         <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)">✓</span> For Christianity</h3>
         <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
@@ -1364,7 +1369,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <section class="slide" data-title="Bible Summary">
     <p class="kicker">Bible · Summary</p>
     <h2 class="h2">The Bible as a Human Book</h2>
-    <div class="pc" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px">
+    <div class="pc g2" style="gap:28px;margin-top:30px">
       <div class="card pro anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--good)">
         <h3 style="display:flex;align-items:center;gap:10px"><span class="b" style="display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)">✓</span> If Divinely Inspired</h3>
         <ul style="padding-left:22px;line-height:1.8;color:var(--text-2)">
@@ -1607,7 +1612,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Conclusion</p>
     <h2 class="h2">The Cumulative Case</h2>
     <p class="lede mb-l">The verdict across all six areas is devastating for a literal, inerrant Christianity. No single argument is a knockout &mdash; but together, they form an overwhelming picture.</p>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:10px;align-items:stretch">
+    <div class="grid g3" style="gap:12px;margin-bottom:10px;align-items:stretch">
       <div class="card card-soft" style="padding:14px 14px;display:flex;flex-direction:column;border-top:3px solid var(--bad)">
         <h4 style="font-size:14px;margin-bottom:6px">🔬 Science</h4>
         <p class="dim" style="flex:1;font-size:12px;line-height:1.5;margin:0 0 8px">God of the gaps, fine-tuning, Adam &amp; Eve, Noah&rsquo;s flood, age of Earth, evolution (fossils, ERVs, GULO, atavisms). Every line of evidence contradicts a literal Genesis.</p>
@@ -1624,7 +1629,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         <div class="pi" style="font-size:11px;line-height:1.4;color:var(--bad);border-top:1px solid color-mix(in srgb,var(--bad) 40%,transparent);padding-top:6px"><b>Verdict:</b> The New Testament's claims about Jesus are not supported by reliable evidence.</div>
       </div>
     </div>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:10px;align-items:stretch">
+    <div class="grid g3" style="gap:12px;margin-bottom:10px;align-items:stretch">
       <div class="card card-soft" style="padding:14px 14px;display:flex;flex-direction:column;border-top:3px solid var(--bad)">
         <h4 style="font-size:14px;margin-bottom:6px">⚖️ Moral</h4>
         <p class="dim" style="flex:1;font-size:12px;line-height:1.5;margin:0 0 8px">OT morality endorses slavery, genocide, and misogyny; hell doctrines eternal punishment for finite sins; original sin makes people guilty before birth.</p>
@@ -1648,7 +1653,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Conclusion · The Verdict</p>
     <h2 class="h2">The Implication</h2>
     <p class="lede mb-l">Six independent lines of evidence, six consistent verdicts.</p>
-    <div class="grid" style="grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:16px;align-items:stretch">
+    <div class="grid g6" style="gap:10px;margin-bottom:16px;align-items:stretch">
       <div class="card" style="padding:10px 10px;display:flex;flex-direction:column;border-left:4px solid var(--bad)">
         <p class="dim" style="font-size:12px;line-height:1.5;margin:0"><b>🔬 Scientific:</b> The biblical creation story is scientifically false.</p>
       </div>
@@ -1790,7 +1795,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Evolution · Paleontology</p>
     <h2 class="h2">Walking Whales: A Prediction Confirmed</h2>
     <p class="lede" style="margin-bottom:10px">The most complete transitional sequence in the fossil record.</p>
-    <div class="grid anim-stagger-list" style="grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:10px" data-anim-target>
+    <div class="grid g5 anim-stagger-list" style="gap:8px;margin-bottom:10px" data-anim-target>
       <div class="card card-soft tc" style="padding:8px 6px;border-bottom:3px solid var(--accent)">
         <p class="dim" style="font-size:10px;font-weight:600;margin:0 0 2px;color:var(--text-3)">50 mya</p>
         <h4 style="font-size:12px;margin:0 0 2px">🐺 Pakicetus</h4>
@@ -1876,7 +1881,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker" style="margin-bottom:4px">Evolution · Anatomy</p>
     <h2 class="h2" style="margin-bottom:8px">Bad Design: The Signature of Evolution</h2>
     <p class="lede" style="margin-bottom:12px">An intelligent designer wouldn&rsquo;t do any of this. Evolution explains every one.</p>
-    <div class="grid anim-stagger-list" style="grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:10px" data-anim-target>
+    <div class="grid g3 anim-stagger-list" style="gap:12px;margin-bottom:10px" data-anim-target>
       <div class="card card-soft" style="padding:14px 14px 12px;border-top:3px solid var(--accent)">
         <h4 style="font-size:14px;margin-bottom:6px">🦒 Recurrent Laryngeal Nerve</h4>
         <p class="dim" style="font-size:12px;line-height:1.5;margin:0">Takes a <b>4.5-meter detour</b> down the giraffe&rsquo;s neck, around the aorta, and back up. In fish it takes a short, direct path. As necks lengthened in evolution, the nerve was trapped behind the aorta.</p>
@@ -2721,6 +2726,9 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 .g2{grid-template-columns:repeat(2,1fr)}
 .g3{grid-template-columns:repeat(3,1fr)}
 .g4{grid-template-columns:repeat(4,1fr)}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g6{grid-template-columns:repeat(6,1fr)}
+.g2asym{grid-template-columns:1fr 2fr}
 .center{display:flex;align-items:center;justify-content:center;text-align:center}
 .fill{flex:1}
 .sp-t{padding-top:24px}.sp-b{padding-bottom:24px}
@@ -2784,13 +2792,14 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 
 /* ====== TABLET / MOBILE ====== */
 @media (max-width: 1024px){
-  .slide{padding:40px 32px;overflow-y:auto}
+  .slide{padding:40px 32px;overflow-y:auto;justify-content:flex-start}
   h1.title,.h1{font-size:40px}
   h2.title,.h2{font-size:30px}
   h3,.h3{font-size:22px}
   h4,.h4{font-size:18px}
   .lede{font-size:16px;line-height:1.5}
-  .g2,.g3,.g4{grid-template-columns:1fr}
+  .g2,.g3,.g4,.g5,.g6{grid-template-columns:1fr}
+  .g2asym{grid-template-columns:1fr}
   .card{padding:16px 18px}
   .kicker{font-size:11px}
   .eyebrow{font-size:11px}
@@ -2801,7 +2810,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   h1.title,.h1{font-size:34px}
   h2.title,.h2{font-size:26px}
   .g2{grid-template-columns:repeat(2,1fr)}
-  .g3,.g4{grid-template-columns:repeat(2,1fr)}
+  .g3,.g4,.g5,.g6{grid-template-columns:repeat(2,1fr)}
+  .g2asym{grid-template-columns:1fr 2fr}
 }
 /* ================= PRINT ================= */
 @media print{
