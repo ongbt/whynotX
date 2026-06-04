@@ -122,6 +122,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 .card-hover{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
 .card-hover:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
 
+.card-claim{border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
+.card-response{border-left:4px solid var(--bad);background:color-mix(in srgb,var(--bad) 4%,var(--surface))}
+.card-bottomline{border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 8%,var(--surface-2));border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+
 .pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:500;
   background:var(--surface-2);color:var(--text-2);border:1px solid var(--border)}
 .pill-accent{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 28%,transparent)}
@@ -137,6 +141,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   font-size:12px;color:var(--text-3);z-index:10;pointer-events:none}
 .slide-number::before{content:attr(data-current)}
 .slide-number::after{content:" / " attr(data-total)}
+.back-link{cursor:pointer;color:var(--accent);opacity:.5;font-size:16px;transition:opacity .2s;pointer-events:auto;text-decoration:none}
+.back-link:hover{opacity:1;color:var(--accent)}
 .progress-bar{position:fixed;left:0;right:0;bottom:0;height:3px;background:transparent;z-index:20}
 .progress-bar > span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s var(--ease)}
 
@@ -176,7 +182,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   h3,.h3{font-size:22px}
   h4,.h4{font-size:18px}
   .lede{font-size:16px;line-height:1.5}
-  .g2,.g3,.g4,.g5,.g6{grid-template-columns:1fr}
+  .g2,.g3,.g4,.g5,.g6,.comp-grid{grid-template-columns:1fr}
   .g2asym{grid-template-columns:1fr}
   .card{padding:16px 18px}
   .kicker{font-size:11px}
@@ -384,7 +390,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- COVER                          -->
   <!-- ============================== -->
   <section class="slide" data-title="Cover">
-    <div class="version-badge" data-deploy="2026-06-01T15:30:00Z">v52 · 2026-06-04 18:46 SGT</div>
+    <div class="version-badge" data-deploy="2026-06-01T15:30:00Z">v64 · 2026-06-04 22:56 SGT</div>
     <div class="anim-stagger-list">
       <p class="kicker">A Reasoned Examination</p>
       <h1 class="h1" style="opacity:1!important;color:var(--text-1);font-size:72px;font-weight:700;line-height:1.1;margin:0 0 16px;letter-spacing:-1px;text-shadow:0 2px 8px rgba(0,0,0,0.3)">
@@ -401,8 +407,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         <span class="pill">Philosophical</span>
       </div>
     </div>
-    <div class="deck-footer"><span class="dim2">Based on the presentation by DarkMatter2525 · Adapted and refined</span><span class="slide-number" data-current="1" data-total="62"></span></div>
-    <div class="notes">Welcome. Today we're going to examine the central question: is Christianity true? Not whether it's comforting or culturally significant, but whether its truth claims hold up to scrutiny. We'll go through six areas: scientific evidence, historical evidence, Jesus's claims, moral philosophy, the Bible itself, and finally broader philosophical questions. Each section will build on the last.</div>
+    <div class="notes">Welcome. Today we're going to examine the central question: is Christianity true? Not whether it's comforting or culturally significant, but whether its truth claims hold up to scrutiny. We'll go through six evidence areas: scientific, historical, Jesus's claims, moral philosophy, the Bible itself, and broader philosophical questions. Each part builds on the last.</div>
   </section>
 
   <!-- ============================== -->
@@ -423,12 +428,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">Burden of Proof</h2>
     <p class="lede mb-l">Extraordinary claims require extraordinary evidence.</p>
     <div class="grid g2" style="align-items:start">
-      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+      <div class="card card-claim anim-fade-left" data-anim="fade-left">
         <h4>The Claim</h4>
         <p class="dim">Christianity makes positive claims about reality: a God exists, Jesus rose from the dead, prayers are answered, miracles occur. These are not neutral statements — they assert something extraordinary about the universe.</p>
       </div>
-      <div class="card card-soft anim-fade-right" data-anim="fade-right">
-        <h4>The Burden</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <p class="dim">Whoever makes a positive claim carries the burden of proof. Skepticism is not a counter-claim — it's the default position until sufficient evidence is presented. The lack of belief is not a belief in lack.</p>
       </div>
     </div>
@@ -439,7 +444,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <section class="slide" data-title="Evidence That Matters">
     <p class="kicker">Ground Rules</p>
     <h2 class="h2">Evidence That Matters</h2>
-    <p class="lede mb-m">Christianity makes testable claims about the world. We'll examine six independent areas — each acts as a lens that reveals whether those claims hold up.</p>
+    <p class="lede mb-m">Christianity makes testable claims about the world. We'll examine six independent evidence areas — each acts as a lens that reveals whether those claims hold up.</p>
     <div class="grid g2" style="align-items:start">
       <div class="card anim-fade-left" data-anim="fade-left">
         <h4>No Faith Required</h4>
@@ -450,7 +455,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         <p class="dim">If Christianity is true, it should hold up in <em>at least one</em> of these areas — ideally all six. If it fails in every single one, that is not a coincidence. That's a pattern.</p>
       </div>
     </div>
-    <div class="notes">The reason to use six independent areas is to eliminate special pleading. A Christian can't retreat to "you just need faith" when science contradicts the Bible — because we're also testing history, Jesus's claims, morality, the biblical text itself, and philosophy. If all six point the same direction, the pattern is clear.</div>
+    <div class="notes">The reason to use six independent evidence areas is to eliminate special pleading. A Christian can't retreat to "you just need faith" when science contradicts the Bible — because we're also testing history, Jesus's claims, morality, the biblical text itself, and philosophy. The Bible section also addresses common defense arguments. If all six point the same direction, the pattern is clear.</div>
   </section>
 
   <section class="slide" data-title="The Six Lines">
@@ -510,80 +515,113 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">The God of the Gaps</h2>
     <p class="lede mb-l">Science has a history of closing gaps where God was once the only explanation. The scientific evidence against a literal Genesis is not a recent discovery — it is the culmination of centuries of inquiry.</p>
     <div class="grid g2" style="align-items:start;gap:14px">
-      <div class="card card-soft anim-fade-left" data-anim="fade-left">
-        <h4>The Pattern</h4>
+      <div class="card card-response anim-fade-left" data-anim="fade-left">
+        <h4>The Response</h4>
         <p class="dim" style="font-size:13px;line-height:1.6">Lightning was divine wrath &mdash; now physics. Disease was divine punishment &mdash; now germ theory. The origin of species was special creation &mdash; now evolution. The history of science is a history of God being pushed into smaller and smaller gaps. Lightning, weather, disease, the motions of planets, the diversity of life &mdash; every domain once attributed to divine action now has a natural explanation. The pattern is undeniable: what we once explained by invoking God, we now explain through natural processes.</p>
       </div>
-      <div class="card card-soft anim-fade-right" data-anim="fade-right">
-        <h4>The Challenge</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <p class="dim" style="font-size:13px;line-height:1.6">This section examines Christianity&rsquo;s specific claims about the natural world: that the Earth is young, that species were individually created, that a global flood reshaped the planet, that humans arose from a single pair. In each case, the scientific evidence tells a different story. The question is not whether Christianity can accommodate science &mdash; it can, through reinterpretation. The question is whether the evidence supports a literal reading of Genesis, and what that means for a faith built on that foundation.</p>
       </div>
     </div>
     <div class="notes">The God of the Gaps argument is the most common but also the weakest. It says "science can't explain X, therefore God." The problem is that historically, every time we've said that, science eventually does explain X. Lightning, disease, the motions of the planets, the origin of species — all were once attributed to God, all now have natural explanations. This section covers what science actually tells us about the specific claims Christianity makes about the natural world.</div>
   </section>
-  <section class="slide" data-title="Fine-Tuning">
+
+
+
+
+
+
+  <section class="slide" data-title="Did God Create">
     <p class="kicker">Scientific · Cosmology</p>
-    <h2 class="h2">The Fine-Tuning Fallacy</h2>
+    <h2 class="h2">Did God Create the Universe?</h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card card-claim anim-fade-left" data-anim="fade-left">
+        <h4>The Claim</h4>
+        <p class="dim" style="margin-bottom:8px">The Kalam Cosmological Argument is one of the most popular intellectual defenses of theistic belief. It attempts to prove that the universe must have been caused by a creator. Here's how it works:</p>
+        <ol class="dim">
+          <li>Whatever begins to exist has a cause.</li>
+          <li>The universe began to exist.</li>
+          <li>Therefore, the universe has a cause.</li>
+          <li>That cause is God.</li>
+        </ol>
+      </div>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
+        <ul class="dim">
+          <li><b>Special pleading:</b> If everything that begins needs a cause, what caused God? If God doesn't need a cause, why can't the universe be the uncaused thing?</li>
+          <li><b>Equivocation:</b> Even if premise 3 is granted, the conclusion "that cause is God" smuggles in attributes (omnipotence, omniscience, benevolence) that aren't in the premises. The cause could be a quantum fluctuation, a multiverse bubble, or anything else.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card card-bottomline anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-top:10px">
+      <p class="dim" style="font-size:13px;line-height:1.6;margin:0"><b>The bottom line:</b> The Kalam argument commits special pleading for God. If everything that begins needs a cause, what caused God? If God doesn't need a cause, why can't the universe be the uncaused thing? And even if there is a first cause, nothing in the argument shows it's the God of the Bible — it could be a quantum fluctuation, a multiverse bubble, or something we haven't discovered yet. The argument smuggles in theology where it only has cosmology.</p>
+    </div>
+    <div class="notes">The Kalam argument has been popularized by William Lane Craig, but it has a fatal flaw: it treats God as a special exception to its own logic. If the universe needs a cause because it began to exist, then God — who is also said to be a conscious being with a beginning (though theologians dispute this) — would need one too. And if you say "God is eternal, he didn't begin," then you've simply moved the mystery back one step. Why not stop at the universe?</div>
+  </section>
+
+  <section class="slide" data-title="Did God Design">
+    <p class="kicker">Scientific · Cosmology</p>
+    <h2 class="h2">Did God Design the Universe?</h2>
     <p class="lede" style="margin-bottom:10px">"The universe appears designed. Therefore a designer exists."</p>
     <div class="grid g2" style="align-items:start">
-      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+      <div class="card card-claim anim-fade-left" data-anim="fade-left">
         <h4>The Claim</h4>
         <p class="dim">Physical constants (gravitational constant, cosmological constant, strong nuclear force, etc.) appear to be finely tuned to within extraordinarily narrow ranges. If any were even slightly different, life could not exist. This seems to suggest a fine-tuner.</p>
       </div>
-      <div class="card card-soft anim-fade-right" data-anim="fade-right">
-        <h4>The Counter</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <p class="dim">Three major problems: (1) The Anthropic Principle — we can only observe a universe that permits our existence. (2) The multiverse hypothesis — if there are countless universes with varying constants, ours being life-permitting is unremarkable. (3) Fine-tuning assumes life is the goal — why not fine-tuned for something else?</p>
       </div>
     </div>
     <div class="card card-soft anim-fade-up" data-anim="fade-up" style="padding:12px 16px;border-left:3px solid var(--accent);margin-top:14px">
       <p class="dim" style="font-size:13px;line-height:1.5;margin:0"><b>The Puddle Analogy:</b> A puddle waking up thinking <em>"What a wonderful hole — it fits me perfectly!"</em> mistakes its shape for evidence the hole was designed for it. We observe a universe that permits our existence — that's not surprising, it's tautological.</p>
     </div>
+    <div class="card card-bottomline anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-top:10px">
+      <p class="dim" style="font-size:13px;line-height:1.6;margin:0"><b>The bottom line:</b> The fine-tuning argument sounds compelling until you realize it's a puddle admiring the hole it fits into. We exist in a universe that permits our existence because we couldn't exist in any other. That's not evidence of design — it's a tautology. And with no proof of a multiverse, the argument remains untestable. A designer is one possible explanation, but far from the simplest one.</p>
+    </div>
     <div class="notes">The fine-tuning argument sounds compelling until you examine it closely. We exist in a universe that permits our existence — that's not surprising, it's tautological.</div>
   </section>
-
-
-
-
-
   <section class="slide" data-title="Age of the Earth">
     <p class="kicker">Scientific · Geology</p>
-    <h2 class="h2">Age of the Earth: Why Not 6,000 Years?</h2>
+    <h2 class="h2">Did God Create the Earth 6,000 Years Ago?</h2>
     <p class="lede mb-l">A direct contradiction between scripture and every dating method.</p>
-    <div class="grid g2asym" style="gap:16px;align-items:stretch">
-      <div class="card" style="border-top:3px solid var(--bad);padding:18px 16px;display:flex;flex-direction:column">
-        <h4>The Claim</h4>
-        <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Adding up Genesis genealogies yields a specific age for the Earth. Archbishop James Ussher calculated <b>4004 BCE</b> for creation (~<b>6,000 years</b> ago). The Septuagint gives a slightly older figure of <b>~10,000 years</b>. Either way, the Bible places the Earth at thousands of years old — a specific, testable claim grounded in the plain reading of the text.</p>
-        <div class="pi" style="border-top:2px solid color-mix(in srgb,var(--bad) 50%,transparent);padding-top:10px;text-align:center">
-          <span style="font-size:28px;font-weight:800;color:var(--bad);letter-spacing:-1px">~10,000</span>
-          <span style="font-size:16px;color:var(--bad);font-weight:600"> years</span>
+    <div class="card card-claim" style="padding:16px 20px;margin-bottom:14px">
+      <h4>The Claim</h4>
+      <p class="dim" style="font-size:13px;line-height:1.5;margin-bottom:0">Adding up Genesis genealogies yields a specific age for the Earth. Archbishop James Ussher calculated <b>4004 BCE</b> for creation (~<b>6,000 years</b> ago). The Septuagint gives a slightly older figure of <b>~10,000 years</b>. Either way, the Bible places the Earth at thousands of years old — a specific, testable claim grounded in the plain reading of the text.</p>
+      <div class="pi" style="border-top:2px solid color-mix(in srgb,var(--bad) 50%,transparent);padding-top:10px;margin-top:10px;text-align:center">
+        <span style="font-size:28px;font-weight:800;color:var(--bad);letter-spacing:-1px">~10,000</span>
+        <span style="font-size:16px;color:var(--bad);font-weight:600"> years</span>
+      </div>
+    </div>
+    <div class="grid g3" style="gap:12px;align-items:stretch">
+      <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
+        <h4>⛰️ Radiometric Dating</h4>
+        <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Uranium-lead dating of zircon crystals gives Earth at <b>4.4 billion years</b>. Multiple independent methods (K-Ar, Rb-Sr, Sm-Nd, U-Pb) all agree.</p>
+        <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
+          <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">4.4 billion</span>
+          <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
         </div>
       </div>
-      <div class="grid" style="grid-template-columns:1fr;gap:10px;align-content:start">
-        <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
-          <h4>⛰️ Radiometric Dating</h4>
-          <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Uranium-lead dating of zircon crystals gives Earth at <b>4.4 billion years</b>. Multiple independent methods (K-Ar, Rb-Sr, Sm-Nd, U-Pb) all agree.</p>
-          <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
-            <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">4.4 billion</span>
-            <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
-          </div>
-        </div>
-        <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
-          <h4>🌌 Stellar Distance</h4>
-          <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Light from galaxies billions of light-years away reaches us. A 6,000-year-old universe would mean God created light in transit — a deceptive appearance of age.</p>
-          <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
-            <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">13.8 billion</span>
-            <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
-          </div>
-        </div>
-        <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
-          <h4>🪨 Geological Column</h4>
-          <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Globally consistent rock layers with distinct fossils. Makes no sense in a 6,000-year timeframe — requires rejecting the entire edifice of modern geology.</p>
-          <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
-            <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">4.5 billion</span>
-            <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
-          </div>
+      <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
+        <h4>🌌 Stellar Distance</h4>
+        <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Light from galaxies billions of light-years away reaches us. A 6,000-year-old universe would mean God created light in transit — a deceptive appearance of age.</p>
+        <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
+          <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">13.8 billion</span>
+          <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
         </div>
       </div>
+      <div class="card card-soft" style="padding:12px 16px;display:flex;flex-direction:column">
+        <h4>🪨 Geological Column</h4>
+        <p class="dim" style="font-size:13px;line-height:1.5;flex:1">Globally consistent rock layers with distinct fossils. Makes no sense in a 6,000-year timeframe — requires rejecting the entire edifice of modern geology.</p>
+        <div class="pi" style="border-top:1px solid color-mix(in srgb,var(--good) 50%,transparent);padding-top:10px;text-align:center">
+          <span style="font-size:28px;font-weight:800;color:var(--good);letter-spacing:-1px">4.5 billion</span>
+          <span style="font-size:16px;color:var(--good);font-weight:600"> years</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-bottomline anim-fade-up" data-anim="fade-up" style="padding:14px 20px;margin-top:10px">
+      <p class="dim" style="font-size:13px;line-height:1.7;margin:0"><b>The bottom line:</b> Every independent dating method in science — radiometric, geological, astronomical — agrees on a 4.5-billion-year-old Earth. The biblical figure of 6,000–10,000 years is contradicted by every branch of science that measures age. To accept the Bible's timeline, you must reject the entire edifice of modern geology, physics, and astronomy.</p>
     </div>
     <div class="notes">This is perhaps the most straightforward contradiction. If you take the Bible literally, the Earth is at most 10,000 years old. Every scientific discipline that measures age — astronomy, geology, physics, biology — independently arrives at 4.5 billion years. You can reconcile this by saying Genesis isn't literal, but then you have to explain which parts are literal and which aren't, and on what basis you decide.</div>
   </section>
@@ -593,6 +631,11 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Scientific · Evolution</p>
     <h2 class="h2">Evolved, Not Created</h2>
     <p class="lede mb-l">Evolution is the cornerstone of modern biology &mdash; supported by multiple independent lines of evidence.</p>
+    <div class="card card-claim anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-bottom:10px">
+      <h4>The Claim</h4>
+      <p class="dim" style="font-size:13px;line-height:1.6;margin:0">God created the animals, plants, and all living things "according to their kinds" in six literal days (Genesis 1). Each species was created separately and fixed — evolution from one form into another is not how life arose. This is the foundation of creationism: special creation, not common descent.</p>
+    </div>
+
     <div class="grid g3" style="align-items:start;gap:12px;flex:1">
       <div class="card card-soft anim-fade-left" data-anim="fade-left">
         <h4 style="margin-bottom:6px;font-size:14px">🦴 Fossil Record: Every Prediction Confirmed</h4>
@@ -607,7 +650,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         <p class="dim" style="font-size:12px;line-height:1.5">The recurrent laryngeal nerve takes a 4.5-meter detour around the giraffe&rsquo;s aorta; in fish it&rsquo;s direct, trapped as necks lengthened. Our eyes are wired backwards with a blind spot; the octopus eye got it right. The vas deferens loops over the ureter. An intelligent engineer wouldn&rsquo;t design any of this. Evolution tinkering with existing structures would.</p>
       </div>
     </div>
-    <div class="card anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-top:8px;border-left:4px solid var(--accent)">
+    <div class="card card-bottomline anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-top:8px">
       <p class="dim" style="font-size:13px;line-height:1.5;margin:0"><b>The bottom line:</b> Evolution is one of the most thoroughly tested theories in science. It does not disprove God, but it makes a <b>literal reading of Genesis impossible</b>. No Adam and Eve, no original sin, no Fall, no special creation. Christian soteriology has no foundation. <b>See Appendix</b> for the full evidence.</p>
     </div>
     <div class="notes">Forceful summary of evolution evidence for casual readers. Key message: evolution is settled science that makes a literal Genesis impossible.</div>
@@ -619,6 +662,11 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Scientific · Evolution</p>
     <h2 class="h2">Origin of Humankind: The Evidence for Common Descent</h2>
     <p class="lede mb-l">Did humans evolve from apes? The evidence says yes &mdash; overwhelmingly so, across fossils, genetics, and population biology.</p>
+    <div class="card card-claim anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-bottom:10px">
+      <h4>The Claim</h4>
+      <p class="dim" style="font-size:13px;line-height:1.6;margin:0">God created mankind in His own image — Adam from the dust of the ground and Eve from Adam's rib (Genesis 2). Humans are a special creation, uniquely made in God's image, not the product of an evolutionary process from ape-like ancestors. This is the biblical account of human origins.</p>
+    </div>
+
     <div class="grid g3" style="gap:10px;align-items:start">
       <div class="card card-soft anim-fade-up" data-anim="fade-up" style="padding:10px 14px;border-left:3px solid var(--accent)">
         <h4 style="font-size:14px;margin-bottom:3px">The Fossil Record</h4>
@@ -654,7 +702,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         <p class="dim" style="font-size:13px;line-height:1.5;margin:0">Human and chimpanzee genomes are 98.8% identical. The similarity follows a nested hierarchy: we share more with chimps than gorillas, more with gorillas than orangutans. This is exactly what evolution predicts and is inexplicable under independent creation.</p>
       </div>
     </div>
-    <div class="card anim-fade-up" data-anim="fade-up" style="padding:10px 16px;margin-top:8px;border-left:4px solid var(--accent)">
+    <div class="card card-bottomline anim-fade-up" data-anim="fade-up" style="padding:10px 16px;margin-top:8px">
       <p class="dim" style="font-size:13px;line-height:1.5;margin:0"><b>The bottom line:</b> The genetic evidence alone places humans firmly within the great ape family. Combined with the fossil sequence, the case for common ancestry is as strong as any conclusion in science. A literal Adam and Eve contradicts all of it.</p>
     </div>
     <div class="notes">Three more genetic lines of evidence: shared broken genes (pseudogenes), shared ERV insertions, and 98.8% genome-wide identity. Together with slide 1, six independent lines all converge on common ancestry.</div>
@@ -663,40 +711,36 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <section class="slide" data-title="Scientific Summary">
     <p class="kicker">Scientific · Summary</p>
     <h2 class="h2">What Science Actually Shows</h2>
-    <p class="lede mb-l">Four Christian claims, four scientific findings — and what it means for theology.</p>
+    <p class="lede mb-l">Five Christian claims, five scientific findings — and what it means for theology.</p>
 
-    <div class="grid g2" style="gap:12px;margin-bottom:14px;align-items:start">
-      <div class="card" style="border-top:3px solid var(--bad);padding:14px 16px">
-        <h4 style="font-size:14px;margin-bottom:8px;color:var(--bad)">✗ The Christian Prediction</h4>
-        <ul style="margin:0;padding-left:18px;line-height:1.8;color:var(--text-2);font-size:13px">
+    <div class="grid g2" style="gap:10px;margin-bottom:12px;align-items:start">
+      <div class="card" style="border-top:3px solid var(--bad);padding:12px 14px">
+        <h4 style="font-size:13px;margin-bottom:6px;color:var(--bad)">✗ The Christian Claim</h4>
+        <ul style="margin:0;padding-left:16px;line-height:1.7;color:var(--text-2);font-size:12px">
+          <li>The fine-tuned universe requires a designer</li>
           <li>A young Earth created in six literal days</li>
           <li>All species individually created by God</li>
-          <li>A global flood that reshaped the planet</li>
           <li>Humans from a single pair a few thousand years ago</li>
+          <li>A first cause that is the God of the Bible</li>
         </ul>
       </div>
-      <div class="card" style="border-top:3px solid var(--good);padding:14px 16px">
-        <h4 style="font-size:14px;margin-bottom:8px;color:var(--good)">✓ What Science Found</h4>
-        <ul style="margin:0;padding-left:18px;line-height:1.8;color:var(--text-2);font-size:13px">
+      <div class="card" style="border-top:3px solid var(--good);padding:12px 14px">
+        <h4 style="font-size:13px;margin-bottom:6px;color:var(--good)">✓ What Science Found</h4>
+        <ul style="margin:0;padding-left:16px;line-height:1.7;color:var(--text-2);font-size:12px">
+          <li>The puddle analogy — fine-tuning is a tautology, not evidence</li>
           <li>A 4.5-billion-year-old Earth formed by natural processes</li>
           <li>All life descended from common ancestors via evolution</li>
-          <li>No evidence of a global flood; geology shows gradual change</li>
           <li>Humanity never bottlenecked to two individuals</li>
+          <li>The Kalam argument commits special pleading for God</li>
         </ul>
       </div>
     </div>
 
-    <div class="grid g2" style="gap:12px;align-items:start">
-      <div class="card card-soft" style="padding:12px 16px">
-        <h4 style="font-size:14px;margin-bottom:4px">The Fall Unravels</h4>
-        <p class="dim" style="font-size:13px;line-height:1.5;margin:0">No Adam means no original sin &mdash; and without original sin, the need for a savior disappears. Paul explicitly ties Christ&rsquo;s redemption to Adam&rsquo;s transgression (Romans 5:12-21). Without the Fall, there is nothing to be saved from. Christianity can accommodate evolution by reinterpreting Genesis allegorically, but the theological cost is steep: the core soteriological framework must be abandoned or redefined beyond recognition.</p>
-      </div>
-      <div class="card card-soft" style="padding:12px 16px">
-        <h4 style="font-size:14px;margin-bottom:4px">No Special Status</h4>
-        <p class="dim" style="font-size:13px;line-height:1.5;margin:0">Humans share a common ancestor with every living thing. Death and extinction have been part of life for hundreds of millions of years &mdash; they cannot be the result of Adam&rsquo;s sin. Special creation and humanity&rsquo;s unique status must be abandoned. Evolution does not disprove God, but it makes a literal Genesis impossible. The image of God becomes hard to define when our lineage connects continuously to earlier hominins.</p>
-      </div>
+    <div class="card card-bottomline anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-top:8px">
+      <h4 style="font-size:13px;margin-bottom:4px">The Verdict</h4>
+      <p class="dim" style="font-size:12px;line-height:1.5;margin:0">No Adam means no original sin — and without original sin, the need for a savior disappears. Paul explicitly ties Christ&rsquo;s redemption to Adam&rsquo;s transgression (Romans 5:12-21). Without the Fall, there is nothing to be saved from. Humans share a common ancestor with every living thing. Death and extinction have been part of life for hundreds of millions of years — they cannot be the result of Adam&rsquo;s sin. The image of God becomes hard to define when our lineage connects continuously to earlier hominins. Christianity can accommodate evolution by reinterpreting Genesis allegorically, but the theological cost is steep: the core soteriological framework must be abandoned or redefined beyond recognition.</p>
     </div>
-    <div class="notes">The scientific evidence consistently contradicts a literal reading of Genesis. Every independent line of evidence — physics, chemistry, geology, biology, genetics — converges on the same conclusion: the Earth is ancient and life evolved. Evolution doesn't disprove God, but it undermines the specific story Christianity tells about why we need saving and how that salvation works. No Fall, no need for a savior.</div>
+    <div class="notes">The scientific evidence consistently contradicts a literal reading of Genesis. Every independent line of evidence — physics, chemistry, geology, biology, genetics — converges on the same conclusion: the Earth is ancient and life evolved. The Kalam and fine-tuning arguments rely on logical fallacies, not evidence. Evolution doesn't disprove God, but it undermines the specific story Christianity tells about why we need saving and how that salvation works. No Fall, no need for a savior.</div>
   </section>
 
 
@@ -719,12 +763,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">Testing the Bible as History</h2>
     <p class="lede mb-l">The Bible presents specific events as literal history. What happens when we check the evidence?</p>
     <div class="grid g2" style="align-items:start;gap:14px">
-      <div class="card card-soft anim-fade-left" data-anim="fade-left">
-        <h4>The Biblical Claims</h4>
+      <div class="card card-claim anim-fade-left" data-anim="fade-left">
+        <h4>The Claim</h4>
         <p class="dim" style="font-size:13px;line-height:1.6">The Old Testament describes a global flood that destroyed all life except Noah&rsquo;s Ark, a mass Exodus of millions of Israelites from Egypt, and a military conquest of Canaan led by Joshua. These are not presented as allegory or metaphor — they are described as real events that happened to real people in specific places at specific times. If any of them can be shown to be historically false, the Bible&rsquo;s credibility as a historical document is seriously compromised.</p>
       </div>
-      <div class="card card-soft anim-fade-right" data-anim="fade-right">
-        <h4>What Archaeology Can Tell Us</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <p class="dim" style="font-size:13px;line-height:1.6">The ancient Near East is one of the most intensively excavated regions in the world. We have extensive records from Egypt, Assyria, and Babylon — inscriptions, annals, administrative documents, and royal propaganda. We can date pottery, trace settlement patterns, and read the records of the very civilizations the Bible describes. If the Exodus happened, Egypt would have recorded it. If the Conquest happened, the ruins would show it. If Noah&rsquo;s Flood happened, the geology would prove it. This is not a matter of interpretation — it is a matter of evidence.</p>
       </div>
     </div>
@@ -734,13 +778,13 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <section class="slide" data-title="Noah's Flood">
     <p class="kicker">Historical · Archaeology</p>
     <h2 class="h2">Noah's Flood: The Geological Impossibility</h2>
-    <div class="card card-soft anim-fade-up" data-anim="fade-up" style="margin-bottom:12px;padding:14px 18px;border-left:4px solid var(--accent)">
+    <div class="card card-claim anim-fade-up" data-anim="fade-up" style="margin-bottom:12px;padding:14px 18px">
       <h4>The Claim</h4>
       <p class="dim" style="font-size:13px;line-height:1.6;margin:0">According to Genesis, God flooded the entire Earth, covering even the highest mountains, killing every land animal and human not on Noah's Ark. The flood lasted 40 days and nights, and the waters covered the earth for over a year before receding. All modern humanity and land animals are descended from the eight people and the animals on that single boat. This is presented as literal, global history.</p>
     </div>
     <div class="grid g2 mt-l" style="align-items:start">
-      <div class="card anim-fade-left" data-anim="fade-left">
-        <h4>Geological Impossibility</h4>
+      <div class="card card-response anim-fade-left" data-anim="fade-left">
+        <h4>The Response</h4>
         <ul class="dim">
           <li>No geological evidence for a global flood in the last 6,000 years</li>
           <li>Stratigraphic layers show gradual deposition over millions of years, not a single catastrophic flood</li>
@@ -748,8 +792,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
           <li>If a global flood occurred, we'd expect a worldwide layer of flood sediment. No such layer exists.</li>
         </ul>
       </div>
-      <div class="card anim-fade-right" data-anim="fade-right">
-        <h4>Biological Impossibility</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <ul class="dim">
           <li>8 people could not feed, clean, and care for ~35,000+ animal species (let alone insects and marine life)</li>
           <li>Freshwater fish would die in saltwater; saltwater fish in freshwater</li>
@@ -767,12 +811,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">The Exodus: The Missing Evidence</h2>
     <p class="lede mb-l">The foundational story of Israel — with zero archaeological support.</p>
     <div class="grid g2" style="align-items:start">
-      <div class="card card-soft anim-fade-left" data-anim="fade-left">
-        <h4>The Biblical Account</h4>
+      <div class="card card-claim anim-fade-left" data-anim="fade-left">
+        <h4>The Claim</h4>
         <p class="dim">The Book of Exodus describes 600,000 Israelite men (likely 2–3 million people total) living as slaves in Egypt, enduring ten plagues, then walking out of Egypt after the firstborn of every Egyptian family was killed. They crossed the Red Sea, wandered in the Sinai desert for 40 years, and received the Law at Mount Sinai. This was a civilization-altering event — a catastrophe for Egypt and a miracle for Israel.</p>
       </div>
-      <div class="card card-soft anim-fade-right" data-anim="fade-right">
-        <h4>What Archaeology Finds</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <ul class="dim">
           <li><b>No Egyptian records</b> of a slave population, plagues, or a mass departure. Egypt recorded everything — including far smaller events</li>
           <li><b>No evidence of 2 million people</b> living in the Sinai for 40 years: no campsites, no graves, no pottery, no animal bones. The Sinai desert cannot support that many people</li>
@@ -862,12 +906,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">What Can We Know About Jesus?</h2>
     <p class="lede mb-l">Three questions: Is the resurrection credible? Were the prophecies really predictions? Did Jesus&rsquo;s own promises come true?</p>
     <div class="grid g2" style="align-items:start;gap:14px">
-      <div class="card card-soft anim-fade-left" data-anim="fade-left">
-        <h4>The Central Claim</h4>
+      <div class="card card-claim anim-fade-left" data-anim="fade-left">
+        <h4>The Claim</h4>
         <p class="dim" style="font-size:13px;line-height:1.6">Christianity stands or falls on the resurrection. If Jesus rose from the dead, Christianity is true. If he did not, it is false. Paul himself makes this clear: &ldquo;If Christ has not been raised, your faith is futile&rdquo; (1 Cor 15:17). This is the claim we must examine most carefully — and by the standards of historical evidence, it requires extraordinary proof.</p>
       </div>
-      <div class="card card-soft anim-fade-right" data-anim="fade-right">
-        <h4>Prophecy and Prediction</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <p class="dim" style="font-size:13px;line-height:1.6">Christians often point to Old Testament prophecies as evidence that Jesus was the messiah. But do those verses actually predict Jesus, or were they reinterpreted after the fact? And Jesus himself made specific predictions about his own return within his disciples&rsquo; lifetime — predictions that did not come true. This section examines all three questions.</p>
       </div>
     </div>
@@ -879,18 +923,20 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">The Resurrection: Extraordinary Claim, Insufficient Evidence</h2>
     <p class="lede mb-l">The central claim of Christianity — and the hardest to verify historically.</p>
     <div class="grid g2" style="align-items:start">
-      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+      <div class="card card-claim anim-fade-left" data-anim="fade-left">
         <h4>The Claim</h4>
         <p class="dim">A man died, was dead for three days, and then rose from the dead — never to die again — resurrected to a glorified, immortal body. This is a miracle of the highest order, and it requires correspondingly high-quality evidence.</p>
       </div>
-      <div class="card card-soft anim-fade-right" data-anim="fade-right">
-        <h4>The Evidence Problem</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <ul class="dim">
           <li>No contemporary non-Christian source mentions it</li>
           <li>The empty tomb story appears only in the Gospels, decades later</li>
           <li>Paul's account (1 Cor 15) mentions only visions, not an empty tomb</li>
           <li>The Gospel accounts contradict each other on who found the tomb, what they saw, and what happened next</li>
           <li>Natural explanations (hallucination, borrowed tomb, wrong tomb, legend formation) are more parsimonious than a violation of every known law of nature</li>
+          <li>Paul claims 500 witnesses saw the resurrected Jesus (1 Cor 15:6), yet names not one of them — and no contemporary historian corroborates the mass sighting</li>
+          <li>No extra-biblical accounts exist of the Gospel miracles — tombs opening (Matt 27:52-53), feeding 5,000, darkness at noon — all in a Roman-governed province, yet unrecorded by any contemporary historian</li>
         </ul>
       </div>
     </div>
@@ -1126,28 +1172,28 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">Biblical Morality: Slavery &amp; Genocide</h2>
     <p class="lede mb-l">The Old Testament condones — and God commands — practices we now consider among the worst moral evils.</p>
 
-    <div class="grid g2" style="gap:14px;align-items:start;margin-bottom:10px">
-      <div class="card card-soft" style="padding:14px 16px;border-top:3px solid var(--bad)">
-        <h4 style="font-size:15px;margin-bottom:6px">🔗 Slavery</h4>
-        <p class="dim" style="font-size:13px;line-height:1.5;margin:0 0 8px">The Bible does not condemn slavery — it regulates and endorses it. Key passages:</p>
-        <ul style="margin:0;padding-left:16px;font-size:13px;line-height:1.7;color:var(--text-2)">
+    <div class="grid g2" style="gap:12px;align-items:start;margin-bottom:8px">
+      <div class="card card-soft" style="padding:12px 14px;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:4px">🔗 Slavery</h4>
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0 0 6px">The Bible does not condemn slavery — it regulates and endorses it. Key passages:</p>
+        <ul style="margin:0;padding-left:14px;font-size:12px;line-height:1.5;color:var(--text-2)">
           <li><b>Leviticus 25:44-46</b> — God tells Israel they may buy slaves from surrounding nations and pass them as inherited property to their children. These slaves are owned for life, unlike Hebrew servants who go free after six years.</li>
           <li><b>Exodus 21:20-21</b> — If a master beats a slave to death, he is punished only if the slave dies <i>immediately</i>. If the slave lingers for a day or two, the master is not punished because the slave is his property.</li>
           <li><b>Ephesians 6:5</b> — The New Testament tells slaves to obey their masters with fear and trembling, as they would Christ. Nowhere in either testament is slavery condemned as a moral evil.</li>
         </ul>
       </div>
-      <div class="card card-soft" style="padding:14px 16px;border-top:3px solid var(--bad)">
-        <h4 style="font-size:15px;margin-bottom:6px">⚔️ Genocide</h4>
-        <p class="dim" style="font-size:13px;line-height:1.5;margin:0 0 8px">God explicitly commands the wholesale destruction of entire peoples:</p>
-        <ul style="margin:0;padding-left:16px;font-size:13px;line-height:1.7;color:var(--text-2)">
+      <div class="card card-soft" style="padding:12px 14px;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:4px">⚔️ Genocide</h4>
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0 0 6px">God explicitly commands the wholesale destruction of entire peoples:</p>
+        <ul style="margin:0;padding-left:14px;font-size:12px;line-height:1.5;color:var(--text-2)">
           <li><b>Deuteronomy 20:16-18</b> — &ldquo;In the cities of the nations the Lord your God is giving you as an inheritance, do not leave alive anything that breathes. Completely destroy them&hellip; so that they will not teach you to follow all the detestable things they do for their gods.&rdquo;</li>
           <li><b>1 Samuel 15:3</b> — God commands Saul to &ldquo;attack the Amalekites and totally destroy everything that belongs to them. Do not spare them; put to death men and women, children and infants, cattle and sheep, camels and donkeys.&rdquo; Saul is later <i>rejected as king</i> for sparing the Amalekite king and the best livestock.</li>
           <li><b>Joshua 6:21</b> — The army of Israel &ldquo;devoted all in the city to destruction, both men and women, young and old, oxen, sheep, and donkeys, with the edge of the sword.&rdquo; This is presented as obedience to divine command, not a regrettable act of war.</li>
         </ul>
       </div>
     </div>
-    <div class="card anim-fade-up" data-anim="fade-up" style="padding:10px 16px;border-left:4px solid var(--accent);background:var(--surface-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0">
-      <p class="dim" style="font-size:13px;line-height:1.5;margin:0"><b>The apologetic response:</b> &ldquo;That was the Old Covenant; we&rsquo;re under the New Covenant.&rdquo; But this raises a serious problem: if God&rsquo;s moral commands can change, then morality is not absolute — it is relative to whatever God commands at the time. And it means God once commanded slavery and genocide, which we now recognize as evil. Did God change his mind? Or did human moral understanding surpass what scripture presents as divine will?</p>
+    <div class="card anim-fade-up" data-anim="fade-up" style="padding:8px 12px;border-left:4px solid var(--accent);background:var(--surface-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0">
+      <p class="dim" style="font-size:12px;line-height:1.4;margin:0"><b>The apologetic response:</b> &ldquo;That was the Old Covenant; we&rsquo;re under the New Covenant.&rdquo; But this raises a serious problem: if God&rsquo;s moral commands can change, then morality is not absolute — it is relative to whatever God commands at the time. And it means God once commanded slavery and genocide, which we now recognize as evil. Did God change his mind? Or did human moral understanding surpass what scripture presents as divine will?</p>
     </div>
     <div class="notes">The slavery and genocide passages are the most morally problematic parts of the Bible. The common defence is the Old/New Covenant distinction, but this is theologically problematic: if God's moral commands changed, then either God changed his mind (contradicting Malachi 3:6), or those commands were never absolute moral truths. Moreover, the New Testament doesn't condemn slavery either — it tells slaves to obey their masters.</div>
   </section>
@@ -1157,21 +1203,21 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">Biblical Morality: Misogyny &amp; Capital Punishment</h2>
     <p class="lede mb-l">The Bible treats women as property and prescribes the death penalty for minor offences.</p>
 
-    <div class="grid g2" style="gap:14px;align-items:start;margin-bottom:10px">
-      <div class="card card-soft" style="padding:14px 16px;border-top:3px solid var(--bad)">
-        <h4 style="font-size:15px;margin-bottom:6px">👩 Misogyny</h4>
-        <p class="dim" style="font-size:13px;line-height:1.5;margin:0 0 8px">Women are consistently treated as subordinate to men throughout scripture:</p>
-        <ul style="margin:0;padding-left:16px;font-size:13px;line-height:1.7;color:var(--text-2)">
+    <div class="grid g2" style="gap:12px;align-items:start;margin-bottom:8px">
+      <div class="card card-soft" style="padding:12px 14px;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:4px">👩 Misogyny</h4>
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0 0 6px">Women are consistently treated as subordinate to men throughout scripture:</p>
+        <ul style="margin:0;padding-left:14px;font-size:12px;line-height:1.5;color:var(--text-2)">
           <li><b>Deuteronomy 22:28-29</b> — A man who rapes an unbetrothed virgin must pay her father 50 shekels and marry her. He may never divorce her. The victim is forced to marry her rapist. The crime is treated as a property violation against the father.</li>
           <li><b>1 Timothy 2:11-14</b> — &ldquo;A woman should learn in quietness and full submission. I do not permit a woman to teach or to assume authority over a man; she must be quiet. For Adam was formed first, then Eve. And Adam was not the one deceived; it was the woman who was deceived and became a sinner.&rdquo;</li>
           <li><b>Numbers 31:17-18</b> — After conquering the Midianites, Moses orders the execution of all male children and non-virgin women; only virgin girls are spared — to be taken as spoils. This is presented as obedience to God.</li>
           <li><b>Elsewhere:</b> Women could not inherit property (except under specific conditions), could not initiate divorce, and their testimony in court was not given the same weight as a man&rsquo;s. A woman suspected of adultery was forced to drink bitter water (Numbers 5) — a trial by ordeal with no male equivalent.</li>
         </ul>
       </div>
-      <div class="card card-soft" style="padding:14px 16px;border-top:3px solid var(--bad)">
-        <h4 style="font-size:15px;margin-bottom:6px">🔞 Death Penalty for Minor Offences</h4>
-        <p class="dim" style="font-size:13px;line-height:1.5;margin:0 0 8px">The Old Testament prescribes capital punishment for a wide range of non-violent offences:</p>
-        <ul style="margin:0;padding-left:16px;font-size:13px;line-height:1.7;color:var(--text-2)">
+      <div class="card card-soft" style="padding:12px 14px;border-top:3px solid var(--bad)">
+        <h4 style="font-size:14px;margin-bottom:4px">🔞 Death Penalty for Minor Offences</h4>
+        <p class="dim" style="font-size:12px;line-height:1.5;margin:0 0 6px">The Old Testament prescribes capital punishment for a wide range of non-violent offences:</p>
+        <ul style="margin:0;padding-left:14px;font-size:12px;line-height:1.5;color:var(--text-2)">
           <li><b>Exodus 31:14-15</b> — Working on the Sabbath carries the death penalty. A man is executed in Numbers 15:32-36 for gathering sticks on the Sabbath.</li>
           <li><b>Leviticus 20:9</b> — Cursing your parents carries the death penalty.</li>
           <li><b>Leviticus 20:10</b> — Adultery carries the death penalty (for both parties).</li>
@@ -1183,8 +1229,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         </ul>
       </div>
     </div>
-    <div class="card anim-fade-up" data-anim="fade-up" style="padding:10px 16px;border-left:4px solid var(--accent);background:var(--surface-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0">
-      <p class="dim" style="font-size:13px;line-height:1.5;margin:0"><b>The apologetic response:</b> &ldquo;These were cultural concessions to a primitive time.&rdquo; But the text does not present them as concessions — they are framed as the direct, unchanging commands of a morally perfect God. If they were concessions, why does God not mark them as such? And if human morality has evolved beyond God&rsquo;s commands, then human reason has surpassed divine revelation — a deeply problematic position for any Christian to hold.</p>
+    <div class="card anim-fade-up" data-anim="fade-up" style="padding:8px 12px;border-left:4px solid var(--accent);background:var(--surface-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0">
+      <p class="dim" style="font-size:12px;line-height:1.4;margin:0"><b>The apologetic response:</b> &ldquo;These were cultural concessions to a primitive time.&rdquo; But the text does not present them as concessions — they are framed as the direct, unchanging commands of a morally perfect God. If they were concessions, why does God not mark them as such? And if human morality has evolved beyond God&rsquo;s commands, then human reason has surpassed divine revelation — a deeply problematic position for any Christian to hold.</p>
     </div>
     <div class="notes">The death penalty passages are often hand-waved as belonging to the Old Covenant, but the same Bible elevates these laws alongside the Ten Commandments. Christians who pick and choose which Old Testament laws apply are doing exactly what the Bible says they shouldn't — selectively following a supposedly divine moral code. The misogyny passages are equally troubling: women are consistently treated as second-class citizens, and this is presented as God's design, not human corruption.</div>
   </section>
@@ -1296,12 +1342,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">Inerrancy & Textual Transmission</h2>
     <p class="lede mb-l">The original autographs don't exist. What we have are copies of copies.</p>
     <div class="grid g2" style="align-items:start">
-      <div class="card card-soft anim-fade-left" data-anim="fade-left">
-        <h4>The Claim of Inerrancy</h4>
+      <div class="card card-claim anim-fade-left" data-anim="fade-left">
+        <h4>The Claim</h4>
         <p class="dim">Many Christians believe the Bible is without error in its original manuscripts. But we don't have the originals. We have thousands of handwritten copies, all of which contain differences — scribal errors, additions, deletions, and theological corrections.</p>
       </div>
-      <div class="card card-soft anim-fade-right" data-anim="fade-right">
-        <h4>What Textual Criticism Reveals</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <ul class="dim">
           <li>There are 400,000+ textual variants among NT manuscripts</li>
           <li>Most are minor, but some affect doctrine: the story of the woman caught in adultery (John 7:53–8:11) and the longer ending of Mark (Mark 16:9–20) are later additions, not original</li>
@@ -1310,6 +1356,11 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         </ul>
       </div>
     </div>
+    <div class="card card-bottomline anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-top:10px">
+      <h4>The Bottom Line</h4>
+      <p class="dim" style="font-size:13px;line-height:1.6;margin:0">Beyond the textual issues above, there's a logical one: the Bible cannot be used as evidence for the Bible's own reliability. When Christians cite 2 Timothy 3:16 ("All Scripture is God-breathed") to prove inerrancy, they're appealing to the very book whose reliability is in question. The Quran claims it is the perfect word of God. The Book of Mormon claims divine origin. Every scripture can assert its own authority — that doesn't make it true.</p>
+    </div>
+
     <div class="notes">If God wanted to preserve an inerrant text for humanity, why didn't he preserve the originals? Why did he allow thousands of scribal errors to accumulate? Why are key passages that support important doctrines later additions? The inerrancy doctrine requires faith not just in the original text, but in the process of transmission and the ability of scholars to reconstruct that text. That's a lot of faith in a very human process.</div>
   </section>
 
@@ -1364,7 +1415,144 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   </section>
 
 
+  <!-- ============================== -->
+
+  <section class="slide" data-title="Fantastical Elements">
+    <p class="kicker">Bible · Credibility</p>
+    <h2 class="h2">Fantastical Elements in the Bible</h2>
+    <p class="lede mb-l">The Bible contains supernatural events that defy credibility &mdash; and their only source is the Bible itself.</p>
+    <div class="grid g1" style="gap:10px;align-items:stretch">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left" style="border-top:3px solid var(--bad);padding:16px;display:flex;flex-direction:column">
+        <h4 style="margin-bottom:8px">🐍 The Talking Snake</h4>
+        <p class="dim" style="flex:1;font-size:13px;line-height:1.6;margin:0">In Genesis 3, a serpent speaks to Eve and debates theology. Not a metaphor &mdash; the story presents it as a literal conversation. In the ancient Near East, talking animals were a known literary trope (like Balaam&rsquo;s donkey in Numbers 22). These are folkloric elements, not historical reporting. No modern biologist or historian treats this as a credible event.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right" style="border-top:3px solid var(--bad);padding:16px;display:flex;flex-direction:column">
+        <h4 style="margin-bottom:8px">🐴 Balaam&rsquo;s Talking Donkey</h4>
+        <p class="dim" style="flex:1;font-size:13px;line-height:1.6;margin:0">Numbers 22:28-30: a donkey speaks to Balaam in Hebrew. Like the serpent, this is a fable-like episode. The story even includes the donkey arguing logically with its owner. The Rabbis themselves recognized this as a special creation for that moment &mdash; acknowledging it is not a normal event. The folkloric character is unmistakable.</p>
+      </div>
+      <div class="card card-soft anim-fade-up" data-anim="fade-up" style="border-top:3px solid var(--bad);padding:16px;display:flex;flex-direction:column">
+        <h4 style="margin-bottom:8px">☀️ The Sun Standing Still</h4>
+        <p class="dim" style="flex:1;font-size:13px;line-height:1.6;margin:0">Joshua 10:12-14: Joshua commands the sun to stand still &ldquo;about a whole day&rdquo; so the Israelites can finish a battle. If the sun literally stopped in the sky, the laws of physics would be catastrophically violated &mdash; the Earth&rsquo;s rotation would fling everything eastward at hundreds of miles per hour. No other culture recorded this event, yet it would have been visible across half the planet. This is clearly a poetic exaggeration of a military victory, not a historical report.</p>
+      </div>
+    </div>
+    <div class="card anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-top:8px;border-left:4px solid var(--accent)">
+      <p class="dim" style="font-size:13px;line-height:1.6;margin:0"><b>The problem:</b> Stories that would be instantly dismissed as folklore in any other context are treated as literal history when found in the Bible. These elements follow the conventions of ancient myth and legend &mdash; not of history writing. If a talking snake appeared in the Quran or the Book of Mormon, skeptics would rightly point out its implausibility. Consistency demands the same standard for the Bible.</p>
+    </div>
+    <div class="notes">The presence of fantastical elements is a strong indicator that we're reading mythology, not history. Talking animals, the sun halting in the sky, a worldwide flood, people living 900+ years — these are the hallmarks of ancient storytelling, not reliable historical records. Every other culture's sacred texts are held to this standard. Why should the Bible be exempt?</div>
+  </section>
+
+  <section class="slide" data-title="OT Reinterpretation">
+    <p class="kicker">Bible · Theological Editing</p>
+    <h2 class="h2">Theological Reinterpretation of History</h2>
+    <p class="lede mb-l">The Old Testament often reinterprets ordinary events as divine acts &mdash; a pattern visible when compared to other ancient sources.</p>
+    <div class="grid g2" style="align-items:start;gap:14px">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>The Pattern</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6">Throughout the Old Testament, ordinary historical events are recast as direct divine interventions. Military victories become miracles. Natural disasters become divine punishment. Diplomatic treaties become commands of God. This was standard practice in the ancient Near East &mdash; every nation credited its gods with its successes and blamed them for its failures. The Bible does the same, but later readers took these poetic interpretations literally.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>Examples</h4>
+        <ul class="dim" style="font-size:13px;line-height:1.7;padding-left:18px;margin:0">
+          <li><b>The Exodus:</b> No archaeological evidence for the mass migration of 2 million people through the Sinai. If it happened as described, the archaeological footprint would be unmistakable. More likely: a small group of Levites left Egypt and their story was later magnified into a national epic (the &ldquo;Levitical Exodus&rdquo; hypothesis).</li>
+          <li><b>The Conquest of Canaan:</b> The book of Joshua describes a swift, divinely-ordained military conquest. Archaeology shows the Canaanite cities were not destroyed in a single campaign &mdash; many were not even inhabited at the time, and the Israelites appear to have emerged from within Canaanite society itself.</li>
+          <li><b>The Plagues of Egypt:</b> Natural events (red algal bloom, frogs, locusts, weather events) that were theologically reinterpreted as divine plagues &mdash; a pattern documented across other ancient cultures.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes">The reinterpretation of history is not unique to the Bible &mdash; it was the standard way ancient peoples understood their world. But when modern Christians insist that every poetic description of divine intervention is literally and historically true, they are misunderstanding the genre of the text. The Bible authors were theologians writing theology, not historians writing journalism.</div>
+  </section>
+
   <!-- Section: Old Testament Prophecies Intro -->
+
+
+
+  <section class="slide" data-title="Bible Objections">
+    <p class="kicker">Bible · Defenses</p>
+    <h2 class="h2">Common Defense Arguments</h2>
+    <p class="lede mb-l">Christians often defend the Bible with these arguments — each fails under scrutiny.</p>
+    <div class="notes">These are the most common Christian apologetic arguments for the Bible's authority. Each is presented as its advocates state it, followed by the critical response.</div>
+  </section>
+
+  <section class="slide" data-title="Objection Authorship">
+    <p class="kicker">Bible · Defense</p>
+    <h2 class="h2">"The Bible Is Unique in Authorship"</h2>
+    <p class="lede mb-l">A common claim about the Bible's composition — and why it doesn't hold up.</p>
+    <div class="grid g2" style="align-items:start;gap:16px">
+      <div class="card card-claim" style="padding:14px 18px">
+        <h4>The Claim</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">Around forty writers across 1,500 years — kings, prophets, fishermen, a physician — produced 66 books that share a unified theme of salvation through Jesus. No other religious text spans such diversity of authorship with such coherence.</p>
+      </div>
+      <div class="card card-soft" style="border-left:4px solid var(--bad);padding:14px 18px">
+        <h4>Response</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">Writers from the same culture and shared history naturally produce coherent narratives. Yet even then, the Bible shows discrepancies: early texts use the plural <i>elohim</i>, betraying polytheistic origins; God's nature evolves from a violent tribal war god to a universal loving god; and the Bible contradicts itself on whether God creates evil (Isaiah 45:7 says yes, 1 John 1:5 says no). Coherence within a tradition is expected — it's not evidence of divine origin.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="Objection Content">
+    <p class="kicker">Bible · Defense</p>
+    <h2 class="h2">"The Bible Is Unique in Content"</h2>
+    <p class="lede mb-l">Salvation by grace, not works — is being different enough?</p>
+    <div class="grid g2" style="align-items:start;gap:16px">
+      <div class="card card-claim" style="padding:14px 18px">
+        <h4>The Claim</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">Unlike other religions that teach salvation through good works, the Bible uniquely offers salvation as a free gift through faith in Jesus Christ (Ephesians 2:8–9). No other sacred text claims a religious leader rose from the dead or gives assurance of eternal life.</p>
+      </div>
+      <div class="card card-soft" style="border-left:4px solid var(--bad);padding:14px 18px">
+        <h4>Response</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">Uniqueness is not proof of truth. Geocentrism was unique. Alchemy was unique. The geocentric model of the solar system was unique. A claim being distinctive doesn't make it true — it still requires evidence. Many religions offer unique salvation narratives; the question is not which is most different, but which is most supported by evidence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="Objection Eyewitnesses">
+    <p class="kicker">Bible · Defense</p>
+    <h2 class="h2">"The Gospels Were Written by Eyewitnesses"</h2>
+    <p class="lede mb-l">Are the Gospels reliable firsthand accounts?</p>
+    <div class="grid g2" style="align-items:start;gap:16px">
+      <div class="card card-claim" style="padding:14px 18px">
+        <h4>The Claim</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">The New Testament was written by eyewitnesses to the events soon after they took place, within the first century. The Gospels preserve the testimony of those who saw Jesus' ministry, death, and resurrection firsthand.</p>
+      </div>
+      <div class="card card-response" style="padding:14px 18px">
+        <h4>The Response</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">The first gospel (Mark) was written some 40 years after Jesus' death — decades of oral tradition during which stories change, embellish, and distort with every transmission. The Gospels are anonymous; their traditional author names were assigned later. Eyewitness testimony is notoriously unreliable even in controlled modern settings. Ancient accounts, especially those written decades later by non-eyewitnesses, must be treated with appropriate skepticism.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="Objection Manuscripts">
+    <p class="kicker">Bible · Defense</p>
+    <h2 class="h2">"The Manuscript Evidence Is Overwhelming"</h2>
+    <p class="lede mb-l">More copies means more reliable — or does it?</p>
+    <div class="grid g2" style="align-items:start;gap:16px">
+      <div class="card card-claim" style="padding:14px 18px">
+        <h4>The Claim</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">The New Testament has over 5,300 Greek manuscripts, 10,000 Latin, and 9,000 other copies — far more than any other ancient work. By comparison, Aristotle's <i>Poetics</i> survives in only five manuscripts, the earliest over a thousand years after the original.</p>
+      </div>
+      <div class="card card-response" style="padding:14px 18px">
+        <h4>The Response</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">A large number of manuscripts reflects that Christianity was popular and institutionally organized, not that it's true. The Quran has few early manuscripts because Islamic leaders controlled the process and burned variant copies — that says nothing about its truth or falsehood. A falsehood repeated many times does not become true. The question is not how many copies exist, but whether the original events actually happened.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="Objection Changed Lives">
+    <p class="kicker">Bible · Defense</p>
+    <h2 class="h2">"The Bible Changes Lives"</h2>
+    <p class="lede mb-l">Are transformed lives evidence that Christianity is true?</p>
+    <div class="grid g2" style="align-items:start;gap:16px">
+      <div class="card card-claim" style="padding:14px 18px">
+        <h4>The Claim</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">Countless people around the world testify to freedom from addiction, destructive lifestyles, and despair through following biblical principles and faith in Christ. God's Word produces transformed lives (Isaiah 55:11).</p>
+      </div>
+      <div class="card card-response" style="padding:14px 18px">
+        <h4>The Response</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6;margin:0">Beliefs changing lives happens in every religion — Muslims, Buddhists, Hindus, and secular humanists all report transformed lives. If changed lives are evidence, they're evidence for all ideologies, which means they're evidence for none. And if we judge by fruits, we must also account for the Inquisition, the Crusades, and fallen leaders like Ravi Zacharias and Kong Hee — evil done in Christ's name using the same Bible as justification.</p>
+      </div>
+    </div>
+  </section>
+
 
   <section class="slide" data-title="Bible Summary">
     <p class="kicker">Bible · Summary</p>
@@ -1396,8 +1584,6 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     </div>
     <div class="notes">When you examine the Bible with the same critical tools you'd apply to any ancient text, it looks exactly like what you'd expect from a collection of human writings: reflecting the cultures, biases, limitations, and theological agendas of their authors. The simplest explanation for the Bible's features is not that it's a divinely inspired inerrant text, but that it's a very human book — a remarkable one, to be sure, but human nonetheless.</div>
   </section>
-
-  <!-- ============================== -->
   <!-- SECTION: PHILOSOPHICAL         -->
   <!-- ============================== -->
   <section class="slide tc center" data-title="Section Philosophical">
@@ -1445,30 +1631,6 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div class="notes">The Euthyphro dilemma is ancient and devastating. If morality depends on God's commands, then whatever God commands is good — including the genocides and slavery commanded in the Old Testament. Many Christians try to avoid this by saying "God's nature is good," but that just pushes the question back: is God's nature good because it happens to be God's nature, or because goodness is a standard God's nature meets?</div>
   </section>
 
-  <section class="slide" data-title="First Cause">
-    <p class="kicker">Philosophical · Cosmology</p>
-    <h2 class="h2">The Kalam: Who Caused God?</h2>
-    <div class="grid g2 mt-l" style="align-items:start">
-      <div class="card anim-fade-left" data-anim="fade-left">
-        <h4>The Argument</h4>
-        <ol class="dim">
-          <li>Whatever begins to exist has a cause.</li>
-          <li>The universe began to exist.</li>
-          <li>Therefore, the universe has a cause.</li>
-          <li>That cause is God.</li>
-        </ol>
-      </div>
-      <div class="card anim-fade-right" data-anim="fade-right">
-        <h4>Two Problems</h4>
-        <ul class="dim">
-          <li><b>Special pleading:</b> If everything that begins needs a cause, what caused God? If God doesn't need a cause, why can't the universe be the uncaused thing?</li>
-          <li><b>Equivocation:</b> Even if premise 3 is granted, the conclusion "that cause is God" smuggles in attributes (omnipotence, omniscience, benevolence) that aren't in the premises. The cause could be a quantum fluctuation, a multiverse bubble, or anything else.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="notes">The Kalam argument has been popularized by William Lane Craig, but it has a fatal flaw: it treats God as a special exception to its own logic. If the universe needs a cause because it began to exist, then God — who is also said to be a conscious being with a beginning (though theologians dispute this) — would need one too. And if you say "God is eternal, he didn't begin," then you've simply moved the mystery back one step. Why not stop at the universe?</div>
-  </section>
-
   <section class="slide" data-title="Pascal's Wager">
     <p class="kicker">Philosophical · Pragmatism</p>
     <h2 class="h2">Pascal's Wager: The Bet You Can't Win</h2>
@@ -1514,12 +1676,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <h2 class="h2">Omniscience vs Free Will</h2>
     <p class="lede mb-l">If God knows everything that will happen, can we truly have free will?</p>
     <div class="grid g2 mt-l" style="align-items:start">
-      <div class="card anim-fade-left" data-anim="fade-left">
-        <h4>The Problem</h4>
+      <div class="card card-response anim-fade-left" data-anim="fade-left">
+        <h4>The Response</h4>
         <p class="dim">Classical Christian theology holds that God is omniscient — He knows all future events with certainty, including every choice you'll ever make. If God knows with absolute certainty that you'll choose A over B, can you genuinely choose B? If not, your choice is not free. Your freely made choices are, from an eternal perspective, already known and fixed.</p>
       </div>
-      <div class="card anim-fade-right" data-anim="fade-right">
-        <h4>Theological Responses</h4>
+      <div class="card card-response anim-fade-right" data-anim="fade-right">
+        <h4>The Response</h4>
         <ul class="dim">
           <li><b>Molinism</b> (middle knowledge) — God knows what you would freely choose in any possible situation. But this still implies the choices are determined by the situation God creates.</li>
           <li><b>Open Theism</b> — God doesn't know the future because the future isn't settled. But this denies classical omniscience.</li>
@@ -1605,13 +1767,34 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div class="notes">The philosophical objections are the most enduring because they don't depend on new discoveries. The problem of evil, the Euthyphro dilemma, and the unreliability of faith have been known for millennia and remain unanswered. They are the background against which all other arguments must be evaluated.</div>
   </section>
 
+<section class="slide" data-title="Prayers">
+    <p class="kicker">Philosophical · Theology</p>
+    <h2 class="h2">The Problem of Unanswered and Contradictory Prayers</h2>
+    <p class="lede mb-l">If God hears and answers prayers, the evidence should be measurable &mdash; and it isn't.</p>
+    <div class="grid g2" style="align-items:start;gap:14px">
+      <div class="card card-soft anim-fade-left" data-anim="fade-left">
+        <h4>Unanswered Prayers</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6">Christians pray for healing, peace, provision, and protection &mdash; often with identical sincerity and faith. Yet outcomes are wildly uneven. Children die of cancer despite global prayer chains. Natural disasters kill believers and non-believers alike. Meanwhile, petty prayers for parking spots or sports victories are reportedly answered. Jesus promised in Matthew 7:7 &ldquo;Ask and it will be given to you&rdquo; &mdash; yet millions ask sincerely and receive nothing. Every Christian must explain why most prayers go unanswered while a few seem to work, and no explanation fits all the data.</p>
+      </div>
+      <div class="card card-soft anim-fade-right" data-anim="fade-right">
+        <h4>The STEP Study</h4>
+        <p class="dim" style="font-size:13px;line-height:1.6">The most rigorous scientific test of intercessory prayer was the <b>STEP Project</b> (Benson et al., 2006, <i>American Heart Journal</i>). 1,802 cardiac bypass patients were randomly assigned to three groups: those who knew they were being prayed for, those who might be prayed for, and those not prayed for. Results: prayer had <b>no effect</b> on complication-free recovery. Remarkably, patients who <i>knew</i> they were being prayed for had a <b>higher rate</b> of complications &mdash; possibly due to performance anxiety. This double-blind, randomized controlled trial provided no evidence that intercessory prayer works.</p>
+      </div>
+    </div>
+    <div class="card anim-fade-up" data-anim="fade-up" style="padding:12px 18px;margin-top:8px;border-left:4px solid var(--accent)">
+      <p class="dim" style="font-size:13px;line-height:1.6;margin:0"><b>The contradiction:</b> Christians also point to answered prayers as evidence of God&rsquo;s involvement. But if the same mechanism (prayer) produces both answered and unanswered outcomes, and the best scientific study finds no effect, the simplest explanation is that answered prayers are confirmation bias &mdash; we remember the hits and forget the misses. A perfectly loving, all-powerful God who asks his children to pray would be expected to produce measurable, consistent results. He does not.</p>
+    </div>
+    <div class="notes">The problem of prayer is one of the most personally challenging issues for Christians. Everyone has experienced both answered and unanswered prayers. The STEP study is significant because it subjected the claim to the same scientific scrutiny we apply to medicine. The result was null, and the study design was robust enough that defenders couldn't easily dismiss it. Some argued that God can't be tested — but if prayer works, it should produce measurable effects. If it doesn't produce measurable effects, why believe it works at all?</div>
+  </section>
+
   <!-- ============================== -->
   <!-- CONCLUSION                     -->
   <!-- ============================== -->
+
   <section class="slide" data-title="The Cumulative Case">
     <p class="kicker">Conclusion</p>
     <h2 class="h2">The Cumulative Case</h2>
-    <p class="lede mb-l">The verdict across all six areas is devastating for a literal, inerrant Christianity. No single argument is a knockout &mdash; but together, they form an overwhelming picture.</p>
+    <p class="lede mb-l">The verdict across all six evidence areas is devastating for a literal, inerrant Christianity. No single argument is a knockout &mdash; but together, they form an overwhelming picture.</p>
     <div class="grid g3" style="gap:12px;margin-bottom:10px;align-items:stretch">
       <div class="card card-soft" style="padding:14px 14px;display:flex;flex-direction:column;border-top:3px solid var(--bad)">
         <h4 style="font-size:14px;margin-bottom:6px">🔬 Science</h4>
@@ -1653,7 +1836,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <p class="kicker">Conclusion · The Verdict</p>
     <h2 class="h2">The Implication</h2>
     <p class="lede mb-l">Six independent lines of evidence, six consistent verdicts.</p>
-    <div class="grid g6" style="gap:10px;margin-bottom:16px;align-items:stretch">
+    <div class="grid g2" style="gap:10px;margin-bottom:16px;align-items:stretch">
       <div class="card" style="padding:10px 10px;display:flex;flex-direction:column;border-left:4px solid var(--bad)">
         <p class="dim" style="font-size:12px;line-height:1.5;margin:0"><b>🔬 Scientific:</b> The biblical creation story is scientifically false.</p>
       </div>
@@ -2113,6 +2296,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     </div>
     <div class="notes">The early Christian reinterpretation of Psalm 16 is a classic example of reading the resurrection back into the Old Testament. A surface reading never would have suggested resurrection &mdash; it describes deliverance from imminent death, not victory over death itself.</div>
   </section>
+<div class='deck-footer'><span class='dim2'>Based on the presentation by DarkMatter2525 · Adapted and refined</span><span style='display:flex;align-items:center;gap:18px'><a class='back-link' onclick='goToSlide(0);return false' href='#' title='Back to slide 1'>⌂ Start</a><span class='slide-number' data-current='1' data-total='64'></span></span></div>
 </div>
 <script>
 /* html-ppt :: runtime.js
@@ -2384,6 +2568,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         bc.postMessage({ type: 'go', idx: n });
       }
     }
+    window.goToSlide = go;
 
     /* ===== listen for remote navigation / theme changes ===== */
     if (bc) {
@@ -2744,6 +2929,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 .card-hover{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
 .card-hover:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
 
+.card-claim{border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
+.card-response{border-left:4px solid var(--bad);background:color-mix(in srgb,var(--bad) 4%,var(--surface))}
+.card-bottomline{border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 8%,var(--surface-2));border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+
 .pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:500;
   background:var(--surface-2);color:var(--text-2);border:1px solid var(--border)}
 .pill-accent{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 28%,transparent)}
@@ -2759,6 +2948,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   font-size:12px;color:var(--text-3);z-index:10;pointer-events:none}
 .slide-number::before{content:attr(data-current)}
 .slide-number::after{content:" / " attr(data-total)}
+.back-link{cursor:pointer;color:var(--accent);opacity:.5;font-size:16px;transition:opacity .2s;pointer-events:auto;text-decoration:none}
+.back-link:hover{opacity:1;color:var(--accent)}
 .progress-bar{position:fixed;left:0;right:0;bottom:0;height:3px;background:transparent;z-index:20}
 .progress-bar > span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s var(--ease)}
 
@@ -2798,7 +2989,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   h3,.h3{font-size:22px}
   h4,.h4{font-size:18px}
   .lede{font-size:16px;line-height:1.5}
-  .g2,.g3,.g4,.g5,.g6{grid-template-columns:1fr}
+  .g2,.g3,.g4,.g5,.g6,.comp-grid{grid-template-columns:1fr}
   .g2asym{grid-template-columns:1fr}
   .card{padding:16px 18px}
   .kicker{font-size:11px}
