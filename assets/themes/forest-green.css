@@ -1,0 +1,16 @@
+/* theme: forest-green — deep green, emerald and sage accents */
+:root{
+  --bg:#0c1a12;--bg-soft:#122218;--surface:#1a2d20;--surface-2:#223828;
+  --border:rgba(255,255,255,.07);--border-strong:rgba(255,255,255,.14);
+  --text-1:#dce8de;--text-2:#8aa890;--text-3:#5a7a62;
+  --accent:#4ade80;--accent-2:#6ee7a0;--accent-3:#86efac;
+  --good:#4ade80;--warn:#facc15;--bad:#fb7185;
+  --grad:linear-gradient(135deg,#4ade80,#2dd4bf);
+  --grad-soft:linear-gradient(135deg,#223828,#1a2d20);
+  --radius:14px;--radius-sm:8px;--radius-lg:22px;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+  --shadow-lg:0 20px 60px rgba(0,0,0,.5);
+  --font-sans:'Inter','Noto Sans SC',sans-serif;
+  --font-display:'Inter','Noto Sans SC',sans-serif;
+  --letter-tight:-.03em;
+}

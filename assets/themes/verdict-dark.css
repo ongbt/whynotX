@@ -1,0 +1,16 @@
+/* theme: verdict-dark — dark bg, gold accent, serif display */
+:root{
+  --bg:#12100e;--bg-soft:#1a1815;--surface:#1e1c19;--surface-2:#2a2723;
+  --border:rgba(255,255,255,.08);--border-strong:rgba(255,255,255,.16);
+  --text-1:#f0ede8;--text-2:#a09888;--text-3:#706a60;
+  --accent:#c9953c;--accent-2:#d4a84e;--accent-3:#e8b860;
+  --good:#4caf7d;--warn:#c98500;--bad:#c13a3a;
+  --grad:linear-gradient(135deg,#c9953c,#d4a84e);
+  --grad-soft:linear-gradient(135deg,#2a2723,#1e1c19);
+  --radius:14px;--radius-sm:8px;--radius-lg:22px;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+  --shadow-lg:0 20px 60px rgba(0,0,0,.5);
+  --font-sans:'DM Sans','Inter','Noto Sans SC',sans-serif;
+  --font-display:'Playfair Display','Noto Serif SC',Georgia,serif;
+  --letter-tight:-.02em;
+}
