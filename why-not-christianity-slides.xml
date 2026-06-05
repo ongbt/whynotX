@@ -818,9 +818,27 @@ The disciples finished going through Israel many times over. Paul traveled exten
     <kicker>Moral · Scripture</kicker>
     <title>Biblical Morality: Misogyny &amp; Capital Punishment</title>
     <subtitle>The Bible treats women as property and prescribes the death penalty for minor offences.</subtitle>
+    <body>
+      <section type="intro">
+        <card verdict="bad">
+          <title>Misogyny in the Bible</title>
+          <content>Women are consistently treated as second-class citizens throughout scripture — and this is presented as God's design, not human corruption. Daughters could be sold into slavery (Exodus 21:7), women were considered property (the Ten Commandments list wives alongside oxen and donkeys), and female testimony was valued below male testimony in legal matters. Paul writes that women should remain silent in churches (1 Cor 14:34-35) and that man is the head of woman (1 Cor 11:3). These are not cultural asides — they are presented as divine order.</content>
+        </card>
+        <card verdict="bad">
+          <title>Capital Punishment for Minor Offences</title>
+          <content>The Old Testament prescribes death for working on the Sabbath (Exodus 31:14-15), cursing parents (Leviticus 20:9), adultery (Leviticus 20:10), homosexuality (Leviticus 20:13), and prophesying falsely (Deuteronomy 18:20). These laws are presented alongside the Ten Commandments as God's direct commands. Christians today pick and choose which apply, but the text itself makes no such distinction — it presents a single, unified legal code from God.</content>
+        </card>
+      </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The Apologetic Problem</title>
+          <content>Christians often dismiss these as "Old Covenant" laws. But this means either (a) God's moral commands changed (contradicting Malachi 3:6), or (b) those were never absolute moral truths. It also means God once commanded death for Sabbath-breaking — which we now recognize as monstrous. Did God change his mind, or did human moral understanding surpass what scripture presents as divine will?</content>
+        </card>
+      </section>
+    </body>
     <notes>The death penalty passages are often hand-waved as belonging to the Old Covenant, but the same Bible elevates these laws alongside the Ten Commandments. Christians who pick and choose which Old Testament laws apply are doing exactly what the Bible says they shouldn't -- selectively following a supposedly divine moral code. The misogyny passages are equally troubling: women are consistently treated as second-class citizens, and this is presented as God's design, not human corruption.</notes>
-  </slide>
-  <slide id="36" title="Hell and Eternal Punishment">
+   </slide>
+   <slide id="36" title="Hell and Eternal Punishment">
     <kicker>Moral · Punishment</kicker>
     <title>Hell: The Problem of Eternal Punishment</title>
     <subtitle>Finite sin, infinite punishment -- is that justice?</subtitle>
@@ -1126,11 +1144,28 @@ Are we justified by faith alone or do we need to keep the law?</content>
       </section>
     </body>
   </slide>
-  <slide id="52" title="Bible Summary">
-    <kicker>Bible · Summary</kicker>
-    <title>The Bible as a Human Book</title>
-    <notes>When you examine the Bible with the same critical tools you'd apply to any ancient text, it looks exactly like what you'd expect from a collection of human writings: reflecting the cultures, biases, limitations, and theological agendas of their authors. The simplest explanation for the Bible's features is not that it's a divinely inspired inerrant text, but that it's a very human book -- a remarkable one, to be sure, but human nonetheless.</notes>
-  </slide>
+<slide id="52" title="Bible Summary">
+  <kicker>Bible · Summary</kicker>
+  <title>The Bible as a Human Book</title>
+  <subtitle>Examined critically, the Bible looks like a human book — not a divinely inspired inerrant text.</subtitle>
+  <body>
+    <section type="main">
+      <card verdict="bad">
+        <title>Textual Transmission</title>
+        <content>No original manuscripts exist. We have copies of copies with 400,000+ variants. Key passages (John 7:53-8:11, Mark 16:9-20, 1 John 5:7-8) are later additions.</content>
+      </card>
+      <card verdict="bad">
+        <title>Canon &amp; Consistency</title>
+        <content>The canon was settled by fallible councils centuries later. The Bible contradicts itself on historical details and contains fantastical elements (talking snakes, demons in pigs) that defy credibility.</content>
+      </card>
+      <card verdict="bad">
+        <title>Defenses Fail</title>
+        <content>Common apologetic arguments — unity of authorship, manuscript evidence, changed lives, eyewitness testimony — fail under scrutiny or apply equally to other scriptures.</content>
+      </card>
+    </section>
+  </body>
+  <notes>When you examine the Bible with the same critical tools you'd apply to any ancient text, it looks exactly like what you'd expect from a collection of human writings: reflecting the cultures, biases, limitations, and theological agendas of their authors. The simplest explanation for the Bible's features is not that it's a divinely inspired inerrant text, but that it's a very human book -- a remarkable one, to be sure, but human nonetheless.</notes>
+</slide>
   <slide id="53" title="Section Philosophical" type="section">
     <kicker>Part Six</kicker>
     <title>Philosophical Objections</title>
