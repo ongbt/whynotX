@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presentation>
   <title>Why I Do Not Believe Christianity Is True</title>
-  <version>v71</version>
+  <version>v73</version>
   <slide_count>87</slide_count>
   <slide id="1" title="Cover">
     <kicker>A Reasoned Examination</kicker>
@@ -135,7 +135,7 @@ Christianity Is True</title>
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line:</title>
           <content> 
 The Kalam argument commits special pleading for God. If everything that begins needs a cause, what caused God? If God doesn't need a cause, why can't the universe be the uncaused thing? And even if there is a first cause, nothing in the argument shows it's the God of the Bible -- it could be a quantum fluctuation, a multiverse bubble, or something we haven't discovered yet. The argument smuggles in theology where it only has cosmology.</content>
@@ -169,7 +169,7 @@ The Kalam argument commits special pleading for God. If everything that begins n
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line</title>
           <content>The fine-tuning argument sounds compelling until you realize it's a puddle admiring the hole it fits into. We exist in a universe that permits our existence because we couldn't exist in any other. That's not evidence of design -- it's a tautology. And with no proof of a multiverse, the argument remains untestable. A designer is one possible explanation, but far from the simplest one.</content>
         </card>
@@ -213,7 +213,7 @@ The Kalam argument commits special pleading for God. If everything that begins n
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line:</title>
           <content>Every independent dating method in science -- radiometric, geological, astronomical -- agrees on a 4.5-billion-year-old Earth. The biblical figure of 6,000--10,000 years is contradicted by every branch of science that measures age. To accept the Bible's timeline, you must reject the entire edifice of modern geology, physics, and astronomy.</content>
         </card>
@@ -247,7 +247,7 @@ The Kalam argument commits special pleading for God. If everything that begins n
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line:</title>
           <content>Evolution is one of the most thoroughly tested theories in science. It does not disprove God, but it makes a **literal reading of Genesis impossible**. No Adam and Eve, no original sin, no Fall, no special creation. Christian soteriology has no foundation. **See Appendix** for the full evidence.</content>
         </card>
@@ -303,7 +303,7 @@ The Kalam argument commits special pleading for God. If everything that begins n
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line</title>
           <content>The genetic evidence alone places humans firmly within the great ape family. Combined with the fossil sequence, the case for common ancestry is as strong as any conclusion in science. A literal Adam and Eve contradicts all of it.</content>
         </card>
@@ -401,6 +401,12 @@ No Adam means no original sin -- and without original sin, the need for a savior
           </content>
         </card>
       </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The bottom line</title>
+          <content>The geological, biological, and genetic evidence against a global flood is overwhelming. The story is best understood as an ancient myth borrowed from Mesopotamian culture, not as literal history.</content>
+        </card>
+      </section>
     </body>
     <notes>The Noah's Ark story is one of the most well-known in the Bible, and one of the most empirically falsifiable. Every branch of science -- geology, biology, genetics, archaeology -- independently concludes that no global flood occurred in human history. The story almost certainly derives from older Mesopotamian flood myths like the Epic of Gilgamesh, which predate the Genesis account.</notes>
   </slide>
@@ -428,7 +434,7 @@ No Adam means no original sin -- and without original sin, the need for a savior
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line</title>
           <content>
 Mainstream archaeologists and biblical historians (Israel Finkelstein, William Dever, Richard Elliott Friedman, and most others) agree that the Exodus as described in the Bible did not happen. Some suggest a small group of Semitic slaves may have escaped Egypt and their story was later magnified into a national epic. But the mass Exodus of millions is not supported by any evidence.
@@ -474,7 +480,7 @@ The consensus: Israelites did not invade Canaan -- they **emerged from within** 
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line</title>
           <content>The Israelites did not invade Canaan from outside -- they **were** Canaanites who gradually differentiated themselves. The conquest narrative was written centuries later as a theological origin myth, not a historical record.</content>
         </card>
@@ -559,6 +565,12 @@ The consensus: Israelites did not invade Canaan -- they **emerged from within** 
 - No contemporary non-Christian source mentions it
 - No extra-biblical accounts exist of the Gospel miracles — tombs opening (Matt 27:52-53), feeding 5,000, darkness at noon — all in a Roman-governed province, yet unrecorded by any contemporary historian
           </content>
+        </card>
+      </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The bottom line</title>
+          <content>The resurrection claim rests on contradictory late accounts and lacks independent corroboration. Natural explanations remain far more probable than a miracle of this magnitude.</content>
         </card>
       </section>
     </body>
@@ -826,17 +838,17 @@ The disciples finished going through Israel many times over. Paul traveled exten
     <subtitle>The Bible treats women as property and prescribes the death penalty for minor offences.</subtitle>
     <body>
       <section type="intro">
-        <card verdict="bad">
+        <card>
           <title>Misogyny in the Bible</title>
           <content>Women are consistently treated as second-class citizens throughout scripture — and this is presented as God's design, not human corruption. Daughters could be sold into slavery (Exodus 21:7), women were considered property (the Ten Commandments list wives alongside oxen and donkeys), and female testimony was valued below male testimony in legal matters. Paul writes that women should remain silent in churches (1 Cor 14:34-35) and that man is the head of woman (1 Cor 11:3). These are not cultural asides — they are presented as divine order.</content>
         </card>
-        <card verdict="bad">
+        <card>
           <title>Capital Punishment for Minor Offences</title>
           <content>The Old Testament prescribes death for working on the Sabbath (Exodus 31:14-15), cursing parents (Leviticus 20:9), adultery (Leviticus 20:10), homosexuality (Leviticus 20:13), and prophesying falsely (Deuteronomy 18:20). These laws are presented alongside the Ten Commandments as God's direct commands. Christians today pick and choose which apply, but the text itself makes no such distinction — it presents a single, unified legal code from God.</content>
         </card>
       </section>
       <section type="outro">
-        <card verdict="bad">
+        <card>
           <title>The Apologetic Problem</title>
           <content>Christians often dismiss these as "Old Covenant" laws. But this means either (a) God's moral commands changed (contradicting Malachi 3:6), or (b) those were never absolute moral truths. It also means God once commanded death for Sabbath-breaking — which we now recognize as monstrous. Did God change his mind, or did human moral understanding surpass what scripture presents as divine will?</content>
         </card>
@@ -866,6 +878,12 @@ The disciples finished going through Israel many times over. Paul traveled exten
           </content>
         </card>
       </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The bottom line</title>
+          <content>Eternal conscious torment for finite sins is morally indefensible. If hell is not eternal, the traditional soteriology collapses; if it is, an all-good God would not create it.</content>
+        </card>
+      </section>
     </body>
     <notes>Hell is one of the most difficult doctrines in Christianity. In recent decades, many Christians have moved away from the traditional view of eternal conscious torment toward annihilationism or universalism. But the traditional view remains the majority position globally, and it was the dominant view for most of church history. If hell is not eternal conscious torment, then what exactly did Jesus save us from? And if it is, then the moral problem is profound: an all-powerful God who could simply annihilate sinners or rehabilitate them instead chooses to torture them forever. This is not justice by any reasonable definition.</notes>
   </slide>
@@ -891,6 +909,12 @@ The disciples finished going through Israel many times over. Paul traveled exten
           </content>
         </card>
       </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The bottom line</title>
+          <content>Inherited guilt is incompatible with any coherent concept of justice. Without original sin, there is no need for atonement — and Christianity's core message loses its foundation.</content>
+        </card>
+      </section>
     </body>
     <notes>Original sin is the theological linchpin of Pauline Christianity. Without it, there is no need for atonement, no need for a savior, and no need for Christianity itself. Jesus's mission only makes sense if humanity is in a state of sin from which it cannot rescue itself. If the doctrine of original sin is morally indefensible -- and it is -- then the entire soteriological framework built on it collapses.</notes>
   </slide>
@@ -900,15 +924,15 @@ The disciples finished going through Israel many times over. Paul traveled exten
     <subtitle>Christianity's core moral doctrines are indefensible. The Bible's specific commands are worse. Secular frameworks provide a more consistent foundation.</subtitle>
     <body>
       <section type="main">
-        <card verdict="bad">
+        <card>
           <title>Doctrines</title>
           <content>Hell (finite sin, infinite punishment) and original sin (inherited guilt) are morally incoherent. A blood sacrifice to appease divine wrath is a primitive concept, not a sophisticated ethical system.</content>
         </card>
-        <card verdict="bad">
+        <card>
           <title>Scripture</title>
           <content>The Bible endorses slavery, genocide, and misogyny as divine commands — not cultural concessions. We've made moral progress despite the Bible, not because of it.</content>
         </card>
-        <card verdict="bad">
+        <card>
           <title>Conclusion</title>
           <content>Secular frameworks grounded in empathy, reason, and human flourishing provide a more consistent moral foundation than divine command does.</content>
         </card>
@@ -948,13 +972,13 @@ The disciples finished going through Israel many times over. Paul traveled exten
     <subtitle>The original autographs don't exist. What we have are copies of copies.</subtitle>
     <body>
       <section type="intro">
-        <card verdict="bad">
+        <card>
           <title>The Claim</title>
           <content>Many Christians believe the Bible is without error in its original manuscripts. But we don't have the originals. We have thousands of handwritten copies, all of which contain differences -- scribal errors, additions, deletions, and theological corrections.</content>
         </card>
       </section>
       <section type="main">
-        <card verdict="bad">
+        <card>
           <title>The Reality</title>
           <content>
 - There are 400,000+ textual variants among NT manuscripts
@@ -965,7 +989,7 @@ The disciples finished going through Israel many times over. Paul traveled exten
         </card>
       </section>
       <section type="outro">
-        <card verdict="bad">
+        <card>
           <title>The Bottom Line</title>
           <content>Beyond the textual issues above, there's a logical one: the Bible cannot be used as evidence for the Bible's own reliability. When Christians cite 2 Timothy 3:16 ("All Scripture is God-breathed") to prove inerrancy, they're appealing to the very book whose reliability is in question. The Quran claims it is the perfect word of God. The Book of Mormon claims divine origin. Every scripture can assert its own authority -- that doesn't make it true.</content>
         </card>
@@ -990,6 +1014,12 @@ The disciples finished going through Israel many times over. Paul traveled exten
         <card>
           <title>🔍 Criteria for Inclusion</title>
           <content>Books were included based on apostolic authorship, orthodoxy, and widespread usage -- human criteria, not divine markers. Catholic, Orthodox, and Protestant traditions still disagree on the canon today.</content>
+        </card>
+      </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The bottom line</title>
+          <content>The biblical canon was decided by fallible humans through political and theological debate. If the Bible's table of contents is a human decision, divine inerrancy is a human claim.</content>
         </card>
       </section>
     </body>
@@ -1018,6 +1048,12 @@ Is God a God of peace or does he create evil? (Isa 45:7 vs multiple "God is love
 Are we justified by faith alone or do we need to keep the law?</content>
         </card>
       </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The bottom line</title>
+          <content>An inerrant book should be internally consistent on its face. The need for elaborate harmonization reveals the text is exactly what we'd expect from human authors.</content>
+        </card>
+      </section>
     </body>
     <notes>Apologists have answers for every contradiction. Harmonization is always possible if you're creative enough. But harmonization isn't the same as the plain reading of the text. When you need to invent elaborate explanations to reconcile two accounts that say different things, you're not discovering the text's meaning -- you're imposing a harmonization on it. An inerrant book would be self-consistent on its face.</notes>
   </slide>
@@ -1041,7 +1077,7 @@ Are we justified by faith alone or do we need to keep the law?</content>
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line</title>
           <content>Stories that would be instantly dismissed as folklore in any other context are treated as literal history when found in the Bible. These elements follow the conventions of ancient myth and legend -- not of history writing. If a talking snake appeared in the Quran or the Book of Mormon, skeptics would rightly point out its implausibility. Consistency demands the same standard for the Bible.</content>
         </card>
@@ -1055,11 +1091,11 @@ Are we justified by faith alone or do we need to keep the law?</content>
     <subtitle>The Old Testament often reinterprets ordinary events as divine acts -- a pattern visible when compared to other ancient sources.</subtitle>
     <body>
       <section type="intro">
-        <card verdict="bad">
+        <card>
           <title>The Pattern</title>
           <content>Throughout the Old Testament, ordinary historical events are recast as direct divine interventions. Military victories become miracles. Natural disasters become divine punishment. Diplomatic treaties become commands of God. This was standard practice in the ancient Near East — every nation credited its gods with its successes and blamed them for its failures. The Bible does the same, but later readers took these poetic interpretations literally.</content>
         </card>
-        <card verdict="bad">
+        <card>
           <title>Concrete Examples</title>
           <content>
 - The Exodus: A small group of Semitic slaves escaping Egypt becomes a foundational miracle of 2 million people crossing the Red Sea. Egyptian records of the period — which meticulously document far smaller events — record nothing.
@@ -1070,7 +1106,7 @@ Are we justified by faith alone or do we need to keep the law?</content>
         </card>
       </section>
       <section type="outro">
-        <card verdict="bad">
+        <card>
           <title>The Bottom Line</title>
           <content>The Bible authors were theologians writing theology, not historians writing journalism. When modern Christians insist that every poetic description of divine intervention is literally and historically true, they are misunderstanding the genre of the text. Every other culture's sacred writings are recognized as theological interpretations of history — the Bible deserves the same critical treatment.</content>
         </card>
@@ -1173,17 +1209,23 @@ Are we justified by faith alone or do we need to keep the law?</content>
     <subtitle>Examined critically, the Bible looks like a human book — not a divinely inspired inerrant text.</subtitle>
     <body>
       <section type="main">
-        <card verdict="bad">
+        <card>
           <title>Textual Transmission</title>
           <content>No original manuscripts exist. We have copies of copies with 400,000+ variants. Key passages (John 7:53-8:11, Mark 16:9-20, 1 John 5:7-8) are later additions.</content>
         </card>
-        <card verdict="bad">
+        <card>
           <title>Canon &amp; Consistency</title>
           <content>The canon was settled by fallible councils centuries later. The Bible contradicts itself on historical details and contains fantastical elements (talking snakes, demons in pigs) that defy credibility.</content>
         </card>
-        <card verdict="bad">
+        <card>
           <title>Defenses Fail</title>
           <content>Common apologetic arguments — unity of authorship, manuscript evidence, changed lives, eyewitness testimony — fail under scrutiny or apply equally to other scriptures.</content>
+        </card>
+      </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The bottom line</title>
+          <content>When examined critically, the Bible exhibits every characteristic of a human composition. The simplest explanation is the correct one: it is a human book.</content>
         </card>
       </section>
     </body>
@@ -1231,17 +1273,17 @@ Are we justified by faith alone or do we need to keep the law?</content>
     </body>
     <notes>The Euthyphro dilemma is ancient and devastating. If morality depends on God's commands, then whatever God commands is good -- including the genocides and slavery commanded in the Old Testament. Many Christians try to avoid this by saying "God's nature is good," but that just pushes the question back: is God's nature good because it happens to be God's nature, or because goodness is a standard God's nature meets?</notes>
   </slide>
-  <slide id="56" title="Pascal&amp;amp;amp;#x27;s Wager">
+  <slide id="56" title="Pascal's Wager">
     <kicker>Philosophical · Pragmatism</kicker>
     <title>Pascal's Wager: The Bet You Can't Win</title>
     <subtitle>"Believe in God because you have everything to gain and nothing to lose."</subtitle>
     <body>
       <section type="intro">
-        <card verdict="bad">
+        <card>
           <title>The Argument</title>
           <content>Pascal argued that belief in God is the rational bet: if God exists, the believer gains infinite reward and avoids infinite punishment. If God doesn't exist, the believer loses little. The atheist, by contrast, risks infinite loss for finite gain.</content>
         </card>
-        <card verdict="bad">
+        <card>
           <title>Why It Fails</title>
           <content>
 - The Many-Gods Objection: Which God do you bet on? Islam, Hinduism, Judaism, and hundreds of other religions each promise different rewards and punishments. Pascal's wager tells you to believe — but doesn't tell you what to believe. The logic applies equally to any god.
@@ -1251,7 +1293,7 @@ Are we justified by faith alone or do we need to keep the law?</content>
         </card>
       </section>
       <section type="outro">
-        <card verdict="bad">
+        <card>
           <title>The Bottom Line</title>
           <content>Pascal's Wager is almost universally rejected by philosophers and theologians. It treats faith as an insurance policy, which is the opposite of genuine religious commitment. And it completely ignores the problem of religious pluralism: which God, exactly, are you betting on?</content>
         </card>
@@ -1287,17 +1329,17 @@ Contrast faith with evidence-based reasoning: when applied properly, science con
     <subtitle>If God knows everything that will happen, can we truly have free will?</subtitle>
     <body>
       <section type="intro">
-        <card verdict="bad">
+        <card>
           <title>Omniscience</title>
           <content>Classical Christian theology holds that God is omniscient -- He knows all future events with certainty, including every choice you'll ever make. This includes every sin, every act of disbelief, every rejection. From God's eternal perspective, everything that will happen is already known.</content>
         </card>
-        <card verdict="bad">
+        <card>
           <title>The Free Will Problem</title>
           <content>If God knows with absolute certainty that you'll choose A over B, can you genuinely choose B? If God's knowledge is infallible, then your choice is fixed -- you cannot choose otherwise. And if you cannot choose otherwise, your choice is not free. Your freely made choices are, from an eternal perspective, already known and determined.</content>
         </card>
       </section>
       <section type="outro">
-        <card verdict="bad">
+        <card>
           <title>The Dilemma</title>
           <content>If humans have genuine free will, then God doesn't know for certain what they'll do -- contradicting classical omniscience. If God does know everything with certainty, then human choices are essentially scripted, and God bears ultimate responsibility for evil. Neither option is comfortable for traditional Christian theology. This is why theologians have debated this for two millennia without resolution.</content>
         </card>
@@ -1529,7 +1571,7 @@ Most skeptics are in the first camp, not the second. The burden of proof remains
         </card>
       </section>
       <section type="outro">
-        <card>
+        <card verdict="bad">
           <title>The bottom line</title>
           <content>The distinction matters because Christians often misrepresent atheism as "believing there is no God" -- a positive claim that would carry its own burden of proof. In reality, atheism is simply the lack of belief in the god claim, which is the default position when evidence is insufficient.</content>
         </card>

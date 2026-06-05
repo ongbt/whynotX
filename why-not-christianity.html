@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-minimal-white is-active" data-themes="theme-minimal-white,theme-dracula,theme-verdict-dark" data-theme="minimal-white">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Why I Do Not Believe Christianity Is True</title>
-<style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
+<html lang="en" class="theme-verdict-dark is-active" data-themes="theme-verdict-dark,theme-dracula" data-theme="verdict-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why I Do Not Believe Christianity Is True</title>
+  <style>
 /* html-ppt :: base.css — reset + shared tokens + layout primitives */
 /* Default tokens. Themes in assets/themes/*.css override the :root block. */
 :root {
@@ -152,6 +155,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   .slide{position:relative;opacity:1!important;transform:none!important;page-break-after:always;height:100vh}
   .deck-header,.deck-footer,.progress-bar,.notes-overlay,.overview{display:none!important}
 }
+
 /* html-ppt :: animations.css
  * Apply by adding class="anim-<name>" or data-anim="<name>".
  * Durations are deliberately snappy; tweak --anim-dur per element.
@@ -290,6 +294,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 @media (prefers-reduced-motion: reduce){
   [class*="anim-"]{animation:none!important;transition:none!important}
 }
+
 /* html-ppt :: shared webfonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;600;700;900&display=swap');
@@ -299,37 +304,6 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-/* theme: minimal-white — 极简白，克制高级 */
-.theme-minimal-white:root, .theme-minimal-white{
-  --bg:#ffffff;--bg-soft:#fafafa;--surface:#ffffff;--surface-2:#f5f5f6;
-  --border:rgba(17,18,22,.08);--border-strong:rgba(17,18,22,.16);
-  --text-1:#0c0d10;--text-2:#55596a;--text-3:#9ca1b0;
-  --accent:#111216;--accent-2:#3b3f4a;--accent-3:#6b6f7a;
-  --good:#1aaf6c;--warn:#c98500;--bad:#c13a3a;
-  --grad:linear-gradient(135deg,#111216,#3b3f4a);
-  --grad-soft:linear-gradient(135deg,#f5f5f6,#ffffff);
-  --radius:14px;--radius-sm:8px;--radius-lg:22px;
-  --shadow:0 1px 2px rgba(17,18,22,.04),0 8px 24px rgba(17,18,22,.06);
-  --shadow-lg:0 20px 60px rgba(17,18,22,.1);
-  --font-sans:'Inter','Noto Sans SC',sans-serif;
-  --font-display:'Inter','Noto Sans SC',sans-serif;
-  --letter-tight:-.035em;
-}
-
-/* theme: dracula — dracula 深色 */
-.theme-dracula:root, .theme-dracula{
-  --bg:#282a36;--bg-soft:#21222c;--surface:#343746;--surface-2:#44475a;
-  --border:rgba(248,248,242,.12);--border-strong:rgba(248,248,242,.24);
-  --text-1:#f8f8f2;--text-2:#bdbde0;--text-3:#6272a4;
-  --accent:#bd93f9;--accent-2:#ff79c6;--accent-3:#8be9fd;
-  --good:#50fa7b;--warn:#f1fa8c;--bad:#ff5555;
-  --grad:linear-gradient(135deg,#bd93f9,#ff79c6 55%,#8be9fd);
-  --grad-soft:linear-gradient(135deg,#343746,#44475a);
-  --radius:12px;--radius-sm:8px;--radius-lg:18px;
-  --shadow:0 10px 30px rgba(0,0,0,.4);
-  --shadow-lg:0 22px 60px rgba(0,0,0,.55);
-  --font-sans:'Inter','Noto Sans SC',sans-serif;
-}
 
 /* theme: verdict-dark — dark bg, gold accent, serif display */
 .theme-verdict-dark:root, .theme-verdict-dark{
@@ -348,12 +322,28 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   --letter-tight:-.02em;
 }
 
+/* theme: dracula — dracula 深色 */
+.theme-dracula:root, .theme-dracula{
+  --bg:#282a36;--bg-soft:#21222c;--surface:#343746;--surface-2:#44475a;
+  --border:rgba(248,248,242,.12);--border-strong:rgba(248,248,242,.24);
+  --text-1:#f8f8f2;--text-2:#bdbde0;--text-3:#6272a4;
+  --accent:#bd93f9;--accent-2:#ff79c6;--accent-3:#8be9fd;
+  --good:#50fa7b;--warn:#f1fa8c;--bad:#ff5555;
+  --grad:linear-gradient(135deg,#bd93f9,#ff79c6 55%,#8be9fd);
+  --grad-soft:linear-gradient(135deg,#343746,#44475a);
+  --radius:12px;--radius-sm:8px;--radius-lg:18px;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+  --shadow-lg:0 22px 60px rgba(0,0,0,.55);
+  --font-sans:'Inter','Noto Sans SC',sans-serif;
+}
+
+
 .slide { overflow-y: auto !important; padding-bottom: 110px !important; }
 .slide::-webkit-scrollbar { width: 6px; }
 .slide::-webkit-scrollbar-track { background: transparent; }
 .slide::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
-.card ul { margin: 4px 0; padding-left: 20px; }
-.card li { font-size: 13px; line-height: 1.55; color: var(--text-2); margin-bottom: 2px; }
+.card li, .card ul { font-size: 13px; line-height: 1.55; color: var(--text-2); }
+.card ul { margin: 2px 0 4px; padding-left: 18px; }
 @media (max-width: 1024px) {
   .slide { padding: 40px 36px 90px !important; }
   .deck-header { top: 12px; left: 18px; right: 18px; }
@@ -363,29 +353,32 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   .lede { font-size: clamp(13px, 2vw, 16px); }
   .card { padding: 14px 14px 12px !important; }
   .slide div[style*="repeat(auto-fit,minmax(300px,1fr))"] { grid-template-columns: repeat(auto-fit,minmax(240px,1fr)) !important; }
-  img[style*="max-height"] { max-height: 80px !important; }
   .mb-l { margin-bottom: 14px !important; }
   .kicker { font-size: 11px; }
   .h4 { font-size: 14px; }
-  .dim,.card p { font-size: clamp(11px, 1.6vw, 13px); line-height: 1.5; }
+  .dim,.card p,.card li,.card ul { font-size: clamp(11px, 1.6vw, 13px); line-height: 1.5; }
+  .card ul { margin: 2px 0 4px; padding-left: 18px; }
 }
 @media (max-width: 640px) {
   .slide { padding: 28px 18px !important; }
   h1.title,.h1 { font-size: clamp(22px, 7vw, 28px); }
   h2.title,.h2 { font-size: clamp(18px, 5vw, 22px); }
   .card { padding: 10px 12px 10px !important; }
-  .card p { font-size: 12px; line-height: 1.4; }
+  .card p,.card li,.card ul { font-size: 12px; line-height: 1.4; }
   .kicker { font-size: 10px; letter-spacing: 0.08em; }
   .slide div[style*="repeat(auto-fit,minmax(300px,1fr))"] { grid-template-columns: 1fr !important; }
 }
 .deck-footer button { background:none; border:none; color:var(--text-3); cursor:pointer; font-size:18px; padding:0 8px 0 0; line-height:1; }
 .deck-footer button:hover { color:var(--accent); }
-</style></head>
-<body><div class="deck">
+
+</style>
+</head>
+<body>
+  <div class="deck">
 
     <!-- COVER -->
     <section class="slide is-active" data-title="Cover">
-      <div class="version-badge" style="position:absolute;top:20px;right:20px;font-size:14px;color:var(--text-3);font-family:monospace;">v71 · June 05, 2026 · 18:10 +08</div>
+      <div class="version-badge" style="position:absolute;top:20px;right:20px;font-size:14px;color:var(--text-3);font-family:monospace;">v73 · June 06, 2026 · 00:17 SGT</div>
       <p class="kicker">A Reasoned Examination</p>
       <h1 class="h1" style="margin-bottom:0.25em">Why I Do Not Believe<br>Christianity Is True</h1>
       <p class="lede" style="max-width:56ch">An evidence-based look at the claims of Christianity through the lenses of science, history, Jesus, morality, scripture, and philosophy.</p>
@@ -470,7 +463,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line:</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Kalam argument commits special pleading for God. If everything that begins needs a cause, what caused God? If God doesn&#x27;t need a cause, why can&#x27;t the universe be the uncaused thing? And even if there is a first cause, nothing in the argument shows it&#x27;s the God of the Bible -- it could be a quantum fluctuation, a multiverse bubble, or something we haven&#x27;t discovered yet. The argument smuggles in theology where it only has cosmology.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line:</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Kalam argument commits special pleading for God. If everything that begins needs a cause, what caused God? If God doesn&#x27;t need a cause, why can&#x27;t the universe be the uncaused thing? And even if there is a first cause, nothing in the argument shows it&#x27;s the God of the Bible -- it could be a quantum fluctuation, a multiverse bubble, or something we haven&#x27;t discovered yet. The argument smuggles in theology where it only has cosmology.</p></div>
       </div>
       </div>
       <div class="notes">The Kalam argument has been popularized by William Lane Craig, but it has a fatal flaw: it treats God as a special exception to its own logic. If the universe needs a cause because it began to exist, then God -- who is also said to be a conscious being with a beginning (though theologians dispute this) -- would need one too. And if you say &quot;God is eternal, he didn&#x27;t begin,&quot; then you&#x27;ve simply moved the mystery back one step. Why not stop at the universe?</div>
@@ -490,7 +483,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The fine-tuning argument sounds compelling until you realize it&#x27;s a puddle admiring the hole it fits into. We exist in a universe that permits our existence because we couldn&#x27;t exist in any other. That&#x27;s not evidence of design -- it&#x27;s a tautology. And with no proof of a multiverse, the argument remains untestable. A designer is one possible explanation, but far from the simplest one.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The fine-tuning argument sounds compelling until you realize it&#x27;s a puddle admiring the hole it fits into. We exist in a universe that permits our existence because we couldn&#x27;t exist in any other. That&#x27;s not evidence of design -- it&#x27;s a tautology. And with no proof of a multiverse, the argument remains untestable. A designer is one possible explanation, but far from the simplest one.</p></div>
       </div>
       </div>
       <div class="notes">The fine-tuning argument sounds compelling until you examine it closely. We exist in a universe that permits our existence -- that&#x27;s not surprising, it&#x27;s tautological.</div>
@@ -511,7 +504,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line:</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Every independent dating method in science -- radiometric, geological, astronomical -- agrees on a 4.5-billion-year-old Earth. The biblical figure of 6,000--10,000 years is contradicted by every branch of science that measures age. To accept the Bible&#x27;s timeline, you must reject the entire edifice of modern geology, physics, and astronomy.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line:</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Every independent dating method in science -- radiometric, geological, astronomical -- agrees on a 4.5-billion-year-old Earth. The biblical figure of 6,000--10,000 years is contradicted by every branch of science that measures age. To accept the Bible&#x27;s timeline, you must reject the entire edifice of modern geology, physics, and astronomy.</p></div>
       </div>
       </div>
       <div class="notes">This is perhaps the most straightforward contradiction. If you take the Bible literally, the Earth is at most 10,000 years old. Every scientific discipline that measures age -- astronomy, geology, physics, biology -- independently arrives at 4.5 billion years. You can reconcile this by saying Genesis isn&#x27;t literal, but then you have to explain which parts are literal and which aren&#x27;t, and on what basis you decide.</div>
@@ -532,7 +525,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line:</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Evolution is one of the most thoroughly tested theories in science. It does not disprove God, but it makes a <strong>literal reading of Genesis impossible</strong>. No Adam and Eve, no original sin, no Fall, no special creation. Christian soteriology has no foundation. <strong>See Appendix</strong> for the full evidence.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line:</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Evolution is one of the most thoroughly tested theories in science. It does not disprove God, but it makes a <strong>literal reading of Genesis impossible</strong>. No Adam and Eve, no original sin, no Fall, no special creation. Christian soteriology has no foundation. <strong>See Appendix</strong> for the full evidence.</p></div>
       </div>
       </div>
       <div class="notes">Forceful summary of evolution evidence for casual readers. Key message: evolution is settled science that makes a literal Genesis impossible.</div>
@@ -566,7 +559,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The genetic evidence alone places humans firmly within the great ape family. Combined with the fossil sequence, the case for common ancestry is as strong as any conclusion in science. A literal Adam and Eve contradicts all of it.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The genetic evidence alone places humans firmly within the great ape family. Combined with the fossil sequence, the case for common ancestry is as strong as any conclusion in science. A literal Adam and Eve contradicts all of it.</p></div>
       </div>
       </div>
       <div class="notes">Three more genetic lines of evidence: shared broken genes (pseudogenes), shared ERV insertions, and 98.8% genome-wide identity. Together with slide 1, six independent lines all converge on common ancestry.</div>
@@ -624,6 +617,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>No geological evidence for a global flood in the last 6,000 years</li><li>Stratigraphic layers show gradual deposition over millions of years, not a single catastrophic flood</li><li>Ice cores from Greenland and Antarctica show annual layers going back 100,000+ years -- uninterrupted</li><li>If a global flood occurred, we&#x27;d expect a worldwide layer of flood sediment. No such layer exists.</li><li>8 people could not feed, clean, and care for ~35,000+ animal species (let alone insects and marine life)</li><li>Freshwater fish would die in saltwater; saltwater fish in freshwater</li><li>Post-flood repopulation is genetically impossible from such a small founder population</li><li>Kangaroos and koalas making it from Ararat to Australia without leaving fossils along the way stretches credulity</li></ul></div>
       </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The geological, biological, and genetic evidence against a global flood is overwhelming. The story is best understood as an ancient myth borrowed from Mesopotamian culture, not as literal history.</p></div>
+      </div>
       </div>
       <div class="notes">The Noah&#x27;s Ark story is one of the most well-known in the Bible, and one of the most empirically falsifiable. Every branch of science -- geology, biology, genetics, archaeology -- independently concludes that no global flood occurred in human history. The story almost certainly derives from older Mesopotamian flood myths like the Epic of Gilgamesh, which predate the Genesis account.</div>
     </section>
@@ -641,7 +638,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Mainstream archaeologists and biblical historians (Israel Finkelstein, William Dever, Richard Elliott Friedman, and most others) agree that the Exodus as described in the Bible did not happen. Some suggest a small group of Semitic slaves may have escaped Egypt and their story was later magnified into a national epic. But the mass Exodus of millions is not supported by any evidence.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Mainstream archaeologists and biblical historians (Israel Finkelstein, William Dever, Richard Elliott Friedman, and most others) agree that the Exodus as described in the Bible did not happen. Some suggest a small group of Semitic slaves may have escaped Egypt and their story was later magnified into a national epic. But the mass Exodus of millions is not supported by any evidence.</p></div>
       </div>
       </div>
       <div class="notes">The Exodus is the most foundational story in the Old Testament. It&#x27;s the event that defines Israel as a nation and establishes the covenant with God. If it didn&#x27;t happen, the theological framework built on it -- the Law, the covenant, the promised land -- loses its historical anchor. It doesn&#x27;t mean the stories are meaningless, but it means they are theology, not history.</div>
@@ -664,7 +661,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Israelites did not invade Canaan from outside -- they <strong>were</strong> Canaanites who gradually differentiated themselves. The conquest narrative was written centuries later as a theological origin myth, not a historical record.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Israelites did not invade Canaan from outside -- they <strong>were</strong> Canaanites who gradually differentiated themselves. The conquest narrative was written centuries later as a theological origin myth, not a historical record.</p></div>
       </div>
       </div>
       <div class="notes">The conquest narrative is one of the most morally problematic parts of the Bible -- God commanding genocide. The archaeological evidence suggests this never happened, which is both a relief and a revelation. It means the genocide was not historical fact but theological fiction. But it also means the Bible presents morally abhorrent commands that were never actually given -- they were written to serve a political purpose.</div>
@@ -721,6 +718,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>The empty tomb story appears only in the Gospels, decades later</li><li>Paul&#x27;s account (1 Cor 15) mentions only visions, not an empty tomb</li><li>Paul claims 500 witnesses saw the resurrected Jesus (1 Cor 15:6), yet names not one of them -- and no contemporary historian corroborates the mass sighting</li><li>The Gospel accounts contradict each other on who found the tomb, what they saw, and what happened next</li><li>Natural explanations (hallucination, borrowed tomb, wrong tomb, legend formation) are more parsimonious than a violation of every known law of nature</li><li>No contemporary non-Christian source mentions it</li><li>No extra-biblical accounts exist of the Gospel miracles -- tombs opening (Matt 27:52-53), feeding 5,000, darkness at noon -- all in a Roman-governed province, yet unrecorded by any contemporary historian</li></ul></div>
       </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The resurrection claim rests on contradictory late accounts and lacks independent corroboration. Natural explanations remain far more probable than a miracle of this magnitude.</p></div>
+      </div>
       </div>
       <div class="notes">The resurrection is the keystone of Christianity. Paul says if Christ didn&#x27;t rise, faith is futile. So the evidence matters enormously. What we have: four contradictory accounts written decades later by anonymous authors, no independent corroboration from Roman or Jewish sources, and Paul -- our earliest source -- mentions only visions, not a physical tomb. Historians can establish that some early Christians believed Jesus appeared to them, but establishing that a dead man actually rose requires evidence of a different order entirely.</div>
     </section>
@@ -745,7 +746,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">The pattern is clear and consistent across all major &quot;messianic prophecies.&quot;</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><ul><li>The Old Testament contains dozens of specific predictions about a coming messiah</li><li>Jesus fulfilled every one of them</li><li>This proves Jesus was the prophesied messiah</li><li>Old Testament prophecy is evidence of divine inspiration</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><ul><li>The Old Testament contains dozens of specific predictions about a coming messiah</li></ul><ul><li>Jesus fulfilled every one of them</li></ul><ul><li>This proves Jesus was the prophesied messiah</li></ul><ul><li>Old Testament prophecy is evidence of divine inspiration</li></ul></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
@@ -816,8 +817,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">If Jesus was wrong about his own return, why trust him on anything else?</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Minimal Facts</h4><ul><li>Jesus of Nazareth was a Jewish apocalyptic preacher</li><li>He believed the end of the world was imminent</li><li>He predicted his return within his disciples&#x27; lifetime</li><li>His followers adapted after the prediction failed</li></ul></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Dilemma</h4><ul><li>Jesus predicted his return within a generation -- it did not happen</li><li>He promised his apostles thrones -- they did not receive them</li><li>He guaranteed prayer works -- mountains stay put</li><li>The most important prediction failed. What remains?</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Minimal Facts</h4><ul><li>Jesus of Nazareth was a Jewish apocalyptic preacher</li></ul><ul><li>He believed the end of the world was imminent</li></ul><ul><li>He predicted his return within his disciples&#x27; lifetime</li></ul><ul><li>His followers adapted after the prediction failed</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Dilemma</h4><ul><li>Jesus predicted his return within a generation -- it did not happen</li></ul><ul><li>He promised his apostles thrones -- they did not receive them</li></ul><ul><li>He guaranteed prayer works -- mountains stay put</li></ul><ul><li>The most important prediction failed. What remains?</li></ul></div>
       </div>
       </div>
       <div class="notes">Scholars like Albert Schweitzer concluded that Jesus was an apocalyptic prophet who expected the kingdom of God to arrive imminently. He was wrong. If he was wrong about the central element of his own message, the foundation of Christian theology is shaken.</div>
@@ -881,12 +882,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">The Bible treats women as property and prescribes the death penalty for minor offences.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Misogyny in the Bible</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Women are consistently treated as second-class citizens throughout scripture -- and this is presented as God&#x27;s design, not human corruption. Daughters could be sold into slavery (Exodus 21:7), women were considered property (the Ten Commandments list wives alongside oxen and donkeys), and female testimony was valued below male testimony in legal matters. Paul writes that women should remain silent in churches (1 Cor 14:34-35) and that man is the head of woman (1 Cor 11:3). These are not cultural asides -- they are presented as divine order.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Capital Punishment for Minor Offences</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Old Testament prescribes death for working on the Sabbath (Exodus 31:14-15), cursing parents (Leviticus 20:9), adultery (Leviticus 20:10), homosexuality (Leviticus 20:13), and prophesying falsely (Deuteronomy 18:20). These laws are presented alongside the Ten Commandments as God&#x27;s direct commands. Christians today pick and choose which apply, but the text itself makes no such distinction -- it presents a single, unified legal code from God.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Misogyny in the Bible</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Women are consistently treated as second-class citizens throughout scripture -- and this is presented as God&#x27;s design, not human corruption. Daughters could be sold into slavery (Exodus 21:7), women were considered property (the Ten Commandments list wives alongside oxen and donkeys), and female testimony was valued below male testimony in legal matters. Paul writes that women should remain silent in churches (1 Cor 14:34-35) and that man is the head of woman (1 Cor 11:3). These are not cultural asides -- they are presented as divine order.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Capital Punishment for Minor Offences</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Old Testament prescribes death for working on the Sabbath (Exodus 31:14-15), cursing parents (Leviticus 20:9), adultery (Leviticus 20:10), homosexuality (Leviticus 20:13), and prophesying falsely (Deuteronomy 18:20). These laws are presented alongside the Ten Commandments as God&#x27;s direct commands. Christians today pick and choose which apply, but the text itself makes no such distinction -- it presents a single, unified legal code from God.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Apologetic Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Christians often dismiss these as &quot;Old Covenant&quot; laws. But this means either (a) God&#x27;s moral commands changed (contradicting Malachi 3:6), or (b) those were never absolute moral truths. It also means God once commanded death for Sabbath-breaking -- which we now recognize as monstrous. Did God change his mind, or did human moral understanding surpass what scripture presents as divine will?</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Apologetic Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Christians often dismiss these as &quot;Old Covenant&quot; laws. But this means either (a) God&#x27;s moral commands changed (contradicting Malachi 3:6), or (b) those were never absolute moral truths. It also means God once commanded death for Sabbath-breaking -- which we now recognize as monstrous. Did God change his mind, or did human moral understanding surpass what scripture presents as divine will?</p></div>
       </div>
       </div>
       <div class="notes">The death penalty passages are often hand-waved as belonging to the Old Covenant, but the same Bible elevates these laws alongside the Ten Commandments. Christians who pick and choose which Old Testament laws apply are doing exactly what the Bible says they shouldn&#x27;t -- selectively following a supposedly divine moral code. The misogyny passages are equally troubling: women are consistently treated as second-class citizens, and this is presented as God&#x27;s design, not human corruption.</div>
@@ -903,6 +904,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Moral Problem</h4><ul><li>Proportionality: Every criminal justice system in the world punishes crimes proportionally. A lifetime of sin -- even a very bad one -- cannot justify infinite suffering. No finite crime deserves infinite punishment. If a human judge sentenced someone to eternal torture for stealing bread, we&#x27;d call it monstrous. Why does God get a pass?</li><li>Finite creatures, infinite debt: The theological defense is that sin against an infinite God incurs infinite debt. But this is an invented metric -- it assumes the nature of the offended party determines the magnitude of the crime. The scale of punishment should fit the crime, not the perceived status of the victim.</li><li>Knowledge problem: Billions of people -- including children who die young, those in remote tribes, and sincere followers of other faiths -- are condemned for not believing something they had no reasonable chance of believing. Is ignorance a sin worthy of eternal torment?</li><li>Annihilation vs. torment: Some Christians reject eternal conscious torment in favor of annihilationism. This is more defensible but still problematic -- it means God creates beings knowing they will be destroyed, which is hard to reconcile with a loving creator.</li></ul></div>
       </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Eternal conscious torment for finite sins is morally indefensible. If hell is not eternal, the traditional soteriology collapses; if it is, an all-good God would not create it.</p></div>
+      </div>
       </div>
       <div class="notes">Hell is one of the most difficult doctrines in Christianity. In recent decades, many Christians have moved away from the traditional view of eternal conscious torment toward annihilationism or universalism. But the traditional view remains the majority position globally, and it was the dominant view for most of church history. If hell is not eternal conscious torment, then what exactly did Jesus save us from? And if it is, then the moral problem is profound: an all-powerful God who could simply annihilate sinners or rehabilitate them instead chooses to torture them forever. This is not justice by any reasonable definition.</div>
     </section>
@@ -918,6 +923,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Injustice</h4><ul><li>Inherited guilt: In what moral system does guilt pass from parent to child? We do not hold children responsible for their parents&#x27; crimes. The very idea is repugnant to any sense of justice. Yet this is exactly what original sin claims: you are guilty of Adam&#x27;s sin, and you deserve punishment for it, through no choice of your own.</li><li>Inherited nature: Even the milder version -- that we inherit a sinful nature rather than guilt -- is troubling. It means God created beings with a built-in inclination to sin, then punishes them for acting on that inclination. It is like creating someone with an addiction and then condemning them for using.</li><li>The escape clause: The solution, according to Christianity, is Jesus. But this means God required a blood sacrifice of himself to himself to fix a problem he created in the first place. If God can forgive sins freely -- and he is said to be perfectly loving and merciful -- why is a sacrifice necessary at all? Why not just forgive?</li><li>Substitutionary atonement: The idea that an innocent person must be punished for the guilty is an ancient tribal concept (scapegoating), not a model of justice. In any civilized legal system, punishing an innocent person for the crimes of the guilty is called a miscarriage of justice.</li></ul></div>
       </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Inherited guilt is incompatible with any coherent concept of justice. Without original sin, there is no need for atonement -- and Christianity&#x27;s core message loses its foundation.</p></div>
+      </div>
       </div>
       <div class="notes">Original sin is the theological linchpin of Pauline Christianity. Without it, there is no need for atonement, no need for a savior, and no need for Christianity itself. Jesus&#x27;s mission only makes sense if humanity is in a state of sin from which it cannot rescue itself. If the doctrine of original sin is morally indefensible -- and it is -- then the entire soteriological framework built on it collapses.</div>
     </section>
@@ -927,9 +936,9 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">Christianity&#x27;s core moral doctrines are indefensible. The Bible&#x27;s specific commands are worse. Secular frameworks provide a more consistent foundation.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Doctrines</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Hell (finite sin, infinite punishment) and original sin (inherited guilt) are morally incoherent. A blood sacrifice to appease divine wrath is a primitive concept, not a sophisticated ethical system.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Scripture</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Bible endorses slavery, genocide, and misogyny as divine commands -- not cultural concessions. We&#x27;ve made moral progress despite the Bible, not because of it.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Conclusion</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Secular frameworks grounded in empathy, reason, and human flourishing provide a more consistent moral foundation than divine command does.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Doctrines</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Hell (finite sin, infinite punishment) and original sin (inherited guilt) are morally incoherent. A blood sacrifice to appease divine wrath is a primitive concept, not a sophisticated ethical system.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Scripture</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Bible endorses slavery, genocide, and misogyny as divine commands -- not cultural concessions. We&#x27;ve made moral progress despite the Bible, not because of it.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Conclusion</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Secular frameworks grounded in empathy, reason, and human flourishing provide a more consistent moral foundation than divine command does.</p></div>
       </div>
       </div>
       <div class="notes">The moral case against Christianity is not just that the Bible endorses outdated practices -- it&#x27;s that the core doctrines of the faith are themselves morally problematic. Eternal punishment for finite sins is not justice. Inherited guilt for Adam&#x27;s transgression is not how moral responsibility works. A blood sacrifice to appease divine wrath is a primitive concept, not a sophisticated ethical system. We&#x27;ve made moral progress despite the Bible&#x27;s endorsement of slavery and genocide, not because of it. Secular frameworks -- grounded in empathy, reason, and human flourishing -- provide a more consistent foundation for morality than divine command does.</div>
@@ -960,15 +969,15 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">The original autographs don&#x27;t exist. What we have are copies of copies.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Many Christians believe the Bible is without error in its original manuscripts. But we don&#x27;t have the originals. We have thousands of handwritten copies, all of which contain differences -- scribal errors, additions, deletions, and theological corrections.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Many Christians believe the Bible is without error in its original manuscripts. But we don&#x27;t have the originals. We have thousands of handwritten copies, all of which contain differences -- scribal errors, additions, deletions, and theological corrections.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>There are 400,000+ textual variants among NT manuscripts</li><li>Most are minor, but some affect doctrine: the story of the woman caught in adultery (John 7:53-8:11) and the longer ending of Mark (Mark 16:9-20) are later additions, not original</li><li>The Johannine Comma (1 John 5:7-8) -- the only explicit Trinitarian verse -- was added centuries later</li><li>We reconstruct the &quot;original&quot; text through scholarly inference, but we can never be certain we have it exactly right</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>There are 400,000+ textual variants among NT manuscripts</li><li>Most are minor, but some affect doctrine: the story of the woman caught in adultery (John 7:53-8:11) and the longer ending of Mark (Mark 16:9-20) are later additions, not original</li><li>The Johannine Comma (1 John 5:7-8) -- the only explicit Trinitarian verse -- was added centuries later</li><li>We reconstruct the &quot;original&quot; text through scholarly inference, but we can never be certain we have it exactly right</li></ul></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Bottom Line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Beyond the textual issues above, there&#x27;s a logical one: the Bible cannot be used as evidence for the Bible&#x27;s own reliability. When Christians cite 2 Timothy 3:16 (&quot;All Scripture is God-breathed&quot;) to prove inerrancy, they&#x27;re appealing to the very book whose reliability is in question. The Quran claims it is the perfect word of God. The Book of Mormon claims divine origin. Every scripture can assert its own authority -- that doesn&#x27;t make it true.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Bottom Line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Beyond the textual issues above, there&#x27;s a logical one: the Bible cannot be used as evidence for the Bible&#x27;s own reliability. When Christians cite 2 Timothy 3:16 (&quot;All Scripture is God-breathed&quot;) to prove inerrancy, they&#x27;re appealing to the very book whose reliability is in question. The Quran claims it is the perfect word of God. The Book of Mormon claims divine origin. Every scripture can assert its own authority -- that doesn&#x27;t make it true.</p></div>
       </div>
       </div>
       <div class="notes">If God wanted to preserve an inerrant text for humanity, why didn&#x27;t he preserve the originals? Why did he allow thousands of scribal errors to accumulate? Why are key passages that support important doctrines later additions? The inerrancy doctrine requires faith not just in the original text, but in the process of transmission and the ability of scholars to reconstruct that text. That&#x27;s a lot of faith in a very human process.</div>
@@ -983,6 +992,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">📖 The New Testament Canon</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The 27-book NT canon was not finalized until the late 4th century (Council of Carthage, 397 CE). Many gospels were circulated before being excluded: Thomas, Peter, Shepherd of Hermas, Didache. The canon was decided by fallible bishops and councils.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🔍 Criteria for Inclusion</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Books were included based on apostolic authorship, orthodoxy, and widespread usage -- human criteria, not divine markers. Catholic, Orthodox, and Protestant traditions still disagree on the canon today.</p></div>
       </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The biblical canon was decided by fallible humans through political and theological debate. If the Bible&#x27;s table of contents is a human decision, divine inerrancy is a human claim.</p></div>
+      </div>
       </div>
       <div class="notes">The canon of scripture wasn&#x27;t handed down from heaven -- it was a centuries-long process of debate, politics, and theological negotiation. Different churches had different Bibles. Marcion had his own canon. The Gnostics had theirs. The canon we have today reflects the winners of those theological battles, not a self-evident list of God-authored books. If the Bible is uniquely inspired, shouldn&#x27;t its table of contents be obvious?</div>
     </section>
@@ -994,6 +1007,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Historical Contradictions</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Who killed Goliath? David (1 Sam 17) or Elhanan (2 Sam 21:19)?</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Who incited David&#x27;s census? God (2 Sam 24:1) or Satan (1 Chr 21:1)?</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">How did Judas die? Hanged himself (Matt 27:5) or fell and burst open (Acts 1:18)?</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">When was the Last Supper? Before or during Passover? (Synoptics vs John)</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">What happened at the empty tomb? One angel? Two? Sitting? Standing? Inside? Outside?</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Theological Contradictions</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Is salvation by faith alone (Eph 2:8-9) or faith + works (James 2:24)? Luther wanted to remove James.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Does God repent/change his mind? Yes (Ex 32:14, Jon 3:10). No (Num 23:19, 1 Sam 15:29).</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Does God tempt people? Yes (Gen 22:1, 2 Sam 24:1). No (James 1:13).</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Is God a God of peace or does he create evil? (Isa 45:7 vs multiple &quot;God is love&quot; passages)</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Are we justified by faith alone or do we need to keep the law?</p></div>
+      </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">An inerrant book should be internally consistent on its face. The need for elaborate harmonization reveals the text is exactly what we&#x27;d expect from human authors.</p></div>
       </div>
       </div>
       <div class="notes">Apologists have answers for every contradiction. Harmonization is always possible if you&#x27;re creative enough. But harmonization isn&#x27;t the same as the plain reading of the text. When you need to invent elaborate explanations to reconcile two accounts that say different things, you&#x27;re not discovering the text&#x27;s meaning -- you&#x27;re imposing a harmonization on it. An inerrant book would be self-consistent on its face.</div>
@@ -1010,7 +1027,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Stories that would be instantly dismissed as folklore in any other context are treated as literal history when found in the Bible. These elements follow the conventions of ancient myth and legend -- not of history writing. If a talking snake appeared in the Quran or the Book of Mormon, skeptics would rightly point out its implausibility. Consistency demands the same standard for the Bible.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Stories that would be instantly dismissed as folklore in any other context are treated as literal history when found in the Bible. These elements follow the conventions of ancient myth and legend -- not of history writing. If a talking snake appeared in the Quran or the Book of Mormon, skeptics would rightly point out its implausibility. Consistency demands the same standard for the Bible.</p></div>
       </div>
       </div>
       <div class="notes">The presence of fantastical elements is a strong indicator that we&#x27;re reading mythology, not history. Talking animals, the sun halting in the sky, a worldwide flood, people living 900+ years -- these are the hallmarks of ancient storytelling, not reliable historical records. Every other culture&#x27;s sacred texts are held to this standard. Why should the Bible be exempt?</div>
@@ -1021,12 +1038,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">The Old Testament often reinterprets ordinary events as divine acts -- a pattern visible when compared to other ancient sources.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Pattern</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Throughout the Old Testament, ordinary historical events are recast as direct divine interventions. Military victories become miracles. Natural disasters become divine punishment. Diplomatic treaties become commands of God. This was standard practice in the ancient Near East -- every nation credited its gods with its successes and blamed them for its failures. The Bible does the same, but later readers took these poetic interpretations literally.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Concrete Examples</h4><ul><li>The Exodus: A small group of Semitic slaves escaping Egypt becomes a foundational miracle of 2 million people crossing the Red Sea. Egyptian records of the period -- which meticulously document far smaller events -- record nothing.</li><li>The Conquest of Canaan: Archaeology shows the Israelites emerged from within Canaanite society. The biblical account of miraculous military conquest was written centuries later as a theological origin myth.</li><li>Sennacherib&#x27;s Invasion (701 BCE): Assyrian records describe Hezekiah paying tribute. The Bible (2 Kings 19) credits divine intervention, claiming an angel killed 185,000 Assyrian soldiers overnight. No Assyrian record mentions this -- because it didn&#x27;t happen.</li><li>The sun standing still at Gibeon (Joshua 10): A poetic description of a long day of battle, taken literally by later readers. No other ancient source records this event, and the physics alone makes it scientifically impossible.</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Pattern</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Throughout the Old Testament, ordinary historical events are recast as direct divine interventions. Military victories become miracles. Natural disasters become divine punishment. Diplomatic treaties become commands of God. This was standard practice in the ancient Near East -- every nation credited its gods with its successes and blamed them for its failures. The Bible does the same, but later readers took these poetic interpretations literally.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Concrete Examples</h4><ul><li>The Exodus: A small group of Semitic slaves escaping Egypt becomes a foundational miracle of 2 million people crossing the Red Sea. Egyptian records of the period -- which meticulously document far smaller events -- record nothing.</li><li>The Conquest of Canaan: Archaeology shows the Israelites emerged from within Canaanite society. The biblical account of miraculous military conquest was written centuries later as a theological origin myth.</li><li>Sennacherib&#x27;s Invasion (701 BCE): Assyrian records describe Hezekiah paying tribute. The Bible (2 Kings 19) credits divine intervention, claiming an angel killed 185,000 Assyrian soldiers overnight. No Assyrian record mentions this -- because it didn&#x27;t happen.</li><li>The sun standing still at Gibeon (Joshua 10): A poetic description of a long day of battle, taken literally by later readers. No other ancient source records this event, and the physics alone makes it scientifically impossible.</li></ul></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Bottom Line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Bible authors were theologians writing theology, not historians writing journalism. When modern Christians insist that every poetic description of divine intervention is literally and historically true, they are misunderstanding the genre of the text. Every other culture&#x27;s sacred writings are recognized as theological interpretations of history -- the Bible deserves the same critical treatment.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Bottom Line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Bible authors were theologians writing theology, not historians writing journalism. When modern Christians insist that every poetic description of divine intervention is literally and historically true, they are misunderstanding the genre of the text. Every other culture&#x27;s sacred writings are recognized as theological interpretations of history -- the Bible deserves the same critical treatment.</p></div>
       </div>
       </div>
       <div class="notes">The reinterpretation of history is not unique to the Bible -- it was the standard way ancient peoples understood their world. But when modern Christians insist that every poetic description of divine intervention is literally and historically true, they are misunderstanding the genre of the text. The Bible authors were theologians writing theology, not historians writing journalism.</div>
@@ -1098,9 +1115,13 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">Examined critically, the Bible looks like a human book -- not a divinely inspired inerrant text.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Textual Transmission</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">No original manuscripts exist. We have copies of copies with 400,000+ variants. Key passages (John 7:53-8:11, Mark 16:9-20, 1 John 5:7-8) are later additions.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Canon &amp; Consistency</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The canon was settled by fallible councils centuries later. The Bible contradicts itself on historical details and contains fantastical elements (talking snakes, demons in pigs) that defy credibility.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Defenses Fail</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Common apologetic arguments -- unity of authorship, manuscript evidence, changed lives, eyewitness testimony -- fail under scrutiny or apply equally to other scriptures.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Textual Transmission</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">No original manuscripts exist. We have copies of copies with 400,000+ variants. Key passages (John 7:53-8:11, Mark 16:9-20, 1 John 5:7-8) are later additions.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Canon &amp; Consistency</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The canon was settled by fallible councils centuries later. The Bible contradicts itself on historical details and contains fantastical elements (talking snakes, demons in pigs) that defy credibility.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Defenses Fail</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Common apologetic arguments -- unity of authorship, manuscript evidence, changed lives, eyewitness testimony -- fail under scrutiny or apply equally to other scriptures.</p></div>
+      </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">When examined critically, the Bible exhibits every characteristic of a human composition. The simplest explanation is the correct one: it is a human book.</p></div>
       </div>
       </div>
       <div class="notes">When you examine the Bible with the same critical tools you&#x27;d apply to any ancient text, it looks exactly like what you&#x27;d expect from a collection of human writings: reflecting the cultures, biases, limitations, and theological agendas of their authors. The simplest explanation for the Bible&#x27;s features is not that it&#x27;s a divinely inspired inerrant text, but that it&#x27;s a very human book -- a remarkable one, to be sure, but human nonetheless.</div>
@@ -1137,18 +1158,18 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div class="notes">The Euthyphro dilemma is ancient and devastating. If morality depends on God&#x27;s commands, then whatever God commands is good -- including the genocides and slavery commanded in the Old Testament. Many Christians try to avoid this by saying &quot;God&#x27;s nature is good,&quot; but that just pushes the question back: is God&#x27;s nature good because it happens to be God&#x27;s nature, or because goodness is a standard God&#x27;s nature meets?</div>
     </section>
-    <section class="slide" data-title="Pascal&amp;amp;amp;#x27;s Wager">
+    <section class="slide" data-title="Pascal&#x27;s Wager">
       <p class="kicker mb-s">Philosophical · Pragmatism</p>
       <h2 class="h2" data-anim="fade-up">Pascal&#x27;s Wager: The Bet You Can&#x27;t Win</h2>
       <p class="lede mb-m">&quot;Believe in God because you have everything to gain and nothing to lose.&quot;</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Argument</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Pascal argued that belief in God is the rational bet: if God exists, the believer gains infinite reward and avoids infinite punishment. If God doesn&#x27;t exist, the believer loses little. The atheist, by contrast, risks infinite loss for finite gain.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Why It Fails</h4><ul><li>The Many-Gods Objection: Which God do you bet on? Islam, Hinduism, Judaism, and hundreds of other religions each promise different rewards and punishments. Pascal&#x27;s wager tells you to believe -- but doesn&#x27;t tell you what to believe. The logic applies equally to any god.</li><li>Faith isn&#x27;t a light switch: You cannot choose to believe something genuinely. If you try to &quot;believe&quot; just as insurance, you haven&#x27;t actually believed -- and an omniscient God would see through it.</li><li>False dichotomy: The wager presents only two options (Christian theism vs. atheism), ignoring all other religious possibilities. With hundreds of competing truth claims, the &quot;rational bet&quot; becomes a lottery, not a logical deduction.</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Argument</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Pascal argued that belief in God is the rational bet: if God exists, the believer gains infinite reward and avoids infinite punishment. If God doesn&#x27;t exist, the believer loses little. The atheist, by contrast, risks infinite loss for finite gain.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Why It Fails</h4><ul><li>The Many-Gods Objection: Which God do you bet on? Islam, Hinduism, Judaism, and hundreds of other religions each promise different rewards and punishments. Pascal&#x27;s wager tells you to believe -- but doesn&#x27;t tell you what to believe. The logic applies equally to any god.</li><li>Faith isn&#x27;t a light switch: You cannot choose to believe something genuinely. If you try to &quot;believe&quot; just as insurance, you haven&#x27;t actually believed -- and an omniscient God would see through it.</li><li>False dichotomy: The wager presents only two options (Christian theism vs. atheism), ignoring all other religious possibilities. With hundreds of competing truth claims, the &quot;rational bet&quot; becomes a lottery, not a logical deduction.</li></ul></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Bottom Line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Pascal&#x27;s Wager is almost universally rejected by philosophers and theologians. It treats faith as an insurance policy, which is the opposite of genuine religious commitment. And it completely ignores the problem of religious pluralism: which God, exactly, are you betting on?</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Bottom Line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Pascal&#x27;s Wager is almost universally rejected by philosophers and theologians. It treats faith as an insurance policy, which is the opposite of genuine religious commitment. And it completely ignores the problem of religious pluralism: which God, exactly, are you betting on?</p></div>
       </div>
       </div>
       <div class="notes">Pascal&#x27;s Wager is probably the most famous argument for belief, and it&#x27;s almost universally rejected by philosophers and theologians alike. It treats faith as an insurance policy, which is arguably the opposite of what genuine religious commitment should be. And it ignores the problem of religious pluralism: which specific version of God do you bet on?</div>
@@ -1171,12 +1192,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">If God knows everything that will happen, can we truly have free will?</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Omniscience</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Classical Christian theology holds that God is omniscient -- He knows all future events with certainty, including every choice you&#x27;ll ever make. This includes every sin, every act of disbelief, every rejection. From God&#x27;s eternal perspective, everything that will happen is already known.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Free Will Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">If God knows with absolute certainty that you&#x27;ll choose A over B, can you genuinely choose B? If God&#x27;s knowledge is infallible, then your choice is fixed -- you cannot choose otherwise. And if you cannot choose otherwise, your choice is not free. Your freely made choices are, from an eternal perspective, already known and determined.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Omniscience</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Classical Christian theology holds that God is omniscient -- He knows all future events with certainty, including every choice you&#x27;ll ever make. This includes every sin, every act of disbelief, every rejection. From God&#x27;s eternal perspective, everything that will happen is already known.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Free Will Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">If God knows with absolute certainty that you&#x27;ll choose A over B, can you genuinely choose B? If God&#x27;s knowledge is infallible, then your choice is fixed -- you cannot choose otherwise. And if you cannot choose otherwise, your choice is not free. Your freely made choices are, from an eternal perspective, already known and determined.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Dilemma</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">If humans have genuine free will, then God doesn&#x27;t know for certain what they&#x27;ll do -- contradicting classical omniscience. If God does know everything with certainty, then human choices are essentially scripted, and God bears ultimate responsibility for evil. Neither option is comfortable for traditional Christian theology. This is why theologians have debated this for two millennia without resolution.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Dilemma</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">If humans have genuine free will, then God doesn&#x27;t know for certain what they&#x27;ll do -- contradicting classical omniscience. If God does know everything with certainty, then human choices are essentially scripted, and God bears ultimate responsibility for evil. Neither option is comfortable for traditional Christian theology. This is why theologians have debated this for two millennia without resolution.</p></div>
       </div>
       </div>
       <div class="notes">This issue is relevant to the problem of evil. If humans have genuine free will, then God doesn&#x27;t know for certain what they&#x27;ll do -- which contradicts classical omniscience. If God does know everything, then human choices are essentially scripted, and God bears ultimate responsibility for evil. Neither option is comfortable for traditional Christian theology.</div>
@@ -1298,7 +1319,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The distinction matters because Christians often misrepresent atheism as &quot;believing there is no God&quot; -- a positive claim that would carry its own burden of proof. In reality, atheism is simply the lack of belief in the god claim, which is the default position when evidence is insufficient.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The distinction matters because Christians often misrepresent atheism as &quot;believing there is no God&quot; -- a positive claim that would carry its own burden of proof. In reality, atheism is simply the lack of belief in the god claim, which is the default position when evidence is insufficient.</p></div>
       </div>
       </div>
       <div class="notes">This distinction is critical. An agnostic atheist says: &quot;I don&#x27;t know for certain whether a god exists, but I don&#x27;t find the evidence for the Christian god convincing enough to believe.&quot; This is different from a gnostic atheist who says &quot;I know no god exists.&quot; Most skeptics are in the first camp, not the second.</div>
@@ -1544,15 +1565,21 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div class="notes">The early Christian reinterpretation of Psalm 16 is a classic example of reading the resurrection back into the Old Testament. A surface reading never would have suggested resurrection -- it describes deliverance from imminent death, not victory over death itself.</div>
     </section>
+    <!-- HELP -->
     <section class="slide" data-title="How to Navigate">
       <p class="kicker mb-s">Getting Started</p>
       <h2 class="h2" data-anim="fade-up">How to Navigate</h2>
-      <p class="lede mb-m">Use any of these methods.</p>
+      <p class="lede mb-m">Use any of these methods to move through the deck.</p>
       <div style="display:flex;flex-direction:column;gap:10px;max-width:500px">
-        <div class="card" style="padding:12px 18px"><strong>&larr; &rarr;</strong> or <strong>Space</strong></div>
-        <div class="card" style="padding:12px 18px">Tap <strong>left/right half</strong> or <strong>swipe</strong></div>
-        <div class="card" style="padding:12px 18px"><strong>T</strong> themes &middot; <strong>F</strong> fullscreen &middot; <strong>O</strong> overview</div>
-        <div class="card" style="padding:12px 18px"><strong>S</strong> presenter &middot; <strong>N</strong> notes &middot; <strong>&#x2302;</strong> home</div>
+        <div class="card" style="padding:12px 18px"><strong>&larr; &rarr;</strong> or <strong>Space</strong> &mdash; Previous / Next</div>
+        <div class="card" style="padding:12px 18px">Tap <strong>left half</strong> or <strong>right half</strong> &mdash; Previous / Next</div>
+        <div class="card" style="padding:12px 18px">Swipe <strong>left</strong> or <strong>right</strong> &mdash; Prev / Next</div>
+        <div class="card" style="padding:12px 18px"><strong>T</strong> &mdash; Cycle themes</div>
+        <div class="card" style="padding:12px 18px"><strong>F</strong> &mdash; Fullscreen</div>
+        <div class="card" style="padding:12px 18px"><strong>O</strong> &mdash; Overview grid</div>
+        <div class="card" style="padding:12px 18px"><strong>S</strong> &mdash; Presenter mode</div>
+        <div class="card" style="padding:12px 18px"><strong>N</strong> &mdash; Notes drawer</div>
+        <div class="card" style="padding:12px 18px"><strong>&#x2302;</strong> (footer) &mdash; Back to first slide</div>
       </div>
     </section>
 
@@ -1561,7 +1588,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <span class="slide-number" data-current="1" data-total="88"></span>
     </div>
   </div>
-  <script>/* html-ppt :: runtime.js
+  <script>
+/* html-ppt :: runtime.js
  * Keyboard-driven deck runtime. Zero dependencies.
  *
  * Features:
@@ -2521,15 +2549,21 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     go(idx);
   });
 })();
-</script>
-  <script>document.querySelector('#theme-link')?.remove();
+
+  </script>
+  <script>
+/* Remove broken theme-link */
+document.querySelector('#theme-link')?.remove();
+/* Touch swipe + tap (debounced) */
 (function(){var _tn=0;var _mdX=-1,_mdY=-1;var xS=0,yS=0,sl=Array.from((document.querySelector('.deck')||document.body).querySelectorAll('.slide'));
 document.addEventListener('touchstart',function(e){if(e.touches.length!==1)return;xS=e.touches[0].clientX;yS=e.touches[0].clientY;_tn=0;},{passive:true});
 document.addEventListener('touchend',function(e){if(e.changedTouches.length!==1)return;var x=e.changedTouches[0].clientX,y=e.changedTouches[0].clientY,dx=x-xS,dy=y-yS,adx=Math.abs(dx),ady=Math.abs(dy);if(adx>40&&adx>ady*1.5){_tn=1;go(dx<0?1:-1);return;}},{passive:true});
 document.addEventListener('mousedown',function(e){_mdX=e.clientX;_mdY=e.clientY;},true);
 document.addEventListener('click',function(e){var t=e.target;if(_tn){_tn=0;return;}if(t.closest('button')||t.closest('a')||t.closest('.overview')||t.closest('.notes')||t.closest('.slide-number')||t.closest('.bar'))return;if(_mdX>=0&&(Math.abs(e.clientX-_mdX)>8||Math.abs(e.clientY-_mdY)>8)){_mdX=-1;return;}_mdX=-1;var r=document.querySelector('.deck')||document.body,rect=r.getBoundingClientRect(),x=e.clientX-rect.left;if(x>0)go(x>rect.width*0.5?1:-1);});})();
+/* Theme toggle (inlined CSS) */
 (function(){var h=document.documentElement,n=(h.getAttribute('data-themes')||'').split(',').map(function(s){return s.trim();}).filter(Boolean);if(n.length<2)return;var ti=0;window._ct=function(){ti=(ti+1)%n.length;h.className=n[ti]+' is-active';h.setAttribute('data-theme',n[ti].replace('theme-',''));try{(new BroadcastChannel('html-ppt-presenter-'+location.pathname)).postMessage({type:'theme',name:n[ti]});}catch(e){}};
 document.addEventListener('keydown',function(e){if((e.key==='t'||e.key==='T')&&!e.metaKey&&!e.ctrlKey&&!e.altKey){if(window._ct){e.preventDefault();window._ct();}}});})();
+/* Expose go() globally (400ms debounce) */
 (function(){var dk=document.querySelector('.deck');if(!dk)return;var sl=Array.from(dk.querySelectorAll('.slide'));if(!sl.length)return;var _gd=0;window.go=function(n){var nw=Date.now();if(nw-_gd<400)return;_gd=nw;var cur=sl.indexOf(document.querySelector('.slide.is-active'));n=cur+n;n=Math.max(0,Math.min(sl.length-1,n));
 sl.forEach(function(s,i){s.classList.toggle('is-active',i===n);s.classList.toggle('is-prev',i<n);});
 var ne=document.querySelector('.slide-number');if(ne)ne.setAttribute('data-current',n+1);
@@ -2537,5 +2571,7 @@ var bf=document.querySelector('.progress-bar span');if(bf)bf.style.width=((n+1)/
 history.replaceState(null,'','#/'+(n+1));
 sl[n].querySelectorAll('[data-anim]').forEach(function(el){var a=el.getAttribute('data-anim');el.classList.remove('anim-'+a);void el.offsetWidth;el.classList.add('anim-'+a);});
 var no=sl[n].querySelector('.notes, aside.notes, .speaker-notes');var ne2=document.querySelector('.notes-overlay');if(ne2)ne2.innerHTML=no?no.innerHTML:'';
-try{(new BroadcastChannel('html-ppt-presenter-'+location.pathname)).postMessage({type:'go',idx:n});}catch(e){}};})();</script>
-</body></html>
+try{(new BroadcastChannel('html-ppt-presenter-'+location.pathname)).postMessage({type:'go',idx:n});}catch(e){}};})();
+  </script>
+</body>
+</html>
