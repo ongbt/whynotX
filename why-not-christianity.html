@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-verdict-dark is-active" data-themes="theme-verdict-dark,theme-dracula" data-theme="verdict-dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why I Do Not Believe Christianity Is True</title>
-  <style>
+<html lang="en" class="theme-minimal-white is-active" data-themes="theme-minimal-white,theme-dracula,theme-verdict-dark" data-theme="minimal-white">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Why I Do Not Believe Christianity Is True</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
 /* html-ppt :: base.css — reset + shared tokens + layout primitives */
 /* Default tokens. Themes in assets/themes/*.css override the :root block. */
 :root {
@@ -155,7 +152,6 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   .slide{position:relative;opacity:1!important;transform:none!important;page-break-after:always;height:100vh}
   .deck-header,.deck-footer,.progress-bar,.notes-overlay,.overview{display:none!important}
 }
-
 /* html-ppt :: animations.css
  * Apply by adding class="anim-<name>" or data-anim="<name>".
  * Durations are deliberately snappy; tweak --anim-dur per element.
@@ -294,7 +290,6 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 @media (prefers-reduced-motion: reduce){
   [class*="anim-"]{animation:none!important;transition:none!important}
 }
-
 /* html-ppt :: shared webfonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;600;700;900&display=swap');
@@ -304,6 +299,37 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/* theme: minimal-white — 极简白，克制高级 */
+.theme-minimal-white:root, .theme-minimal-white{
+  --bg:#ffffff;--bg-soft:#fafafa;--surface:#ffffff;--surface-2:#f5f5f6;
+  --border:rgba(17,18,22,.08);--border-strong:rgba(17,18,22,.16);
+  --text-1:#0c0d10;--text-2:#55596a;--text-3:#9ca1b0;
+  --accent:#111216;--accent-2:#3b3f4a;--accent-3:#6b6f7a;
+  --good:#1aaf6c;--warn:#c98500;--bad:#c13a3a;
+  --grad:linear-gradient(135deg,#111216,#3b3f4a);
+  --grad-soft:linear-gradient(135deg,#f5f5f6,#ffffff);
+  --radius:14px;--radius-sm:8px;--radius-lg:22px;
+  --shadow:0 1px 2px rgba(17,18,22,.04),0 8px 24px rgba(17,18,22,.06);
+  --shadow-lg:0 20px 60px rgba(17,18,22,.1);
+  --font-sans:'Inter','Noto Sans SC',sans-serif;
+  --font-display:'Inter','Noto Sans SC',sans-serif;
+  --letter-tight:-.035em;
+}
+
+/* theme: dracula — dracula 深色 */
+.theme-dracula:root, .theme-dracula{
+  --bg:#282a36;--bg-soft:#21222c;--surface:#343746;--surface-2:#44475a;
+  --border:rgba(248,248,242,.12);--border-strong:rgba(248,248,242,.24);
+  --text-1:#f8f8f2;--text-2:#bdbde0;--text-3:#6272a4;
+  --accent:#bd93f9;--accent-2:#ff79c6;--accent-3:#8be9fd;
+  --good:#50fa7b;--warn:#f1fa8c;--bad:#ff5555;
+  --grad:linear-gradient(135deg,#bd93f9,#ff79c6 55%,#8be9fd);
+  --grad-soft:linear-gradient(135deg,#343746,#44475a);
+  --radius:12px;--radius-sm:8px;--radius-lg:18px;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+  --shadow-lg:0 22px 60px rgba(0,0,0,.55);
+  --font-sans:'Inter','Noto Sans SC',sans-serif;
+}
 
 /* theme: verdict-dark — dark bg, gold accent, serif display */
 .theme-verdict-dark:root, .theme-verdict-dark{
@@ -322,28 +348,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   --letter-tight:-.02em;
 }
 
-/* theme: dracula — dracula 深色 */
-.theme-dracula:root, .theme-dracula{
-  --bg:#282a36;--bg-soft:#21222c;--surface:#343746;--surface-2:#44475a;
-  --border:rgba(248,248,242,.12);--border-strong:rgba(248,248,242,.24);
-  --text-1:#f8f8f2;--text-2:#bdbde0;--text-3:#6272a4;
-  --accent:#bd93f9;--accent-2:#ff79c6;--accent-3:#8be9fd;
-  --good:#50fa7b;--warn:#f1fa8c;--bad:#ff5555;
-  --grad:linear-gradient(135deg,#bd93f9,#ff79c6 55%,#8be9fd);
-  --grad-soft:linear-gradient(135deg,#343746,#44475a);
-  --radius:12px;--radius-sm:8px;--radius-lg:18px;
-  --shadow:0 10px 30px rgba(0,0,0,.4);
-  --shadow-lg:0 22px 60px rgba(0,0,0,.55);
-  --font-sans:'Inter','Noto Sans SC',sans-serif;
-}
-
-
 .slide { overflow-y: auto !important; padding-bottom: 110px !important; }
 .slide::-webkit-scrollbar { width: 6px; }
 .slide::-webkit-scrollbar-track { background: transparent; }
 .slide::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
-.card li, .card ul { font-size: 13px; line-height: 1.55; color: var(--text-2); }
-.card ul { margin: 2px 0 4px; padding-left: 18px; }
+.card ul { margin: 4px 0; padding-left: 20px; }
+.card li { font-size: 13px; line-height: 1.55; color: var(--text-2); margin-bottom: 2px; }
 @media (max-width: 1024px) {
   .slide { padding: 40px 36px 90px !important; }
   .deck-header { top: 12px; left: 18px; right: 18px; }
@@ -353,32 +363,29 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   .lede { font-size: clamp(13px, 2vw, 16px); }
   .card { padding: 14px 14px 12px !important; }
   .slide div[style*="repeat(auto-fit,minmax(300px,1fr))"] { grid-template-columns: repeat(auto-fit,minmax(240px,1fr)) !important; }
+  img[style*="max-height"] { max-height: 80px !important; }
   .mb-l { margin-bottom: 14px !important; }
   .kicker { font-size: 11px; }
   .h4 { font-size: 14px; }
-  .dim,.card p,.card li,.card ul { font-size: clamp(11px, 1.6vw, 13px); line-height: 1.5; }
-  .card ul { margin: 2px 0 4px; padding-left: 18px; }
+  .dim,.card p { font-size: clamp(11px, 1.6vw, 13px); line-height: 1.5; }
 }
 @media (max-width: 640px) {
   .slide { padding: 28px 18px !important; }
   h1.title,.h1 { font-size: clamp(22px, 7vw, 28px); }
   h2.title,.h2 { font-size: clamp(18px, 5vw, 22px); }
   .card { padding: 10px 12px 10px !important; }
-  .card p,.card li,.card ul { font-size: 12px; line-height: 1.4; }
+  .card p { font-size: 12px; line-height: 1.4; }
   .kicker { font-size: 10px; letter-spacing: 0.08em; }
   .slide div[style*="repeat(auto-fit,minmax(300px,1fr))"] { grid-template-columns: 1fr !important; }
 }
 .deck-footer button { background:none; border:none; color:var(--text-3); cursor:pointer; font-size:18px; padding:0 8px 0 0; line-height:1; }
 .deck-footer button:hover { color:var(--accent); }
-
-</style>
-</head>
-<body>
-  <div class="deck">
+</style></head>
+<body><div class="deck">
 
     <!-- COVER -->
     <section class="slide is-active" data-title="Cover">
-      <div class="version-badge" style="position:absolute;top:20px;right:20px;font-size:14px;color:var(--text-3);font-family:monospace;">v70 · June 05, 2026 · 14:53 SGT</div>
+      <div class="version-badge" style="position:absolute;top:20px;right:20px;font-size:14px;color:var(--text-3);font-family:monospace;">v71 · June 05, 2026 · 18:10 +08</div>
       <p class="kicker">A Reasoned Examination</p>
       <h1 class="h1" style="margin-bottom:0.25em">Why I Do Not Believe<br>Christianity Is True</h1>
       <p class="lede" style="max-width:56ch">An evidence-based look at the claims of Christianity through the lenses of science, history, Jesus, morality, scripture, and philosophy.</p>
@@ -397,7 +404,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Christianity makes positive claims about reality: a God exists, Jesus rose from the dead, prayers are answered, miracles occur. These are not neutral statements -- they assert something extraordinary about the universe.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Whoever makes a positive claim carries the burden of proof. Skepticism is not a counter-claim -- it&#x27;s the default position until sufficient evidence is presented. The lack of belief is not a belief in lack.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Whoever makes a positive claim carries the burden of proof. Skepticism is not a counter-claim -- it&#x27;s the default position until sufficient evidence is presented. The lack of belief is not a belief in lack.</p></div>
       </div>
       </div>
       <div class="notes">The most common confusion in these debates: atheism isn&#x27;t the claim that &quot;no god exists&quot; with certainty. It&#x27;s the lack of belief in the god claim due to insufficient evidence. The difference matters. If I tell you there&#x27;s a dragon in my garage, you don&#x27;t have to prove there isn&#x27;t -- I have to show you the dragon.</div>
@@ -409,7 +416,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">No Faith Required</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">These are all secular, evidence-based inquiries. No scripture, no dogma, no theological assumptions -- just the same tools we use to evaluate any truth claim about the world.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Six Chances to Be Right</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">If Christianity is true, it should hold up in *at least one* of these areas -- ideally all six. If it fails in every single one, that is not a coincidence. That&#x27;s a pattern.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Six Chances to Be Right</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">If Christianity is true, it should hold up in <strong>at least one</strong> of these areas -- ideally all six. If it fails in every single one, that is not a coincidence. That&#x27;s a pattern.</p></div>
       </div>
       </div>
       <div class="notes">The reason to use six independent evidence areas is to eliminate special pleading. A Christian can&#x27;t retreat to &quot;you just need faith&quot; when science contradicts the Bible -- because we&#x27;re also testing history, Jesus&#x27;s claims, morality, the biblical text itself, and philosophy. The Bible section also addresses common defense arguments. If all six point the same direction, the pattern is clear.</div>
@@ -444,8 +451,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">Science has a history of closing gaps where God was once the only explanation. The scientific evidence against a literal Genesis is not a recent discovery -- it is the culmination of centuries of inquiry.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Lightning = physics. Disease = germ theory. The origin of species = evolution. The pattern is unmistakable: every domain once attributed to divine action now has a natural explanation. This section tests Christianity&#x27;s specific claims against science: young Earth, special creation, global flood, and a single human pair.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">This section examines Christianity&#x27;s specific claims about the natural world: that the Earth is young, that species were individually created, that a global flood reshaped the planet, that humans arose from a single pair. In each case, the scientific evidence tells a different story. The question is not whether Christianity can accommodate science -- it can, through reinterpretation. The question is whether the evidence supports a literal reading of Genesis, and what that means for a faith built on that foundation.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Lightning = physics. Disease = germ theory. The origin of species = evolution. The pattern is unmistakable: every domain once attributed to divine action now has a natural explanation. This section tests Christianity&#x27;s specific claims against science: young Earth, special creation, global flood, and a single human pair.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">This section examines Christianity&#x27;s specific claims about the natural world: that the Earth is young, that species were individually created, that a global flood reshaped the planet, that humans arose from a single pair. In each case, the scientific evidence tells a different story. The question is not whether Christianity can accommodate science -- it can, through reinterpretation. The question is whether the evidence supports a literal reading of Genesis, and what that means for a faith built on that foundation.</p></div>
       </div>
       </div>
       <div class="notes">The God of the Gaps argument is the most common but also the weakest. It says &quot;science can&#x27;t explain X, therefore God.&quot; The problem is that historically, every time we&#x27;ve said that, science eventually does explain X. Lightning, disease, the motions of the planets, the origin of species -- all were once attributed to God, all now have natural explanations. This section covers what science actually tells us about the specific claims Christianity makes about the natural world.</div>
@@ -459,7 +466,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><ul><li>Special pleading: If everything that begins needs a cause, what caused God? If God doesn&#x27;t need a cause, why can&#x27;t the universe be the uncaused thing?</li><li>Equivocation: Even if premise 3 is granted, the conclusion &quot;that cause is God&quot; smuggles in attributes (omnipotence, omniscience, benevolence) that aren&#x27;t in the premises. The cause could be a quantum fluctuation, a multiverse bubble, or anything else.</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>Special pleading: If everything that begins needs a cause, what caused God? If God doesn&#x27;t need a cause, why can&#x27;t the universe be the uncaused thing?</li><li>Equivocation: Even if premise 3 is granted, the conclusion &quot;that cause is God&quot; smuggles in attributes (omnipotence, omniscience, benevolence) that aren&#x27;t in the premises. The cause could be a quantum fluctuation, a multiverse bubble, or anything else.</li></ul></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
@@ -478,8 +485,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">1. The Anthropic Principle -- we can only observe a universe that permits our existence.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">2. The multiverse hypothesis -- if there are countless universes with varying constants, ours being life-permitting is unremarkable.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">3. Fine-tuning assumes life is the goal -- why not fine-tuned for something else?</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>The Puddle Analogy:</strong> A puddle waking up thinking *&quot;What a wonderful hole -- it fits me perfectly!&quot;* mistakes its shape for evidence the hole was designed for it. We observe a universe that permits our existence -- that&#x27;s not surprising, it&#x27;s tautological.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">1. The Anthropic Principle -- we can only observe a universe that permits our existence.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">2. The multiverse hypothesis -- if there are countless universes with varying constants, ours being life-permitting is unremarkable.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">3. Fine-tuning assumes life is the goal -- why not fine-tuned for something else?</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>The Puddle Analogy:</strong> A puddle waking up thinking <strong>&quot;What a wonderful hole -- it fits me perfectly!&quot;</strong> mistakes its shape for evidence the hole was designed for it. We observe a universe that permits our existence -- that&#x27;s not surprising, it&#x27;s tautological.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
@@ -570,11 +577,11 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">Five Christian claims, five scientific findings -- and what it means for theology.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> God created the universe. <strong>Science:</strong> The universe began with the Big Bang 13.8 billion years ago. Kalam argument fails.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> The universe is finely tuned for life. <strong>Science:</strong> Anthropic principle and multiverse hypothesis explain fine-tuning without design.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> God created the Earth 6,000 years ago. <strong>Science:</strong> Radiometric dating, stellar distances, and geology all show a 4.5-billion-year-old Earth.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> God created species separately. <strong>Science:</strong> Fossil record, observed evolution, and genetic evidence confirm common descent.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> God created humans uniquely. <strong>Science:</strong> Fossils, genetics, and chromosome evidence show humans evolved from ape-like ancestors.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> God created the universe.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Science:</strong> The universe began with the Big Bang 13.8 billion years ago. Kalam argument fails.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> The universe is finely tuned for life.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Science:</strong> Anthropic principle and multiverse hypothesis explain fine-tuning without design.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> God created the Earth 6,000 years ago.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Science:</strong> Radiometric dating, stellar distances, and geology all show a 4.5-billion-year-old Earth.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> God created species separately.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Science:</strong> Fossil record, observed evolution, and genetic evidence confirm common descent.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Claim:</strong> God created humans uniquely.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Science:</strong> Fossils, genetics, and chromosome evidence show humans evolved from ape-like ancestors.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
@@ -601,7 +608,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The ancient Near East is one of the most intensively excavated regions in the world. We have extensive records from Egypt, Assyria, and Babylon -- inscriptions, annals, administrative documents, and royal propaganda. We can date pottery, trace settlement patterns, and read the records of the very civilizations the Bible describes. If the Exodus happened, Egypt would have recorded it. If the Conquest happened, the ruins would show it. If Noah&#x27;s Flood happened, the geology would prove it. This is not a matter of interpretation -- it is a matter of evidence.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The ancient Near East is one of the most intensively excavated regions in the world. We have extensive records from Egypt, Assyria, and Babylon -- inscriptions, annals, administrative documents, and royal propaganda. We can date pottery, trace settlement patterns, and read the records of the very civilizations the Bible describes. If the Exodus happened, Egypt would have recorded it. If the Conquest happened, the ruins would show it. If Noah&#x27;s Flood happened, the geology would prove it. This is not a matter of interpretation -- it is a matter of evidence.</p></div>
       </div>
       </div>
       <div class="notes">This section covers the three most significant cases where archaeology directly contradicts or fails to support the biblical account. These are not fringe positions -- they are the consensus of mainstream archaeology and biblical historiography.</div>
@@ -615,7 +622,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><ul><li>No geological evidence for a global flood in the last 6,000 years</li><li>Stratigraphic layers show gradual deposition over millions of years, not a single catastrophic flood</li><li>Ice cores from Greenland and Antarctica show annual layers going back 100,000+ years -- uninterrupted</li><li>If a global flood occurred, we&#x27;d expect a worldwide layer of flood sediment. No such layer exists.</li><li>8 people could not feed, clean, and care for ~35,000+ animal species (let alone insects and marine life)</li><li>Freshwater fish would die in saltwater; saltwater fish in freshwater</li><li>Post-flood repopulation is genetically impossible from such a small founder population</li><li>Kangaroos and koalas making it from Ararat to Australia without leaving fossils along the way stretches credulity</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>No geological evidence for a global flood in the last 6,000 years</li><li>Stratigraphic layers show gradual deposition over millions of years, not a single catastrophic flood</li><li>Ice cores from Greenland and Antarctica show annual layers going back 100,000+ years -- uninterrupted</li><li>If a global flood occurred, we&#x27;d expect a worldwide layer of flood sediment. No such layer exists.</li><li>8 people could not feed, clean, and care for ~35,000+ animal species (let alone insects and marine life)</li><li>Freshwater fish would die in saltwater; saltwater fish in freshwater</li><li>Post-flood repopulation is genetically impossible from such a small founder population</li><li>Kangaroos and koalas making it from Ararat to Australia without leaving fossils along the way stretches credulity</li></ul></div>
       </div>
       </div>
       <div class="notes">The Noah&#x27;s Ark story is one of the most well-known in the Bible, and one of the most empirically falsifiable. Every branch of science -- geology, biology, genetics, archaeology -- independently concludes that no global flood occurred in human history. The story almost certainly derives from older Mesopotamian flood myths like the Epic of Gilgamesh, which predate the Genesis account.</div>
@@ -630,7 +637,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><ul><li>No Egyptian records of a slave population, plagues, or a mass departure. Egypt recorded everything -- including far smaller events</li><li>No evidence of 2 million people living in the Sinai for 40 years: no campsites, no graves, no pottery, no animal bones. The Sinai desert cannot support that many people</li><li>No evidence of conquest in Canaan that matches the biblical timeline. Many cities Joshua supposedly conquered (like Jericho and Ai) were either unoccupied or already destroyed centuries earlier</li><li>No demographic shift in Canaan that suggests an incoming population. The archaeological record shows continuous Canaanite habitation</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>No Egyptian records of a slave population, plagues, or a mass departure. Egypt recorded everything -- including far smaller events</li><li>No evidence of 2 million people living in the Sinai for 40 years: no campsites, no graves, no pottery, no animal bones. The Sinai desert cannot support that many people</li><li>No evidence of conquest in Canaan that matches the biblical timeline. Many cities Joshua supposedly conquered (like Jericho and Ai) were either unoccupied or already destroyed centuries earlier</li><li>No demographic shift in Canaan that suggests an incoming population. The archaeological record shows continuous Canaanite habitation</li></ul></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
@@ -648,6 +655,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Joshua&#x27;s army crosses the Jordan, destroys Jericho as its walls fall, and conquers Canaan city by city, wiping out entire populations as God commanded. A swift, total, divinely ordained conquest.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <h4 class="h4" style="margin-bottom:2px;font-size:15px">The Reality</h4>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Jericho</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Excavated by Kathleen Kenyon. Destroyed around <strong>1550 BCE</strong> -- <strong>300 years before</strong> the biblical date (~1200 BCE). By 1200 BCE it was a small, unfortified settlement or uninhabited.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Ai</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The name means &quot;the ruin&quot; -- fittingly, it was already a ruin when the Israelites supposedly conquered it. Abandoned centuries before.</p></div>
@@ -656,7 +664,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Israelites did not invade Canaan from outside -- they *were* Canaanites who gradually differentiated themselves. The conquest narrative was written centuries later as a theological origin myth, not a historical record.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The bottom line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Israelites did not invade Canaan from outside -- they <strong>were</strong> Canaanites who gradually differentiated themselves. The conquest narrative was written centuries later as a theological origin myth, not a historical record.</p></div>
       </div>
       </div>
       <div class="notes">The conquest narrative is one of the most morally problematic parts of the Bible -- God commanding genocide. The archaeological evidence suggests this never happened, which is both a relief and a revelation. It means the genocide was not historical fact but theological fiction. But it also means the Bible presents morally abhorrent commands that were never actually given -- they were written to serve a political purpose.</div>
@@ -696,7 +704,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Christians often point to Old Testament prophecies as evidence that Jesus was the messiah. But do those verses actually predict Jesus, or were they reinterpreted after the fact? And Jesus himself made specific predictions about his own return within his disciples&#x27; lifetime -- predictions that did not come true. This section examines all three questions.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Christians often point to Old Testament prophecies as evidence that Jesus was the messiah. But do those verses actually predict Jesus, or were they reinterpreted after the fact? And Jesus himself made specific predictions about his own return within his disciples&#x27; lifetime -- predictions that did not come true. This section examines all three questions.</p></div>
       </div>
       </div>
       <div class="notes">The Jesus section covers three distinct but related lines of evidence: (1) whether the resurrection is historically credible, (2) whether OT prophecies were genuinely predictive or retrofitted, and (3) whether Jesus&#x27;s own predictions about the future were accurate. Each alone is significant; together they form a coherent picture.</div>
@@ -711,7 +719,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><ul><li>The empty tomb story appears only in the Gospels, decades later</li><li>Paul&#x27;s account (1 Cor 15) mentions only visions, not an empty tomb</li><li>Paul claims 500 witnesses saw the resurrected Jesus (1 Cor 15:6), yet names not one of them -- and no contemporary historian corroborates the mass sighting</li><li>The Gospel accounts contradict each other on who found the tomb, what they saw, and what happened next</li><li>Natural explanations (hallucination, borrowed tomb, wrong tomb, legend formation) are more parsimonious than a violation of every known law of nature</li><li>No contemporary non-Christian source mentions it</li><li>No extra-biblical accounts exist of the Gospel miracles -- tombs opening (Matt 27:52-53), feeding 5,000, darkness at noon -- all in a Roman-governed province, yet unrecorded by any contemporary historian</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>The empty tomb story appears only in the Gospels, decades later</li><li>Paul&#x27;s account (1 Cor 15) mentions only visions, not an empty tomb</li><li>Paul claims 500 witnesses saw the resurrected Jesus (1 Cor 15:6), yet names not one of them -- and no contemporary historian corroborates the mass sighting</li><li>The Gospel accounts contradict each other on who found the tomb, what they saw, and what happened next</li><li>Natural explanations (hallucination, borrowed tomb, wrong tomb, legend formation) are more parsimonious than a violation of every known law of nature</li><li>No contemporary non-Christian source mentions it</li><li>No extra-biblical accounts exist of the Gospel miracles -- tombs opening (Matt 27:52-53), feeding 5,000, darkness at noon -- all in a Roman-governed province, yet unrecorded by any contemporary historian</li></ul></div>
       </div>
       </div>
       <div class="notes">The resurrection is the keystone of Christianity. Paul says if Christ didn&#x27;t rise, faith is futile. So the evidence matters enormously. What we have: four contradictory accounts written decades later by anonymous authors, no independent corroboration from Roman or Jewish sources, and Paul -- our earliest source -- mentions only visions, not a physical tomb. Historians can establish that some early Christians believed Jesus appeared to them, but establishing that a dead man actually rose requires evidence of a different order entirely.</div>
@@ -726,7 +734,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><ul><li>Isaiah 7:14 &quot;virgin will conceive&quot; -- Hebrew word almah means &quot;young woman&quot; not &quot;virgin.&quot; Referred to Isaiah&#x27;s own son, born during the Syro-Ephraimite war.</li><li>Micah 5:2 &quot;Bethlehem&quot; -- refers to a coming ruler who would defend Israel against Assyria. Jesus was born in Bethlehem, but the prophecy was about a contemporary deliverer.</li><li>Hosea 11:1 &quot;out of Egypt I called my son&quot; -- refers to the nation of Israel, not an individual. Matthew takes it out of context entirely.</li><li>Jeremiah 31:15 &quot;Rachel weeping&quot; -- refers to the Babylonian exile, not a massacre by Herod. Matthew recontextualizes it to fit his narrative.</li><li>Isaiah 53 &quot;Suffering Servant&quot; -- describes the nation of Israel or Isaiah himself, not an individual messiah. Jewish interpretation has never read it as messianic.</li><li>Psalm 22 &quot;my God, my God&quot; -- a poetic psalm describing the Psalmist&#x27;s own suffering. The &quot;pierced&quot; detail is a mistranslation of &quot;like a lion.&quot;</li><li>Psalm 16:10 &quot;not abandoned to the grave&quot; -- the Psalmist expresses confidence in God&#x27;s protection, not a prediction of resurrection.</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>Isaiah 7:14 &quot;virgin will conceive&quot; -- Hebrew word almah means &quot;young woman&quot; not &quot;virgin.&quot; Referred to Isaiah&#x27;s own son, born during the Syro-Ephraimite war.</li><li>Micah 5:2 &quot;Bethlehem&quot; -- refers to a coming ruler who would defend Israel against Assyria. Jesus was born in Bethlehem, but the prophecy was about a contemporary deliverer.</li><li>Hosea 11:1 &quot;out of Egypt I called my son&quot; -- refers to the nation of Israel, not an individual. Matthew takes it out of context entirely.</li><li>Jeremiah 31:15 &quot;Rachel weeping&quot; -- refers to the Babylonian exile, not a massacre by Herod. Matthew recontextualizes it to fit his narrative.</li><li>Isaiah 53 &quot;Suffering Servant&quot; -- describes the nation of Israel or Isaiah himself, not an individual messiah. Jewish interpretation has never read it as messianic.</li><li>Psalm 22 &quot;my God, my God&quot; -- a poetic psalm describing the Psalmist&#x27;s own suffering. The &quot;pierced&quot; detail is a mistranslation of &quot;like a lion.&quot;</li><li>Psalm 16:10 &quot;not abandoned to the grave&quot; -- the Psalmist expresses confidence in God&#x27;s protection, not a prediction of resurrection.</li></ul></div>
       </div>
       </div>
       <div class="notes">The prophecy argument is one of the most commonly used by apologists. When you actually read each prophecy in its original context, you find that almost none of them are predictive in nature. They were about events and people contemporary to the writers. See the appendix for a detailed analysis of all seven prophecies.</div>
@@ -737,7 +745,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">The pattern is clear and consistent across all major &quot;messianic prophecies.&quot;</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><ul><li>The Old Testament contains dozens of specific predictions about a coming messiah</li></ul><ul><li>Jesus fulfilled every one of them</li></ul><ul><li>This proves Jesus was the prophesied messiah</li></ul><ul><li>Old Testament prophecy is evidence of divine inspiration</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><ul><li>The Old Testament contains dozens of specific predictions about a coming messiah</li><li>Jesus fulfilled every one of them</li><li>This proves Jesus was the prophesied messiah</li><li>Old Testament prophecy is evidence of divine inspiration</li></ul></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
@@ -808,8 +816,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">If Jesus was wrong about his own return, why trust him on anything else?</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Minimal Facts</h4><ul><li>Jesus of Nazareth was a Jewish apocalyptic preacher</li></ul><ul><li>He believed the end of the world was imminent</li></ul><ul><li>He predicted his return within his disciples&#x27; lifetime</li></ul><ul><li>His followers adapted after the prediction failed</li></ul></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Dilemma</h4><ul><li>Jesus predicted his return within a generation -- it did not happen</li></ul><ul><li>He promised his apostles thrones -- they did not receive them</li></ul><ul><li>He guaranteed prayer works -- mountains stay put</li></ul><ul><li>The most important prediction failed. What remains?</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Minimal Facts</h4><ul><li>Jesus of Nazareth was a Jewish apocalyptic preacher</li><li>He believed the end of the world was imminent</li><li>He predicted his return within his disciples&#x27; lifetime</li><li>His followers adapted after the prediction failed</li></ul></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Dilemma</h4><ul><li>Jesus predicted his return within a generation -- it did not happen</li><li>He promised his apostles thrones -- they did not receive them</li><li>He guaranteed prayer works -- mountains stay put</li><li>The most important prediction failed. What remains?</li></ul></div>
       </div>
       </div>
       <div class="notes">Scholars like Albert Schweitzer concluded that Jesus was an apocalyptic prophet who expected the kingdom of God to arrive imminently. He was wrong. If he was wrong about the central element of his own message, the foundation of Christian theology is shaken.</div>
@@ -821,7 +829,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">✝️ The Resurrection</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">No contemporary corroboration. Four contradictory Gospel accounts written decades later by anonymous authors. Paul&#x27;s earlier account mentions only visions, not an empty tomb. Natural explanations are more parsimonious than a violation of every known law of nature.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">📖 OT Prophecies</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Every major &quot;messianic prophecy&quot; fails under scrutiny. Verses are taken out of context, mistranslated, or refer to contemporary figures and events. The NT authors used *vaticinium ex eventu* -- reading earlier texts in light of later events.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">📖 OT Prophecies</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Every major &quot;messianic prophecy&quot; fails under scrutiny. Verses are taken out of context, mistranslated, or refer to contemporary figures and events. The NT authors used <strong>vaticinium ex eventu</strong> -- reading earlier texts in light of later events.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">⏳ Jesus&#x27;s Own Predictions</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Jesus predicted his return within his disciples&#x27; lifetime (&quot;this generation will not pass away&quot;). He promised the apostles thrones. He said the Son of Man would come before they finished their mission. None of it happened. Deuteronomy says a prophet whose words fail is not from God.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
@@ -857,7 +865,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">The Old Testament condones -- and God commands -- practices we now consider among the worst moral evils.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🔗 Slavery</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Bible does not condemn slavery -- it regulates and endorses it. Key passages:</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Leviticus 25:44-46</strong> -- God tells Israel they may buy slaves from surrounding nations and pass them as inherited property to their children. These slaves are owned for life, unlike Hebrew servants who go free after six years.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Exodus 21:20-21</strong> -- If a master beats a slave to death, he is punished only if the slave dies *immediately*. If the slave lingers for a day or two, the master is not punished because the slave is his property.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Ephesians 6:5</strong> -- The New Testament tells slaves to obey their masters with fear and trembling, as they would Christ. Nowhere in either testament is slavery condemned as a moral evil.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🔗 Slavery</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Bible does not condemn slavery -- it regulates and endorses it. Key passages:</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Leviticus 25:44-46</strong> -- God tells Israel they may buy slaves from surrounding nations and pass them as inherited property to their children. These slaves are owned for life, unlike Hebrew servants who go free after six years.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Exodus 21:20-21</strong> -- If a master beats a slave to death, he is punished only if the slave dies <strong>immediately</strong>. If the slave lingers for a day or two, the master is not punished because the slave is his property.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Ephesians 6:5</strong> -- The New Testament tells slaves to obey their masters with fear and trembling, as they would Christ. Nowhere in either testament is slavery condemned as a moral evil.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Genocide</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">God explicitly commands the wholesale destruction of entire peoples:</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Deuteronomy 20:16-18</strong> -- &quot;In the cities of the nations the Lord your God is giving you as an inheritance, do not leave alive anything that breathes. Completely destroy them... so that they will not teach you to follow all the detestable things they do for their gods.&quot;</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>1 Samuel 15:3</strong> -- God commands Saul to &quot;attack the Amalekites and totally destroy everything that belongs to them. Do not spare them; put to death men and women, children and infants, cattle and sheep, camels and donkeys.&quot; Saul is later *rejected as king* for sparing the Amalekite king and the best livestock.</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>Joshua 6:21</strong> -- The army of Israel &quot;devoted all in the city to destruction, both men and women, young and old, oxen, sheep, and donkeys, with the edge of the sword.&quot; This is presented as obedience to divine command, not a regrettable act of war.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
@@ -904,7 +912,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">The doctrine that we are all born sinful -- and therefore deserve punishment -- before we have done anything wrong.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Doctrine</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Augustine codified the doctrine of original sin: because Adam sinned, all of humanity inherits both a sinful nature and the guilt of that first sin. We are born *already guilty* in God&#x27;s eyes, deserving of punishment before we&#x27;ve committed a single wrong act. This is why infant baptism was considered necessary in much of church history -- unbaptized babies who died were thought to go to hell or to a separate place called limbo.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Doctrine</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Augustine codified the doctrine of original sin: because Adam sinned, all of humanity inherits both a sinful nature and the guilt of that first sin. We are born <strong>already guilty</strong> in God&#x27;s eyes, deserving of punishment before we&#x27;ve committed a single wrong act. This is why infant baptism was considered necessary in much of church history -- unbaptized babies who died were thought to go to hell or to a separate place called limbo.</p></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
@@ -953,7 +961,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Many Christians believe the Bible is without error in its original manuscripts. But we don&#x27;t have the originals. We have thousands of handwritten copies, all of which contain differences -- scribal errors, additions, deletions, and theological corrections.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><ul><li>There are 400,000+ textual variants among NT manuscripts</li><li>Most are minor, but some affect doctrine: the story of the woman caught in adultery (John 7:53-8:11) and the longer ending of Mark (Mark 16:9-20) are later additions, not original</li><li>The Johannine Comma (1 John 5:7-8) -- the only explicit Trinitarian verse -- was added centuries later</li><li>We reconstruct the &quot;original&quot; text through scholarly inference, but we can never be certain we have it exactly right</li></ul></div>
+      </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><ul><li>There are 400,000+ textual variants among NT manuscripts</li><li>Most are minor, but some affect doctrine: the story of the woman caught in adultery (John 7:53-8:11) and the longer ending of Mark (Mark 16:9-20) are later additions, not original</li><li>The Johannine Comma (1 John 5:7-8) -- the only explicit Trinitarian verse -- was added centuries later</li><li>We reconstruct the &quot;original&quot; text through scholarly inference, but we can never be certain we have it exactly right</li></ul></div>
       </div>
       <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
@@ -1009,8 +1020,13 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <h2 class="h2" data-anim="fade-up">Theological Reinterpretation of History</h2>
       <p class="lede mb-m">The Old Testament often reinterprets ordinary events as divine acts -- a pattern visible when compared to other ancient sources.</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Pattern</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Throughout the Old Testament, ordinary historical events are recast as direct divine interventions. Military victories become miracles. Natural disasters become divine punishment. Diplomatic treaties become commands of God. This was standard practice in the ancient Near East -- every nation credited its gods with its successes and blamed them for its failures. The Bible does the same, but later readers took these poetic interpretations literally.</p></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Pattern</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Throughout the Old Testament, ordinary historical events are recast as direct divine interventions. Military victories become miracles. Natural disasters become divine punishment. Diplomatic treaties become commands of God. This was standard practice in the ancient Near East -- every nation credited its gods with its successes and blamed them for its failures. The Bible does the same, but later readers took these poetic interpretations literally.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Concrete Examples</h4><ul><li>The Exodus: A small group of Semitic slaves escaping Egypt becomes a foundational miracle of 2 million people crossing the Red Sea. Egyptian records of the period -- which meticulously document far smaller events -- record nothing.</li><li>The Conquest of Canaan: Archaeology shows the Israelites emerged from within Canaanite society. The biblical account of miraculous military conquest was written centuries later as a theological origin myth.</li><li>Sennacherib&#x27;s Invasion (701 BCE): Assyrian records describe Hezekiah paying tribute. The Bible (2 Kings 19) credits divine intervention, claiming an angel killed 185,000 Assyrian soldiers overnight. No Assyrian record mentions this -- because it didn&#x27;t happen.</li><li>The sun standing still at Gibeon (Joshua 10): A poetic description of a long day of battle, taken literally by later readers. No other ancient source records this event, and the physics alone makes it scientifically impossible.</li></ul></div>
+      </div>
+      <div style="height:1px;background:var(--border);margin:6px 0 2px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 18px">
+      <div class="card" data-anim="fade-up" style="padding:14px 18px border-left:3px solid var(--bad,#cf222e);padding-left:14px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Bottom Line</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The Bible authors were theologians writing theology, not historians writing journalism. When modern Christians insist that every poetic description of divine intervention is literally and historically true, they are misunderstanding the genre of the text. Every other culture&#x27;s sacred writings are recognized as theological interpretations of history -- the Bible deserves the same critical treatment.</p></div>
       </div>
       </div>
       <div class="notes">The reinterpretation of history is not unique to the Bible -- it was the standard way ancient peoples understood their world. But when modern Christians insist that every poetic description of divine intervention is literally and historically true, they are misunderstanding the genre of the text. The Bible authors were theologians writing theology, not historians writing journalism.</div>
@@ -1028,7 +1044,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Around forty writers across 1,500 years -- kings, prophets, fishermen, a physician -- produced 66 books that share a unified theme of salvation through Jesus. No other religious text spans such diversity of authorship with such coherence.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Writers from the same culture and shared history naturally produce coherent narratives. Yet even then, the Bible shows discrepancies: early texts use the plural *elohim*, betraying polytheistic origins; God&#x27;s nature evolves from a violent tribal war god to a universal loving god; and the Bible contradicts itself on whether God creates evil (Isaiah 45:7 says yes, 1 John 1:5 says no). Coherence within a tradition is expected -- it&#x27;s not evidence of divine origin.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Writers from the same culture and shared history naturally produce coherent narratives. Yet even then, the Bible shows discrepancies: early texts use the plural <strong>elohim</strong>, betraying polytheistic origins; God&#x27;s nature evolves from a violent tribal war god to a universal loving god; and the Bible contradicts itself on whether God creates evil (Isaiah 45:7 says yes, 1 John 1:5 says no). Coherence within a tradition is expected -- it&#x27;s not evidence of divine origin.</p></div>
       </div>
       </div>
     </section>
@@ -1050,7 +1066,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The New Testament was written by eyewitnesses to the events soon after they took place, within the first century. The Gospels preserve the testimony of those who saw Jesus&#x27; ministry, death, and resurrection firsthand.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The first gospel (Mark) was written some 40 years after Jesus&#x27; death -- decades of oral tradition during which stories change, embellish, and distort with every transmission. The Gospels are anonymous; their traditional author names were assigned later. Eyewitness testimony is notoriously unreliable even in controlled modern settings. Ancient accounts, especially those written decades later by non-eyewitnesses, must be treated with appropriate skepticism.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The first gospel (Mark) was written some 40 years after Jesus&#x27; death -- decades of oral tradition during which stories change, embellish, and distort with every transmission. The Gospels are anonymous; their traditional author names were assigned later. Eyewitness testimony is notoriously unreliable even in controlled modern settings. Ancient accounts, especially those written decades later by non-eyewitnesses, must be treated with appropriate skepticism.</p></div>
       </div>
       </div>
     </section>
@@ -1060,8 +1076,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">More copies means more reliable -- or does it?</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The New Testament has over 5,300 Greek manuscripts, 10,000 Latin, and 9,000 other copies -- far more than any other ancient work. By comparison, Aristotle&#x27;s *Poetics* survives in only five manuscripts, the earliest over a thousand years after the original.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">A large number of manuscripts reflects that Christianity was popular and institutionally organized, not that it&#x27;s true. The Quran has few early manuscripts because Islamic leaders controlled the process and burned variant copies -- that says nothing about its truth or falsehood. A falsehood repeated many times does not become true. The question is not how many copies exist, but whether the original events actually happened.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The New Testament has over 5,300 Greek manuscripts, 10,000 Latin, and 9,000 other copies -- far more than any other ancient work. By comparison, Aristotle&#x27;s <strong>Poetics</strong> survives in only five manuscripts, the earliest over a thousand years after the original.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">A large number of manuscripts reflects that Christianity was popular and institutionally organized, not that it&#x27;s true. The Quran has few early manuscripts because Islamic leaders controlled the process and burned variant copies -- that says nothing about its truth or falsehood. A falsehood repeated many times does not become true. The question is not how many copies exist, but whether the original events actually happened.</p></div>
       </div>
       </div>
     </section>
@@ -1072,7 +1088,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;border-left:3px solid var(--accent,#3b6cff);padding-left:14px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Claim</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Countless people around the world testify to freedom from addiction, destructive lifestyles, and despair through following biblical principles and faith in Christ. God&#x27;s Word produces transformed lives (Isaiah 55:11).</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Response</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Beliefs changing lives happens in every religion -- Muslims, Buddhists, Hindus, and secular humanists all report transformed lives. If changed lives are evidence, they&#x27;re evidence for all ideologies, which means they&#x27;re evidence for none. And if we judge by fruits, we must also account for the Inquisition, the Crusades, and fallen leaders like Ravi Zacharias and Kong Hee -- evil done in Christ&#x27;s name using the same Bible as justification.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Reality</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Beliefs changing lives happens in every religion -- Muslims, Buddhists, Hindus, and secular humanists all report transformed lives. If changed lives are evidence, they&#x27;re evidence for all ideologies, which means they&#x27;re evidence for none. And if we judge by fruits, we must also account for the Inquisition, the Crusades, and fallen leaders like Ravi Zacharias and Kong Hee -- evil done in Christ&#x27;s name using the same Bible as justification.</p></div>
       </div>
       </div>
     </section>
@@ -1214,7 +1230,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Unanswered Prayers</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Christians pray for healing, peace, provision, and protection -- often with identical sincerity and faith. Yet outcomes are wildly uneven. Children die of cancer despite global prayer chains. Natural disasters kill believers and non-believers alike. Meanwhile, petty prayers for parking spots or sports victories are reportedly answered. Jesus promised in Matthew 7:7 &quot;Ask and it will be given to you&quot; -- yet millions ask sincerely and receive nothing. Every Christian must explain why most prayers go unanswered while a few seem to work, and no explanation fits all the data.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The STEP Study</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The most rigorous scientific test of intercessory prayer was the <strong>STEP Project</strong> (Benson et al., 2006, *American Heart Journal*). 1,802 cardiac bypass patients were randomly assigned to three groups: those who knew they were being prayed for, those who might be prayed for, and those not prayed for. Results: prayer had <strong>no effect</strong> on complication-free recovery. Remarkably, patients who *knew* they were being prayed for had a <strong>higher rate</strong> of complications -- possibly due to performance anxiety. This double-blind, randomized controlled trial provided no evidence that intercessory prayer works.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The STEP Study</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The most rigorous scientific test of intercessory prayer was the <strong>STEP Project</strong> (Benson et al., 2006, <strong>American Heart Journal</strong>). 1,802 cardiac bypass patients were randomly assigned to three groups: those who knew they were being prayed for, those who might be prayed for, and those not prayed for. Results: prayer had <strong>no effect</strong> on complication-free recovery. Remarkably, patients who <strong>knew</strong> they were being prayed for had a <strong>higher rate</strong> of complications -- possibly due to performance anxiety. This double-blind, randomized controlled trial provided no evidence that intercessory prayer works.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>The contradiction:</strong> Christians also point to answered prayers as evidence of God&#x27;s involvement. But if the same mechanism (prayer) produces both answered and unanswered outcomes, and the best scientific study finds no effect, the simplest explanation is that answered prayers are confirmation bias -- we remember the hits and forget the misses. A perfectly loving, all-powerful God who asks his children to pray would be expected to produce measurable, consistent results. He does not.</p></div>
       </div>
       </div>
@@ -1331,7 +1347,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🐺 Pakicetus</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">50 mya</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Land predator, wolf-sized, ears adapted for underwater hearing.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🐊 Ambulocetus</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">48 mya</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">&quot;Walking whale&quot; -- crocodile-like, could walk on land *and* swim.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🐊 Ambulocetus</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">48 mya</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">&quot;Walking whale&quot; -- crocodile-like, could walk on land <strong>and</strong> swim.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🦴 Rodhocetus</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">46 mya</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">More aquatic, paddle-like feet, pelvis still connected to spine.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🐋 Basilosaurus</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">40 mya</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Fully aquatic, 18m long, tiny vestigial hind legs.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🐳 Modern Whales</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Today</p><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Flippers, no hind limbs, blowhole, sonar.</p></div>
@@ -1371,9 +1387,9 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🦒 Recurrent Laryngeal Nerve</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Takes a <strong>4.5-meter detour</strong> down the giraffe&#x27;s neck, around the aorta, and back up. In fish it takes a short, direct path. As necks lengthened in evolution, the nerve was trapped behind the aorta.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">👁️ The Human Eye</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Photoreceptors face <strong>backward</strong>, with nerves and blood vessels on top creating a blind spot. The octopus eye evolved independently and has the wiring *behind* the retina -- the &quot;correct&quot; design.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">👁️ The Human Eye</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Photoreceptors face <strong>backward</strong>, with nerves and blood vessels on top creating a blind spot. The octopus eye evolved independently and has the wiring <strong>behind</strong> the retina -- the &quot;correct&quot; design.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">🧬 The Vas Deferens</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">In male mammals, it <strong>loops over the ureter</strong> -- a legacy of our fish ancestry when the testes were near the kidneys. An engineer would never route it this way.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>The Argument from Poor Design:</strong> An engineer would not route a nerve around a major artery, wire a retina backwards, or loop a tube in a way that requires a hernia. These are *historical constraints* -- the unmistakable signature of evolution tinkering with existing structures rather than designing from scratch.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55"><strong>The Argument from Poor Design:</strong> An engineer would not route a nerve around a major artery, wire a retina backwards, or loop a tube in a way that requires a hernia. These are <strong>historical constraints</strong> -- the unmistakable signature of evolution tinkering with existing structures rather than designing from scratch.</p></div>
       </div>
       </div>
       <div class="notes">The argument from poor design is perhaps the strongest evidence against intelligent design. We don&#x27;t just have neutral evidence that doesn&#x27;t support design -- we have positive evidence of bad design. Bodies that look exactly like what you&#x27;d expect from evolutionary history.</div>
@@ -1397,7 +1413,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">What Are ERVs?</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">When a retrovirus infects a germ cell (sperm or egg), its DNA becomes a permanent part of the host genome. If that individual reproduces, the viral insertion is passed down to all descendants -- a <strong>genetic fossil</strong> preserved for millions of years. About <strong>8% of the human genome</strong> consists of ancient ERV remnants.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Shared Insertion Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Humans and chimpanzees share <strong>hundreds of ERV insertions</strong> at the *exact same genomic positions.* The odds of two independent viral insertions landing in the same nucleotide position in two different species are effectively zero -- far less than the probability of winning the lottery multiple times in a row. The only parsimonious explanation: <strong>common ancestry.</strong></p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Shared Insertion Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Humans and chimpanzees share <strong>hundreds of ERV insertions</strong> at the <strong>exact same genomic positions.</strong> The odds of two independent viral insertions landing in the same nucleotide position in two different species are effectively zero -- far less than the probability of winning the lottery multiple times in a row. The only parsimonious explanation: <strong>common ancestry.</strong></p></div>
       </div>
       </div>
       <div class="notes">Creationists try to argue ERVs have &quot;function&quot; to explain why they&#x27;re shared. For some ERVs, this is true -- a tiny fraction have been co-opted for things like placental development (syncytin). But the vast majority are inert viral remnants. And even functional ERVs don&#x27;t explain why humans and chimps share them at precisely the same locations. The shared position is the key evidence, not the presence of ERVs themselves. This is overwhelming evidence of common descent, not design.</div>
@@ -1439,7 +1455,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Context &amp; Original Meaning</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The following appendix slides cover each prophecy in detail: the original Hebrew context, what the passage actually meant to its original audience, how the New Testament reinterpreted it, and why that reinterpretation is problematic. In every case, the prophecy either refers to a contemporary figure (Isaiah&#x27;s son, King Hezekiah, King Josiah) or is a poetic passage that was never intended as a prediction.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Vaticinium Ex Eventu</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The New Testament authors used a technique called *vaticinium ex eventu* -- reading earlier texts in light of later events. They searched the Septuagint (a Greek translation of the Hebrew Bible) for passages that could be reinterpreted as referring to Jesus, often ignoring the original meaning entirely. This was a standard literary technique of the time, not evidence of actual prediction.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">Vaticinium Ex Eventu</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">The New Testament authors used a technique called <strong>vaticinium ex eventu</strong> -- reading earlier texts in light of later events. They searched the Septuagint (a Greek translation of the Hebrew Bible) for passages that could be reinterpreted as referring to Jesus, often ignoring the original meaning entirely. This was a standard literary technique of the time, not evidence of actual prediction.</p></div>
       </div>
       </div>
       <div class="notes">This appendix contains the detailed analysis of all seven messianic prophecies. The slides examine each prophecy in its original Hebrew context, showing how the New Testament reinterpreted passages that had nothing to do with Jesus.</div>
@@ -1450,8 +1466,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">Isaiah 7:14: &quot;A virgin shall conceive and bear a son, and shall call his name Immanuel.&quot;</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Context</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Isaiah is speaking to King Ahaz of Judah, who is terrified of an invasion by Israel and Syria. The sign -- a young woman (Hebrew: *almah*, meaning &quot;young woman,&quot; not *bethulah*, &quot;virgin&quot;) giving birth -- is meant to show Ahaz that the threat will pass within a few years. The child is named Immanuel as a symbolic name, and the prophecy is fulfilled in Isaiah 8:3-4 when the prophet&#x27;s own son is born. The context is entirely about the 8th century BCE, not a messiah 700 years later.</p></div>
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Matthew (1:23) quotes the Septuagint, which mistranslated *almah* as *parthenos* (virgin). The original Hebrew says nothing about a miraculous birth.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Context</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Isaiah is speaking to King Ahaz of Judah, who is terrified of an invasion by Israel and Syria. The sign -- a young woman (Hebrew: <strong>almah</strong>, meaning &quot;young woman,&quot; not <strong>bethulah</strong>, &quot;virgin&quot;) giving birth -- is meant to show Ahaz that the threat will pass within a few years. The child is named Immanuel as a symbolic name, and the prophecy is fulfilled in Isaiah 8:3-4 when the prophet&#x27;s own son is born. The context is entirely about the 8th century BCE, not a messiah 700 years later.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Matthew (1:23) quotes the Septuagint, which mistranslated <strong>almah</strong> as <strong>parthenos</strong> (virgin). The original Hebrew says nothing about a miraculous birth.</p></div>
       </div>
       </div>
       <div class="notes">This is the most famous &quot;messianic prophecy&quot; and it fails on every level. The original Hebrew word doesn&#x27;t mean virgin, the context is about an 8th-century political crisis, and the prophecy was fulfilled within Isaiah&#x27;s lifetime.</div>
@@ -1522,27 +1538,21 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <p class="lede mb-m">Psalm 16:10: &quot;You will not abandon my soul to Sheol, nor let your Holy One see corruption.&quot;</p>
       <div style="display:flex;flex-direction:column;gap:20px;flex:1;min-height:0">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Context</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">David is expressing confidence that God will protect him from dying at the hands of his enemies. The psalm is about David&#x27;s hope for deliverance in *this* life. Peter (Acts 2:25-31) and Paul (Acts 13:35-37) argue that since David did die and his tomb was still around, the psalm must refer to someone else -- Jesus. But David is speaking in the first person. He is the &quot;Holy One&quot; who trusts God not to let enemies kill him prematurely.</p></div>
+      <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Context</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">David is expressing confidence that God will protect him from dying at the hands of his enemies. The psalm is about David&#x27;s hope for deliverance in <strong>this</strong> life. Peter (Acts 2:25-31) and Paul (Acts 13:35-37) argue that since David did die and his tomb was still around, the psalm must refer to someone else -- Jesus. But David is speaking in the first person. He is the &quot;Holy One&quot; who trusts God not to let enemies kill him prematurely.</p></div>
       <div class="card" data-anim="fade-up" style="padding:14px 18px"><h4 class="h4" style="margin-bottom:4px;font-size:14px">The Problem</h4><p class="dim" style="margin:0 0 4px;font-size:13px;line-height:1.55">Peter and Paul argue: &quot;David died, so he can&#x27;t be talking about himself.&quot; But this only works if you ignore that the psalmist often speaks hyperbolically. Every psalm of lament expresses hope that God won&#x27;t let the speaker die. If none of those psalmists were predicting the resurrection, why should this one be treated differently?</p></div>
       </div>
       </div>
       <div class="notes">The early Christian reinterpretation of Psalm 16 is a classic example of reading the resurrection back into the Old Testament. A surface reading never would have suggested resurrection -- it describes deliverance from imminent death, not victory over death itself.</div>
     </section>
-    <!-- HELP -->
     <section class="slide" data-title="How to Navigate">
       <p class="kicker mb-s">Getting Started</p>
       <h2 class="h2" data-anim="fade-up">How to Navigate</h2>
-      <p class="lede mb-m">Use any of these methods to move through the deck.</p>
+      <p class="lede mb-m">Use any of these methods.</p>
       <div style="display:flex;flex-direction:column;gap:10px;max-width:500px">
-        <div class="card" style="padding:12px 18px"><strong>&larr; &rarr;</strong> or <strong>Space</strong> &mdash; Previous / Next</div>
-        <div class="card" style="padding:12px 18px">Tap <strong>left half</strong> or <strong>right half</strong> &mdash; Previous / Next</div>
-        <div class="card" style="padding:12px 18px">Swipe <strong>left</strong> or <strong>right</strong> &mdash; Prev / Next</div>
-        <div class="card" style="padding:12px 18px"><strong>T</strong> &mdash; Cycle themes</div>
-        <div class="card" style="padding:12px 18px"><strong>F</strong> &mdash; Fullscreen</div>
-        <div class="card" style="padding:12px 18px"><strong>O</strong> &mdash; Overview grid</div>
-        <div class="card" style="padding:12px 18px"><strong>S</strong> &mdash; Presenter mode</div>
-        <div class="card" style="padding:12px 18px"><strong>N</strong> &mdash; Notes drawer</div>
-        <div class="card" style="padding:12px 18px"><strong>&#x2302;</strong> (footer) &mdash; Back to first slide</div>
+        <div class="card" style="padding:12px 18px"><strong>&larr; &rarr;</strong> or <strong>Space</strong></div>
+        <div class="card" style="padding:12px 18px">Tap <strong>left/right half</strong> or <strong>swipe</strong></div>
+        <div class="card" style="padding:12px 18px"><strong>T</strong> themes &middot; <strong>F</strong> fullscreen &middot; <strong>O</strong> overview</div>
+        <div class="card" style="padding:12px 18px"><strong>S</strong> presenter &middot; <strong>N</strong> notes &middot; <strong>&#x2302;</strong> home</div>
       </div>
     </section>
 
@@ -1551,8 +1561,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <span class="slide-number" data-current="1" data-total="88"></span>
     </div>
   </div>
-  <script>
-/* html-ppt :: runtime.js
+  <script>/* html-ppt :: runtime.js
  * Keyboard-driven deck runtime. Zero dependencies.
  *
  * Features:
@@ -2512,21 +2521,15 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     go(idx);
   });
 })();
-
-  </script>
-  <script>
-/* Remove broken theme-link */
-document.querySelector('#theme-link')?.remove();
-/* Touch swipe + tap (debounced) */
+</script>
+  <script>document.querySelector('#theme-link')?.remove();
 (function(){var _tn=0;var _mdX=-1,_mdY=-1;var xS=0,yS=0,sl=Array.from((document.querySelector('.deck')||document.body).querySelectorAll('.slide'));
 document.addEventListener('touchstart',function(e){if(e.touches.length!==1)return;xS=e.touches[0].clientX;yS=e.touches[0].clientY;_tn=0;},{passive:true});
 document.addEventListener('touchend',function(e){if(e.changedTouches.length!==1)return;var x=e.changedTouches[0].clientX,y=e.changedTouches[0].clientY,dx=x-xS,dy=y-yS,adx=Math.abs(dx),ady=Math.abs(dy);if(adx>40&&adx>ady*1.5){_tn=1;go(dx<0?1:-1);return;}},{passive:true});
 document.addEventListener('mousedown',function(e){_mdX=e.clientX;_mdY=e.clientY;},true);
 document.addEventListener('click',function(e){var t=e.target;if(_tn){_tn=0;return;}if(t.closest('button')||t.closest('a')||t.closest('.overview')||t.closest('.notes')||t.closest('.slide-number')||t.closest('.bar'))return;if(_mdX>=0&&(Math.abs(e.clientX-_mdX)>8||Math.abs(e.clientY-_mdY)>8)){_mdX=-1;return;}_mdX=-1;var r=document.querySelector('.deck')||document.body,rect=r.getBoundingClientRect(),x=e.clientX-rect.left;if(x>0)go(x>rect.width*0.5?1:-1);});})();
-/* Theme toggle (inlined CSS) */
 (function(){var h=document.documentElement,n=(h.getAttribute('data-themes')||'').split(',').map(function(s){return s.trim();}).filter(Boolean);if(n.length<2)return;var ti=0;window._ct=function(){ti=(ti+1)%n.length;h.className=n[ti]+' is-active';h.setAttribute('data-theme',n[ti].replace('theme-',''));try{(new BroadcastChannel('html-ppt-presenter-'+location.pathname)).postMessage({type:'theme',name:n[ti]});}catch(e){}};
 document.addEventListener('keydown',function(e){if((e.key==='t'||e.key==='T')&&!e.metaKey&&!e.ctrlKey&&!e.altKey){if(window._ct){e.preventDefault();window._ct();}}});})();
-/* Expose go() globally (400ms debounce) */
 (function(){var dk=document.querySelector('.deck');if(!dk)return;var sl=Array.from(dk.querySelectorAll('.slide'));if(!sl.length)return;var _gd=0;window.go=function(n){var nw=Date.now();if(nw-_gd<400)return;_gd=nw;var cur=sl.indexOf(document.querySelector('.slide.is-active'));n=cur+n;n=Math.max(0,Math.min(sl.length-1,n));
 sl.forEach(function(s,i){s.classList.toggle('is-active',i===n);s.classList.toggle('is-prev',i<n);});
 var ne=document.querySelector('.slide-number');if(ne)ne.setAttribute('data-current',n+1);
@@ -2534,7 +2537,5 @@ var bf=document.querySelector('.progress-bar span');if(bf)bf.style.width=((n+1)/
 history.replaceState(null,'','#/'+(n+1));
 sl[n].querySelectorAll('[data-anim]').forEach(function(el){var a=el.getAttribute('data-anim');el.classList.remove('anim-'+a);void el.offsetWidth;el.classList.add('anim-'+a);});
 var no=sl[n].querySelector('.notes, aside.notes, .speaker-notes');var ne2=document.querySelector('.notes-overlay');if(ne2)ne2.innerHTML=no?no.innerHTML:'';
-try{(new BroadcastChannel('html-ppt-presenter-'+location.pathname)).postMessage({type:'go',idx:n});}catch(e){}};})();
-  </script>
-</body>
-</html>
+try{(new BroadcastChannel('html-ppt-presenter-'+location.pathname)).postMessage({type:'go',idx:n});}catch(e){}};})();</script>
+</body></html>

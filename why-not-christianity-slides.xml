@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presentation>
   <title>Why I Do Not Believe Christianity Is True</title>
-  <version>v70</version>
+  <version>v71</version>
   <slide_count>87</slide_count>
   <slide id="1" title="Cover">
     <kicker>A Reasoned Examination</kicker>
@@ -27,7 +27,7 @@ Christianity Is True</title>
           <content>Christianity makes positive claims about reality: a God exists, Jesus rose from the dead, prayers are answered, miracles occur. These are not neutral statements -- they assert something extraordinary about the universe.</content>
         </card>
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>Whoever makes a positive claim carries the burden of proof. Skepticism is not a counter-claim -- it's the default position until sufficient evidence is presented. The lack of belief is not a belief in lack.</content>
         </card>
       </section>
@@ -46,7 +46,7 @@ Christianity Is True</title>
         </card>
         <card>
           <title>Six Chances to Be Right</title>
-          <content>If Christianity is true, it should hold up in *at least one* of these areas -- ideally all six. If it fails in every single one, that is not a coincidence. That's a pattern.</content>
+          <content>If Christianity is true, it should hold up in **at least one** of these areas -- ideally all six. If it fails in every single one, that is not a coincidence. That's a pattern.</content>
         </card>
       </section>
     </body>
@@ -99,11 +99,11 @@ Christianity Is True</title>
     <body>
       <section type="intro">
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>Lightning = physics. Disease = germ theory. The origin of species = evolution. The pattern is unmistakable: every domain once attributed to divine action now has a natural explanation. This section tests Christianity's specific claims against science: young Earth, special creation, global flood, and a single human pair.</content>
         </card>
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>This section examines Christianity's specific claims about the natural world: that the Earth is young, that species were individually created, that a global flood reshaped the planet, that humans arose from a single pair. In each case, the scientific evidence tells a different story. The question is not whether Christianity can accommodate science -- it can, through reinterpretation. The question is whether the evidence supports a literal reading of Genesis, and what that means for a faith built on that foundation.</content>
         </card>
       </section>
@@ -127,7 +127,7 @@ Christianity Is True</title>
       </section>
       <section type="main">
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>
 - Special pleading: If everything that begins needs a cause, what caused God? If God doesn't need a cause, why can't the universe be the uncaused thing?
 - Equivocation: Even if premise 3 is granted, the conclusion "that cause is God" smuggles in attributes (omnipotence, omniscience, benevolence) that aren't in the premises. The cause could be a quantum fluctuation, a multiverse bubble, or anything else.
@@ -157,7 +157,7 @@ The Kalam argument commits special pleading for God. If everything that begins n
       </section>
       <section type="main">
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>
           1. The Anthropic Principle -- we can only observe a universe that permits our existence.
           2. The multiverse hypothesis -- if there are countless universes with varying constants, ours being life-permitting is unremarkable.
@@ -165,7 +165,7 @@ The Kalam argument commits special pleading for God. If everything that begins n
           </content>
         </card>
         <card>
-          <content>**The Puddle Analogy:** A puddle waking up thinking *"What a wonderful hole -- it fits me perfectly!"* mistakes its shape for evidence the hole was designed for it. We observe a universe that permits our existence -- that's not surprising, it's tautological.</content>
+          <content>**The Puddle Analogy:** A puddle waking up thinking **"What a wonderful hole -- it fits me perfectly!"** mistakes its shape for evidence the hole was designed for it. We observe a universe that permits our existence -- that's not surprising, it's tautological.</content>
         </card>
       </section>
       <section type="outro">
@@ -318,19 +318,24 @@ The Kalam argument commits special pleading for God. If everything that begins n
     <body>
       <section type="main">
         <card>
-          <content>**Claim:** God created the universe. **Science:** The universe began with the Big Bang 13.8 billion years ago. Kalam argument fails.</content>
+          <content>**Claim:** God created the universe. 
+          **Science:** The universe began with the Big Bang 13.8 billion years ago. Kalam argument fails.</content>
         </card>
         <card>
-          <content>**Claim:** The universe is finely tuned for life. **Science:** Anthropic principle and multiverse hypothesis explain fine-tuning without design.</content>
+          <content>**Claim:** The universe is finely tuned for life. 
+          **Science:** Anthropic principle and multiverse hypothesis explain fine-tuning without design.</content>
         </card>
         <card>
-          <content>**Claim:** God created the Earth 6,000 years ago. **Science:** Radiometric dating, stellar distances, and geology all show a 4.5-billion-year-old Earth.</content>
+          <content>**Claim:** God created the Earth 6,000 years ago. 
+          **Science:** Radiometric dating, stellar distances, and geology all show a 4.5-billion-year-old Earth.</content>
         </card>
         <card>
-          <content>**Claim:** God created species separately. **Science:** Fossil record, observed evolution, and genetic evidence confirm common descent.</content>
+          <content>**Claim:** God created species separately. 
+          **Science:** Fossil record, observed evolution, and genetic evidence confirm common descent.</content>
         </card>
         <card>
-          <content>**Claim:** God created humans uniquely. **Science:** Fossils, genetics, and chromosome evidence show humans evolved from ape-like ancestors.</content>
+          <content>**Claim:** God created humans uniquely. 
+          **Science:** Fossils, genetics, and chromosome evidence show humans evolved from ape-like ancestors.</content>
         </card>
       </section>
       <section type="outro">
@@ -363,7 +368,7 @@ No Adam means no original sin -- and without original sin, the need for a savior
       <section type="main">
 
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>The ancient Near East is one of the most intensively excavated regions in the world. We have extensive records from Egypt, Assyria, and Babylon -- inscriptions, annals, administrative documents, and royal propaganda. We can date pottery, trace settlement patterns, and read the records of the very civilizations the Bible describes. If the Exodus happened, Egypt would have recorded it. If the Conquest happened, the ruins would show it. If Noah's Flood happened, the geology would prove it. This is not a matter of interpretation -- it is a matter of evidence.</content>
         </card>
       </section>
@@ -383,7 +388,7 @@ No Adam means no original sin -- and without original sin, the need for a savior
       </section>
       <section type="main">
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>
 - No geological evidence for a global flood in the last 6,000 years
 - Stratigraphic layers show gradual deposition over millions of years, not a single catastrophic flood
@@ -413,7 +418,7 @@ No Adam means no original sin -- and without original sin, the need for a savior
       </section>
       <section type="main">
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>
 - No Egyptian records of a slave population, plagues, or a mass departure. Egypt recorded everything — including far smaller events
 - No evidence of 2 million people living in the Sinai for 40 years: no campsites, no graves, no pottery, no animal bones. The Sinai desert cannot support that many people
@@ -446,6 +451,7 @@ Mainstream archaeologists and biblical historians (Israel Finkelstein, William D
       </section>
 
       <section type="main">
+        <title>The Reality</title>
         <card>
           <content>Jericho
 
@@ -470,7 +476,7 @@ The consensus: Israelites did not invade Canaan -- they **emerged from within** 
       <section type="outro">
         <card>
           <title>The bottom line</title>
-          <content>The Israelites did not invade Canaan from outside -- they *were* Canaanites who gradually differentiated themselves. The conquest narrative was written centuries later as a theological origin myth, not a historical record.</content>
+          <content>The Israelites did not invade Canaan from outside -- they **were** Canaanites who gradually differentiated themselves. The conquest narrative was written centuries later as a theological origin myth, not a historical record.</content>
         </card>
       </section>
     </body>
@@ -523,7 +529,7 @@ The consensus: Israelites did not invade Canaan -- they **emerged from within** 
       </section>
       <section type="main">
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>Christians often point to Old Testament prophecies as evidence that Jesus was the messiah. But do those verses actually predict Jesus, or were they reinterpreted after the fact? And Jesus himself made specific predictions about his own return within his disciples' lifetime -- predictions that did not come true. This section examines all three questions.</content>
         </card>
       </section>
@@ -543,7 +549,7 @@ The consensus: Israelites did not invade Canaan -- they **emerged from within** 
       </section>
       <section type="main">
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>
 - The empty tomb story appears only in the Gospels, decades later
 - Paul's account (1 Cor 15) mentions only visions, not an empty tomb
@@ -571,7 +577,7 @@ The consensus: Israelites did not invade Canaan -- they **emerged from within** 
       </section>
       <section type="main">
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>
 - Isaiah 7:14 "virgin will conceive” — Hebrew word almah means "young woman" not "virgin." Referred to Isaiah's own son, born during the Syro-Ephraimite war.
 - Micah 5:2 "Bethlehem" — refers to a coming ruler who would defend Israel against Assyria. Jesus was born in Bethlehem, but the prophecy was about a contemporary deliverer.
@@ -743,7 +749,7 @@ The disciples finished going through Israel many times over. Paul traveled exten
         </card>
         <card>
           <title>📖 OT Prophecies</title>
-          <content>Every major "messianic prophecy" fails under scrutiny. Verses are taken out of context, mistranslated, or refer to contemporary figures and events. The NT authors used *vaticinium ex eventu* -- reading earlier texts in light of later events.</content>
+          <content>Every major "messianic prophecy" fails under scrutiny. Verses are taken out of context, mistranslated, or refer to contemporary figures and events. The NT authors used **vaticinium ex eventu** -- reading earlier texts in light of later events.</content>
         </card>
         <card>
           <title>⏳ Jesus's Own Predictions</title>
@@ -793,7 +799,7 @@ The disciples finished going through Israel many times over. Paul traveled exten
           <content>The Bible does not condemn slavery -- it regulates and endorses it. Key passages:
 
 **Leviticus 25:44-46** -- God tells Israel they may buy slaves from surrounding nations and pass them as inherited property to their children. These slaves are owned for life, unlike Hebrew servants who go free after six years.
-**Exodus 21:20-21** -- If a master beats a slave to death, he is punished only if the slave dies *immediately*. If the slave lingers for a day or two, the master is not punished because the slave is his property.
+**Exodus 21:20-21** -- If a master beats a slave to death, he is punished only if the slave dies **immediately**. If the slave lingers for a day or two, the master is not punished because the slave is his property.
 **Ephesians 6:5** -- The New Testament tells slaves to obey their masters with fear and trembling, as they would Christ. Nowhere in either testament is slavery condemned as a moral evil.</content>
         </card>
         <card>
@@ -837,8 +843,8 @@ The disciples finished going through Israel many times over. Paul traveled exten
       </section>
     </body>
     <notes>The death penalty passages are often hand-waved as belonging to the Old Covenant, but the same Bible elevates these laws alongside the Ten Commandments. Christians who pick and choose which Old Testament laws apply are doing exactly what the Bible says they shouldn't -- selectively following a supposedly divine moral code. The misogyny passages are equally troubling: women are consistently treated as second-class citizens, and this is presented as God's design, not human corruption.</notes>
-   </slide>
-   <slide id="36" title="Hell and Eternal Punishment">
+  </slide>
+  <slide id="36" title="Hell and Eternal Punishment">
     <kicker>Moral · Punishment</kicker>
     <title>Hell: The Problem of Eternal Punishment</title>
     <subtitle>Finite sin, infinite punishment -- is that justice?</subtitle>
@@ -871,7 +877,7 @@ The disciples finished going through Israel many times over. Paul traveled exten
       <section type="intro">
         <card>
           <title>The Doctrine</title>
-          <content>Augustine codified the doctrine of original sin: because Adam sinned, all of humanity inherits both a sinful nature and the guilt of that first sin. We are born *already guilty* in God's eyes, deserving of punishment before we've committed a single wrong act. This is why infant baptism was considered necessary in much of church history -- unbaptized babies who died were thought to go to hell or to a separate place called limbo.</content>
+          <content>Augustine codified the doctrine of original sin: because Adam sinned, all of humanity inherits both a sinful nature and the guilt of that first sin. We are born **already guilty** in God's eyes, deserving of punishment before we've committed a single wrong act. This is why infant baptism was considered necessary in much of church history -- unbaptized babies who died were thought to go to hell or to a separate place called limbo.</content>
         </card>
       </section>
       <section type="main">
@@ -946,8 +952,10 @@ The disciples finished going through Israel many times over. Paul traveled exten
           <title>The Claim</title>
           <content>Many Christians believe the Bible is without error in its original manuscripts. But we don't have the originals. We have thousands of handwritten copies, all of which contain differences -- scribal errors, additions, deletions, and theological corrections.</content>
         </card>
+      </section>
+      <section type="main">
         <card verdict="bad">
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>
 - There are 400,000+ textual variants among NT manuscripts
 - Most are minor, but some affect doctrine: the story of the woman caught in adultery (John 7:53-8:11) and the longer ending of Mark (Mark 16:9-20) are later additions, not original
@@ -1046,10 +1054,25 @@ Are we justified by faith alone or do we need to keep the law?</content>
     <title>Theological Reinterpretation of History</title>
     <subtitle>The Old Testament often reinterprets ordinary events as divine acts -- a pattern visible when compared to other ancient sources.</subtitle>
     <body>
-      <section type="main">
-        <card>
+      <section type="intro">
+        <card verdict="bad">
           <title>The Pattern</title>
-          <content>Throughout the Old Testament, ordinary historical events are recast as direct divine interventions. Military victories become miracles. Natural disasters become divine punishment. Diplomatic treaties become commands of God. This was standard practice in the ancient Near East -- every nation credited its gods with its successes and blamed them for its failures. The Bible does the same, but later readers took these poetic interpretations literally.</content>
+          <content>Throughout the Old Testament, ordinary historical events are recast as direct divine interventions. Military victories become miracles. Natural disasters become divine punishment. Diplomatic treaties become commands of God. This was standard practice in the ancient Near East — every nation credited its gods with its successes and blamed them for its failures. The Bible does the same, but later readers took these poetic interpretations literally.</content>
+        </card>
+        <card verdict="bad">
+          <title>Concrete Examples</title>
+          <content>
+- The Exodus: A small group of Semitic slaves escaping Egypt becomes a foundational miracle of 2 million people crossing the Red Sea. Egyptian records of the period — which meticulously document far smaller events — record nothing.
+- The Conquest of Canaan: Archaeology shows the Israelites emerged from within Canaanite society. The biblical account of miraculous military conquest was written centuries later as a theological origin myth.
+- Sennacherib's Invasion (701 BCE): Assyrian records describe Hezekiah paying tribute. The Bible (2 Kings 19) credits divine intervention, claiming an angel killed 185,000 Assyrian soldiers overnight. No Assyrian record mentions this — because it didn't happen.
+- The sun standing still at Gibeon (Joshua 10): A poetic description of a long day of battle, taken literally by later readers. No other ancient source records this event, and the physics alone makes it scientifically impossible.
+          </content>
+        </card>
+      </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The Bottom Line</title>
+          <content>The Bible authors were theologians writing theology, not historians writing journalism. When modern Christians insist that every poetic description of divine intervention is literally and historically true, they are misunderstanding the genre of the text. Every other culture's sacred writings are recognized as theological interpretations of history — the Bible deserves the same critical treatment.</content>
         </card>
       </section>
     </body>
@@ -1072,7 +1095,7 @@ Are we justified by faith alone or do we need to keep the law?</content>
         </card>
         <card>
           <title>Response</title>
-          <content>Writers from the same culture and shared history naturally produce coherent narratives. Yet even then, the Bible shows discrepancies: early texts use the plural *elohim*, betraying polytheistic origins; God's nature evolves from a violent tribal war god to a universal loving god; and the Bible contradicts itself on whether God creates evil (Isaiah 45:7 says yes, 1 John 1:5 says no). Coherence within a tradition is expected -- it's not evidence of divine origin.</content>
+          <content>Writers from the same culture and shared history naturally produce coherent narratives. Yet even then, the Bible shows discrepancies: early texts use the plural **elohim**, betraying polytheistic origins; God's nature evolves from a violent tribal war god to a universal loving god; and the Bible contradicts itself on whether God creates evil (Isaiah 45:7 says yes, 1 John 1:5 says no). Coherence within a tradition is expected -- it's not evidence of divine origin.</content>
         </card>
       </section>
     </body>
@@ -1104,7 +1127,7 @@ Are we justified by faith alone or do we need to keep the law?</content>
           <content>The New Testament was written by eyewitnesses to the events soon after they took place, within the first century. The Gospels preserve the testimony of those who saw Jesus' ministry, death, and resurrection firsthand.</content>
         </card>
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>The first gospel (Mark) was written some 40 years after Jesus' death -- decades of oral tradition during which stories change, embellish, and distort with every transmission. The Gospels are anonymous; their traditional author names were assigned later. Eyewitness testimony is notoriously unreliable even in controlled modern settings. Ancient accounts, especially those written decades later by non-eyewitnesses, must be treated with appropriate skepticism.</content>
         </card>
       </section>
@@ -1118,10 +1141,10 @@ Are we justified by faith alone or do we need to keep the law?</content>
       <section type="intro">
         <card>
           <title>The Claim</title>
-          <content>The New Testament has over 5,300 Greek manuscripts, 10,000 Latin, and 9,000 other copies -- far more than any other ancient work. By comparison, Aristotle's *Poetics* survives in only five manuscripts, the earliest over a thousand years after the original.</content>
+          <content>The New Testament has over 5,300 Greek manuscripts, 10,000 Latin, and 9,000 other copies -- far more than any other ancient work. By comparison, Aristotle's **Poetics** survives in only five manuscripts, the earliest over a thousand years after the original.</content>
         </card>
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>A large number of manuscripts reflects that Christianity was popular and institutionally organized, not that it's true. The Quran has few early manuscripts because Islamic leaders controlled the process and burned variant copies -- that says nothing about its truth or falsehood. A falsehood repeated many times does not become true. The question is not how many copies exist, but whether the original events actually happened.</content>
         </card>
       </section>
@@ -1138,34 +1161,34 @@ Are we justified by faith alone or do we need to keep the law?</content>
           <content>Countless people around the world testify to freedom from addiction, destructive lifestyles, and despair through following biblical principles and faith in Christ. God's Word produces transformed lives (Isaiah 55:11).</content>
         </card>
         <card>
-          <title>The Response</title>
+          <title>The Reality</title>
           <content>Beliefs changing lives happens in every religion -- Muslims, Buddhists, Hindus, and secular humanists all report transformed lives. If changed lives are evidence, they're evidence for all ideologies, which means they're evidence for none. And if we judge by fruits, we must also account for the Inquisition, the Crusades, and fallen leaders like Ravi Zacharias and Kong Hee -- evil done in Christ's name using the same Bible as justification.</content>
         </card>
       </section>
     </body>
   </slide>
-<slide id="52" title="Bible Summary">
-  <kicker>Bible · Summary</kicker>
-  <title>The Bible as a Human Book</title>
-  <subtitle>Examined critically, the Bible looks like a human book — not a divinely inspired inerrant text.</subtitle>
-  <body>
-    <section type="main">
-      <card verdict="bad">
-        <title>Textual Transmission</title>
-        <content>No original manuscripts exist. We have copies of copies with 400,000+ variants. Key passages (John 7:53-8:11, Mark 16:9-20, 1 John 5:7-8) are later additions.</content>
-      </card>
-      <card verdict="bad">
-        <title>Canon &amp; Consistency</title>
-        <content>The canon was settled by fallible councils centuries later. The Bible contradicts itself on historical details and contains fantastical elements (talking snakes, demons in pigs) that defy credibility.</content>
-      </card>
-      <card verdict="bad">
-        <title>Defenses Fail</title>
-        <content>Common apologetic arguments — unity of authorship, manuscript evidence, changed lives, eyewitness testimony — fail under scrutiny or apply equally to other scriptures.</content>
-      </card>
-    </section>
-  </body>
-  <notes>When you examine the Bible with the same critical tools you'd apply to any ancient text, it looks exactly like what you'd expect from a collection of human writings: reflecting the cultures, biases, limitations, and theological agendas of their authors. The simplest explanation for the Bible's features is not that it's a divinely inspired inerrant text, but that it's a very human book -- a remarkable one, to be sure, but human nonetheless.</notes>
-</slide>
+  <slide id="52" title="Bible Summary">
+    <kicker>Bible · Summary</kicker>
+    <title>The Bible as a Human Book</title>
+    <subtitle>Examined critically, the Bible looks like a human book — not a divinely inspired inerrant text.</subtitle>
+    <body>
+      <section type="main">
+        <card verdict="bad">
+          <title>Textual Transmission</title>
+          <content>No original manuscripts exist. We have copies of copies with 400,000+ variants. Key passages (John 7:53-8:11, Mark 16:9-20, 1 John 5:7-8) are later additions.</content>
+        </card>
+        <card verdict="bad">
+          <title>Canon &amp; Consistency</title>
+          <content>The canon was settled by fallible councils centuries later. The Bible contradicts itself on historical details and contains fantastical elements (talking snakes, demons in pigs) that defy credibility.</content>
+        </card>
+        <card verdict="bad">
+          <title>Defenses Fail</title>
+          <content>Common apologetic arguments — unity of authorship, manuscript evidence, changed lives, eyewitness testimony — fail under scrutiny or apply equally to other scriptures.</content>
+        </card>
+      </section>
+    </body>
+    <notes>When you examine the Bible with the same critical tools you'd apply to any ancient text, it looks exactly like what you'd expect from a collection of human writings: reflecting the cultures, biases, limitations, and theological agendas of their authors. The simplest explanation for the Bible's features is not that it's a divinely inspired inerrant text, but that it's a very human book -- a remarkable one, to be sure, but human nonetheless.</notes>
+  </slide>
   <slide id="53" title="Section Philosophical" type="section">
     <kicker>Part Six</kicker>
     <title>Philosophical Objections</title>
@@ -1370,7 +1393,7 @@ The problem isn't that we can't explain evil -- it's that the three attributes (
         </card>
         <card>
           <title>The STEP Study</title>
-          <content>The most rigorous scientific test of intercessory prayer was the **STEP Project** (Benson et al., 2006, *American Heart Journal*). 1,802 cardiac bypass patients were randomly assigned to three groups: those who knew they were being prayed for, those who might be prayed for, and those not prayed for. Results: prayer had **no effect** on complication-free recovery. Remarkably, patients who *knew* they were being prayed for had a **higher rate** of complications -- possibly due to performance anxiety. This double-blind, randomized controlled trial provided no evidence that intercessory prayer works.</content>
+          <content>The most rigorous scientific test of intercessory prayer was the **STEP Project** (Benson et al., 2006, **American Heart Journal**). 1,802 cardiac bypass patients were randomly assigned to three groups: those who knew they were being prayed for, those who might be prayed for, and those not prayed for. Results: prayer had **no effect** on complication-free recovery. Remarkably, patients who **knew** they were being prayed for had a **higher rate** of complications -- possibly due to performance anxiety. This double-blind, randomized controlled trial provided no evidence that intercessory prayer works.</content>
         </card>
         <card>
           <content>**The contradiction:** Christians also point to answered prayers as evidence of God's involvement. But if the same mechanism (prayer) produces both answered and unanswered outcomes, and the best scientific study finds no effect, the simplest explanation is that answered prayers are confirmation bias -- we remember the hits and forget the misses. A perfectly loving, all-powerful God who asks his children to pray would be expected to produce measurable, consistent results. He does not.</content>
@@ -1586,7 +1609,7 @@ Land predator, wolf-sized, ears adapted for underwater hearing.</content>
           <title>🐊 Ambulocetus</title>
           <content>48 mya
 
-"Walking whale" -- crocodile-like, could walk on land *and* swim.</content>
+"Walking whale" -- crocodile-like, could walk on land **and** swim.</content>
         </card>
         <card>
           <title>🦴 Rodhocetus</title>
@@ -1667,14 +1690,14 @@ But at the southern end of the ring, where the two ends meet, the forms live tog
         </card>
         <card>
           <title>👁️ The Human Eye</title>
-          <content>Photoreceptors face **backward**, with nerves and blood vessels on top creating a blind spot. The octopus eye evolved independently and has the wiring *behind* the retina -- the "correct" design.</content>
+          <content>Photoreceptors face **backward**, with nerves and blood vessels on top creating a blind spot. The octopus eye evolved independently and has the wiring **behind** the retina -- the "correct" design.</content>
         </card>
         <card>
           <title>🧬 The Vas Deferens</title>
           <content>In male mammals, it **loops over the ureter** -- a legacy of our fish ancestry when the testes were near the kidneys. An engineer would never route it this way.</content>
         </card>
         <card>
-          <content>**The Argument from Poor Design:** An engineer would not route a nerve around a major artery, wire a retina backwards, or loop a tube in a way that requires a hernia. These are *historical constraints* -- the unmistakable signature of evolution tinkering with existing structures rather than designing from scratch.</content>
+          <content>**The Argument from Poor Design:** An engineer would not route a nerve around a major artery, wire a retina backwards, or loop a tube in a way that requires a hernia. These are **historical constraints** -- the unmistakable signature of evolution tinkering with existing structures rather than designing from scratch.</content>
         </card>
       </section>
     </body>
@@ -1710,7 +1733,7 @@ But at the southern end of the ring, where the two ends meet, the forms live tog
         </card>
         <card>
           <title>The Shared Insertion Problem</title>
-          <content>Humans and chimpanzees share **hundreds of ERV insertions** at the *exact same genomic positions.* The odds of two independent viral insertions landing in the same nucleotide position in two different species are effectively zero -- far less than the probability of winning the lottery multiple times in a row. The only parsimonious explanation: **common ancestry.**</content>
+          <content>Humans and chimpanzees share **hundreds of ERV insertions** at the **exact same genomic positions.** The odds of two independent viral insertions landing in the same nucleotide position in two different species are effectively zero -- far less than the probability of winning the lottery multiple times in a row. The only parsimonious explanation: **common ancestry.**</content>
         </card>
       </section>
     </body>
@@ -1773,7 +1796,7 @@ But at the southern end of the ring, where the two ends meet, the forms live tog
         </card>
         <card>
           <title>Vaticinium Ex Eventu</title>
-          <content>The New Testament authors used a technique called *vaticinium ex eventu* -- reading earlier texts in light of later events. They searched the Septuagint (a Greek translation of the Hebrew Bible) for passages that could be reinterpreted as referring to Jesus, often ignoring the original meaning entirely. This was a standard literary technique of the time, not evidence of actual prediction.</content>
+          <content>The New Testament authors used a technique called **vaticinium ex eventu** -- reading earlier texts in light of later events. They searched the Septuagint (a Greek translation of the Hebrew Bible) for passages that could be reinterpreted as referring to Jesus, often ignoring the original meaning entirely. This was a standard literary technique of the time, not evidence of actual prediction.</content>
         </card>
       </section>
     </body>
@@ -1787,11 +1810,11 @@ But at the southern end of the ring, where the two ends meet, the forms live tog
       <section type="main">
         <card>
           <title>The Context</title>
-          <content>Isaiah is speaking to King Ahaz of Judah, who is terrified of an invasion by Israel and Syria. The sign -- a young woman (Hebrew: *almah*, meaning "young woman," not *bethulah*, "virgin") giving birth -- is meant to show Ahaz that the threat will pass within a few years. The child is named Immanuel as a symbolic name, and the prophecy is fulfilled in Isaiah 8:3-4 when the prophet's own son is born. The context is entirely about the 8th century BCE, not a messiah 700 years later.</content>
+          <content>Isaiah is speaking to King Ahaz of Judah, who is terrified of an invasion by Israel and Syria. The sign -- a young woman (Hebrew: **almah**, meaning "young woman," not **bethulah**, "virgin") giving birth -- is meant to show Ahaz that the threat will pass within a few years. The child is named Immanuel as a symbolic name, and the prophecy is fulfilled in Isaiah 8:3-4 when the prophet's own son is born. The context is entirely about the 8th century BCE, not a messiah 700 years later.</content>
         </card>
         <card>
           <title>The Problem</title>
-          <content>Matthew (1:23) quotes the Septuagint, which mistranslated *almah* as *parthenos* (virgin). The original Hebrew says nothing about a miraculous birth.</content>
+          <content>Matthew (1:23) quotes the Septuagint, which mistranslated **almah** as **parthenos** (virgin). The original Hebrew says nothing about a miraculous birth.</content>
         </card>
       </section>
     </body>
@@ -1895,7 +1918,7 @@ But at the southern end of the ring, where the two ends meet, the forms live tog
       <section type="main">
         <card>
           <title>The Context</title>
-          <content>David is expressing confidence that God will protect him from dying at the hands of his enemies. The psalm is about David's hope for deliverance in *this* life. Peter (Acts 2:25-31) and Paul (Acts 13:35-37) argue that since David did die and his tomb was still around, the psalm must refer to someone else -- Jesus. But David is speaking in the first person. He is the "Holy One" who trusts God not to let enemies kill him prematurely.</content>
+          <content>David is expressing confidence that God will protect him from dying at the hands of his enemies. The psalm is about David's hope for deliverance in **this** life. Peter (Acts 2:25-31) and Paul (Acts 13:35-37) argue that since David did die and his tomb was still around, the psalm must refer to someone else -- Jesus. But David is speaking in the first person. He is the "Holy One" who trusts God not to let enemies kill him prematurely.</content>
         </card>
         <card>
           <title>The Problem</title>
