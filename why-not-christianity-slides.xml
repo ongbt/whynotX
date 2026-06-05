@@ -1213,10 +1213,24 @@ Are we justified by faith alone or do we need to keep the law?</content>
     <title>Pascal's Wager: The Bet You Can't Win</title>
     <subtitle>"Believe in God because you have everything to gain and nothing to lose."</subtitle>
     <body>
-      <section type="main">
-        <card>
+      <section type="intro">
+        <card verdict="bad">
           <title>The Argument</title>
           <content>Pascal argued that belief in God is the rational bet: if God exists, the believer gains infinite reward and avoids infinite punishment. If God doesn't exist, the believer loses little. The atheist, by contrast, risks infinite loss for finite gain.</content>
+        </card>
+        <card verdict="bad">
+          <title>Why It Fails</title>
+          <content>
+- The Many-Gods Objection: Which God do you bet on? Islam, Hinduism, Judaism, and hundreds of other religions each promise different rewards and punishments. Pascal's wager tells you to believe — but doesn't tell you what to believe. The logic applies equally to any god.
+- Faith isn't a light switch: You cannot choose to believe something genuinely. If you try to "believe" just as insurance, you haven't actually believed — and an omniscient God would see through it.
+- False dichotomy: The wager presents only two options (Christian theism vs. atheism), ignoring all other religious possibilities. With hundreds of competing truth claims, the "rational bet" becomes a lottery, not a logical deduction.
+          </content>
+        </card>
+      </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The Bottom Line</title>
+          <content>Pascal's Wager is almost universally rejected by philosophers and theologians. It treats faith as an insurance policy, which is the opposite of genuine religious commitment. And it completely ignores the problem of religious pluralism: which God, exactly, are you betting on?</content>
         </card>
       </section>
     </body>
@@ -1249,9 +1263,20 @@ Contrast faith with evidence-based reasoning: when applied properly, science con
     <title>Omniscience vs Free Will</title>
     <subtitle>If God knows everything that will happen, can we truly have free will?</subtitle>
     <body>
-      <section type="main">
-        <card>
-          <content>Classical Christian theology holds that God is omniscient -- He knows all future events with certainty, including every choice you'll ever make. If God knows with absolute certainty that you'll choose A over B, can you genuinely choose B? If not, your choice is not free. Your freely made choices are, from an eternal perspective, already known and fixed.</content>
+      <section type="intro">
+        <card verdict="bad">
+          <title>Omniscience</title>
+          <content>Classical Christian theology holds that God is omniscient -- He knows all future events with certainty, including every choice you'll ever make. This includes every sin, every act of disbelief, every rejection. From God's eternal perspective, everything that will happen is already known.</content>
+        </card>
+        <card verdict="bad">
+          <title>The Free Will Problem</title>
+          <content>If God knows with absolute certainty that you'll choose A over B, can you genuinely choose B? If God's knowledge is infallible, then your choice is fixed -- you cannot choose otherwise. And if you cannot choose otherwise, your choice is not free. Your freely made choices are, from an eternal perspective, already known and determined.</content>
+        </card>
+      </section>
+      <section type="outro">
+        <card verdict="bad">
+          <title>The Dilemma</title>
+          <content>If humans have genuine free will, then God doesn't know for certain what they'll do -- contradicting classical omniscience. If God does know everything with certainty, then human choices are essentially scripted, and God bears ultimate responsibility for evil. Neither option is comfortable for traditional Christian theology. This is why theologians have debated this for two millennia without resolution.</content>
         </card>
       </section>
     </body>
