@@ -1,6 +1,8 @@
-import re
+import re, os
 
-with open("/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides-old.html", "r") as f:
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(SCRIPT_DIR, "why-not-christianity-slides-old.html"), "r") as f:
     html = f.read()
 
 # Extract all <section class="slide"> elements with their data-title and content
@@ -84,9 +86,10 @@ lines.append('</presentation>')
 
 output = '\n'.join(lines)
 
-with open("/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides.xml", "w") as f:
+output_path = os.path.join(SCRIPT_DIR, "why-not-christianity-slides.xml")
+with open(output_path, "w") as f:
     f.write(output)
 
 print(f"Slides extracted: {len(slides)}")
 print(f"Output: {len(output)} chars")
-print(f"File: /home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides.xml")
+print(f"File: {output_path}")

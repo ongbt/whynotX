@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Extract structured slide XML from HTML presentation deck."""
-import re, sys
+import re, sys, os
 
-with open("/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides-old.html") as f:
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(SCRIPT_DIR, "why-not-christianity-slides-old.html")) as f:
     RAW = f.read()
 
 def esc(s):
@@ -270,7 +272,7 @@ def build():
 # ── Run ──────────────────────────────────────────────────────
 xml = build()
 slide_count = xml.count('<slide ')
-with open('/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides.xml', 'w') as f:
+with open(os.path.join(SCRIPT_DIR, 'why-not-christianity-slides.xml'), 'w') as f:
     f.write(xml)
 print(f"Slides: {slide_count}")
 print(f"XML: {len(xml)} chars")

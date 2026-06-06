@@ -6,21 +6,23 @@ import re, os, subprocess
 from html import escape
 from datetime import datetime
 
-XML_PATH = '/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity.xml'
-OUTPUT_PATH = '/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity.html'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+XML_PATH = os.path.join(SCRIPT_DIR, 'why-not-christianity.xml')
+OUTPUT_PATH = os.path.join(SCRIPT_DIR, 'why-not-christianity.html')
 
 # Themes: verdict-dark (darker) + dracula for argumentation deck
 THEME_NAMES = ['theme-verdict-dark', 'theme-dracula']
-THEME_PATHS = [
-    '/home/bengt/.hermes/skills/html-ppt/assets/themes/verdict-dark.css',
-    '/home/bengt/.hermes/skills/html-ppt/assets/themes/dracula.css',
-]
 
-HTML_PPT_DIR = '/home/bengt/.hermes/skills/html-ppt'
-BASE_CSS = f'{HTML_PPT_DIR}/assets/base.css'
-ANIM_CSS = f'{HTML_PPT_DIR}/assets/animations/animations.css'
-FONTS_CSS = f'{HTML_PPT_DIR}/assets/fonts.css'
-RUNTIME_JS = f'{HTML_PPT_DIR}/assets/runtime.js'
+HTML_PPT_DIR = os.path.join(os.path.expanduser('~'), '.hermes', 'skills', 'html-ppt')
+THEME_PATHS = [
+    os.path.join(HTML_PPT_DIR, 'assets/themes/verdict-dark.css'),
+    os.path.join(HTML_PPT_DIR, 'assets/themes/dracula.css'),
+]
+BASE_CSS = os.path.join(HTML_PPT_DIR, 'assets/base.css')
+ANIM_CSS = os.path.join(HTML_PPT_DIR, 'assets/animations/animations.css')
+FONTS_CSS = os.path.join(HTML_PPT_DIR, 'assets/fonts.css')
+RUNTIME_JS = os.path.join(HTML_PPT_DIR, 'assets/runtime.js')
 
 # ─── Helpers ───
 
