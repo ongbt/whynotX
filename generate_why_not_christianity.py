@@ -6,8 +6,8 @@ import re, os, subprocess
 from html import escape
 from datetime import datetime
 
-XML_PATH = '/mnt/c/Users/bengt/hermes_workspace/why-not-christianity.xml'
-OUTPUT_PATH = '/home/bengt/hermes_workspace/why-not-christianity.html'
+XML_PATH = '/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity.xml'
+OUTPUT_PATH = '/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity.html'
 
 # Themes: verdict-dark (darker) + dracula for argumentation deck
 THEME_NAMES = ['theme-verdict-dark', 'theme-dracula']

@@ -2,7 +2,7 @@
 """Extract structured slide XML from HTML presentation deck."""
 import re, sys
 
-with open("/home/bengt/hermes_workspace/why-not-christianity-slides.html") as f:
+with open("/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides-old.html") as f:
     RAW = f.read()
 
 def esc(s):
@@ -270,7 +270,7 @@ def build():
 # ── Run ──────────────────────────────────────────────────────
 xml = build()
 slide_count = xml.count('<slide ')
-with open('/home/bengt/hermes_workspace/why-not-christianity-slides.xml', 'w') as f:
+with open('/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides.xml', 'w') as f:
     f.write(xml)
 print(f"Slides: {slide_count}")
 print(f"XML: {len(xml)} chars")

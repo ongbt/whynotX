@@ -2,18 +2,27 @@
 
 ## Hard rules (non-negotiable)
 
-- **NEVER access /mnt/c/ directly.** Only read files staged into the WSL filesystem (e.g. ~/hermes_workspace/). For anything else, ask BT to copy over.
-- **Do NOT auto-push/commit/deploy unless explicitly asked.** This includes Cloudflare Pages deploys. All changes stay local until BT says so.
+- **Do NOT auto-push/commit/deploy unless explicitly asked.** All changes stay local until BT says so. (Exception: post-commit hook auto-deploys on commit — that's fine, it's the git hook, not the agent.)
+- **Generator reads from `why-not-christianity.xml`** (the single canonical XML source). After editing the XML, always copy it to `~/hermes_workspace/why-not-christianity/why-not-christianity.xml` (to match generator path) and run `python3 ~/hermes_workspace/why-not-christianity/generate_why_not_christianity.py` to regenerate the HTML.
 
 ## Presentation conventions
 
-- `why-not-christianity-slides.html`: Bump the version badge (v# · date time SGT) on EVERY edit.
+- **Single canonical XML:** `why-not-christianity.xml` (no `-slides` suffix). The generator reads `why-not-christianity.xml` and writes `why-not-christianity.html`.
+- **Version:** Bump `<version>` in the XML before regenerating. Generator reads it from XML.
+- **Theme:** `theme-verdict-dark` (dark #12100e bg, gold #c9953c accent, Playfair Display + DM Sans). All bottom-line/conclusion cards get `verdict="bad"` for the red left-border styling.
 - BT prefers `frontend-slides` (fixed 1920×1080 stage, uniform scaling) over `html-ppt` for tablet-friendly presentations.
-- Chose "Verdict" style: dark #12100e bg, gold #c9953c accent, Playfair Display + DM Sans. Low density / speaker-led is default.
 
 ## Deploy workflow
 
-- Website deploys must be followed immediately by curling the deployed URL, checking for expected content (not just HTTP 200), and reporting success/failure. Never finish a deploy step without verify.
+- After deploying, curl the deployed URL and check for expected content, then report success/failure.
+- Deploy via `git commit` (post-commit hook runs `wrangler pages deploy`) or manually via `bash deploy.sh`.
+- Live at: https://whynotx.pages.dev/
+
+## File bridge
+
+- **WSL path:** `~/hermes_workspace/` → **Windows path:** `C:\Users\bengt\hermes_workspace\`
+- `/mnt/c/Users/bengt/hermes_workspace/` is the same files as `~/hermes_workspace/` via WSL mount. Either path works.
+- Deliverables (decks, exports, HTML) go here.
 
 ## User profile
 
@@ -21,7 +30,7 @@
 - **Email:** bengtiong@email.com
 - **GitHub:** ongbt
 - **Timezone:** Asia/Singapore (GMT+8)
-- **Windows user:** bengt. File bridge: ~/hermes_workspace/ → C:\Users\bengt\hermes_workspace\. Deliverables (decks, exports) go here.
-- Values accuracy over convenience. Short direct commands, action over explanation. Systematic changes: think through side effects, plan, verify after.
-- Wants proactive health monitoring with clear resolved vs active distinction.
+- Values accuracy over convenience. Short direct commands, action over explanation.
+- Systematic changes: think through side effects, plan, verify after.
 - Two-phase: review first, then batched implementation.
+- Full substantive text on slides — do NOT auto-condense card content.

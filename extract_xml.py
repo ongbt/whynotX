@@ -1,6 +1,6 @@
 import re
 
-with open("/home/bengt/hermes_workspace/why-not-christianity-slides.html", "r") as f:
+with open("/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides-old.html", "r") as f:
     html = f.read()
 
 # Extract all <section class="slide"> elements with their data-title and content
@@ -84,9 +84,9 @@ lines.append('</presentation>')
 
 output = '\n'.join(lines)
 
-with open("/home/bengt/hermes_workspace/why-not-christianity-slides.xml", "w") as f:
+with open("/home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides.xml", "w") as f:
     f.write(output)
 
 print(f"Slides extracted: {len(slides)}")
 print(f"Output: {len(output)} chars")
-print(f"File: /home/bengt/hermes_workspace/why-not-christianity-slides.xml")
+print(f"File: /home/bengt/hermes_workspace/why-not-christianity/why-not-christianity-slides.xml")
